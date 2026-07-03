@@ -42,30 +42,7 @@ flag_decision = {
                 set_variable = {
                     var = converted_research_speed
                     value = 0
-                }
-
-                # ===== 初始化上限变量 =====
-                # 工厂上限
-                set_variable = { var = cap_civilian_factory value = 300 }
-                set_variable = { var = cap_military_factory value = 300 }
-                set_variable = { var = cap_naval_dockyard value = 150 }
-                # 人力上限 (1000万)
-                set_variable = { var = cap_manpower value = 10000000 }
-                # 科研点上限
-                set_variable = { var = cap_research_point value = 1000000 }
-                # 军事经验上限
-                set_variable = { var = cap_army_xp value = 9999 }
-                set_variable = { var = cap_navy_xp value = 9999 }
-                set_variable = { var = cap_air_xp value = 9999 }
-                # 指挥点数上限
-                set_variable = { var = cap_command_power value = 2000 }
-                # 政治点数上限
-                set_variable = { var = cap_political_power value = 9999 }
-                # 特工位上限
-                set_variable = { var = cap_operative_slot value = 50 }
-                # 调整步长 (默认+1)
-                set_variable = { var = adjustment_step value = 1 }
-            }
+                }            }
 		}
     }
 
