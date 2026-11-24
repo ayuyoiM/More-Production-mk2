@@ -72,5 +72,7 @@ mp_cat_political = {
                 world_tension_decrease_production_research = 1
             }
         }
+
+    	ai_will_do = { factor = 0 }
     }
 }

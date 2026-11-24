@@ -201,3 +201,54 @@
   mp_tab_diplomatic: "Diplomacy line enabled"
   mp_tab_breakthrough: "Breakthrough line enabled"
   mp_tab_xp: "XP line enabled"
+
+  # Fuel Decisions
+  fuel_research_decision: "Basic Fuel Production Research  |  §G10 RP§!"
+  fuel_research_decision_trigger_tt: "Requires §G10 RP§!, current: §Y[?research_point_var]§!"
+  fuel_research_2_decision: "Improved Fuel Production Research  |  §Y100 RP§!"
+  fuel_research_2_decision_trigger_tt: "Requires §Y100 RP§!, current: §Y[?research_point_var]§!"
+  fuel_research_3_decision: "Advanced Fuel Production Research  |  §R10,000 RP§!"
+  fuel_research_3_decision_trigger_tt: "Requires §R10,000 RP§!, current: §Y[?research_point_var]§!"
+
+  # Intel / Decryption Decisions
+  intel_decryption_research_decision: "Basic Intel & Decryption Research  |  §G10 RP§!"
+  intel_decryption_research_decision_trigger_tt: "Requires §G10 RP§!, current: §Y[?research_point_var]§!"
+  intel_decryption_research_2_decision: "Improved Intel & Decryption Research  |  §Y100 RP§!"
+  intel_decryption_research_2_decision_trigger_tt: "Requires §Y100 RP§!, current: §Y[?research_point_var]§!"
+  intel_decryption_research_3_decision: "Advanced Intel & Decryption Research  |  §R10,000 RP§!"
+  intel_decryption_research_3_decision_trigger_tt: "Requires §R10,000 RP§!, current: §Y[?research_point_var]§!"
+
+  # MIO Decisions
+  mio_research_decision: "Basic MIO Research  |  §G10 RP§!"
+  mio_research_decision_trigger_tt: "Requires §G10 RP§!, current: §Y[?research_point_var]§!"
+  mio_research_2_decision: "Improved MIO Research  |  §Y100 RP§!"
+  mio_research_2_decision_trigger_tt: "Requires §Y100 RP§!, current: §Y[?research_point_var]§!"
+  mio_research_3_decision: "Advanced MIO Research  |  §R10,000 RP§!"
+  mio_research_3_decision_trigger_tt: "Requires §R10,000 RP§!, current: §Y[?research_point_var]§!"
+  mio_size_decision: "MIO Size +1  |  §R100,000 MIO Points§!"
+  mio_size_decision_trigger_tt: "Requires §R100,000 MIO Points§!, current: §Y[?mio_var]§!\n §GSize up unlocks new policy and trait slots§!"
+
+  # Doctrine Decisions
+  doctrine_research_decision: "Basic Doctrine Mastery Research  |  §G10 RP§!"
+  doctrine_research_decision_trigger_tt: "Requires §G10 RP§!, current: §Y[?research_point_var]§!"
+  doctrine_research_2_decision: "Improved Doctrine Mastery Research  |  §Y100 RP§!"
+  doctrine_research_2_decision_trigger_tt: "Requires §Y100 RP§!, current: §Y[?research_point_var]§!"
+  doctrine_research_3_decision: "Advanced Doctrine Mastery Research  |  §R10,000 RP§!"
+  doctrine_research_3_decision_trigger_tt: "Requires §R10,000 RP§!, current: §Y[?research_point_var]§!"
+
+  # New production line switches
+  mp_enable_fuel_tab: "Enable Fuel Production Line"
+  mp_disable_fuel_tab: "Disable Fuel Production Line"
+  mp_enable_intel_decryption_tab: "Enable Intel & Decryption Production Line"
+  mp_disable_intel_decryption_tab: "Disable Intel & Decryption Production Line"
+  mp_enable_mio_tab: "Enable MIO Production Line"
+  mp_disable_mio_tab: "Disable MIO Production Line"
+  mp_enable_doctrine_tab: "Enable Doctrine Production Line"
+  mp_disable_doctrine_tab: "Disable Doctrine Production Line"
+  mp_tab_fuel: "Fuel production line enabled"
+  mp_tab_intel: "Intel & Decryption production line enabled"
+  mp_tab_mio: "MIO production line enabled"
+  mp_tab_doctrine: "Doctrine production line enabled"
+  mp_enable_occupation_tab: "Enable Occupation Equipment Production Line"
+  mp_disable_occupation_tab: "Disable Occupation Equipment Production Line"
+  mp_tab_occupation: "Occupation equipment production line enabled"

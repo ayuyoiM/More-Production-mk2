@@ -273,7 +273,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/focusview/filter/air_xp_icon.dds"
 	}
 
-
 	SpriteType = {
 		name = "GFX_archetype_command_power"
 		texturefile = "gfx/interface/command_power_icon.dds"
@@ -298,7 +297,6 @@ spriteTypes = {
 		name = "GFX_command_power_in_warehouse_product_3_medium"
 		texturefile = "gfx/interface/command_power_icon.dds"
 	}
-
 
 	# world tension 
 
@@ -337,7 +335,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_SWE_radiotjanst.dds"
 	}
 
-	# civ ， mil and naval dockyard factory
+	# civ  mil and naval dockyard factory
 
 	SpriteType = {
 		name = "GFX_archetype_civilian_factory"
@@ -441,7 +439,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_coal.dds"
 	}
 
-
 	SpriteType = {
 		name = "GFX_archetype_oil"
 		texturefile = "gfx/interface/decisions/decision_oil.dds"
@@ -466,7 +463,6 @@ spriteTypes = {
 		name = "GFX_oil_in_warehouse_product_3_medium"
 		texturefile = "gfx/interface/decisions/decision_oil.dds"
 	}	
-
 
 	SpriteType = {
 		name = "GFX_archetype_steel"
@@ -493,7 +489,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_steel.dds"
 	}
 
-
 	SpriteType = {
 		name = "GFX_archetype_rubber"
 		texturefile = "gfx/interface/decisions/decision_rubber.dds"
@@ -518,7 +513,6 @@ spriteTypes = {
 		name = "GFX_rubber_in_warehouse_product_3_medium"
 		texturefile = "gfx/interface/decisions/decision_rubber.dds"
 	}
-
 
 	SpriteType = {
 		name = "GFX_archetype_aluminium"
@@ -545,7 +539,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_aluminium.dds"
 	}
 
-
 	SpriteType = {
 		name = "GFX_archetype_tungsten"
 		texturefile = "gfx/interface/decisions/decision_tungsten.dds"
@@ -570,7 +563,6 @@ spriteTypes = {
 		name = "GFX_tungsten_in_warehouse_product_3_medium"
 		texturefile = "gfx/interface/decisions/decision_tungsten.dds"
 	}
-
 
 	SpriteType = {
 		name = "GFX_archetype_chromium"
@@ -923,4 +915,5 @@ spriteTypes = {
 		texturefile = "gfx/interface/operatives/total_operatives.dds"
 	}
 	
+
 }

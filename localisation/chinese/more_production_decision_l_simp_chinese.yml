@@ -202,3 +202,54 @@
   mp_tab_diplomatic: "外交生产线已启用"
   mp_tab_breakthrough: "设施突破生产线已启用"
   mp_tab_xp: "经验生产线已启用"
+
+  # Fuel Decisions
+  fuel_research_decision: "初级燃料生产研究  |  §G10科研点§!"
+  fuel_research_decision_trigger_tt: "需要§G10科研点§!，当前为：§Y[?research_point_var]§!"
+  fuel_research_2_decision: "中级燃料生产研究  |  §Y100科研点§!"
+  fuel_research_2_decision_trigger_tt: "需要§Y100科研点§!，当前为：§Y[?research_point_var]§!"
+  fuel_research_3_decision: "高级燃料生产研究  |  §R10,000科研点§!"
+  fuel_research_3_decision_trigger_tt: "需要§R10,000科研点§!，当前为：§Y[?research_point_var]§!"
+
+  # Intel / Decryption Decisions
+  intel_decryption_research_decision: "初级情报破译研究  |  §G10科研点§!"
+  intel_decryption_research_decision_trigger_tt: "需要§G10科研点§!，当前为：§Y[?research_point_var]§!"
+  intel_decryption_research_2_decision: "中级情报破译研究  |  §Y100科研点§!"
+  intel_decryption_research_2_decision_trigger_tt: "需要§Y100科研点§!，当前为：§Y[?research_point_var]§!"
+  intel_decryption_research_3_decision: "高级情报破译研究  |  §R10,000科研点§!"
+  intel_decryption_research_3_decision_trigger_tt: "需要§R10,000科研点§!，当前为：§Y[?research_point_var]§!"
+
+  # MIO Decisions
+  mio_research_decision: "初级军工组织研究  |  §G10科研点§!"
+  mio_research_decision_trigger_tt: "需要§G10科研点§!，当前为：§Y[?research_point_var]§!"
+  mio_research_2_decision: "中级军工组织研究  |  §Y100科研点§!"
+  mio_research_2_decision_trigger_tt: "需要§Y100科研点§!，当前为：§Y[?research_point_var]§!"
+  mio_research_3_decision: "高级军工组织研究  |  §R10,000科研点§!"
+  mio_research_3_decision_trigger_tt: "需要§R10,000科研点§!，当前为：§Y[?research_point_var]§!"
+  mio_size_decision: "军工组织规模 +1  |  §R100,000资金点§!"
+  mio_size_decision_trigger_tt: "需要§R100,000资金点§!，当前为：§Y[?mio_var]§!\n §G规模提升后解锁新的政策与特质槽位§!"
+
+  # Doctrine Decisions
+  doctrine_research_decision: "初级学说精通研究  |  §G10科研点§!"
+  doctrine_research_decision_trigger_tt: "需要§G10科研点§!，当前为：§Y[?research_point_var]§!"
+  doctrine_research_2_decision: "中级学说精通研究  |  §Y100科研点§!"
+  doctrine_research_2_decision_trigger_tt: "需要§Y100科研点§!，当前为：§Y[?research_point_var]§!"
+  doctrine_research_3_decision: "高级学说精通研究  |  §R10,000科研点§!"
+  doctrine_research_3_decision_trigger_tt: "需要§R10,000科研点§!，当前为：§Y[?research_point_var]§!"
+
+  # New production line switches
+  mp_enable_fuel_tab: "启用燃料生产线"
+  mp_disable_fuel_tab: "停用燃料生产线"
+  mp_enable_intel_decryption_tab: "启用情报破译生产线"
+  mp_disable_intel_decryption_tab: "停用情报破译生产线"
+  mp_enable_mio_tab: "启用军工组织生产线"
+  mp_disable_mio_tab: "停用军工组织生产线"
+  mp_enable_doctrine_tab: "启用学说生产线"
+  mp_disable_doctrine_tab: "停用学说生产线"
+  mp_tab_fuel: "燃料生产线已启用"
+  mp_tab_intel: "情报破译生产线已启用"
+  mp_tab_mio: "军工组织生产线已启用"
+  mp_tab_doctrine: "学说生产线已启用"
+  mp_enable_occupation_tab: "启用占领设备生产线"
+  mp_disable_occupation_tab: "停用占领设备生产线"
+  mp_tab_occupation: "占领设备生产线已启用"

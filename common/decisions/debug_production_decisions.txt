@@ -1,14 +1,20 @@
-mp_cat_debug = {
+mp_cat_lines = {
 
-    # 调试用：仅当游戏以 -debug 启动时出现
-    # 逐个激活全部研究决策，并开启全部生产线
+    # 调试/作弊用：正常模式只显示「一键关闭」
+    # 一键启用会激活 cheat_mode，所以正常模式下不给
 
     mp_unlock_all_production = {
         icon = mission_icon
         cost = 0
         priority = 200
 
-        visible = { is_debug = yes }
+        visible = {
+            is_ai = no
+            OR = {
+                is_debug = yes
+                has_country_flag = cheat_mode
+            }
+        }
 
         complete_effect = {
             # debug 下一律按作弊模式处理，否则 research 决策的 available 会挡掉
@@ -47,6 +53,18 @@ mp_cat_debug = {
             activate_decision = command_power_production_decision
             activate_decision = command_power_production_2_decision
             activate_decision = command_power_production_3_decision
+            activate_decision = fuel_research_decision
+            activate_decision = fuel_research_2_decision
+            activate_decision = fuel_research_3_decision
+            activate_decision = intel_decryption_research_decision
+            activate_decision = intel_decryption_research_2_decision
+            activate_decision = intel_decryption_research_3_decision
+            activate_decision = mio_research_decision
+            activate_decision = mio_research_2_decision
+            activate_decision = mio_research_3_decision
+            activate_decision = doctrine_research_decision
+            activate_decision = doctrine_research_2_decision
+            activate_decision = doctrine_research_3_decision
             set_country_flag = mp_tab_factory
             set_country_flag = mp_tab_resource
             set_country_flag = mp_tab_manpower
@@ -58,6 +76,11 @@ mp_cat_debug = {
             set_country_flag = mp_tab_diplomatic
             set_country_flag = mp_tab_breakthrough
             set_country_flag = mp_tab_xp
+            set_country_flag = mp_tab_fuel
+            set_country_flag = mp_tab_intel
+            set_country_flag = mp_tab_mio
+            set_country_flag = mp_tab_occupation
+            set_country_flag = mp_tab_doctrine
         }
 
         ai_will_do = { factor = 0 }
@@ -68,7 +91,9 @@ mp_cat_debug = {
         cost = 0
         priority = 190
 
-        visible = { is_debug = yes }
+        visible = {
+            is_ai = no
+        }
 
         complete_effect = {
             clr_country_flag = mp_tab_factory
@@ -82,6 +107,11 @@ mp_cat_debug = {
             clr_country_flag = mp_tab_diplomatic
             clr_country_flag = mp_tab_breakthrough
             clr_country_flag = mp_tab_xp
+            clr_country_flag = mp_tab_fuel
+            clr_country_flag = mp_tab_intel
+            clr_country_flag = mp_tab_mio
+            clr_country_flag = mp_tab_occupation
+            clr_country_flag = mp_tab_doctrine
         }
 
         ai_will_do = { factor = 0 }

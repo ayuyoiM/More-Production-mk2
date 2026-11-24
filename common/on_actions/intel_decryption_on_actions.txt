@@ -1,0 +1,146 @@
+on_actions = {
+
+	on_weekly = { # intel_decryption_in_warehouse_product
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var:num_equipment@intel_decryption_in_warehouse_product > 0
+					}
+				}
+
+				set_variable = {
+					var = intel_decryption_product
+					value = var:num_equipment@intel_decryption_in_warehouse_product
+				}
+				set_variable = {
+					var = intel_decryption_product_negative
+					value = var:num_equipment@intel_decryption_in_warehouse_product
+				}
+				multiply_variable = {
+					var = intel_decryption_product_negative
+					value = -1
+				}
+
+				add_equipment_to_stockpile = {
+					type = intel_decryption_in_warehouse_product
+					amount = intel_decryption_product_negative
+				}
+
+				add_to_variable = {
+					var = more_production_intel_network_gain_factor
+					value = intel_decryption_product
+				}
+				add_to_variable = {
+					var = more_production_decryption_power_factor
+					value = intel_decryption_product
+				}
+
+				set_variable = {
+					var = intel_decryption_product
+					value = 0
+				}
+				set_variable = {
+					var = intel_decryption_product_negative
+					value = 0
+				}
+			}
+		}
+	}
+
+	on_weekly = { # intel_decryption_in_warehouse_product_2
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var:num_equipment@intel_decryption_in_warehouse_product_2 > 0
+					}
+				}
+
+				set_variable = {
+					var = intel_decryption_product_2
+					value = var:num_equipment@intel_decryption_in_warehouse_product_2
+				}
+				set_variable = {
+					var = intel_decryption_product_2_negative
+					value = var:num_equipment@intel_decryption_in_warehouse_product_2
+				}
+				multiply_variable = {
+					var = intel_decryption_product_2_negative
+					value = -1
+				}
+
+				add_equipment_to_stockpile = {
+					type = intel_decryption_in_warehouse_product_2
+					amount = intel_decryption_product_2_negative
+				}
+
+				add_to_variable = {
+					var = more_production_intel_network_gain_factor
+					value = intel_decryption_product_2
+				}
+				add_to_variable = {
+					var = more_production_decryption_power_factor
+					value = intel_decryption_product_2
+				}
+
+				set_variable = {
+					var = intel_decryption_product_2
+					value = 0
+				}
+				set_variable = {
+					var = intel_decryption_product_2_negative
+					value = 0
+				}
+			}
+		}
+	}
+
+	on_weekly = { # intel_decryption_in_warehouse_product_3
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var:num_equipment@intel_decryption_in_warehouse_product_3 > 0
+					}
+				}
+
+				set_variable = {
+					var = intel_decryption_product_3
+					value = var:num_equipment@intel_decryption_in_warehouse_product_3
+				}
+				set_variable = {
+					var = intel_decryption_product_3_negative
+					value = var:num_equipment@intel_decryption_in_warehouse_product_3
+				}
+				multiply_variable = {
+					var = intel_decryption_product_3_negative
+					value = -1
+				}
+
+				add_equipment_to_stockpile = {
+					type = intel_decryption_in_warehouse_product_3
+					amount = intel_decryption_product_3_negative
+				}
+
+				add_to_variable = {
+					var = more_production_intel_network_gain_factor
+					value = intel_decryption_product_3
+				}
+				add_to_variable = {
+					var = more_production_decryption_power_factor
+					value = intel_decryption_product_3
+				}
+
+				set_variable = {
+					var = intel_decryption_product_3
+					value = 0
+				}
+				set_variable = {
+					var = intel_decryption_product_3_negative
+					value = 0
+				}
+			}
+		}
+	}
+}

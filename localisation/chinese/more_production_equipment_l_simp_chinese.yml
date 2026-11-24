@@ -357,3 +357,43 @@
   factory_output_in_warehouse_desc: "工厂产出"
 
 
+
+  # Fuel Equipment
+  fuel_in_warehouse_product: "燃料 I"
+  fuel_in_warehouse_product_desc: "人造燃料！"
+  fuel_in_warehouse_product_2: "燃料 II"
+  fuel_in_warehouse_product_2_desc: "更有效率的人造燃料！"
+  fuel_in_warehouse_product_3: "燃料 III"
+  fuel_in_warehouse_product_3_desc: "最有效率的人造燃料！"
+  fuel_in_warehouse: "燃料"
+  fuel_in_warehouse_desc: "燃料生产线"
+
+  # Intel / Decryption Equipment
+  intel_decryption_in_warehouse_product: "情报破译 I"
+  intel_decryption_in_warehouse_product_desc: "人造情报与破译速度！"
+  intel_decryption_in_warehouse_product_2: "情报破译 II"
+  intel_decryption_in_warehouse_product_2_desc: "更有效率的人造情报与破译速度！"
+  intel_decryption_in_warehouse_product_3: "情报破译 III"
+  intel_decryption_in_warehouse_product_3_desc: "最有效率的人造情报与破译速度！"
+  intel_decryption_in_warehouse: "情报破译"
+  intel_decryption_in_warehouse_desc: "情报与破译生产线"
+
+  # MIO Equipment
+  mio_in_warehouse_product: "军工组织 I"
+  mio_in_warehouse_product_desc: "人造军工组织资金！"
+  mio_in_warehouse_product_2: "军工组织 II"
+  mio_in_warehouse_product_2_desc: "更有效率的人造军工组织资金！"
+  mio_in_warehouse_product_3: "军工组织 III"
+  mio_in_warehouse_product_3_desc: "最有效率的人造军工组织资金！"
+  mio_in_warehouse: "军工组织"
+  mio_in_warehouse_desc: "军工组织生产线"
+
+  # Doctrine Equipment
+  doctrine_in_warehouse_product: "学说精通 I"
+  doctrine_in_warehouse_product_desc: "人造学说精通点！"
+  doctrine_in_warehouse_product_2: "学说精通 II"
+  doctrine_in_warehouse_product_2_desc: "更有效率的人造学说精通点！"
+  doctrine_in_warehouse_product_3: "学说精通 III"
+  doctrine_in_warehouse_product_3_desc: "最有效率的人造学说精通点！"
+  doctrine_in_warehouse: "学说精通"
+  doctrine_in_warehouse_desc: "学说生产线"

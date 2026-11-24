@@ -242,3 +242,35 @@
   decrease_autonomy_production_2_research_desc: "Unlocks Intermediate Autonomy-Decreasing Equipment."
   decrease_autonomy_production_3_research: "Decrease Autonomy III"
   decrease_autonomy_production_3_research_desc: "Unlocks Advanced Autonomy-Decreasing Equipment."
+
+  # Fuel Production Technologies
+  fuel_production_research: "Fuel Production I"
+  fuel_production_research_desc: "Unlocks basic fuel production."
+  fuel_production_2_research: "Fuel Production II"
+  fuel_production_2_research_desc: "Unlocks improved fuel production."
+  fuel_production_3_research: "Fuel Production III"
+  fuel_production_3_research_desc: "Unlocks advanced fuel production."
+
+  # Intel / Decryption Production Technologies
+  intel_decryption_production_research: "Intel & Decryption I"
+  intel_decryption_production_research_desc: "Unlocks basic intel and decryption production."
+  intel_decryption_production_2_research: "Intel & Decryption II"
+  intel_decryption_production_2_research_desc: "Unlocks improved intel and decryption production."
+  intel_decryption_production_3_research: "Intel & Decryption III"
+  intel_decryption_production_3_research_desc: "Unlocks advanced intel and decryption production."
+
+  # MIO Production Technologies
+  mio_production_research: "MIO I"
+  mio_production_research_desc: "Unlocks basic MIO production."
+  mio_production_2_research: "MIO II"
+  mio_production_2_research_desc: "Unlocks improved MIO production."
+  mio_production_3_research: "MIO III"
+  mio_production_3_research_desc: "Unlocks advanced MIO production."
+
+  # Doctrine Production Technologies
+  doctrine_production_research: "Doctrine Mastery I"
+  doctrine_production_research_desc: "Unlocks basic doctrine mastery production."
+  doctrine_production_2_research: "Doctrine Mastery II"
+  doctrine_production_2_research_desc: "Unlocks improved doctrine mastery production."
+  doctrine_production_3_research: "Doctrine Mastery III"
+  doctrine_production_3_research_desc: "Unlocks advanced doctrine mastery production."

@@ -1,0 +1,57 @@
+equipments = {
+
+	# intel_decryption production line
+
+	intel_decryption_in_warehouse = {
+		year = 1936
+
+		is_archetype = yes
+
+		picture = idea_generic_spy_intel
+		is_buildable = no
+
+		type = infantry
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		active = yes
+
+		lend_lease_cost = 2
+
+		build_cost_ic = 0.17
+		resources = {
+			oil = 2
+			rubber = 1
+		}
+	}
+
+	intel_decryption_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_intel }
+		year = 1936
+		archetype = intel_decryption_in_warehouse
+		priority = 10
+	}
+
+	intel_decryption_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_intel }
+		year = 1938
+		archetype = intel_decryption_in_warehouse
+		parent = intel_decryption_in_warehouse_product
+
+		build_cost_ic = 0.01
+
+		priority = 20
+	}
+
+	intel_decryption_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_intel }
+		year = 1941
+		archetype = intel_decryption_in_warehouse
+		parent = intel_decryption_in_warehouse_product_2
+
+		build_cost_ic = 0.001
+
+		priority = 30
+	}
+}

@@ -205,3 +205,54 @@
   mp_tab_diplomatic: "Линия дипломатии включена"
   mp_tab_breakthrough: "Линия прорыва включена"
   mp_tab_xp: "Линия опыта включена"
+
+  # Fuel Decisions
+  fuel_research_decision: "Базовое исследование производства топлива  |  §G10 ОИ§!"
+  fuel_research_decision_trigger_tt: "Требуется §G10 ОИ§!, сейчас: §Y[?research_point_var]§!"
+  fuel_research_2_decision: "Улучшенное исследование производства топлива  |  §Y100 ОИ§!"
+  fuel_research_2_decision_trigger_tt: "Требуется §Y100 ОИ§!, сейчас: §Y[?research_point_var]§!"
+  fuel_research_3_decision: "Продвинутое исследование производства топлива  |  §R10,000 ОИ§!"
+  fuel_research_3_decision_trigger_tt: "Требуется §R10,000 ОИ§!, сейчас: §Y[?research_point_var]§!"
+
+  # Intel / Decryption Decisions
+  intel_decryption_research_decision: "Базовое исследование разведки и дешифровки  |  §G10 ОИ§!"
+  intel_decryption_research_decision_trigger_tt: "Требуется §G10 ОИ§!, сейчас: §Y[?research_point_var]§!"
+  intel_decryption_research_2_decision: "Улучшенное исследование разведки и дешифровки  |  §Y100 ОИ§!"
+  intel_decryption_research_2_decision_trigger_tt: "Требуется §Y100 ОИ§!, сейчас: §Y[?research_point_var]§!"
+  intel_decryption_research_3_decision: "Продвинутое исследование разведки и дешифровки  |  §R10,000 ОИ§!"
+  intel_decryption_research_3_decision_trigger_tt: "Требуется §R10,000 ОИ§!, сейчас: §Y[?research_point_var]§!"
+
+  # MIO Decisions
+  mio_research_decision: "Базовое исследование ВПО  |  §G10 ОИ§!"
+  mio_research_decision_trigger_tt: "Требуется §G10 ОИ§!, сейчас: §Y[?research_point_var]§!"
+  mio_research_2_decision: "Улучшенное исследование ВПО  |  §Y100 ОИ§!"
+  mio_research_2_decision_trigger_tt: "Требуется §Y100 ОИ§!, сейчас: §Y[?research_point_var]§!"
+  mio_research_3_decision: "Продвинутое исследование ВПО  |  §R10,000 ОИ§!"
+  mio_research_3_decision_trigger_tt: "Требуется §R10,000 ОИ§!, сейчас: §Y[?research_point_var]§!"
+  mio_size_decision: "Размер ВПО +1  |  §R100,000 очков ВПО§!"
+  mio_size_decision_trigger_tt: "Требуется §R100,000 очков ВПО§!, сейчас: §Y[?mio_var]§!\n §GПовышение размера открывает новые ячейки политики и черт§!"
+
+  # Doctrine Decisions
+  doctrine_research_decision: "Базовое исследование мастерства доктрин  |  §G10 ОИ§!"
+  doctrine_research_decision_trigger_tt: "Требуется §G10 ОИ§!, сейчас: §Y[?research_point_var]§!"
+  doctrine_research_2_decision: "Улучшенное исследование мастерства доктрин  |  §Y100 ОИ§!"
+  doctrine_research_2_decision_trigger_tt: "Требуется §Y100 ОИ§!, сейчас: §Y[?research_point_var]§!"
+  doctrine_research_3_decision: "Продвинутое исследование мастерства доктрин  |  §R10,000 ОИ§!"
+  doctrine_research_3_decision_trigger_tt: "Требуется §R10,000 ОИ§!, сейчас: §Y[?research_point_var]§!"
+
+  # New production line switches
+  mp_enable_fuel_tab: "Включить линию производства топлива"
+  mp_disable_fuel_tab: "Отключить линию производства топлива"
+  mp_enable_intel_decryption_tab: "Включить линию разведки и дешифровки"
+  mp_disable_intel_decryption_tab: "Отключить линию разведки и дешифровки"
+  mp_enable_mio_tab: "Включить линию ВПО"
+  mp_disable_mio_tab: "Отключить линию ВПО"
+  mp_enable_doctrine_tab: "Включить линию доктрин"
+  mp_disable_doctrine_tab: "Отключить линию доктрин"
+  mp_tab_fuel: "Линия производства топлива включена"
+  mp_tab_intel: "Линия разведки и дешифровки включена"
+  mp_tab_mio: "Линия ВПО включена"
+  mp_tab_doctrine: "Линия доктрин включена"
+  mp_enable_occupation_tab: "Включить линию оккупационного снаряжения"
+  mp_disable_occupation_tab: "Отключить линию оккупационного снаряжения"
+  mp_tab_occupation: "Линия оккупационного снаряжения включена"

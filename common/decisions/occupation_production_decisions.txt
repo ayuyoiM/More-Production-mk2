@@ -36,6 +36,8 @@ mp_cat_military = {
             }
             set_country_flag = occupation_decision_enabled
         }
+
+    	ai_will_do = { factor = 0 }
     }
 
     occupation_equipment_research_2_decision = {
@@ -79,6 +81,8 @@ mp_cat_military = {
                 coring_equipment_production_2_research = 1
             }
         }
+
+    	ai_will_do = { factor = 0 }
     }
 
     occupation_equipment_research_3_decision = {
@@ -122,6 +126,8 @@ mp_cat_military = {
                 coring_equipment_production_3_research = 1
             }
         }
+
+    	ai_will_do = { factor = 0 }
     }
 
     # State Occupation Decisions

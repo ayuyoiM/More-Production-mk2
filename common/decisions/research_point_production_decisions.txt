@@ -39,6 +39,8 @@ mp_cat_research = {
 				research_point_production_2_research = 1
 			}
 		}
+
+		ai_will_do = { factor = 0 }
 	}
 
 	research_point_3_decision = {
@@ -84,6 +86,8 @@ mp_cat_research = {
 				modifier = research_speed_dymanic_modifier
 			}
 		}
+
+		ai_will_do = { factor = 0 }
 	}
 
 	research_slot_decision = {
@@ -123,6 +127,8 @@ mp_cat_research = {
 			}
 			add_research_slot = 1
 		}
+
+		ai_will_do = { factor = 0 }
 	}
 
 	research_speed_decision = {
@@ -186,6 +192,8 @@ mp_cat_research = {
 				}
 			}
 		}
+
+		ai_will_do = { factor = 0 }
     }
 
 	special_research_speed_decision = {
@@ -251,5 +259,7 @@ mp_cat_research = {
 			}
 			
 		}
+
+		ai_will_do = { factor = 0 }
 	}
 }

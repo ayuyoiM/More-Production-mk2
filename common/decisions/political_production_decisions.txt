@@ -72,6 +72,8 @@ mp_cat_political = {
 				warsupport_production_research = 1
 			}
 		}
+
+		ai_will_do = { factor = 0 }
 	}
 
 	political_research_2_decision = {
@@ -114,6 +116,8 @@ mp_cat_political = {
 				warsupport_production_2_research = 1
 			}
 		}
+
+		ai_will_do = { factor = 0 }
 	}
 
 	political_research_3_decision = {
@@ -156,6 +160,8 @@ mp_cat_political = {
 				warsupport_production_3_research = 1
 			}
 		}
+
+		ai_will_do = { factor = 0 }
 	}
 
 }

@@ -1,0 +1,32 @@
+technologies = {
+	mio_production_research = {
+
+		enable_equipments = {
+			mio_in_warehouse
+			mio_in_warehouse_product
+		}
+
+		research_cost = -1
+		ai_will_do = { factor = 0 }
+	}
+
+	mio_production_2_research = {
+
+		enable_equipments = {
+			mio_in_warehouse_product_2
+		}
+
+		research_cost = -1
+		ai_will_do = { factor = 0 }
+	}
+
+	mio_production_3_research = {
+
+		enable_equipments = {
+			mio_in_warehouse_product_3
+		}
+
+		research_cost = -1
+		ai_will_do = { factor = 0 }
+	}
+}

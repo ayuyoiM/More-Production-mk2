@@ -352,3 +352,43 @@
   factory_output_in_warehouse: "Factory Output"
   factory_output_in_warehouse_desc: "Factory Output"
 
+
+  # Fuel Equipment
+  fuel_in_warehouse_product: "Fuel I"
+  fuel_in_warehouse_product_desc: "Synthetic fuel!"
+  fuel_in_warehouse_product_2: "Fuel II"
+  fuel_in_warehouse_product_2_desc: "More efficient synthetic fuel!"
+  fuel_in_warehouse_product_3: "Fuel III"
+  fuel_in_warehouse_product_3_desc: "The most efficient synthetic fuel!"
+  fuel_in_warehouse: "Fuel"
+  fuel_in_warehouse_desc: "Fuel production line"
+
+  # Intel / Decryption Equipment
+  intel_decryption_in_warehouse_product: "Intel & Decryption I"
+  intel_decryption_in_warehouse_product_desc: "Synthetic intel and decryption speed!"
+  intel_decryption_in_warehouse_product_2: "Intel & Decryption II"
+  intel_decryption_in_warehouse_product_2_desc: "More efficient synthetic intel and decryption speed!"
+  intel_decryption_in_warehouse_product_3: "Intel & Decryption III"
+  intel_decryption_in_warehouse_product_3_desc: "The most efficient synthetic intel and decryption speed!"
+  intel_decryption_in_warehouse: "Intel & Decryption"
+  intel_decryption_in_warehouse_desc: "Intel and decryption production line"
+
+  # MIO Equipment
+  mio_in_warehouse_product: "MIO I"
+  mio_in_warehouse_product_desc: "Synthetic MIO funds!"
+  mio_in_warehouse_product_2: "MIO II"
+  mio_in_warehouse_product_2_desc: "More efficient synthetic MIO funds!"
+  mio_in_warehouse_product_3: "MIO III"
+  mio_in_warehouse_product_3_desc: "The most efficient synthetic MIO funds!"
+  mio_in_warehouse: "MIO"
+  mio_in_warehouse_desc: "Military industrial organization production line"
+
+  # Doctrine Equipment
+  doctrine_in_warehouse_product: "Doctrine Mastery I"
+  doctrine_in_warehouse_product_desc: "Synthetic doctrine mastery!"
+  doctrine_in_warehouse_product_2: "Doctrine Mastery II"
+  doctrine_in_warehouse_product_2_desc: "More efficient synthetic doctrine mastery!"
+  doctrine_in_warehouse_product_3: "Doctrine Mastery III"
+  doctrine_in_warehouse_product_3_desc: "The most efficient synthetic doctrine mastery!"
+  doctrine_in_warehouse: "Doctrine Mastery"
+  doctrine_in_warehouse_desc: "Doctrine production line"

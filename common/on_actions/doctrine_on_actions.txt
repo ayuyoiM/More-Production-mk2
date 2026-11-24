@@ -1,0 +1,131 @@
+on_actions = {
+
+	on_weekly = { # doctrine_in_warehouse_product
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var:num_equipment@doctrine_in_warehouse_product > 0
+					}
+				}
+
+				set_variable = {
+					var = doctrine_product
+					value = var:num_equipment@doctrine_in_warehouse_product
+				}
+				set_variable = {
+					var = doctrine_product_negative
+					value = var:num_equipment@doctrine_in_warehouse_product
+				}
+				multiply_variable = {
+					var = doctrine_product_negative
+					value = -1
+				}
+
+				add_equipment_to_stockpile = {
+					type = doctrine_in_warehouse_product
+					amount = doctrine_product_negative
+				}
+
+				add_mastery = {
+					amount = doctrine_product
+				}
+
+				set_variable = {
+					var = doctrine_product
+					value = 0
+				}
+				set_variable = {
+					var = doctrine_product_negative
+					value = 0
+				}
+			}
+		}
+	}
+
+	on_weekly = { # doctrine_in_warehouse_product_2
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var:num_equipment@doctrine_in_warehouse_product_2 > 0
+					}
+				}
+
+				set_variable = {
+					var = doctrine_product_2
+					value = var:num_equipment@doctrine_in_warehouse_product_2
+				}
+				set_variable = {
+					var = doctrine_product_2_negative
+					value = var:num_equipment@doctrine_in_warehouse_product_2
+				}
+				multiply_variable = {
+					var = doctrine_product_2_negative
+					value = -1
+				}
+
+				add_equipment_to_stockpile = {
+					type = doctrine_in_warehouse_product_2
+					amount = doctrine_product_2_negative
+				}
+
+				add_mastery = {
+					amount = doctrine_product_2
+				}
+
+				set_variable = {
+					var = doctrine_product_2
+					value = 0
+				}
+				set_variable = {
+					var = doctrine_product_2_negative
+					value = 0
+				}
+			}
+		}
+	}
+
+	on_weekly = { # doctrine_in_warehouse_product_3
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var:num_equipment@doctrine_in_warehouse_product_3 > 0
+					}
+				}
+
+				set_variable = {
+					var = doctrine_product_3
+					value = var:num_equipment@doctrine_in_warehouse_product_3
+				}
+				set_variable = {
+					var = doctrine_product_3_negative
+					value = var:num_equipment@doctrine_in_warehouse_product_3
+				}
+				multiply_variable = {
+					var = doctrine_product_3_negative
+					value = -1
+				}
+
+				add_equipment_to_stockpile = {
+					type = doctrine_in_warehouse_product_3
+					amount = doctrine_product_3_negative
+				}
+
+				add_mastery = {
+					amount = doctrine_product_3
+				}
+
+				set_variable = {
+					var = doctrine_product_3
+					value = 0
+				}
+				set_variable = {
+					var = doctrine_product_3_negative
+					value = 0
+				}
+			}
+		}
+	}
+}

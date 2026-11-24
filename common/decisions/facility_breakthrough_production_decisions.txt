@@ -75,6 +75,8 @@ mp_cat_military = {
 				nuclear_breakthrough_production_research = 1
 			}
 		}
+
+		ai_will_do = { factor = 0 }
 	}
 
 	facility_breakthrough_research_2_decision = {
@@ -120,6 +122,8 @@ mp_cat_military = {
 				nuclear_breakthrough_production_2_research = 1
 			}
 		}
+
+		ai_will_do = { factor = 0 }
 	}
 
 	facility_breakthrough_research_3_decision = {
@@ -165,5 +169,7 @@ mp_cat_military = {
 				nuclear_breakthrough_production_3_research = 1
 			}
 		}
+
+		ai_will_do = { factor = 0 }
 	}
 }

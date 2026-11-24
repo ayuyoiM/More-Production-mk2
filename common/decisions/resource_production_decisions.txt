@@ -81,6 +81,8 @@ mp_cat_civilian = {
                 chromium_production_research = 1
             }
         }
+
+    	ai_will_do = { factor = 0 }
     }
 
     resource_research_2_decision = {
@@ -132,6 +134,8 @@ mp_cat_civilian = {
                 chromium_production_2_research = 1
             }
         }
+
+    	ai_will_do = { factor = 0 }
     }
 
     resource_research_3_decision = {
@@ -183,5 +187,7 @@ mp_cat_civilian = {
                 chromium_production_3_research = 1
             }
         }
+
+    	ai_will_do = { factor = 0 }
     }
 }

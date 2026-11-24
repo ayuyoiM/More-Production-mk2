@@ -342,3 +342,43 @@
   # Производительность заводов
   factory_output_in_warehouse: "Производительность заводов"
   factory_output_in_warehouse_desc: "Производительность заводов"
+
+  # Fuel Equipment
+  fuel_in_warehouse_product: "Топливо I"
+  fuel_in_warehouse_product_desc: "Синтетическое топливо!"
+  fuel_in_warehouse_product_2: "Топливо II"
+  fuel_in_warehouse_product_2_desc: "Более эффективное синтетическое топливо!"
+  fuel_in_warehouse_product_3: "Топливо III"
+  fuel_in_warehouse_product_3_desc: "Самое эффективное синтетическое топливо!"
+  fuel_in_warehouse: "Топливо"
+  fuel_in_warehouse_desc: "Линия производства топлива"
+
+  # Intel / Decryption Equipment
+  intel_decryption_in_warehouse_product: "Разведка и дешифровка I"
+  intel_decryption_in_warehouse_product_desc: "Синтетическая скорость разведки и дешифровки!"
+  intel_decryption_in_warehouse_product_2: "Разведка и дешифровка II"
+  intel_decryption_in_warehouse_product_2_desc: "Более эффективная скорость разведки и дешифровки!"
+  intel_decryption_in_warehouse_product_3: "Разведка и дешифровка III"
+  intel_decryption_in_warehouse_product_3_desc: "Самая эффективная скорость разведки и дешифровки!"
+  intel_decryption_in_warehouse: "Разведка и дешифровка"
+  intel_decryption_in_warehouse_desc: "Линия производства разведки и дешифровки"
+
+  # MIO Equipment
+  mio_in_warehouse_product: "ВПО I"
+  mio_in_warehouse_product_desc: "Синтетические средства ВПО!"
+  mio_in_warehouse_product_2: "ВПО II"
+  mio_in_warehouse_product_2_desc: "Более эффективные синтетические средства ВПО!"
+  mio_in_warehouse_product_3: "ВПО III"
+  mio_in_warehouse_product_3_desc: "Самые эффективные синтетические средства ВПО!"
+  mio_in_warehouse: "ВПО"
+  mio_in_warehouse_desc: "Линия производства военно-промышленных организаций"
+
+  # Doctrine Equipment
+  doctrine_in_warehouse_product: "Мастерство доктрин I"
+  doctrine_in_warehouse_product_desc: "Синтетическое мастерство доктрин!"
+  doctrine_in_warehouse_product_2: "Мастерство доктрин II"
+  doctrine_in_warehouse_product_2_desc: "Более эффективное синтетическое мастерство доктрин!"
+  doctrine_in_warehouse_product_3: "Мастерство доктрин III"
+  doctrine_in_warehouse_product_3_desc: "Самое эффективное синтетическое мастерство доктрин!"
+  doctrine_in_warehouse: "Мастерство доктрин"
+  doctrine_in_warehouse_desc: "Линия производства доктрин"

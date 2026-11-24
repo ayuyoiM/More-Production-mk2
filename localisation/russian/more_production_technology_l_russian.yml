@@ -232,3 +232,35 @@
   decrease_autonomy_production_2_research_desc: "Разблокирует среднее оборудование для снижения автономии."
   decrease_autonomy_production_3_research: "Снижение автономии III"
   decrease_autonomy_production_3_research_desc: "Разблокирует передовое оборудование для снижения автономии."
+
+  # Fuel Production Technologies
+  fuel_production_research: "Производство топлива I"
+  fuel_production_research_desc: "Открывает базовое производство топлива."
+  fuel_production_2_research: "Производство топлива II"
+  fuel_production_2_research_desc: "Открывает улучшенное производство топлива."
+  fuel_production_3_research: "Производство топлива III"
+  fuel_production_3_research_desc: "Открывает продвинутое производство топлива."
+
+  # Intel / Decryption Production Technologies
+  intel_decryption_production_research: "Разведка и дешифровка I"
+  intel_decryption_production_research_desc: "Открывает базовое производство разведки и дешифровки."
+  intel_decryption_production_2_research: "Разведка и дешифровка II"
+  intel_decryption_production_2_research_desc: "Открывает улучшенное производство разведки и дешифровки."
+  intel_decryption_production_3_research: "Разведка и дешифровка III"
+  intel_decryption_production_3_research_desc: "Открывает продвинутое производство разведки и дешифровки."
+
+  # MIO Production Technologies
+  mio_production_research: "ВПО I"
+  mio_production_research_desc: "Открывает базовое производство ВПО."
+  mio_production_2_research: "ВПО II"
+  mio_production_2_research_desc: "Открывает улучшенное производство ВПО."
+  mio_production_3_research: "ВПО III"
+  mio_production_3_research_desc: "Открывает продвинутое производство ВПО."
+
+  # Doctrine Production Technologies
+  doctrine_production_research: "Мастерство доктрин I"
+  doctrine_production_research_desc: "Открывает базовое производство мастерства доктрин."
+  doctrine_production_2_research: "Мастерство доктрин II"
+  doctrine_production_2_research_desc: "Открывает улучшенное производство мастерства доктрин."
+  doctrine_production_3_research: "Мастерство доктрин III"
+  doctrine_production_3_research_desc: "Открывает продвинутое производство мастерства доктрин."
