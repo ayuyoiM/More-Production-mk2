@@ -1,0 +1,61 @@
+我个菜荀子：
+Hi, I have made this mod from the code base of another cereator, huge credit to: Space Maze
+
+Space Maze:
+Here's the message from the previous creator explaining how this mod works:
+
+"Hi, if you're reading this, then most likely you're interested in how this mod works.
+In fact, everything is simple. An unused, separate equipment with the name and design of manpower has been added.
+When it is produced and accumulated in the warehouse, a hidden trigger occurs every week,
+which takes away all the manpower produced in the warehouse and adds this number to the current manpower of the country.
+Using this technology, you can make the production of anything: stability, political power, research cells, military experience, and so on.
+ If you do something similar using my technology, you can use it with credit XD
+
+Have fun!"
+
+ Feels free to make another mod based on my current mod, just make sure to credit me XD
+
+# 万能军工厂
+
+基于“我个菜荀子”的万能军工厂 v0.1修改而来，新增煤生产线，并做了分类重构。
+原作：https://steamcommunity.com/sharedfiles/filedetails/?id=3378477376
+
+适用版本：HOI4 1.20.*（Operation Postern）
+模组版本：1.3
+
+## 功能
+
+作弊向模组。用军事工厂生产「虚拟装备」，
+装备进仓库后由脚本定期转换成国家的真实资源或属性。
+可以不花任何代价把产能变成工厂、资源、政治点、科研点、人力、经验等等。
+
+## 界面结构
+
+决策界面分为：
+
+  生产线管理    四个大类总开关，一次开/关一整个大类
+  民生          工厂、资源、人力
+  军事          设施突破、占领、经验与指挥点
+  科研          科研点
+  外交政治      政治、意识形态、特务、自治、紧张度、外交
+  调试          仅在 -debug 启动时出现，一键解锁全部
+
+每个大类内部还有逐条的生产线开关，可以只开其中一两条。
+
+生产界面默认什么都不显示，开启对应生产线后装备才会出现。
+
+## 实现原理
+
+- 每种可生产项对应一个不可建造的虚拟装备（archetype + 三档 product）。
+- 装备的 can_be_produced 检查国家 flag，flag 由决策开关设置。
+- on_weekly / on_daily 定期扫描仓库里的虚拟装备数量，转换成真实属性，
+  同时把虚拟装备扣掉。
+- 科技只负责解锁装备（enable_equipments），本身不进科技树
+  （research_cost = -1，ai_will_do = 0）。
+
+## 致谢
+
+原原模组作者：Space Maze
+原模组作者：我个菜荀子
+本修改版在原作基础上新增煤生产线，并将生产项重构为分类 + 生产线开关结构。
+LLM 大语言模型：DeepSeek 4.1 Flash
