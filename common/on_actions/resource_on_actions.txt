@@ -12,7 +12,7 @@ on_actions = {
 				
 				set_variable = {
 					var = coal_product_negative
-					value = 50
+					value = var:num_equipment@coal_in_warehouse_product
 				}
 
 				multiply_variable = {
@@ -61,7 +61,7 @@ on_actions = {
 				
 				set_variable = {
 					var = coal_product_2_negative
-					value = 50
+					value = var:num_equipment@coal_in_warehouse_product_2
 				}
 
 				multiply_variable = {
@@ -110,7 +110,7 @@ on_actions = {
 				
 				set_variable = {
 					var = coal_product_3_negative
-					value = 50
+					value = var:num_equipment@coal_in_warehouse_product_3
 				}
 
 				multiply_variable = {
@@ -159,7 +159,7 @@ on_actions = {
 				
 				set_variable = {
 					var = oil_product_negative
-					value = 50
+					value = var:num_equipment@oil_in_warehouse_product
 				}
 
 				multiply_variable = {
@@ -208,7 +208,7 @@ on_actions = {
 				
 				set_variable = {
 					var = oil_product_2_negative
-					value = 50
+					value = var:num_equipment@oil_in_warehouse_product_2
 				}
 
 				multiply_variable = {
@@ -257,7 +257,7 @@ on_actions = {
 				
 				set_variable = {
 					var = oil_product_3_negative
-					value = 50
+					value = var:num_equipment@oil_in_warehouse_product_3
 				}
 
 				multiply_variable = {
@@ -307,7 +307,7 @@ on_actions = {
 				
 				set_variable = {
 					var = aluminium_product_negative
-					value = 50
+					value = var:num_equipment@aluminium_in_warehouse_product
 				}
 
 				multiply_variable = {
@@ -356,7 +356,7 @@ on_actions = {
 				
 				set_variable = {
 					var = aluminium_product_2_negative
-					value = 50
+					value = var:num_equipment@aluminium_in_warehouse_product_2
 				}
 
 				multiply_variable = {
@@ -405,7 +405,7 @@ on_actions = {
 				
 				set_variable = {
 					var = aluminium_product_3_negative
-					value = 50
+					value = var:num_equipment@aluminium_in_warehouse_product_3
 				}
 
 				multiply_variable = {
@@ -455,7 +455,7 @@ on_actions = {
 				
 				set_variable = {
 					var = rubber_product_negative
-					value = 50
+					value = var:num_equipment@rubber_in_warehouse_product
 				}
 
 				multiply_variable = {
@@ -504,7 +504,7 @@ on_actions = {
 				
 				set_variable = {
 					var = rubber_product_2_negative
-					value = 50
+					value = var:num_equipment@rubber_in_warehouse_product_2
 				}
 
 				multiply_variable = {
@@ -553,7 +553,7 @@ on_actions = {
 				
 				set_variable = {
 					var = rubber_product_3_negative
-					value = 50
+					value = var:num_equipment@rubber_in_warehouse_product_3
 				}
 
 				multiply_variable = {
@@ -603,7 +603,7 @@ on_actions = {
 				
 				set_variable = {
 					var = steel_product_negative
-					value = 50
+					value = var:num_equipment@steel_in_warehouse_product
 				}
 
 				multiply_variable = {
@@ -652,7 +652,7 @@ on_actions = {
 				
 				set_variable = {
 					var = steel_product_2_negative
-					value = 50
+					value = var:num_equipment@steel_in_warehouse_product_2
 				}
 
 				multiply_variable = {
@@ -701,7 +701,7 @@ on_actions = {
 				
 				set_variable = {
 					var = steel_product_3_negative
-					value = 50
+					value = var:num_equipment@steel_in_warehouse_product_3
 				}
 
 				multiply_variable = {
@@ -751,7 +751,7 @@ on_actions = {
 				
 				set_variable = {
 					var = tungsten_product_negative
-					value = 50
+					value = var:num_equipment@tungsten_in_warehouse_product
 				}
 
 				multiply_variable = {
@@ -800,7 +800,7 @@ on_actions = {
 				
 				set_variable = {
 					var = tungsten_product_2_negative
-					value = 50
+					value = var:num_equipment@tungsten_in_warehouse_product_2
 				}
 
 				multiply_variable = {
@@ -849,7 +849,7 @@ on_actions = {
 				
 				set_variable = {
 					var = tungsten_product_3_negative
-					value = 50
+					value = var:num_equipment@tungsten_in_warehouse_product_3
 				}
 
 				multiply_variable = {
@@ -899,7 +899,7 @@ on_actions = {
 				
 				set_variable = {
 					var = chromium_product_negative
-					value = 50
+					value = var:num_equipment@chromium_in_warehouse_product
 				}
 
 				multiply_variable = {
@@ -948,7 +948,7 @@ on_actions = {
 				
 				set_variable = {
 					var = chromium_product_2_negative
-					value = 50
+					value = var:num_equipment@chromium_in_warehouse_product_2
 				}
 
 				multiply_variable = {
@@ -997,7 +997,7 @@ on_actions = {
 				
 				set_variable = {
 					var = chromium_product_3_negative
-					value = 50
+					value = var:num_equipment@chromium_in_warehouse_product_3
 				}
 
 				multiply_variable = {
