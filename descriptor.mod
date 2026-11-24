@@ -3,7 +3,6 @@ tags={
 	"Technologies"
 	"Military"
 	"Gameplay"
-	"Fixes"
 }
 name="More_Production_mk2"
 supported_version="1.20.*"
