@@ -157,6 +157,13 @@
   # Отмена автоматического использования оккупационного оборудования
   cancel_automate_occupation_decision: "Отменить автоматическое использование оккупационного оборудования"
   cancel_automate_occupation_decision_desc: "§GВы сможете вручную использовать оккупационное оборудование на карте§!"
+
+  occupation_compliance_decision: "Повысить лояльность  |  §G1 оборудование лояльности§!"
+  occupation_compliance_decision_desc: "\nПотратить одно оборудование лояльности, чтобы добавить 75 лояльности в этом регионе."
+  occupation_remove_resistance_decision: "Подавить сопротивление  |  §G1 оборудование сопротивления§!"
+  occupation_remove_resistance_decision_desc: "\nПотратить одно оборудование сопротивления, чтобы убрать 100 сопротивления в этом регионе."
+  occupation_integrating_cores_decision: "Интегрировать ядро  |  §G1 оборудование ядра§!"
+  occupation_integrating_cores_decision_desc: "\nПотратить одно оборудование ядра, чтобы сделать этот регион основным."
   # Переключатели категорий производства
   mp_cat_lines: "Линии производства"
   mp_cat_civilian: "Гражданское"
@@ -186,8 +193,6 @@
   mp_disable_autonomy_tab: "Отключить производство автономии"
   mp_enable_tension_tab: "Включить производство напряжённости"
   mp_disable_tension_tab: "Отключить производство напряжённости"
-  mp_enable_diplomatic_tab: "Включить производство дипломатии"
-  mp_disable_diplomatic_tab: "Отключить производство дипломатии"
   mp_enable_breakthrough_tab: "Включить производство прорыва"
   mp_disable_breakthrough_tab: "Отключить производство прорыва"
   mp_enable_xp_tab: "Включить производство опыта и командных очков"
@@ -202,17 +207,9 @@
   mp_tab_agency: "Линия разведки включена"
   mp_tab_autonomy: "Линия автономии включена"
   mp_tab_tension: "Линия напряжённости включена"
-  mp_tab_diplomatic: "Линия дипломатии включена"
   mp_tab_breakthrough: "Линия прорыва включена"
   mp_tab_xp: "Линия опыта включена"
 
-  # Fuel Decisions
-  fuel_research_decision: "Базовое исследование производства топлива  |  §G10 ОИ§!"
-  fuel_research_decision_trigger_tt: "Требуется §G10 ОИ§!, сейчас: §Y[?research_point_var]§!"
-  fuel_research_2_decision: "Улучшенное исследование производства топлива  |  §Y100 ОИ§!"
-  fuel_research_2_decision_trigger_tt: "Требуется §Y100 ОИ§!, сейчас: §Y[?research_point_var]§!"
-  fuel_research_3_decision: "Продвинутое исследование производства топлива  |  §R10,000 ОИ§!"
-  fuel_research_3_decision_trigger_tt: "Требуется §R10,000 ОИ§!, сейчас: §Y[?research_point_var]§!"
 
   # Intel / Decryption Decisions
   intel_decryption_research_decision: "Базовое исследование разведки и дешифровки  |  §G10 ОИ§!"
@@ -239,17 +236,20 @@
   doctrine_research_2_decision_trigger_tt: "Требуется §Y100 ОИ§!, сейчас: §Y[?research_point_var]§!"
   doctrine_research_3_decision: "Продвинутое исследование мастерства доктрин  |  §R10,000 ОИ§!"
   doctrine_research_3_decision_trigger_tt: "Требуется §R10,000 ОИ§!, сейчас: §Y[?research_point_var]§!"
+  doctrine_mastery_invest_100: "Вложить мастерство доктрин  |  §G100§!"
+  doctrine_mastery_invest_100_desc: "Влить накопленное мастерство доктрин в доктрины. Доступно: §Y[?doctrine_mastery_pool]§!"
+  doctrine_mastery_invest_1000: "Вложить мастерство доктрин  |  §Y1 000§!"
+  doctrine_mastery_invest_1000_desc: "Влить накопленное мастерство доктрин в доктрины. Доступно: §Y[?doctrine_mastery_pool]§!"
+  doctrine_mastery_invest_10000: "Вложить мастерство доктрин  |  §R10 000§!"
+  doctrine_mastery_invest_10000_desc: "Влить накопленное мастерство доктрин в доктрины. Доступно: §Y[?doctrine_mastery_pool]§!"
 
   # New production line switches
-  mp_enable_fuel_tab: "Включить линию производства топлива"
-  mp_disable_fuel_tab: "Отключить линию производства топлива"
   mp_enable_intel_decryption_tab: "Включить линию разведки и дешифровки"
   mp_disable_intel_decryption_tab: "Отключить линию разведки и дешифровки"
   mp_enable_mio_tab: "Включить линию ВПО"
   mp_disable_mio_tab: "Отключить линию ВПО"
   mp_enable_doctrine_tab: "Включить линию доктрин"
   mp_disable_doctrine_tab: "Отключить линию доктрин"
-  mp_tab_fuel: "Линия производства топлива включена"
   mp_tab_intel: "Линия разведки и дешифровки включена"
   mp_tab_mio: "Линия ВПО включена"
   mp_tab_doctrine: "Линия доктрин включена"

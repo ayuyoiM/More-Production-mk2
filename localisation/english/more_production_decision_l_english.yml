@@ -153,6 +153,13 @@
   # Cancel Automate Occupation Equipment
   cancel_automate_occupation_decision: "Cancel Automatic Use of Occupation Equipment"
   cancel_automate_occupation_decision_desc: "§GYou will be able to use occupation equipment manually on the map§!"
+
+  occupation_compliance_decision: "Boost Compliance  |  §G1 Compliance Equipment§!"
+  occupation_compliance_decision_desc: "\nSpend one compliance equipment to add 75 compliance in this state."
+  occupation_remove_resistance_decision: "Suppress Resistance  |  §G1 Resistance Equipment§!"
+  occupation_remove_resistance_decision_desc: "\nSpend one resistance equipment to remove 100 resistance in this state."
+  occupation_integrating_cores_decision: "Integrate Core  |  §G1 Coring Equipment§!"
+  occupation_integrating_cores_decision_desc: "\nSpend one coring equipment to turn this state into a core state."
   # Production tab toggles
   mp_cat_lines: "Production Lines"
   mp_cat_civilian: "Civilian"
@@ -182,8 +189,6 @@
   mp_disable_autonomy_tab: "Disable Autonomy Production"
   mp_enable_tension_tab: "Enable Tension Production"
   mp_disable_tension_tab: "Disable Tension Production"
-  mp_enable_diplomatic_tab: "Enable Diplomacy Production"
-  mp_disable_diplomatic_tab: "Disable Diplomacy Production"
   mp_enable_breakthrough_tab: "Enable Breakthrough Production"
   mp_disable_breakthrough_tab: "Disable Breakthrough Production"
   mp_enable_xp_tab: "Enable XP & Command Power Production"
@@ -198,17 +203,9 @@
   mp_tab_agency: "Intelligence line enabled"
   mp_tab_autonomy: "Autonomy line enabled"
   mp_tab_tension: "Tension line enabled"
-  mp_tab_diplomatic: "Diplomacy line enabled"
   mp_tab_breakthrough: "Breakthrough line enabled"
   mp_tab_xp: "XP line enabled"
 
-  # Fuel Decisions
-  fuel_research_decision: "Basic Fuel Production Research  |  §G10 RP§!"
-  fuel_research_decision_trigger_tt: "Requires §G10 RP§!, current: §Y[?research_point_var]§!"
-  fuel_research_2_decision: "Improved Fuel Production Research  |  §Y100 RP§!"
-  fuel_research_2_decision_trigger_tt: "Requires §Y100 RP§!, current: §Y[?research_point_var]§!"
-  fuel_research_3_decision: "Advanced Fuel Production Research  |  §R10,000 RP§!"
-  fuel_research_3_decision_trigger_tt: "Requires §R10,000 RP§!, current: §Y[?research_point_var]§!"
 
   # Intel / Decryption Decisions
   intel_decryption_research_decision: "Basic Intel & Decryption Research  |  §G10 RP§!"
@@ -235,17 +232,20 @@
   doctrine_research_2_decision_trigger_tt: "Requires §Y100 RP§!, current: §Y[?research_point_var]§!"
   doctrine_research_3_decision: "Advanced Doctrine Mastery Research  |  §R10,000 RP§!"
   doctrine_research_3_decision_trigger_tt: "Requires §R10,000 RP§!, current: §Y[?research_point_var]§!"
+  doctrine_mastery_invest_100: "Invest Doctrine Mastery  |  §G100 Mastery§!"
+  doctrine_mastery_invest_100_desc: "Pour stored doctrine mastery into your doctrines. Available: §Y[?doctrine_mastery_pool]§!"
+  doctrine_mastery_invest_1000: "Invest Doctrine Mastery  |  §Y1,000 Mastery§!"
+  doctrine_mastery_invest_1000_desc: "Pour stored doctrine mastery into your doctrines. Available: §Y[?doctrine_mastery_pool]§!"
+  doctrine_mastery_invest_10000: "Invest Doctrine Mastery  |  §R10,000 Mastery§!"
+  doctrine_mastery_invest_10000_desc: "Pour stored doctrine mastery into your doctrines. Available: §Y[?doctrine_mastery_pool]§!"
 
   # New production line switches
-  mp_enable_fuel_tab: "Enable Fuel Production Line"
-  mp_disable_fuel_tab: "Disable Fuel Production Line"
   mp_enable_intel_decryption_tab: "Enable Intel & Decryption Production Line"
   mp_disable_intel_decryption_tab: "Disable Intel & Decryption Production Line"
   mp_enable_mio_tab: "Enable MIO Production Line"
   mp_disable_mio_tab: "Disable MIO Production Line"
   mp_enable_doctrine_tab: "Enable Doctrine Production Line"
   mp_disable_doctrine_tab: "Disable Doctrine Production Line"
-  mp_tab_fuel: "Fuel production line enabled"
   mp_tab_intel: "Intel & Decryption production line enabled"
   mp_tab_mio: "MIO production line enabled"
   mp_tab_doctrine: "Doctrine production line enabled"

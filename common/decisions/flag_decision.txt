@@ -1,7 +1,7 @@
 flag_decision = {
 
     cheat_mode_decision = {
-        icon = mission_icon
+        icon = GFX_decision_generic_decision
 		cost = 0
 		complete_effect = {
 			hidden_effect = {
@@ -9,6 +9,48 @@ flag_decision = {
 
                 set_variable = {
                     var = research_point_var
+                    value = 0
+                }
+
+                set_variable = {
+                    var = doctrine_mastery_pool
+                    value = 0
+                }
+
+                set_variable = {
+                    var = more_production_research_speed_factor
+                    value = 0
+                }
+
+                set_variable = {
+                    var = more_production_special_project_speed_factor
+                    value = 0
+                }
+
+                set_variable = {
+                    var = more_production_industrial_capacity_factory
+                    value = 0
+                }
+
+                set_variable = {
+                    var = more_production_industrial_capacity_dockyard
+                    value = 0
+                }
+
+                set_variable = {
+                    var = more_production_operative_slot
+                    value = 0
+                }
+
+
+
+                set_variable = {
+                    var = more_production_intel_network_gain_factor
+                    value = 0
+                }
+
+                set_variable = {
+                    var = more_production_decryption_power_factor
                     value = 0
                 }
 
@@ -27,7 +69,7 @@ flag_decision = {
     }
 
     normal_mode_decision = {
-        icon = mission_icon
+        icon = GFX_decision_generic_decision
 		cost = 0
 		complete_effect = {
             set_technology = {
@@ -38,6 +80,48 @@ flag_decision = {
 
                 set_variable = {
                     var = research_point_var
+                    value = 0
+                }
+
+                set_variable = {
+                    var = doctrine_mastery_pool
+                    value = 0
+                }
+
+                set_variable = {
+                    var = more_production_research_speed_factor
+                    value = 0
+                }
+
+                set_variable = {
+                    var = more_production_special_project_speed_factor
+                    value = 0
+                }
+
+                set_variable = {
+                    var = more_production_industrial_capacity_factory
+                    value = 0
+                }
+
+                set_variable = {
+                    var = more_production_industrial_capacity_dockyard
+                    value = 0
+                }
+
+                set_variable = {
+                    var = more_production_operative_slot
+                    value = 0
+                }
+
+
+
+                set_variable = {
+                    var = more_production_intel_network_gain_factor
+                    value = 0
+                }
+
+                set_variable = {
+                    var = more_production_decryption_power_factor
                     value = 0
                 }
 

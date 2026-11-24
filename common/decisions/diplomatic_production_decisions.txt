@@ -1,36 +1,6 @@
 mp_cat_political = {
 
-    mp_enable_diplomatic_tab = {
-        icon = mission_icon
-        cost = 0
-        priority = 100
 
-        visible = {
-            NOT = { has_country_flag = mp_tab_diplomatic }
-        }
-
-        complete_effect = {
-            set_country_flag = mp_tab_diplomatic
-        }
-
-        ai_will_do = { factor = 0 }
-    }
-
-    mp_disable_diplomatic_tab = {
-        icon = mission_icon
-        cost = 0
-        priority = 90
-
-        visible = {
-            has_country_flag = mp_tab_diplomatic
-        }
-
-        complete_effect = {
-            clr_country_flag = mp_tab_diplomatic
-        }
-
-        ai_will_do = { factor = 0 }
-    }
 
 
 	## TODO: Next Patch Update

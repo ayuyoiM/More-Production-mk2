@@ -343,15 +343,6 @@
   factory_output_in_warehouse: "Производительность заводов"
   factory_output_in_warehouse_desc: "Производительность заводов"
 
-  # Fuel Equipment
-  fuel_in_warehouse_product: "Топливо I"
-  fuel_in_warehouse_product_desc: "Синтетическое топливо!"
-  fuel_in_warehouse_product_2: "Топливо II"
-  fuel_in_warehouse_product_2_desc: "Более эффективное синтетическое топливо!"
-  fuel_in_warehouse_product_3: "Топливо III"
-  fuel_in_warehouse_product_3_desc: "Самое эффективное синтетическое топливо!"
-  fuel_in_warehouse: "Топливо"
-  fuel_in_warehouse_desc: "Линия производства топлива"
 
   # Intel / Decryption Equipment
   intel_decryption_in_warehouse_product: "Разведка и дешифровка I"

@@ -1,13 +1,15 @@
 mp_cat_military = {
 
 	mp_enable_mio_tab = {
-		icon = GFX_MIO_has_policy_icon
+		icon = GFX_archetype_mio
 		cost = 0
 		priority = 100
 
 		visible = {
 			NOT = { has_country_flag = mp_tab_mio }
-			has_tech = mio_production_research
+			OR = {
+				has_tech = mio_production_research
+			}
 		}
 
 		complete_effect = {
@@ -18,7 +20,7 @@ mp_cat_military = {
 	}
 
 	mp_disable_mio_tab = {
-		icon = GFX_MIO_has_policy_icon
+		icon = GFX_archetype_mio
 		cost = 0
 		priority = 90
 
@@ -33,23 +35,20 @@ mp_cat_military = {
 		ai_will_do = { factor = 0 }
 	}
 
+
 	mio_research_decision = {
-		icon = GFX_MIO_has_policy_icon
+		icon = GFX_archetype_mio
 		cost = 0
 		priority = 30
 		fire_only_once = yes
-
-		visible = {
-			NOT = { has_country_flag = cheat_mode }
-		}
 
 		available = {
 			NOT = { has_tech = mio_production_research }
 			custom_trigger_tooltip = {
 				tooltip = mio_research_decision_trigger_tt
 				OR = {
-					has_country_flag = cheat_mode
-					check_variable = {
+						has_country_flag = cheat_mode
+						check_variable = {
 						research_point_var > 9
 					}
 				}
@@ -75,14 +74,13 @@ mp_cat_military = {
 	}
 
 	mio_research_2_decision = {
-		icon = GFX_MIO_has_policy_icon
+		icon = GFX_archetype_mio
 		cost = 0
 		priority = 20
 		fire_only_once = yes
 
 		visible = {
 			has_tech = mio_production_research
-			NOT = { has_country_flag = cheat_mode }
 		}
 
 		available = {
@@ -90,8 +88,8 @@ mp_cat_military = {
 			custom_trigger_tooltip = {
 				tooltip = mio_research_2_decision_trigger_tt
 				OR = {
-					has_country_flag = cheat_mode
-					check_variable = {
+						has_country_flag = cheat_mode
+						check_variable = {
 						research_point_var > 99
 					}
 				}
@@ -117,14 +115,13 @@ mp_cat_military = {
 	}
 
 	mio_research_3_decision = {
-		icon = GFX_MIO_has_policy_icon
+		icon = GFX_archetype_mio
 		cost = 0
 		priority = 10
 		fire_only_once = yes
 
 		visible = {
 			has_tech = mio_production_2_research
-			NOT = { has_country_flag = cheat_mode }
 		}
 
 		available = {
@@ -132,8 +129,8 @@ mp_cat_military = {
 			custom_trigger_tooltip = {
 				tooltip = mio_research_3_decision_trigger_tt
 				OR = {
-					has_country_flag = cheat_mode
-					check_variable = {
+						has_country_flag = cheat_mode
+						check_variable = {
 						research_point_var > 9999
 					}
 				}
@@ -160,7 +157,7 @@ mp_cat_military = {
 
 	# 给所有已解锁的 MIO 加规模
 	mio_size_decision = {
-		icon = GFX_MIO_has_policy_icon
+		icon = GFX_archetype_mio
 		cost = 0
 		priority = 10
 		fire_only_once = no
@@ -176,8 +173,8 @@ mp_cat_military = {
 			custom_trigger_tooltip = {
 				tooltip = mio_size_decision_trigger_tt
 				OR = {
-					has_country_flag = cheat_mode
-					check_variable = {
+						has_country_flag = cheat_mode
+						check_variable = {
 						mio_var > 99999
 					}
 				}

@@ -11,7 +11,7 @@
 
 两者用**目录 junction** 连在一起，游戏加载目录指向开发目录。改开发目录即刻生效，不需要复制。
 
-`Documents\...\mod\More_Production_coal.mod` 是独立的描述文件，不在 junction 内，改版本号要单独动。
+`Documents\...\mod\More_Production_coal.mod` 是独立的描述文件，不在 junction 内，改版本号要单独动。目前已是 `1.20.*`，和 `descriptor.mod` 一致。
 
 游戏本体：`D:\Program Files\Steam\steamapps\common\Hearts of Iron IV`
 
@@ -22,12 +22,12 @@ common/
   decisions/
     categories/more_production_category.txt   6 个 category 定义
     flag_decision.txt                          模式选择（作弊/正常）
-    production_lines.txt                       生产线管理：大类总开关 + 占领自动化
-    <类别>_production_decisions.txt            13 个，各类研究决策 + 细类开关
+    production_lines.txt                       生产线管理：三个大类的启用/停用总开关 + 占领自动化
+    <类别>_production_decisions.txt            16 个，各类研究决策 + 细类开关
     debug_production_decisions.txt             调试：一键解锁（仅 -debug）
-  units/equipment/<类别>_equipment.txt         12 个，虚拟装备定义
-  technologies/<类别>_tech.txt                 12 个，解锁装备的科技
-  on_actions/<类别>_on_actions.txt             12 个，定期转换逻辑
+  units/equipment/<类别>_equipment.txt         11 个，虚拟装备定义
+  technologies/<类别>_tech.txt                 11 个，解锁装备的科技
+  on_actions/<类别>_on_actions.txt             11 个，定期转换逻辑
   dynamic_modifiers/more_production_modifiers.txt
 localisation/{chinese,english,russian}/        三语言，各 4 个 yml
 interface/more_production.gfx
@@ -58,7 +58,7 @@ on_weekly / on_daily 扫描仓库 → 转换成真实属性 → 扣掉虚拟装�
 
 ## 五、加一条新生产线的完整步骤
 
-以「燃料」为例，假设归到军事大类：
+以「军工组织」为例，假设归到军事大类（下面出现的 fuel_ 前缀按实际类别替换）：
 
 1. **装备**：在对应 `*_equipment.txt` 里加一个 archetype + 三档 product。
    - archetype：`is_buildable = no`、`is_archetype = yes`、`type = infantry`（占位）
@@ -112,16 +112,25 @@ on_weekly / on_daily 扫描仓库 → 转换成真实属性 → 扣掉虚拟装�
 8. **科研点 / 占领两条线没有开关**
    这两类的装备常驻生产界面，不检查 flag。加新细类时别照抄这两类的写法。
 
+9. **`add_mastery` 不加 filter 会灌所有活跃 track**
+   文档：不给 `folder` / `grand_doctrine` / `sub_doctrine` / `track` 等 filter 时，mastery 加到所有已激活的 track。它也只对已激活的 track 生效，没选大战略时点了白扣池子，所以三条投入决议的 `available` 里加了 `has_any_grand_doctrine` 门槛。`doctrine_mastery_pool` 在模式选择决策里初始化为 0。
+
 ## 七、当前状态
 
 已完成：
 - 生产项按民生 / 军事 / 科研 / 外交政治四大类拆分
 - 每个大类内部有细类生产线开关
 - 生产线管理里的大类总开关（先启用后停用，分段排列）
-- 占领设备自动使用移到生产线管理
+- 六个分类 priority 设为 -1 ~ -6，排在所有原版决议分类（最低 0）之后
+- 占领设备自动化决策在生产线管理（mp_cat_lines）里
 - 调试分类一键解锁全部（`activate_decision` 逐个激活研究决策）
 - 三语言本地化
+- 三条新生产线：情报破译、军工组织、学说
+- 全部决策与科技图标补齐，六个分类各配独立图标
+- 占领设备决策搬到外交政治分类
+- 学说精通度改为决议投入（`doctrine_mastery_invest_100/1000/10000`），三语言本地化已补
+- 三个历史决策缺的本地化键已补齐
 
 未做：
-- 新增生产项（燃料、核弹、科研槽、情报、MIO、师模板上限、合法性、学说等）
+- diplomatic 线只有占位注释，还没做生产项
 - `mod_summary.md` 已过时，内容被本文档取代，可以删

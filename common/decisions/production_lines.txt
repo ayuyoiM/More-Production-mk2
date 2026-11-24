@@ -3,7 +3,7 @@ mp_cat_lines = {
     # ---------- 启用 ----------
 
     mp_enable_civilian_all = {
-        icon = mission_icon
+        icon = GFX_decision_generic_civil_support
         cost = 0
         priority = 100
 
@@ -27,7 +27,7 @@ mp_cat_lines = {
     }
 
     mp_enable_military_all = {
-        icon = mission_icon
+        icon = GFX_decision_generic_military
         cost = 0
         priority = 90
 
@@ -36,7 +36,6 @@ mp_cat_lines = {
                 AND = {
                     has_country_flag = mp_tab_breakthrough
                     has_country_flag = mp_tab_xp
-                    has_country_flag = mp_tab_fuel
                     has_country_flag = mp_tab_mio
                     has_country_flag = mp_tab_occupation
                     has_country_flag = mp_tab_doctrine
@@ -47,7 +46,6 @@ mp_cat_lines = {
         complete_effect = {
             set_country_flag = mp_tab_breakthrough
             set_country_flag = mp_tab_xp
-            set_country_flag = mp_tab_fuel
             set_country_flag = mp_tab_mio
             set_country_flag = mp_tab_occupation
             set_country_flag = mp_tab_doctrine
@@ -57,7 +55,7 @@ mp_cat_lines = {
     }
 
     mp_enable_political_all = {
-        icon = mission_icon
+        icon = GFX_decision_generic_political_discourse
         cost = 0
         priority = 80
 
@@ -69,7 +67,6 @@ mp_cat_lines = {
                     has_country_flag = mp_tab_agency
                     has_country_flag = mp_tab_autonomy
                     has_country_flag = mp_tab_tension
-                    has_country_flag = mp_tab_diplomatic
                     has_country_flag = mp_tab_intel
                 }
             }
@@ -81,7 +78,6 @@ mp_cat_lines = {
             set_country_flag = mp_tab_agency
             set_country_flag = mp_tab_autonomy
             set_country_flag = mp_tab_tension
-            set_country_flag = mp_tab_diplomatic
             set_country_flag = mp_tab_intel
         }
 
@@ -91,7 +87,7 @@ mp_cat_lines = {
     # ---------- 停用 ----------
 
     mp_disable_civilian_all = {
-        icon = mission_icon
+        icon = GFX_decision_generic_civil_support
         cost = 0
         priority = 95
 
@@ -113,7 +109,7 @@ mp_cat_lines = {
     }
 
     mp_disable_military_all = {
-        icon = mission_icon
+        icon = GFX_decision_generic_military
         cost = 0
         priority = 85
 
@@ -121,7 +117,6 @@ mp_cat_lines = {
             OR = {
                 has_country_flag = mp_tab_breakthrough
                 has_country_flag = mp_tab_xp
-                has_country_flag = mp_tab_fuel
                 has_country_flag = mp_tab_mio
                 has_country_flag = mp_tab_occupation
                 has_country_flag = mp_tab_doctrine
@@ -131,7 +126,6 @@ mp_cat_lines = {
         complete_effect = {
             clr_country_flag = mp_tab_breakthrough
             clr_country_flag = mp_tab_xp
-            clr_country_flag = mp_tab_fuel
             clr_country_flag = mp_tab_mio
             clr_country_flag = mp_tab_occupation
             clr_country_flag = mp_tab_doctrine
@@ -141,7 +135,7 @@ mp_cat_lines = {
     }
 
     mp_disable_political_all = {
-        icon = mission_icon
+        icon = GFX_decision_generic_political_discourse
         cost = 0
         priority = 75
 
@@ -152,7 +146,6 @@ mp_cat_lines = {
                 has_country_flag = mp_tab_agency
                 has_country_flag = mp_tab_autonomy
                 has_country_flag = mp_tab_tension
-                has_country_flag = mp_tab_diplomatic
                 has_country_flag = mp_tab_intel
             }
         }
@@ -163,199 +156,17 @@ mp_cat_lines = {
             clr_country_flag = mp_tab_agency
             clr_country_flag = mp_tab_autonomy
             clr_country_flag = mp_tab_tension
-            clr_country_flag = mp_tab_diplomatic
             clr_country_flag = mp_tab_intel
         }
 
         ai_will_do = { factor = 0 }
     }
 
-    # ---------- 新增生产线开关 ----------
-
-    mp_enable_fuel_tab = {
-        icon = GFX_fuel_medium
-        cost = 0
-        priority = 60
-
-        visible = {
-            NOT = { has_country_flag = mp_tab_fuel }
-            OR = {
-                has_tech = fuel_production_research
-                has_country_flag = cheat_mode
-            }
-        }
-
-        complete_effect = {
-            set_country_flag = mp_tab_fuel
-        }
-
-        ai_will_do = { factor = 0 }
-    }
-
-    mp_disable_fuel_tab = {
-        icon = GFX_fuel_medium
-        cost = 0
-        priority = 59
-
-        visible = {
-            has_country_flag = mp_tab_fuel
-        }
-
-        complete_effect = {
-            clr_country_flag = mp_tab_fuel
-        }
-
-        ai_will_do = { factor = 0 }
-    }
-
-    mp_enable_intel_decryption_tab = {
-        icon = GFX_counter_intelligence
-        cost = 0
-        priority = 58
-
-        visible = {
-            NOT = { has_country_flag = mp_tab_intel }
-            OR = {
-                has_tech = intel_decryption_production_research
-                has_country_flag = cheat_mode
-            }
-        }
-
-        complete_effect = {
-            set_country_flag = mp_tab_intel
-        }
-
-        ai_will_do = { factor = 0 }
-    }
-
-    mp_disable_intel_decryption_tab = {
-        icon = GFX_counter_intelligence
-        cost = 0
-        priority = 57
-
-        visible = {
-            has_country_flag = mp_tab_intel
-        }
-
-        complete_effect = {
-            clr_country_flag = mp_tab_intel
-        }
-
-        ai_will_do = { factor = 0 }
-    }
-
-    mp_enable_mio_tab = {
-        icon = GFX_MIO_has_policy_icon
-        cost = 0
-        priority = 56
-
-        visible = {
-            NOT = { has_country_flag = mp_tab_mio }
-            OR = {
-                has_tech = mio_production_research
-                has_country_flag = cheat_mode
-            }
-        }
-
-        complete_effect = {
-            set_country_flag = mp_tab_mio
-        }
-
-        ai_will_do = { factor = 0 }
-    }
-
-    mp_disable_mio_tab = {
-        icon = GFX_MIO_has_policy_icon
-        cost = 0
-        priority = 55
-
-        visible = {
-            has_country_flag = mp_tab_mio
-        }
-
-        complete_effect = {
-            clr_country_flag = mp_tab_mio
-        }
-
-        ai_will_do = { factor = 0 }
-    }
-
-    mp_enable_doctrine_tab = {
-        icon = GFX_doctrine_mastery
-        cost = 0
-        priority = 54
-
-        visible = {
-            NOT = { has_country_flag = mp_tab_doctrine }
-            OR = {
-                has_tech = doctrine_production_research
-                has_country_flag = cheat_mode
-            }
-        }
-
-        complete_effect = {
-            set_country_flag = mp_tab_doctrine
-        }
-
-        ai_will_do = { factor = 0 }
-    }
-
-    mp_disable_doctrine_tab = {
-        icon = GFX_doctrine_mastery
-        cost = 0
-        priority = 53
-
-        visible = {
-            has_country_flag = mp_tab_doctrine
-        }
-
-        complete_effect = {
-            clr_country_flag = mp_tab_doctrine
-        }
-
-        ai_will_do = { factor = 0 }
-    }
-
-    mp_enable_occupation_tab = {
-        icon = GFX_archetype_coring_equipment
-        cost = 0
-        priority = 52
-
-        visible = {
-            NOT = { has_country_flag = mp_tab_occupation }
-            OR = {
-                has_tech = compliance_equipment_production_research
-                has_country_flag = cheat_mode
-            }
-        }
-
-        complete_effect = {
-            set_country_flag = mp_tab_occupation
-        }
-
-        ai_will_do = { factor = 0 }
-    }
-
-    mp_disable_occupation_tab = {
-        icon = GFX_archetype_coring_equipment
-        cost = 0
-        priority = 51
-
-        visible = {
-            has_country_flag = mp_tab_occupation
-        }
-
-        complete_effect = {
-            clr_country_flag = mp_tab_occupation
-        }
-
-        ai_will_do = { factor = 0 }
-    }
 
     # ---------- 占领设备自动化 ----------
 
     automate_occupation_decision = {
-        icon = mission_icon
+        icon = GFX_decision_generic_operation
         priority = 20
         cost = 0
 
@@ -368,11 +179,11 @@ mp_cat_lines = {
             set_country_flag = automate_occupation_enabled
         }
 
-    	ai_will_do = { factor = 0 }
+        ai_will_do = { factor = 0 }
     }
 
     cancel_automate_occupation_decision = {
-        icon = mission_icon
+        icon = GFX_decision_generic_operation
         priority = 19
         cost = 0
 
@@ -385,7 +196,7 @@ mp_cat_lines = {
             clr_country_flag = automate_occupation_enabled
         }
 
-    	ai_will_do = { factor = 0 }
+        ai_will_do = { factor = 0 }
     }
 
 }

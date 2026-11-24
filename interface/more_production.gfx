@@ -916,4 +916,64 @@ spriteTypes = {
 	}
 	
 
+	SpriteType = {
+		name = "GFX_archetype_intel_decryption"
+		texturefile = "gfx/interface/ideas/generic_spy_intel.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_intel_decryption_production_research_medium"
+		texturefile = "gfx/interface/ideas/generic_spy_intel.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_intel_decryption_production_2_research_medium"
+		texturefile = "gfx/interface/ideas/generic_spy_intel.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_intel_decryption_production_3_research_medium"
+		texturefile = "gfx/interface/ideas/generic_spy_intel.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_archetype_mio"
+		texturefile = "gfx/interface/military_industrial_organization/MIO_has_policy_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_mio_production_research_medium"
+		texturefile = "gfx/interface/military_industrial_organization/MIO_has_policy_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_mio_production_2_research_medium"
+		texturefile = "gfx/interface/military_industrial_organization/MIO_has_policy_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_mio_production_3_research_medium"
+		texturefile = "gfx/interface/military_industrial_organization/MIO_has_policy_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_archetype_doctrine"
+		texturefile = "gfx/texticons/doctrine_mastery_texticon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_doctrine_production_research_medium"
+		texturefile = "gfx/texticons/doctrine_mastery_texticon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_doctrine_production_2_research_medium"
+		texturefile = "gfx/texticons/doctrine_mastery_texticon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_doctrine_production_3_research_medium"
+		texturefile = "gfx/texticons/doctrine_mastery_texticon.dds"
+	}
+
 }

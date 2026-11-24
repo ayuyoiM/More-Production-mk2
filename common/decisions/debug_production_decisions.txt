@@ -1,10 +1,10 @@
 mp_cat_lines = {
 
     # 调试/作弊用：正常模式只显示「一键关闭」
-    # 一键启用会激活 cheat_mode，所以正常模式下不给
+    # 一键解锁只解锁研究/科技，不替你启用生产线；生产线由各开关逐条启用
 
     mp_unlock_all_production = {
-        icon = mission_icon
+        icon = GFX_decision_generic_industry
         cost = 0
         priority = 200
 
@@ -53,9 +53,6 @@ mp_cat_lines = {
             activate_decision = command_power_production_decision
             activate_decision = command_power_production_2_decision
             activate_decision = command_power_production_3_decision
-            activate_decision = fuel_research_decision
-            activate_decision = fuel_research_2_decision
-            activate_decision = fuel_research_3_decision
             activate_decision = intel_decryption_research_decision
             activate_decision = intel_decryption_research_2_decision
             activate_decision = intel_decryption_research_3_decision
@@ -65,29 +62,13 @@ mp_cat_lines = {
             activate_decision = doctrine_research_decision
             activate_decision = doctrine_research_2_decision
             activate_decision = doctrine_research_3_decision
-            set_country_flag = mp_tab_factory
-            set_country_flag = mp_tab_resource
-            set_country_flag = mp_tab_manpower
-            set_country_flag = mp_tab_political
-            set_country_flag = mp_tab_ideology
-            set_country_flag = mp_tab_agency
-            set_country_flag = mp_tab_autonomy
-            set_country_flag = mp_tab_tension
-            set_country_flag = mp_tab_diplomatic
-            set_country_flag = mp_tab_breakthrough
-            set_country_flag = mp_tab_xp
-            set_country_flag = mp_tab_fuel
-            set_country_flag = mp_tab_intel
-            set_country_flag = mp_tab_mio
-            set_country_flag = mp_tab_occupation
-            set_country_flag = mp_tab_doctrine
         }
 
         ai_will_do = { factor = 0 }
     }
 
     mp_lock_all_production = {
-        icon = mission_icon
+        icon = GFX_decision_generic_industry
         cost = 0
         priority = 190
 
@@ -104,10 +85,8 @@ mp_cat_lines = {
             clr_country_flag = mp_tab_agency
             clr_country_flag = mp_tab_autonomy
             clr_country_flag = mp_tab_tension
-            clr_country_flag = mp_tab_diplomatic
             clr_country_flag = mp_tab_breakthrough
             clr_country_flag = mp_tab_xp
-            clr_country_flag = mp_tab_fuel
             clr_country_flag = mp_tab_intel
             clr_country_flag = mp_tab_mio
             clr_country_flag = mp_tab_occupation

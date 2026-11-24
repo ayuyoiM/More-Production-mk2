@@ -2,9 +2,9 @@
 # 生产线开关集中在 mp_cat_lines
 
 mp_cat_lines = {
-	icon = GFX_decision_generic_construction
+	icon = GFX_decision_generic_industry
 	
-	priority = 200
+	priority = -1
 
 	allowed = {
 		is_ai = no
@@ -22,9 +22,9 @@ mp_cat_lines = {
 }
 
 mp_cat_civilian = {
-	icon = GFX_decision_generic_construction
+	icon = GFX_decision_generic_civil_support
 	
-	priority = 100
+	priority = -2
 
 	allowed = {
 		is_ai = no
@@ -42,9 +42,9 @@ mp_cat_civilian = {
 }
 
 mp_cat_military = {
-	icon = GFX_decision_generic_construction
+	icon = GFX_decision_generic_military
 	
-	priority = 90
+	priority = -3
 
 	allowed = {
 		is_ai = no
@@ -62,9 +62,9 @@ mp_cat_military = {
 }
 
 mp_cat_research = {
-	icon = GFX_decision_generic_construction
+	icon = GFX_decision_generic_research
 	
-	priority = 80
+	priority = -4
 
 	allowed = {
 		is_ai = no
@@ -82,9 +82,9 @@ mp_cat_research = {
 }
 
 mp_cat_political = {
-	icon = GFX_decision_generic_construction
+	icon = GFX_decision_generic_political_discourse
 	
-	priority = 70
+	priority = -5
 
 	allowed = {
 		is_ai = no
@@ -102,9 +102,9 @@ mp_cat_political = {
 }
 
 mp_cat_debug = {
-	icon = GFX_decision_generic_construction
+	icon = GFX_decision_generic_decision
 	
-	priority = 999
+	priority = -6
 
 	allowed = {
 		is_ai = no

@@ -353,15 +353,6 @@
   factory_output_in_warehouse_desc: "Factory Output"
 
 
-  # Fuel Equipment
-  fuel_in_warehouse_product: "Fuel I"
-  fuel_in_warehouse_product_desc: "Synthetic fuel!"
-  fuel_in_warehouse_product_2: "Fuel II"
-  fuel_in_warehouse_product_2_desc: "More efficient synthetic fuel!"
-  fuel_in_warehouse_product_3: "Fuel III"
-  fuel_in_warehouse_product_3_desc: "The most efficient synthetic fuel!"
-  fuel_in_warehouse: "Fuel"
-  fuel_in_warehouse_desc: "Fuel production line"
 
   # Intel / Decryption Equipment
   intel_decryption_in_warehouse_product: "Intel & Decryption I"

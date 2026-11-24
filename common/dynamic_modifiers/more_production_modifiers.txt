@@ -24,15 +24,6 @@ operative_dymanic_modifier = {
     operative_slot = more_production_operative_slot
 }
 
-fuel_dymanic_modifier = {
-    enable = { always = yes }
-
-    icon = GFX_idea_generic_production_bonus
-
-    max_fuel = more_production_max_fuel
-    fuel_gain = more_production_fuel_gain
-}
-
 intel_decryption_dymanic_modifier = {
     enable = { always = yes }
 

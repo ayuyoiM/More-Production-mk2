@@ -7,7 +7,7 @@ equipments = {
 
 		is_archetype = yes
 
-		picture = doctrine_mastery
+		picture = archetype_doctrine
 		is_buildable = no
 
 		type = infantry

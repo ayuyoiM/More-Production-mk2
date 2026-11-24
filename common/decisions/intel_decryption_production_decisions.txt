@@ -1,55 +1,54 @@
 mp_cat_political = {
 
 	mp_enable_intel_decryption_tab = {
-		icon = GFX_counter_intelligence
+		icon = GFX_archetype_intel_decryption
 		cost = 0
 		priority = 100
 
 		visible = {
-			NOT = { has_country_flag = mp_tab_intel_decryption }
-			has_tech = intel_decryption_production_research
+			NOT = { has_country_flag = mp_tab_intel }
+			OR = {
+				has_tech = intel_decryption_production_research
+			}
 		}
 
 		complete_effect = {
-			set_country_flag = mp_tab_intel_decryption
+			set_country_flag = mp_tab_intel
 		}
 
 		ai_will_do = { factor = 0 }
 	}
 
 	mp_disable_intel_decryption_tab = {
-		icon = GFX_counter_intelligence
+		icon = GFX_archetype_intel_decryption
 		cost = 0
 		priority = 90
 
 		visible = {
-			has_country_flag = mp_tab_intel_decryption
+			has_country_flag = mp_tab_intel
 		}
 
 		complete_effect = {
-			clr_country_flag = mp_tab_intel_decryption
+			clr_country_flag = mp_tab_intel
 		}
 
 		ai_will_do = { factor = 0 }
 	}
 
+
 	intel_decryption_research_decision = {
-		icon = GFX_counter_intelligence
+		icon = GFX_archetype_intel_decryption
 		cost = 0
 		priority = 30
 		fire_only_once = yes
-
-		visible = {
-			NOT = { has_country_flag = cheat_mode }
-		}
 
 		available = {
 			NOT = { has_tech = intel_decryption_production_research }
 			custom_trigger_tooltip = {
 				tooltip = intel_decryption_research_decision_trigger_tt
 				OR = {
-					has_country_flag = cheat_mode
-					check_variable = {
+						has_country_flag = cheat_mode
+						check_variable = {
 						research_point_var > 9
 					}
 				}
@@ -78,14 +77,13 @@ mp_cat_political = {
 	}
 
 	intel_decryption_research_2_decision = {
-		icon = GFX_counter_intelligence
+		icon = GFX_archetype_intel_decryption
 		cost = 0
 		priority = 20
 		fire_only_once = yes
 
 		visible = {
 			has_tech = intel_decryption_production_research
-			NOT = { has_country_flag = cheat_mode }
 		}
 
 		available = {
@@ -93,8 +91,8 @@ mp_cat_political = {
 			custom_trigger_tooltip = {
 				tooltip = intel_decryption_research_2_decision_trigger_tt
 				OR = {
-					has_country_flag = cheat_mode
-					check_variable = {
+						has_country_flag = cheat_mode
+						check_variable = {
 						research_point_var > 99
 					}
 				}
@@ -120,14 +118,13 @@ mp_cat_political = {
 	}
 
 	intel_decryption_research_3_decision = {
-		icon = GFX_counter_intelligence
+		icon = GFX_archetype_intel_decryption
 		cost = 0
 		priority = 10
 		fire_only_once = yes
 
 		visible = {
 			has_tech = intel_decryption_production_2_research
-			NOT = { has_country_flag = cheat_mode }
 		}
 
 		available = {
@@ -135,8 +132,8 @@ mp_cat_political = {
 			custom_trigger_tooltip = {
 				tooltip = intel_decryption_research_3_decision_trigger_tt
 				OR = {
-					has_country_flag = cheat_mode
-					check_variable = {
+						has_country_flag = cheat_mode
+						check_variable = {
 						research_point_var > 9999
 					}
 				}

@@ -233,13 +233,6 @@
   decrease_autonomy_production_3_research: "Снижение автономии III"
   decrease_autonomy_production_3_research_desc: "Разблокирует передовое оборудование для снижения автономии."
 
-  # Fuel Production Technologies
-  fuel_production_research: "Производство топлива I"
-  fuel_production_research_desc: "Открывает базовое производство топлива."
-  fuel_production_2_research: "Производство топлива II"
-  fuel_production_2_research_desc: "Открывает улучшенное производство топлива."
-  fuel_production_3_research: "Производство топлива III"
-  fuel_production_3_research_desc: "Открывает продвинутое производство топлива."
 
   # Intel / Decryption Production Technologies
   intel_decryption_production_research: "Разведка и дешифровка I"

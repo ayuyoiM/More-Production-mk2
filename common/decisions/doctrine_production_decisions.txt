@@ -1,13 +1,15 @@
 mp_cat_military = {
 
 	mp_enable_doctrine_tab = {
-		icon = GFX_doctrine_mastery
+		icon = GFX_archetype_doctrine
 		cost = 0
 		priority = 100
 
 		visible = {
 			NOT = { has_country_flag = mp_tab_doctrine }
-			has_tech = doctrine_production_research
+			OR = {
+				has_tech = doctrine_production_research
+			}
 		}
 
 		complete_effect = {
@@ -18,7 +20,7 @@ mp_cat_military = {
 	}
 
 	mp_disable_doctrine_tab = {
-		icon = GFX_doctrine_mastery
+		icon = GFX_archetype_doctrine
 		cost = 0
 		priority = 90
 
@@ -33,23 +35,20 @@ mp_cat_military = {
 		ai_will_do = { factor = 0 }
 	}
 
+
 	doctrine_research_decision = {
-		icon = GFX_doctrine_mastery
+		icon = GFX_archetype_doctrine
 		cost = 0
 		priority = 30
 		fire_only_once = yes
-
-		visible = {
-			NOT = { has_country_flag = cheat_mode }
-		}
 
 		available = {
 			NOT = { has_tech = doctrine_production_research }
 			custom_trigger_tooltip = {
 				tooltip = doctrine_research_decision_trigger_tt
 				OR = {
-					has_country_flag = cheat_mode
-					check_variable = {
+						has_country_flag = cheat_mode
+						check_variable = {
 						research_point_var > 9
 					}
 				}
@@ -75,14 +74,13 @@ mp_cat_military = {
 	}
 
 	doctrine_research_2_decision = {
-		icon = GFX_doctrine_mastery
+		icon = GFX_archetype_doctrine
 		cost = 0
 		priority = 20
 		fire_only_once = yes
 
 		visible = {
 			has_tech = doctrine_production_research
-			NOT = { has_country_flag = cheat_mode }
 		}
 
 		available = {
@@ -90,8 +88,8 @@ mp_cat_military = {
 			custom_trigger_tooltip = {
 				tooltip = doctrine_research_2_decision_trigger_tt
 				OR = {
-					has_country_flag = cheat_mode
-					check_variable = {
+						has_country_flag = cheat_mode
+						check_variable = {
 						research_point_var > 99
 					}
 				}
@@ -117,14 +115,13 @@ mp_cat_military = {
 	}
 
 	doctrine_research_3_decision = {
-		icon = GFX_doctrine_mastery
+		icon = GFX_archetype_doctrine
 		cost = 0
 		priority = 10
 		fire_only_once = yes
 
 		visible = {
 			has_tech = doctrine_production_2_research
-			NOT = { has_country_flag = cheat_mode }
 		}
 
 		available = {
@@ -132,8 +129,8 @@ mp_cat_military = {
 			custom_trigger_tooltip = {
 				tooltip = doctrine_research_3_decision_trigger_tt
 				OR = {
-					has_country_flag = cheat_mode
-					check_variable = {
+						has_country_flag = cheat_mode
+						check_variable = {
 						research_point_var > 9999
 					}
 				}
@@ -152,6 +149,133 @@ mp_cat_military = {
 			}
 			set_technology = {
 				doctrine_production_3_research = 1
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+
+	doctrine_mastery_invest_100 = {
+		icon = GFX_archetype_doctrine
+		cost = 0
+		priority = 9
+
+		visible = {
+			has_tech = doctrine_production_research
+		}
+
+		available = {
+			OR = {
+				has_any_grand_doctrine = land
+				has_any_grand_doctrine = naval
+				has_any_grand_doctrine = air
+			}
+			check_variable = {
+				doctrine_mastery_pool > 99
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_any_grand_doctrine = land
+						has_any_grand_doctrine = naval
+						has_any_grand_doctrine = air
+					}
+				}
+				add_mastery = {
+					amount = 100
+				}
+				subtract_from_variable = {
+					var = doctrine_mastery_pool
+					value = 100
+				}
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	doctrine_mastery_invest_1000 = {
+		icon = GFX_archetype_doctrine
+		cost = 0
+		priority = 8
+
+		visible = {
+			has_tech = doctrine_production_research
+		}
+
+		available = {
+			OR = {
+				has_any_grand_doctrine = land
+				has_any_grand_doctrine = naval
+				has_any_grand_doctrine = air
+			}
+			check_variable = {
+				doctrine_mastery_pool > 999
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_any_grand_doctrine = land
+						has_any_grand_doctrine = naval
+						has_any_grand_doctrine = air
+					}
+				}
+				add_mastery = {
+					amount = 1000
+				}
+				subtract_from_variable = {
+					var = doctrine_mastery_pool
+					value = 1000
+				}
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	doctrine_mastery_invest_10000 = {
+		icon = GFX_archetype_doctrine
+		cost = 0
+		priority = 7
+
+		visible = {
+			has_tech = doctrine_production_research
+		}
+
+		available = {
+			OR = {
+				has_any_grand_doctrine = land
+				has_any_grand_doctrine = naval
+				has_any_grand_doctrine = air
+			}
+			check_variable = {
+				doctrine_mastery_pool > 9999
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_any_grand_doctrine = land
+						has_any_grand_doctrine = naval
+						has_any_grand_doctrine = air
+					}
+				}
+				add_mastery = {
+					amount = 10000
+				}
+				subtract_from_variable = {
+					var = doctrine_mastery_pool
+					value = 10000
+				}
 			}
 		}
 

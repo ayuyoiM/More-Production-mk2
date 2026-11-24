@@ -244,13 +244,6 @@
   decrease_autonomy_production_3_research_desc: "解锁高级降低自治度装备。"
 
 
-  # Fuel Production Technologies
-  fuel_production_research: "燃料生产 I"
-  fuel_production_research_desc: "解锁初级燃料生产。"
-  fuel_production_2_research: "燃料生产 II"
-  fuel_production_2_research_desc: "解锁中级燃料生产。"
-  fuel_production_3_research: "燃料生产 III"
-  fuel_production_3_research_desc: "解锁高级燃料生产。"
 
   # Intel / Decryption Production Technologies
   intel_decryption_production_research: "情报破译 I"

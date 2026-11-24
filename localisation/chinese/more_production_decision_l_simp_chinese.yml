@@ -154,6 +154,13 @@
   # cancel automate occupation equipment
   cancel_automate_occupation_decision: "取消自动使用占领设备"
   cancel_automate_occupation_decision_desc: "§G你将可以手动在地图上使用占领设备§!"
+
+  occupation_compliance_decision: "提升顺从度  |  §G1 顺从装备§!"
+  occupation_compliance_decision_desc: "\n消耗一个顺从度装备，让该地区顺从度 +75"
+  occupation_remove_resistance_decision: "镇压抵抗  |  §G1 抵抗装备§!"
+  occupation_remove_resistance_decision_desc: "\n消耗一个抵抗度装备，让该地区抵抗度 -100"
+  occupation_integrating_cores_decision: "建立核心  |  §G1 核心化装备§!"
+  occupation_integrating_cores_decision_desc: "\n消耗一个核心化装备，把该地区变为你的核心省份"
   # 生产类别开关
   mp_cat_lines: "生产线管理"
   mp_cat_civilian: "民生"
@@ -183,8 +190,6 @@
   mp_disable_autonomy_tab: "停用自治生产线"
   mp_enable_tension_tab: "启用紧张度生产线"
   mp_disable_tension_tab: "停用紧张度生产线"
-  mp_enable_diplomatic_tab: "启用外交生产线"
-  mp_disable_diplomatic_tab: "停用外交生产线"
   mp_enable_breakthrough_tab: "启用设施突破生产线"
   mp_disable_breakthrough_tab: "停用设施突破生产线"
   mp_enable_xp_tab: "启用经验与指挥点生产线"
@@ -199,17 +204,9 @@
   mp_tab_agency: "特务生产线已启用"
   mp_tab_autonomy: "自治生产线已启用"
   mp_tab_tension: "紧张度生产线已启用"
-  mp_tab_diplomatic: "外交生产线已启用"
   mp_tab_breakthrough: "设施突破生产线已启用"
   mp_tab_xp: "经验生产线已启用"
 
-  # Fuel Decisions
-  fuel_research_decision: "初级燃料生产研究  |  §G10科研点§!"
-  fuel_research_decision_trigger_tt: "需要§G10科研点§!，当前为：§Y[?research_point_var]§!"
-  fuel_research_2_decision: "中级燃料生产研究  |  §Y100科研点§!"
-  fuel_research_2_decision_trigger_tt: "需要§Y100科研点§!，当前为：§Y[?research_point_var]§!"
-  fuel_research_3_decision: "高级燃料生产研究  |  §R10,000科研点§!"
-  fuel_research_3_decision_trigger_tt: "需要§R10,000科研点§!，当前为：§Y[?research_point_var]§!"
 
   # Intel / Decryption Decisions
   intel_decryption_research_decision: "初级情报破译研究  |  §G10科研点§!"
@@ -236,17 +233,20 @@
   doctrine_research_2_decision_trigger_tt: "需要§Y100科研点§!，当前为：§Y[?research_point_var]§!"
   doctrine_research_3_decision: "高级学说精通研究  |  §R10,000科研点§!"
   doctrine_research_3_decision_trigger_tt: "需要§R10,000科研点§!，当前为：§Y[?research_point_var]§!"
+  doctrine_mastery_invest_100: "投入学说精通度  |  §G100精通度§!"
+  doctrine_mastery_invest_100_desc: "把库存的学说精通度灌进学说。当前可用：§Y[?doctrine_mastery_pool]§!"
+  doctrine_mastery_invest_1000: "投入学说精通度  |  §Y1,000精通度§!"
+  doctrine_mastery_invest_1000_desc: "把库存的学说精通度灌进学说。当前可用：§Y[?doctrine_mastery_pool]§!"
+  doctrine_mastery_invest_10000: "投入学说精通度  |  §R10,000精通度§!"
+  doctrine_mastery_invest_10000_desc: "把库存的学说精通度灌进学说。当前可用：§Y[?doctrine_mastery_pool]§!"
 
   # New production line switches
-  mp_enable_fuel_tab: "启用燃料生产线"
-  mp_disable_fuel_tab: "停用燃料生产线"
   mp_enable_intel_decryption_tab: "启用情报破译生产线"
   mp_disable_intel_decryption_tab: "停用情报破译生产线"
   mp_enable_mio_tab: "启用军工组织生产线"
   mp_disable_mio_tab: "停用军工组织生产线"
   mp_enable_doctrine_tab: "启用学说生产线"
   mp_disable_doctrine_tab: "停用学说生产线"
-  mp_tab_fuel: "燃料生产线已启用"
   mp_tab_intel: "情报破译生产线已启用"
   mp_tab_mio: "军工组织生产线已启用"
   mp_tab_doctrine: "学说生产线已启用"
