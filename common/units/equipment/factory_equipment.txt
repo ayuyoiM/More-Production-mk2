@@ -25,12 +25,14 @@ equipments = {
 	}
 
 	civilian_factory_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_factory }
 		year = 1936
 		archetype = civilian_factory_in_warehouse
 		priority = 10	
 	}
 
 	civilian_factory_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_factory }
 		year = 1938
 		archetype = civilian_factory_in_warehouse
 		parent = civilian_factory_in_warehouse_product
@@ -39,6 +41,7 @@ equipments = {
 	}
 
 	civilian_factory_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_factory }
 		year = 1941
 		archetype = civilian_factory_in_warehouse
 		parent = civilian_factory_in_warehouse_product_2
@@ -73,12 +76,14 @@ equipments = {
 	}
 
 	military_factory_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_factory }
 		year = 1936
 		archetype = military_factory_in_warehouse
 		priority = 10	
 	}
 
 	military_factory_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_factory }
 		year = 1938
 		archetype = military_factory_in_warehouse
 		parent = military_factory_in_warehouse_product
@@ -87,6 +92,7 @@ equipments = {
 	}
 
 	military_factory_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_factory }
 		year = 1941
 		archetype = military_factory_in_warehouse
 		parent = military_factory_in_warehouse_product_2
@@ -121,12 +127,14 @@ equipments = {
 	}
 
 	naval_dockyard_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_factory }
 		year = 1936
 		archetype = naval_dockyard_in_warehouse
 		priority = 10	
 	}
 
 	naval_dockyard_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_factory }
 		year = 1938
 		archetype = naval_dockyard_in_warehouse
 		parent = naval_dockyard_in_warehouse_product
@@ -135,6 +143,7 @@ equipments = {
 	}
 
 	naval_dockyard_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_factory }
 		year = 1941
 		archetype = naval_dockyard_in_warehouse
 		parent = naval_dockyard_in_warehouse_product_2
@@ -168,12 +177,14 @@ equipments = {
 	}
 
 	factory_output_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_factory }
 		year = 1936
 		archetype = factory_output_in_warehouse
 		priority = 10	
 	}
 
 	factory_output_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_factory }
 		year = 1938
 		archetype = factory_output_in_warehouse
 		parent = factory_output_in_warehouse_product
@@ -182,6 +193,7 @@ equipments = {
 	}
 
 	factory_output_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_factory }
 		year = 1941
 		archetype = factory_output_in_warehouse
 		parent = factory_output_in_warehouse_product_2

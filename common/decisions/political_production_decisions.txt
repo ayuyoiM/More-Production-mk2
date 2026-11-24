@@ -1,4 +1,42 @@
-more_production_decision = {
+mp_cat_political = {
+
+	mp_enable_political_tab = {
+		icon = generic_political_discourse
+		cost = 0
+		priority = 100
+
+		visible = {
+			NOT = { has_country_flag = mp_tab_political }
+			OR = {
+				has_tech = political_power_production_research
+				has_tech = stability_production_research
+				has_tech = warsupport_production_research
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = mp_tab_political
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_disable_political_tab = {
+		icon = generic_political_discourse
+		cost = 0
+		priority = 90
+
+		visible = {
+			has_country_flag = mp_tab_political
+		}
+
+		complete_effect = {
+			clr_country_flag = mp_tab_political
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
 
 	political_research_decision = {
 		icon = generic_political_discourse
@@ -6,6 +44,7 @@ more_production_decision = {
 		priority = 30
 		fire_only_once = yes 
 		available = {
+			NOT = { has_tech = political_power_production_research }
 			custom_trigger_tooltip = {
 				tooltip = political_research_decision_trigger_tt
 				OR = {
@@ -47,6 +86,7 @@ more_production_decision = {
 		}
 		
 		available = {
+			NOT = { has_tech = political_power_production_2_research }
 			custom_trigger_tooltip = {
 				tooltip = political_research_2_decision_trigger_tt
 				OR = {
@@ -88,6 +128,7 @@ more_production_decision = {
 		}
 
 		available = {
+			NOT = { has_tech = political_power_production_3_research }
 			custom_trigger_tooltip = {
 				tooltip = political_research_3_decision_trigger_tt
 				OR = {

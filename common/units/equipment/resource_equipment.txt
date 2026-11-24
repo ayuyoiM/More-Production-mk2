@@ -30,12 +30,14 @@ equipments = {
 	}
 
 	coal_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1936
 		archetype = coal_in_warehouse
 		priority = 10
 	}
 
 	coal_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1938
 		archetype = coal_in_warehouse
 		parent = coal_in_warehouse_product
@@ -47,6 +49,7 @@ equipments = {
 	}
 
 	coal_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1941
 		archetype = coal_in_warehouse
 		parent = coal_in_warehouse_product_2
@@ -85,12 +88,14 @@ equipments = {
 	}
 
 	oil_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1936
 		archetype = oil_in_warehouse
 		priority = 10	
 	}
 
 	oil_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1938
 		archetype = oil_in_warehouse
 		parent = oil_in_warehouse_product
@@ -102,6 +107,7 @@ equipments = {
 	}
 
 	oil_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1941
 		archetype = oil_in_warehouse
 		parent = oil_in_warehouse_product_2
@@ -139,12 +145,14 @@ equipments = {
 	}
 
 	steel_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1936
 		archetype = steel_in_warehouse
 		priority = 10	
 	}
 
 	steel_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1938
 		archetype = steel_in_warehouse
 		parent = steel_in_warehouse_product
@@ -156,6 +164,7 @@ equipments = {
 	}
 
 	steel_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1938
 		archetype = steel_in_warehouse
 		parent = steel_in_warehouse_product_2
@@ -193,12 +202,14 @@ equipments = {
 	}
 
 	tungsten_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1936
 		archetype = tungsten_in_warehouse
 		priority = 10	
 	}
 
 	tungsten_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1938
 		archetype = tungsten_in_warehouse
 		parent = tungsten_in_warehouse_product
@@ -210,6 +221,7 @@ equipments = {
 	}
 
 	tungsten_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1941
 		archetype = tungsten_in_warehouse
 		parent = tungsten_in_warehouse_product_2
@@ -248,12 +260,14 @@ equipments = {
 	}
 
 	aluminium_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1936
 		archetype = aluminium_in_warehouse
 		priority = 10	
 	}
 
 	aluminium_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1938
 		archetype = aluminium_in_warehouse
 		parent = aluminium_in_warehouse_product
@@ -265,6 +279,7 @@ equipments = {
 	}
 
 	aluminium_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1941
 		archetype = aluminium_in_warehouse
 		parent = aluminium_in_warehouse_product_2
@@ -303,12 +318,14 @@ equipments = {
 	}
 
 	rubber_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1936
 		archetype = rubber_in_warehouse
 		priority = 10	
 	}
 
 	rubber_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1938
 		archetype = rubber_in_warehouse
 		parent = rubber_in_warehouse_product
@@ -320,6 +337,7 @@ equipments = {
 	}
 
 	rubber_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1941
 		archetype = rubber_in_warehouse
 		parent = rubber_in_warehouse_product_2
@@ -358,12 +376,14 @@ equipments = {
 	}
 
 	chromium_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1936
 		archetype = chromium_in_warehouse
 		priority = 10	
 	}
 
 	chromium_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1938
 		archetype = chromium_in_warehouse
 		parent = chromium_in_warehouse_product
@@ -375,6 +395,7 @@ equipments = {
 	}
 
 	chromium_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1941
 		archetype = chromium_in_warehouse
 		parent = chromium_in_warehouse_product_2

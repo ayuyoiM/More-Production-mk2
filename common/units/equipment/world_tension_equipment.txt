@@ -25,6 +25,7 @@ equipments = {
 	}
 
 	world_tension_increase_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_tension }
 		year = 1936
 		archetype = world_tension_increase_in_warehouse
 		priority = 10	
@@ -55,6 +56,7 @@ equipments = {
 	}
 
 	world_tension_decrease_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_tension }
 		year = 1936
 		archetype = world_tension_decrease_in_warehouse
 		priority = 10	

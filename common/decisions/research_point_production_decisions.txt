@@ -1,4 +1,4 @@
-more_production_decision = {
+mp_cat_research = {
 
 	research_point_2_decision = {
 		icon = GFX_research_icon
@@ -13,6 +13,7 @@ more_production_decision = {
 		}
 		
 		available = {
+			NOT = { has_tech = research_point_production_2_research }
 			custom_trigger_tooltip = {
 				tooltip = research_point_2_decision_trigger_tt
 				OR = {
@@ -54,6 +55,7 @@ more_production_decision = {
 		}
 
 		available = {
+			NOT = { has_tech = research_point_production_3_research }
 			custom_trigger_tooltip = {
 				tooltip = research_point_3_decision_trigger_tt
 				OR = {

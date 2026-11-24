@@ -1,4 +1,41 @@
-more_production_decision = {
+mp_cat_political = {
+
+    mp_enable_tension_tab = {
+        icon = GFX_world_tension_icon
+        cost = 0
+        priority = 100
+
+        visible = {
+            NOT = { has_country_flag = mp_tab_tension }
+            OR = {
+                has_tech = world_tension_increase_production_research
+                has_tech = world_tension_decrease_production_research
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = mp_tab_tension
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    mp_disable_tension_tab = {
+        icon = GFX_world_tension_icon
+        cost = 0
+        priority = 90
+
+        visible = {
+            has_country_flag = mp_tab_tension
+        }
+
+        complete_effect = {
+            clr_country_flag = mp_tab_tension
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
 
     # World Tension Decision
     world_tension_production_decision = {
@@ -8,6 +45,7 @@ more_production_decision = {
         fire_only_once = yes 
 
         available = {
+            NOT = { has_tech = world_tension_increase_production_research }
             custom_trigger_tooltip = {
                 tooltip = world_tension_production_decision_trigger_tt
                 OR = {

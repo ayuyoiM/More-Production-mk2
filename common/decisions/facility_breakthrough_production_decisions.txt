@@ -1,4 +1,43 @@
-more_production_decision = {
+mp_cat_military = {
+
+	mp_enable_breakthrough_tab = {
+		icon = generic_research
+		cost = 0
+		priority = 100
+
+		visible = {
+			NOT = { has_country_flag = mp_tab_breakthrough }
+			OR = {
+				has_tech = army_breakthrough_production_research
+				has_tech = navy_breakthrough_production_research
+				has_tech = air_breakthrough_production_research
+				has_tech = nuclear_breakthrough_production_research
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = mp_tab_breakthrough
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_disable_breakthrough_tab = {
+		icon = generic_research
+		cost = 0
+		priority = 90
+
+		visible = {
+			has_country_flag = mp_tab_breakthrough
+		}
+
+		complete_effect = {
+			clr_country_flag = mp_tab_breakthrough
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
 
 	facility_breakthrough_research_decision = {
 		icon = generic_research
@@ -7,6 +46,7 @@ more_production_decision = {
 		fire_only_once = yes 
 
 		available = {
+			NOT = { has_tech = army_breakthrough_production_research }
 			custom_trigger_tooltip = {
 				tooltip = facility_breakthrough_research_decision_trigger_tt
 				OR = {
@@ -51,6 +91,7 @@ more_production_decision = {
 		}
 
 		available = {
+			NOT = { has_tech = army_breakthrough_production_2_research }
 			custom_trigger_tooltip = {
 				tooltip = facility_breakthrough_research_2_decision_trigger_tt
 				OR = {
@@ -95,6 +136,7 @@ more_production_decision = {
 		}
 
 		available = {
+			NOT = { has_tech = army_breakthrough_production_3_research }
 			custom_trigger_tooltip = {
 				tooltip = facility_breakthrough_research_3_decision_trigger_tt
 				OR = {

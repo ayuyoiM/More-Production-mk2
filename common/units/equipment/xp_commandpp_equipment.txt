@@ -25,12 +25,14 @@ equipments = {
 	}
 
 	armyxp_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_xp }
 		year = 1936
 		archetype = armyxp_in_warehouse
 		priority = 10	
 	}
 
 	armyxp_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_xp }
 		year = 1938
 		archetype = armyxp_in_warehouse
 		parent = armyxp_in_warehouse_product
@@ -41,6 +43,7 @@ equipments = {
 	}
 
 	armyxp_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_xp }
 		year = 1941
 		archetype = armyxp_in_warehouse
 		parent = armyxp_in_warehouse_product_2
@@ -79,12 +82,14 @@ equipments = {
 	}
 
 	navyxp_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_xp }
 		year = 1936
 		archetype = navyxp_in_warehouse
 		priority = 10	
 	}
 
 	navyxp_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_xp }
 		year = 1938
 		archetype = navyxp_in_warehouse
 		parent = navyxp_in_warehouse_product
@@ -95,6 +100,7 @@ equipments = {
 	}
 
 	navyxp_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_xp }
 		year = 1941
 		archetype = navyxp_in_warehouse
 		parent = navyxp_in_warehouse_product_2
@@ -132,12 +138,14 @@ equipments = {
 	}
 
 	airxp_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_xp }
 		year = 1936
 		archetype = airxp_in_warehouse
 		priority = 10	
 	}
 
 	airxp_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_xp }
 		year = 1938
 		archetype = airxp_in_warehouse
 		parent = airxp_in_warehouse_product
@@ -148,6 +156,7 @@ equipments = {
 	}
 
 	airxp_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_xp }
 		year = 1938
 		archetype = airxp_in_warehouse
 		parent = airxp_in_warehouse_product_2
@@ -186,12 +195,14 @@ equipments = {
 	}
 
 	command_power_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_xp }
 		year = 1936
 		archetype = command_power_in_warehouse
 		priority = 10	
 	}
 
 	command_power_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_xp }
 		year = 1938
 		archetype = command_power_in_warehouse
 		parent = command_power_in_warehouse_product
@@ -202,6 +213,7 @@ equipments = {
 	}
 
 	command_power_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_xp }
 		year = 1938
 		archetype = command_power_in_warehouse
 		parent = command_power_in_warehouse_product_2

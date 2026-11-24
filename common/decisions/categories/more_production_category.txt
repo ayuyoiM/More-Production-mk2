@@ -1,11 +1,10 @@
-################
-#### MOD_DEC ####
-################
+# 生产大类：民生 / 军事 / 科研 / 外交政治
+# 生产线开关集中在 mp_cat_lines
 
-more_production_decision = {
+mp_cat_lines = {
 	icon = GFX_decision_generic_construction
 	
-	priority = 114514
+	priority = 200
 
 	allowed = {
 		is_ai = no
@@ -20,6 +19,104 @@ more_production_decision = {
 			has_country_flag = cheat_mode
 		}
 	}
+}
+
+mp_cat_civilian = {
+	icon = GFX_decision_generic_construction
 	
-	visible_when_empty = yes	
+	priority = 100
+
+	allowed = {
+		is_ai = no
+	}
+
+	picture = GFX_decision_cat_picture_gateway_to_europe
+
+	visible = {
+		is_ai = no
+		OR = {
+			has_country_flag = normal_mode
+			has_country_flag = cheat_mode
+		}
+	}
+}
+
+mp_cat_military = {
+	icon = GFX_decision_generic_construction
+	
+	priority = 90
+
+	allowed = {
+		is_ai = no
+	}
+
+	picture = GFX_decision_cat_picture_gateway_to_europe
+
+	visible = {
+		is_ai = no
+		OR = {
+			has_country_flag = normal_mode
+			has_country_flag = cheat_mode
+		}
+	}
+}
+
+mp_cat_research = {
+	icon = GFX_decision_generic_construction
+	
+	priority = 80
+
+	allowed = {
+		is_ai = no
+	}
+
+	picture = GFX_decision_cat_picture_gateway_to_europe
+
+	visible = {
+		is_ai = no
+		OR = {
+			has_country_flag = normal_mode
+			has_country_flag = cheat_mode
+		}
+	}
+}
+
+mp_cat_political = {
+	icon = GFX_decision_generic_construction
+	
+	priority = 70
+
+	allowed = {
+		is_ai = no
+	}
+
+	picture = GFX_decision_cat_picture_gateway_to_europe
+
+	visible = {
+		is_ai = no
+		OR = {
+			has_country_flag = normal_mode
+			has_country_flag = cheat_mode
+		}
+	}
+}
+
+mp_cat_debug = {
+	icon = GFX_decision_generic_construction
+	
+	priority = 999
+
+	allowed = {
+		is_ai = no
+	}
+
+	picture = GFX_decision_cat_picture_gateway_to_europe
+
+	visible = {
+		is_ai = no
+		OR = {
+			has_country_flag = normal_mode
+			has_country_flag = cheat_mode
+		}
+	}
 }

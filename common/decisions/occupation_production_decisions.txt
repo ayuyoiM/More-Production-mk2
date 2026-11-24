@@ -1,34 +1,4 @@
-more_production_decision = {
-
-    automate_occupation_decision = {
-        icon = mission_icon
-        priority = 1145141919810
-		cost = 0
-
-        visible = {
-            has_country_flag = occupation_decision_enabled
-            NOT = {has_country_flag = automate_occupation_enabled}
-        }
-        
-		complete_effect = {
-            set_country_flag = automate_occupation_enabled
-		}
-    }
-
-    cancel_automate_occupation_decision = {
-        icon = mission_icon
-        priority = 1145141919810
-		cost = 0
-
-        visible = {
-            has_country_flag = occupation_decision_enabled
-            has_country_flag = automate_occupation_enabled
-        }
-        
-		complete_effect = {
-            clr_country_flag = automate_occupation_enabled
-		}
-    }
+mp_cat_military = {
 
     occupation_equipment_research_decision = {
         icon = GFX_decision_generic_form_nation
@@ -37,6 +7,7 @@ more_production_decision = {
         fire_only_once = yes
 
         available = {
+            NOT = { has_tech = compliance_equipment_production_research }
             custom_trigger_tooltip = {
                 tooltip = occupation_equipment_research_decision_trigger_tt
                 OR = {
@@ -80,6 +51,7 @@ more_production_decision = {
         }
 
         available = {
+            NOT = { has_tech = compliance_equipment_production_2_research }
             custom_trigger_tooltip = {
                 tooltip = occupation_equipment_research_2_decision_trigger_tt
                 OR = {
@@ -122,6 +94,7 @@ more_production_decision = {
         }
 
         available = {
+            NOT = { has_tech = compliance_equipment_production_3_research }
             custom_trigger_tooltip = {
                 tooltip = occupation_equipment_research_3_decision_trigger_tt
                 OR = {

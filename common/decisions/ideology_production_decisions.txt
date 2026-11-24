@@ -1,4 +1,43 @@
-more_production_decision = {
+mp_cat_political = {
+
+	mp_enable_ideology_tab = {
+		icon = generic_civil_support
+		cost = 0
+		priority = 100
+
+		visible = {
+			NOT = { has_country_flag = mp_tab_ideology }
+			OR = {
+				has_tech = democracy_production_research
+				has_tech = communism_production_research
+				has_tech = fascism_production_research
+				has_tech = neutrality_production_research
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = mp_tab_ideology
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_disable_ideology_tab = {
+		icon = generic_civil_support
+		cost = 0
+		priority = 90
+
+		visible = {
+			has_country_flag = mp_tab_ideology
+		}
+
+		complete_effect = {
+			clr_country_flag = mp_tab_ideology
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
 
 	ideology_research_decision = {
 		icon = generic_civil_support
@@ -7,6 +46,7 @@ more_production_decision = {
 		fire_only_once = yes 
 
 		available = {
+			NOT = { has_tech = democracy_production_research }
 			custom_trigger_tooltip = {
 				tooltip = ideology_research_decision_trigger_tt
 				OR = {

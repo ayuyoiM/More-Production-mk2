@@ -1,4 +1,43 @@
-more_production_decision = {
+mp_cat_civilian = {
+
+    mp_enable_factory_tab = {
+        icon = GFX_FOCUS_FILTER_INDUSTRY
+        cost = 0
+        priority = 100
+
+        visible = {
+            NOT = { has_country_flag = mp_tab_factory }
+            OR = {
+                has_tech = civilian_factory_production_research
+                has_tech = military_factory_production_research
+                has_tech = naval_dockyard_production_research
+                has_tech = factory_output_production_research
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = mp_tab_factory
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    mp_disable_factory_tab = {
+        icon = GFX_FOCUS_FILTER_INDUSTRY
+        cost = 0
+        priority = 90
+
+        visible = {
+            has_country_flag = mp_tab_factory
+        }
+
+        complete_effect = {
+            clr_country_flag = mp_tab_factory
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
 
     factory_research_decision = {
         icon = GFX_FOCUS_FILTER_INDUSTRY
@@ -7,6 +46,7 @@ more_production_decision = {
         fire_only_once = yes 
 
         available = {
+            NOT = { has_tech = civilian_factory_production_research }
             custom_trigger_tooltip = {
                 tooltip = factory_research_decision_trigger_tt
                 OR = {
@@ -53,6 +93,7 @@ more_production_decision = {
         }
 
         available = {
+            NOT = { has_tech = civilian_factory_production_2_research }
             custom_trigger_tooltip = {
                 tooltip = factory_research_2_decision_trigger_tt
                 OR = {
@@ -96,6 +137,7 @@ more_production_decision = {
         }
 
         available = {
+            NOT = { has_tech = civilian_factory_production_3_research }
             custom_trigger_tooltip = {
                 tooltip = factory_research_3_decision_trigger_tt
                 OR = {

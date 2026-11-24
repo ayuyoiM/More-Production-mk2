@@ -1,0 +1,185 @@
+mp_cat_lines = {
+
+    # ---------- 启用 ----------
+
+    mp_enable_civilian_all = {
+        icon = mission_icon
+        cost = 0
+        priority = 100
+
+        visible = {
+            NOT = {
+                AND = {
+                    has_country_flag = mp_tab_factory
+                    has_country_flag = mp_tab_resource
+                    has_country_flag = mp_tab_manpower
+                }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = mp_tab_factory
+            set_country_flag = mp_tab_resource
+            set_country_flag = mp_tab_manpower
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    mp_enable_military_all = {
+        icon = mission_icon
+        cost = 0
+        priority = 90
+
+        visible = {
+            NOT = {
+                AND = {
+                    has_country_flag = mp_tab_breakthrough
+                    has_country_flag = mp_tab_xp
+                }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = mp_tab_breakthrough
+            set_country_flag = mp_tab_xp
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    mp_enable_political_all = {
+        icon = mission_icon
+        cost = 0
+        priority = 80
+
+        visible = {
+            NOT = {
+                AND = {
+                    has_country_flag = mp_tab_political
+                    has_country_flag = mp_tab_ideology
+                    has_country_flag = mp_tab_agency
+                    has_country_flag = mp_tab_autonomy
+                    has_country_flag = mp_tab_tension
+                    has_country_flag = mp_tab_diplomatic
+                }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = mp_tab_political
+            set_country_flag = mp_tab_ideology
+            set_country_flag = mp_tab_agency
+            set_country_flag = mp_tab_autonomy
+            set_country_flag = mp_tab_tension
+            set_country_flag = mp_tab_diplomatic
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    # ---------- 停用 ----------
+
+    mp_disable_civilian_all = {
+        icon = mission_icon
+        cost = 0
+        priority = 95
+
+        visible = {
+            OR = {
+                has_country_flag = mp_tab_factory
+                has_country_flag = mp_tab_resource
+                has_country_flag = mp_tab_manpower
+            }
+        }
+
+        complete_effect = {
+            clr_country_flag = mp_tab_factory
+            clr_country_flag = mp_tab_resource
+            clr_country_flag = mp_tab_manpower
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    mp_disable_military_all = {
+        icon = mission_icon
+        cost = 0
+        priority = 85
+
+        visible = {
+            OR = {
+                has_country_flag = mp_tab_breakthrough
+                has_country_flag = mp_tab_xp
+            }
+        }
+
+        complete_effect = {
+            clr_country_flag = mp_tab_breakthrough
+            clr_country_flag = mp_tab_xp
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    mp_disable_political_all = {
+        icon = mission_icon
+        cost = 0
+        priority = 75
+
+        visible = {
+            OR = {
+                has_country_flag = mp_tab_political
+                has_country_flag = mp_tab_ideology
+                has_country_flag = mp_tab_agency
+                has_country_flag = mp_tab_autonomy
+                has_country_flag = mp_tab_tension
+                has_country_flag = mp_tab_diplomatic
+            }
+        }
+
+        complete_effect = {
+            clr_country_flag = mp_tab_political
+            clr_country_flag = mp_tab_ideology
+            clr_country_flag = mp_tab_agency
+            clr_country_flag = mp_tab_autonomy
+            clr_country_flag = mp_tab_tension
+            clr_country_flag = mp_tab_diplomatic
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    # ---------- 占领设备自动化 ----------
+
+    automate_occupation_decision = {
+        icon = mission_icon
+        priority = 20
+        cost = 0
+
+        visible = {
+            has_country_flag = occupation_decision_enabled
+            NOT = { has_country_flag = automate_occupation_enabled }
+        }
+
+        complete_effect = {
+            set_country_flag = automate_occupation_enabled
+        }
+    }
+
+    cancel_automate_occupation_decision = {
+        icon = mission_icon
+        priority = 19
+        cost = 0
+
+        visible = {
+            has_country_flag = occupation_decision_enabled
+            has_country_flag = automate_occupation_enabled
+        }
+
+        complete_effect = {
+            clr_country_flag = automate_occupation_enabled
+        }
+    }
+
+}

@@ -24,12 +24,14 @@ equipments = {
 	}
 
 	army_breakthrough_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_breakthrough }
 		year = 1936
 		archetype = army_breakthrough_in_warehouse
 		priority = 10	
 	}
 
 	army_breakthrough_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_breakthrough }
 		year = 1938
 		archetype = army_breakthrough_in_warehouse
 		parent = army_breakthrough_in_warehouse_product
@@ -40,6 +42,7 @@ equipments = {
 	}
 
 	army_breakthrough_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_breakthrough }
 		year = 1940
 		archetype = army_breakthrough_in_warehouse
 		parent = army_breakthrough_in_warehouse_product_2
@@ -76,12 +79,14 @@ equipments = {
 	}
 
 	navy_breakthrough_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_breakthrough }
 		year = 1936
 		archetype = navy_breakthrough_in_warehouse
 		priority = 10	
 	}
 
 	navy_breakthrough_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_breakthrough }
 		year = 1938
 		archetype = navy_breakthrough_in_warehouse
 		parent = navy_breakthrough_in_warehouse_product
@@ -92,6 +97,7 @@ equipments = {
 	}
 
 	navy_breakthrough_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_breakthrough }
 		year = 1940
 		archetype = navy_breakthrough_in_warehouse
 		parent = navy_breakthrough_in_warehouse_product_2
@@ -129,12 +135,14 @@ equipments = {
 	}
 
 	air_breakthrough_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_breakthrough }
 		year = 1936
 		archetype = air_breakthrough_in_warehouse
 		priority = 10	
 	}
 
 	air_breakthrough_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_breakthrough }
 		year = 1938
 		archetype = air_breakthrough_in_warehouse
 		parent = air_breakthrough_in_warehouse_product
@@ -145,6 +153,7 @@ equipments = {
 	}
 
 	air_breakthrough_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_breakthrough }
 		year = 1940
 		archetype = air_breakthrough_in_warehouse
 		parent = air_breakthrough_in_warehouse_product_2
@@ -182,12 +191,14 @@ equipments = {
 	}
 
 	nuclear_breakthrough_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_breakthrough }
 		year = 1936
 		archetype = nuclear_breakthrough_in_warehouse
 		priority = 10	
 	}
 
 	nuclear_breakthrough_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_breakthrough }
 		year = 1938
 		archetype = nuclear_breakthrough_in_warehouse
 		parent = nuclear_breakthrough_in_warehouse_product
@@ -198,6 +209,7 @@ equipments = {
 	}
 
 	nuclear_breakthrough_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_breakthrough }
 		year = 1940
 		archetype = nuclear_breakthrough_in_warehouse
 		parent = nuclear_breakthrough_in_warehouse_product_2

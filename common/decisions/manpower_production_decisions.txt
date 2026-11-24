@@ -1,4 +1,40 @@
-more_production_decision = {
+mp_cat_civilian = {
+
+	mp_enable_manpower_tab = {
+		icon = GFX_manpower_icon
+		cost = 0
+		priority = 100
+
+		visible = {
+			NOT = { has_country_flag = mp_tab_manpower }
+			OR = {
+				has_tech = manpower_production_research
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = mp_tab_manpower
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_disable_manpower_tab = {
+		icon = GFX_manpower_icon
+		cost = 0
+		priority = 90
+
+		visible = {
+			has_country_flag = mp_tab_manpower
+		}
+
+		complete_effect = {
+			clr_country_flag = mp_tab_manpower
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
 
 	manpower_research_decision = {
 		icon = GFX_manpower_icon
@@ -7,6 +43,7 @@ more_production_decision = {
 		fire_only_once = yes 
 
 		available = {
+			NOT = { has_tech = manpower_production_research }
 			custom_trigger_tooltip = {
 				tooltip = manpower_research_decision_trigger_tt
 				OR = {
@@ -44,6 +81,7 @@ more_production_decision = {
 		}
 		
 		available = {
+			NOT = { has_tech = manpower_production_2_research }
 			custom_trigger_tooltip = {
 				tooltip = manpower_research_2_decision_trigger_tt
 				OR = {
@@ -81,6 +119,7 @@ more_production_decision = {
 		}
 
 		available = {
+			NOT = { has_tech = manpower_production_3_research }
 			custom_trigger_tooltip = {
 				tooltip = manpower_research_3_decision_trigger_tt
 				OR = {

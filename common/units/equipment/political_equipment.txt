@@ -26,12 +26,14 @@ equipments = {
 	}
 
 	pp_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_political }
 		year = 1936
 		archetype = pp_in_warehouse
 		priority = 10	
 	}
 
 	pp_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_political }
 		year = 1938
 		archetype = pp_in_warehouse
 		parent = pp_in_warehouse_product
@@ -42,6 +44,7 @@ equipments = {
 	}
 
 	pp_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_political }
 		year = 1940
 		archetype = pp_in_warehouse
 		parent = pp_in_warehouse_product_2
@@ -79,12 +82,14 @@ equipments = {
 	}
 
 	stability_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_political }
 		year = 1936
 		archetype = stability_in_warehouse
 		priority = 10	
 	}
 
 	stability_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_political }
 		year = 1938
 		archetype = stability_in_warehouse
 		parent = stability_in_warehouse_product
@@ -95,6 +100,7 @@ equipments = {
 	}
 
 	stability_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_political }
 		year = 1940
 		archetype = stability_in_warehouse
 		parent = stability_in_warehouse_product_2
@@ -130,12 +136,14 @@ equipments = {
 	}
 
 	warsupport_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_political }
 		year = 1936
 		archetype = warsupport_in_warehouse
 		priority = 10	
 	}
 
 	warsupport_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_political }
 		year = 1938
 		archetype = warsupport_in_warehouse
 		parent = warsupport_in_warehouse_product
@@ -146,6 +154,7 @@ equipments = {
 	}
 
 	warsupport_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_political }
 		year = 1940
 		archetype = warsupport_in_warehouse
 		parent = warsupport_in_warehouse_product_2

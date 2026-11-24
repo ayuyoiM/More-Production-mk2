@@ -1,4 +1,4 @@
-version="1.2"
+version="1.3"
 tags={
 	"Technologies"
 	"Military"
@@ -6,5 +6,5 @@ tags={
 	"Fixes"
 }
 name="More_Production_mk2"
-supported_version="1.18.*"
+supported_version="1.20.*"
 remote_file_id="3615184066"

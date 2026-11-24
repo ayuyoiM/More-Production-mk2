@@ -18,12 +18,14 @@ equipments = {
     }
 
     operative_slot_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_agency }
         year = 1936
         archetype = operative_slot_in_warehouse
         priority = 30
     }
 
     operative_slot_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_agency }
         year = 1938
         archetype = operative_slot_in_warehouse
         parent = operative_slot_in_warehouse_product
@@ -32,6 +34,7 @@ equipments = {
     }
 
     operative_slot_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_agency }
         year = 1941
         archetype = operative_slot_in_warehouse
         parent = operative_slot_in_warehouse_product_2

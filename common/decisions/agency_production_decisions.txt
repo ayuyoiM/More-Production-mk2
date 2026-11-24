@@ -1,4 +1,40 @@
-more_production_decision = {
+mp_cat_political = {
+
+	mp_enable_agency_tab = {
+		icon = GFX_total_operatives
+		cost = 0
+		priority = 100
+
+		visible = {
+			NOT = { has_country_flag = mp_tab_agency }
+			OR = {
+				has_tech = operative_slot_production_research
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = mp_tab_agency
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_disable_agency_tab = {
+		icon = GFX_total_operatives
+		cost = 0
+		priority = 90
+
+		visible = {
+			has_country_flag = mp_tab_agency
+		}
+
+		complete_effect = {
+			clr_country_flag = mp_tab_agency
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
 
     operative_slot_research_decision = {
 		icon = GFX_total_operatives
@@ -43,6 +79,7 @@ more_production_decision = {
 		}
 
 		available = {
+			NOT = { has_tech = operative_slot_production_2_research }
 			custom_trigger_tooltip = {
 				tooltip = operative_slot_research_2_decision_trigger_tt
 				OR = {
@@ -78,6 +115,7 @@ more_production_decision = {
 		}
 
 		available = {
+			NOT = { has_tech = operative_slot_production_3_research }
 			custom_trigger_tooltip = {
 				tooltip = operative_slot_research_3_decision_trigger_tt
 				OR = {

@@ -26,6 +26,7 @@ equipments = {
 	}
 
 	democracy_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_ideology }
 		year = 1936
 		archetype = democracy_in_warehouse
 		priority = 10	
@@ -57,6 +58,7 @@ equipments = {
 	}
 
 	communism_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_ideology }
 		year = 1936
 		archetype = communism_in_warehouse
 		priority = 10	
@@ -88,6 +90,7 @@ equipments = {
 	}
 
 	neutrality_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_ideology }
 		year = 1936
 		archetype = neutrality_in_warehouse
 		priority = 10	
@@ -119,6 +122,7 @@ equipments = {
 	}
 
 	fascism_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_ideology }
 		year = 1936
 		archetype = fascism_in_warehouse
 		priority = 10	

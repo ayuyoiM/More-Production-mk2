@@ -28,12 +28,14 @@ equipments = {
 	}
 
 	man_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_manpower }
 		year = 1936
 		archetype = man_in_warehouse
 		priority = 10	
 	}
 
 	man_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_manpower }
 		year = 1938
 		archetype = man_in_warehouse
 		parent = man_in_warehouse_product
@@ -44,6 +46,7 @@ equipments = {
 	}
 
 	man_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_manpower }
 		year = 1941
 		archetype = man_in_warehouse
 		parent = man_in_warehouse_product_2
