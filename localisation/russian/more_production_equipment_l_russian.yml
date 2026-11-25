@@ -157,6 +157,14 @@
   steel_in_warehouse_product_3: "Сталь III"
   steel_in_warehouse_product_3_desc: "Самый эффективный способ добывать сталь голыми руками!"
 
+  # Уголь
+  coal_in_warehouse_product: "Уголь I"
+  coal_in_warehouse_product_desc: "Способ добывать уголь голыми руками!"
+  coal_in_warehouse_product_2: "Уголь II"
+  coal_in_warehouse_product_2_desc: "Более эффективный способ добывать уголь голыми руками!"
+  coal_in_warehouse_product_3: "Уголь III"
+  coal_in_warehouse_product_3_desc: "Самый эффективный способ добывать уголь голыми руками!"
+
   tungsten_in_warehouse_product: "Вольфрам I"
   tungsten_in_warehouse_product_desc: "Способ добывать вольфрам голыми руками!"
   tungsten_in_warehouse_product_2: "Вольфрам II"
@@ -316,6 +324,8 @@
   rubber_in_warehouse_desc: "Будет производиться в столичном регионе"
   steel_in_warehouse: "Сталь"
   steel_in_warehouse_desc: "Будет производиться в столичном регионе"
+  coal_in_warehouse: "Уголь"
+  coal_in_warehouse_desc: "Будет производиться в столичном регионе"
   tungsten_in_warehouse: "Вольфрам"
   tungsten_in_warehouse_desc: "Будет производиться в столичном регионе"
   chromium_in_warehouse: "Хром"

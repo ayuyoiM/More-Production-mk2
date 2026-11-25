@@ -132,6 +132,14 @@
   steel_production_3_research: "Добыча стали III"
   steel_production_3_research_desc: "Разблокирует передовую добычу стали."
 
+  # Уголь
+  coal_production_research: "Добыча угля I"
+  coal_production_research_desc: "Разблокирует базовую добычу угля."
+  coal_production_2_research: "Добыча угля II"
+  coal_production_2_research_desc: "Разблокирует среднюю добычу угля."
+  coal_production_3_research: "Добыча угля III"
+  coal_production_3_research_desc: "Разблокирует передовую добычу угля."
+
   tungsten_production_research: "Добыча вольфрама I"
   tungsten_production_research_desc: "Разблокирует базовую добычу вольфрама."
   tungsten_production_2_research: "Добыча вольфрама II"
