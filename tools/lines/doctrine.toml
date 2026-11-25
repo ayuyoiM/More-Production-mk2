@@ -1,0 +1,61 @@
+# doctrine 组生产线配置（由 tools/import_lines.py 反推，人工核对后使用）
+
+[[production_line]]
+id = "doctrine"
+group = "doctrine"
+name_chinese = "学说精通"
+name_english = "Doctrine Mastery"
+name_russian = "Мастерство доктрин"
+country_flag = "mp_tab_doctrine"
+resources = { oil = 2, rubber = 1 }
+archetype_equipment = "doctrine_in_warehouse"
+texture_file = "gfx/texticons/doctrine_mastery_texticon.dds"
+
+[[production_line.equipment]]
+id = "doctrine_in_warehouse_product"
+year = 1936
+build_cost = 30
+description_chinese = "人造学说精通点！"
+description_english = "Synthetic doctrine mastery!"
+description_russian = "Синтетическое мастерство доктрин!"
+
+[[production_line.equipment]]
+id = "doctrine_in_warehouse_product_2"
+year = 1938
+build_cost = 15
+description_chinese = "更有效率的人造学说精通点！"
+description_english = "More efficient synthetic doctrine mastery!"
+description_russian = "Более эффективное синтетическое мастерство доктрин!"
+
+[[production_line.equipment]]
+id = "doctrine_in_warehouse_product_3"
+year = 1941
+build_cost = 5
+description_chinese = "最有效率的人造学说精通点！"
+description_english = "The most efficient synthetic doctrine mastery!"
+description_russian = "Самое эффективное синтетическое мастерство доктрин!"
+
+[production_line.technology]
+identifiers = [
+  "doctrine_production_research",
+  "doctrine_production_2_research",
+  "doctrine_production_3_research",
+]
+descriptions_chinese = [
+  "解锁初级学说精通生产。",
+  "解锁中级学说精通生产。",
+  "解锁高级学说精通生产。",
+]
+descriptions_english = [
+  "Unlocks basic doctrine mastery production.",
+  "Unlocks improved doctrine mastery production.",
+  "Unlocks advanced doctrine mastery production.",
+]
+descriptions_russian = [
+  "Открывает базовое производство мастерства доктрин.",
+  "Открывает улучшенное производство мастерства доктрин.",
+  "Открывает продвинутое производство мастерства доктрин.",
+]
+
+[[production_line.effect]]
+type = "add_mastery"

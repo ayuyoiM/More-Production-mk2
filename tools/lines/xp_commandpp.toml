@@ -1,0 +1,241 @@
+# xp_commandpp 组生产线配置（由 tools/import_lines.py 反推，人工核对后使用）
+
+[[production_line]]
+id = "armyxp"
+group = "xp_commandpp"
+name_chinese = "陆军经验"
+name_english = "Army Experience"
+name_russian = "Опыт армии"
+country_flag = "mp_tab_xp"
+resources = { steel = 2 }
+archetype_equipment = "armyxp_in_warehouse"
+texture_file = "gfx/interface/focusview/filter/army_xp_icon.dds"
+
+[[production_line.equipment]]
+id = "armyxp_in_warehouse_product"
+year = 1936
+build_cost = 20
+description_chinese = "人造陆军经验！"
+description_english = "Artificial army experience!"
+description_russian = "Искусственный опыт армии!"
+
+[[production_line.equipment]]
+id = "armyxp_in_warehouse_product_2"
+year = 1938
+build_cost = 10
+description_chinese = "更有效率的人造陆军经验！"
+description_english = "More efficient artificial army experience!"
+description_russian = "Более эффективный искусственный опыт армии!"
+
+[[production_line.equipment]]
+id = "armyxp_in_warehouse_product_3"
+year = 1941
+build_cost = 4
+description_chinese = "最有效率的人造陆军经验！"
+description_english = "Most efficient artificial army experience!"
+description_russian = "Наиболее эффективный искусственный опыт армии!"
+
+[production_line.technology]
+identifiers = [
+  "armyxp_production_research",
+  "armyxp_production_2_research",
+  "armyxp_production_3_research",
+]
+descriptions_chinese = [
+  "解锁陆军经验生产 I。",
+  "解锁陆军经验生产 II。",
+  "解锁陆军经验生产 III。",
+]
+descriptions_english = [
+  "Unlocks Army Experience Production I.",
+  "Unlocks Army Experience Production II.",
+  "Unlocks Army Experience Production III.",
+]
+descriptions_russian = [
+  "Разблокирует производство опыта армии I.",
+  "Разблокирует производство опыта армии II.",
+  "Разблокирует производство опыта армии III.",
+]
+
+[[production_line.effect]]
+type = "army_experience"
+
+[[production_line]]
+id = "navyxp"
+group = "xp_commandpp"
+name_chinese = "海军经验"
+name_english = "Naval Experience"
+name_russian = "Опыт флота"
+country_flag = "mp_tab_xp"
+resources = { steel = 1, oil = 1 }
+archetype_equipment = "navyxp_in_warehouse"
+texture_file = "gfx/interface/focusview/filter/navy_xp_icon.dds"
+
+[[production_line.equipment]]
+id = "navyxp_in_warehouse_product"
+year = 1936
+build_cost = 20
+description_chinese = "人造海军经验！"
+description_english = "Artificial naval experience!"
+description_russian = "Искусственный опыт флота!"
+
+[[production_line.equipment]]
+id = "navyxp_in_warehouse_product_2"
+year = 1938
+build_cost = 10
+description_chinese = "更有效率的人造海军经验！"
+description_english = "More efficient artificial naval experience!"
+description_russian = "Более эффективный искусственный опыт флота!"
+
+[[production_line.equipment]]
+id = "navyxp_in_warehouse_product_3"
+year = 1941
+build_cost = 4
+description_chinese = "最有效率的人造海军经验！"
+description_english = "Most efficient artificial naval experience!"
+description_russian = "Наиболее эффективный искусственный опыт флота!"
+
+[production_line.technology]
+identifiers = [
+  "navyxp_production_research",
+  "navyxp_production_2_research",
+  "navyxp_production_3_research",
+]
+descriptions_chinese = [
+  "解锁海军经验生产 I。",
+  "解锁海军经验生产 II。",
+  "解锁海军经验生产 III。",
+]
+descriptions_english = [
+  "Unlocks Naval Experience Production I.",
+  "Unlocks Naval Experience Production II.",
+  "Unlocks Naval Experience Production III.",
+]
+descriptions_russian = [
+  "Разблокирует производство опыта флота I.",
+  "Разблокирует производство опыта флота II.",
+  "Разблокирует производство опыта флота III.",
+]
+
+[[production_line.effect]]
+type = "navy_experience"
+
+[[production_line]]
+id = "airxp"
+group = "xp_commandpp"
+name_chinese = "空军经验"
+name_english = "Air Force Experience"
+name_russian = "Опыт ВВС"
+country_flag = "mp_tab_xp"
+resources = { aluminium = 2 }
+archetype_equipment = "airxp_in_warehouse"
+texture_file = "gfx/interface/focusview/filter/air_xp_icon.dds"
+
+[[production_line.equipment]]
+id = "airxp_in_warehouse_product"
+year = 1936
+build_cost = 20
+description_chinese = "人造空军经验！"
+description_english = "Artificial air force experience!"
+description_russian = "Искусственный опыт ВВС!"
+
+[[production_line.equipment]]
+id = "airxp_in_warehouse_product_2"
+year = 1938
+build_cost = 10
+description_chinese = "更有效率的人造空军经验！"
+description_english = "More efficient artificial air force experience!"
+description_russian = "Более эффективный искусственный опыт ВВС!"
+
+[[production_line.equipment]]
+id = "airxp_in_warehouse_product_3"
+year = 1938
+build_cost = 4
+description_chinese = "最有效率的人造空军经验！"
+description_english = "Most efficient artificial air force experience!"
+description_russian = "Наиболее эффективный искусственный опыт ВВС!"
+
+[production_line.technology]
+identifiers = [
+  "airxp_production_research",
+  "airxp_production_2_research",
+  "airxp_production_3_research",
+]
+descriptions_chinese = [
+  "解锁空军经验生产 I。",
+  "解锁空军经验生产 II。",
+  "解锁空军经验生产 III。",
+]
+descriptions_english = [
+  "Unlocks Air Force Experience Production I.",
+  "Unlocks Air Force Experience Production II.",
+  "Unlocks Air Force Experience Production III.",
+]
+descriptions_russian = [
+  "Разблокирует производство опыта авиации I.",
+  "Разблокирует производство опыта авиации II.",
+  "Разблокирует производство опыта авиации III.",
+]
+
+[[production_line.effect]]
+type = "air_experience"
+
+[[production_line]]
+id = "command_power"
+group = "xp_commandpp"
+name_chinese = "指挥点数"
+name_english = "Command Power"
+name_russian = "Очки командования"
+country_flag = "mp_tab_xp"
+resources = { steel = 1, aluminium = 1 }
+archetype_equipment = "command_power_in_warehouse"
+texture_file = "gfx/interface/command_power_icon.dds"
+
+[[production_line.equipment]]
+id = "command_power_in_warehouse_product"
+year = 1936
+build_cost = 15
+description_chinese = "人造指挥点数！"
+description_english = "Artificial command power!"
+description_russian = "Искусственные очки командования!"
+
+[[production_line.equipment]]
+id = "command_power_in_warehouse_product_2"
+year = 1938
+build_cost = 8
+description_chinese = "更有效率的人造指挥点数！"
+description_english = "More efficient artificial command power!"
+description_russian = "Более эффективные искусственные очки командования!"
+
+[[production_line.equipment]]
+id = "command_power_in_warehouse_product_3"
+year = 1938
+build_cost = 2
+description_chinese = "最有效率的人造指挥点数！"
+description_english = "Most efficient artificial command power!"
+description_russian = "Наиболее эффективные искусственные очки командования!"
+
+[production_line.technology]
+identifiers = [
+  "command_power_production_research",
+  "command_power_production_2_research",
+  "command_power_production_3_research",
+]
+descriptions_chinese = [
+  "解锁指挥点数生产 I。",
+  "解锁指挥点数生产 II。",
+  "解锁指挥点数生产 III。",
+]
+descriptions_english = [
+  "Unlocks Command Power Production I.",
+  "Unlocks Command Power Production II.",
+  "Unlocks Command Power Production III.",
+]
+descriptions_russian = [
+  "Разблокирует производство командных очков I.",
+  "Разблокирует производство командных очков II.",
+  "Разблокирует производство командных очков III.",
+]
+
+[[production_line.effect]]
+type = "add_command_power"

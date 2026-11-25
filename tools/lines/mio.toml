@@ -1,0 +1,65 @@
+# mio 组生产线配置（由 tools/import_lines.py 反推，人工核对后使用）
+
+[[production_line]]
+id = "mio"
+group = "mio"
+name_chinese = "军工组织"
+name_english = "MIO"
+name_russian = "ВПО"
+country_flag = "mp_tab_mio"
+resources = { oil = 2, rubber = 1 }
+archetype_equipment = "mio_in_warehouse"
+texture_file = "gfx/interface/military_industrial_organization/MIO_has_policy_icon.dds"
+
+[[production_line.equipment]]
+id = "mio_in_warehouse_product"
+year = 1936
+build_cost = 30
+description_chinese = "人造军工组织资金！"
+description_english = "Synthetic MIO funds!"
+description_russian = "Синтетические средства ВПО!"
+
+[[production_line.equipment]]
+id = "mio_in_warehouse_product_2"
+year = 1938
+build_cost = 15
+description_chinese = "更有效率的人造军工组织资金！"
+description_english = "More efficient synthetic MIO funds!"
+description_russian = "Более эффективные синтетические средства ВПО!"
+
+[[production_line.equipment]]
+id = "mio_in_warehouse_product_3"
+year = 1941
+build_cost = 5
+description_chinese = "最有效率的人造军工组织资金！"
+description_english = "The most efficient synthetic MIO funds!"
+description_russian = "Самые эффективные синтетические средства ВПО!"
+
+[production_line.technology]
+identifiers = [
+  "mio_production_research",
+  "mio_production_2_research",
+  "mio_production_3_research",
+]
+descriptions_chinese = [
+  "解锁初级军工组织生产。",
+  "解锁中级军工组织生产。",
+  "解锁高级军工组织生产。",
+]
+descriptions_english = [
+  "Unlocks basic MIO production.",
+  "Unlocks improved MIO production.",
+  "Unlocks advanced MIO production.",
+]
+descriptions_russian = [
+  "Открывает базовое производство ВПО.",
+  "Открывает улучшенное производство ВПО.",
+  "Открывает продвинутое производство ВПО.",
+]
+
+[[production_line.effect]]
+type = "add_mio_funds"
+
+[[production_line.effect]]
+type = "add_to_variable"
+target = "mio_var"

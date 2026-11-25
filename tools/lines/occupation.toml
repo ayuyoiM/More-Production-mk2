@@ -1,0 +1,175 @@
+# occupation 组生产线配置（由 tools/import_lines.py 反推，人工核对后使用）
+
+[[production_line]]
+id = "compliance_equipment"
+group = "occupation"
+name_chinese = "顺从度设备"
+name_english = "Compliance Equipment"
+name_russian = "Оборудование для соответствия"
+country_flag = "mp_tab_occupation"
+resources = { steel = 1 }
+actions = "manual"
+archetype_equipment = "compliance_equipment_in_warehouse"
+texture_file = "gfx/interface/occupation/compliance_icon.dds"
+
+[[production_line.equipment]]
+id = "compliance_equipment_in_warehouse_product"
+year = 1936
+build_cost = 2000
+description_chinese = "人造的顺从度设备！"
+description_english = "Artificial compliance equipment!"
+description_russian = "Искусственное оборудование для соответствия!"
+
+[[production_line.equipment]]
+id = "compliance_equipment_in_warehouse_product_2"
+year = 1938
+build_cost = 500
+description_chinese = "更有效率的人造顺从设备！"
+description_english = "More efficient artificial compliance equipment!"
+description_russian = "Более эффективное искусственное оборудование для соответствия!"
+
+[[production_line.equipment]]
+id = "compliance_equipment_in_warehouse_product_3"
+year = 1940
+build_cost = 80
+description_chinese = "最有效率的人造顺从设备！"
+description_english = "The most efficient artificial compliance equipment!"
+description_russian = "Наиболее эффективное искусственное оборудование для соответствия!"
+
+[production_line.technology]
+identifiers = [
+  "compliance_equipment_production_research",
+  "compliance_equipment_production_2_research",
+  "compliance_equipment_production_3_research",
+]
+descriptions_chinese = [
+  "解锁基础服从设备的生产科技。",
+  "解锁中级服从设备的生产科技。",
+  "解锁高级服从设备的生产科技。",
+]
+descriptions_english = [
+  "Unlocks Basic Compliance Equipment Production Technology.",
+  "Unlocks Intermediate Compliance Equipment Production Technology.",
+  "Unlocks Advanced Compliance Equipment Production Technology.",
+]
+descriptions_russian = [
+  "Разблокирует базовую технологию производства оборудования для подчинения.",
+  "Разблокирует среднюю технологию производства оборудования для подчинения.",
+  "Разблокирует передовую технологию производства оборудования для подчинения.",
+]
+
+[[production_line]]
+id = "resistance_equipment"
+group = "occupation"
+name_chinese = "移除抵抗设备"
+name_english = "Resistance Suppression Equipment"
+name_russian = "Оборудование для подавления сопротивления"
+country_flag = "mp_tab_occupation"
+resources = { steel = 1, aluminium = 1 }
+actions = "manual"
+archetype_equipment = "resistance_equipment_in_warehouse"
+texture_file = "gfx/interface/resistance_icon.dds"
+
+[[production_line.equipment]]
+id = "resistance_equipment_in_warehouse_product"
+year = 1936
+build_cost = 200
+description_chinese = "人造降低抵抗设备！"
+description_english = "Artificial resistance suppression equipment!"
+description_russian = "Искусственное оборудование для подавления сопротивления!"
+
+[[production_line.equipment]]
+id = "resistance_equipment_in_warehouse_product_2"
+year = 1938
+build_cost = 80
+description_chinese = "更有效率的人造降低抵抗设备！"
+description_english = "More efficient artificial resistance suppression equipment!"
+description_russian = "Более эффективное искусственное оборудование для подавления сопротивления!"
+
+[[production_line.equipment]]
+id = "resistance_equipment_in_warehouse_product_3"
+year = 1940
+build_cost = 8
+description_chinese = "最有效率的人造降低抵抗设备！"
+description_english = "The most efficient artificial resistance suppression equipment!"
+description_russian = "Наиболее эффективное искусственное оборудование для подавления сопротивления!"
+
+[production_line.technology]
+identifiers = [
+  "resistance_equipment_production_research",
+  "resistance_equipment_production_2_research",
+  "resistance_equipment_production_3_research",
+]
+descriptions_chinese = [
+  "解锁基础抵抗设备的生产科技。",
+  "解锁中级抵抗设备的生产科技。",
+  "解锁高级抵抗设备的生产科技。",
+]
+descriptions_english = [
+  "Unlocks Basic Resistance Suppression Equipment Production Technology.",
+  "Unlocks Intermediate Resistance Suppression Equipment Production Technology.",
+  "Unlocks Advanced Resistance Suppression Equipment Production Technology.",
+]
+descriptions_russian = [
+  "Разблокирует базовую технологию производства оборудования для подавления сопротивления.",
+  "Разблокирует среднюю технологию производства оборудования для подавления сопротивления.",
+  "Разблокирует передовую технологию производства оборудования для подавления сопротивления.",
+]
+
+[[production_line]]
+id = "coring_equipment"
+group = "occupation"
+name_chinese = "造核心设备"
+name_english = "Coring Equipment"
+name_russian = "Оборудование для коринга"
+country_flag = "mp_tab_occupation"
+resources = { steel = 1, tungsten = 1 }
+actions = "manual"
+archetype_equipment = "coring_equipment_in_warehouse"
+texture_file = "gfx/interface/ideas/idea_generic_constitutional_guarantee.dds"
+
+[[production_line.equipment]]
+id = "coring_equipment_in_warehouse_product"
+year = 1936
+build_cost = 8000
+description_chinese = "我们终于可以在钢四造核心啦！"
+description_english = "Finally, we can core in HOI4!"
+description_russian = "Наконец-то мы можем делать коринг в HOI4!"
+
+[[production_line.equipment]]
+id = "coring_equipment_in_warehouse_product_2"
+year = 1938
+build_cost = 2000
+description_chinese = "更有效率的造核心设备！"
+description_english = "More efficient coring equipment!"
+description_russian = "Более эффективное оборудование для коринга!"
+
+[[production_line.equipment]]
+id = "coring_equipment_in_warehouse_product_3"
+year = 1940
+build_cost = 200
+description_chinese = "最有效率的人造核心设备！"
+description_english = "The most efficient artificial coring equipment!"
+description_russian = "Наиболее эффективное искусственное оборудование для коринга!"
+
+[production_line.technology]
+identifiers = [
+  "coring_equipment_production_research",
+  "coring_equipment_production_2_research",
+  "coring_equipment_production_3_research",
+]
+descriptions_chinese = [
+  "解锁基础造核心设备的生产科技。",
+  "解锁中级造核心设备的生产科技。",
+  "解锁高级核心设备的生产科技。",
+]
+descriptions_english = [
+  "Unlocks Basic Coring Equipment Production Technology.",
+  "Unlocks Intermediate Coring Equipment Production Technology.",
+  "Unlocks Advanced Coring Equipment Production Technology.",
+]
+descriptions_russian = [
+  "Разблокирует базовую технологию производства оборудования для создания ядра.",
+  "Разблокирует среднюю технологию производства оборудования для создания ядра.",
+  "Разблокирует передовую технологию производства оборудования для создания ядра.",
+]

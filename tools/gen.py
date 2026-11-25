@@ -10,6 +10,7 @@
 配置改动请改 tools/lines/*.toml，不要手改生成出来的文件。
 """
 import argparse
+import re
 import sys
 import tomllib
 from pathlib import Path
@@ -22,9 +23,9 @@ SPRITE_BEGIN = "\t# 生成区开始"
 SPRITE_END = "\t# 生成区结束"
 
 
-def load_lines():
+def load_lines(config_dir=None):
     lines = []
-    for path in sorted(CONFIG_DIR.glob("*.toml")):
+    for path in sorted((config_dir or CONFIG_DIR).glob("*.toml")):
         with path.open("rb") as f:
             data = tomllib.load(f)
         for entry in data.get("production_line", []):
@@ -33,8 +34,9 @@ def load_lines():
                           "name_english", "name_russian"):
                 if field not in entry:
                     sys.exit("%s 里的线缺少字段 %s" % (path.name, field))
-            if len(entry.get("equipment", [])) != 3:
-                sys.exit("%s 里的线 %s 需要正好三档装备" % (path.name, entry["id"]))
+            count = len(entry.get("equipment", []))
+            if count not in (1, 2, 3):
+                sys.exit("%s 里的线 %s 装备档数只能是 1~3，现在是 %d" % (path.name, entry["id"], count))
             lines.append(entry)
     return lines
 
@@ -77,15 +79,11 @@ def render_equipment(lines):
         out.append(INDENT * 2 + "lend_lease_cost = 2")
         out.append("")
         out.append(INDENT * 2 + "build_cost_ic = " + str(products[0]["build_cost"]))
-        resources = line.get("resources", {})
-        if resources:
-            out.append(INDENT * 2 + "resources = {")
-            for key, value in resources.items():
-                out.append(INDENT * 3 + key + " = " + str(value))
-            out.append(INDENT * 2 + "}")
-        else:
-            out.append(INDENT * 2 + "resources = {")
-            out.append(INDENT * 2 + "}")
+        resources = line.get("resources") or {}
+        out.append(INDENT * 2 + "resources = {")
+        for key, value in resources.items():
+            out.append(INDENT * 3 + key + " = " + str(value))
+        out.append(INDENT * 2 + "}")
         out.append(INDENT + "}")
         out.append("")
         for tier, product in enumerate(products):
@@ -97,6 +95,12 @@ def render_equipment(lines):
             if tier:
                 out.append(INDENT * 2 + "parent = " + products[tier - 1]["id"])
                 out.append(INDENT * 2 + "build_cost_ic = " + str(product["build_cost"]))
+            own = product.get("resources") or {}
+            if own:
+                out.append(INDENT * 2 + "resources = {")
+                for key, value in own.items():
+                    out.append(INDENT * 3 + key + " = " + str(value))
+                out.append(INDENT * 2 + "}")
             out.append(INDENT * 2 + "priority = " + str((tier + 1) * 10))
             out.append(INDENT + "}")
             out.append("")
@@ -109,7 +113,9 @@ def render_technology(lines):
     for line in lines:
         techs = line["technology"]["identifiers"]
         ids = product_ids(line)
-        for tier in range(3):
+        if len(techs) != len(ids):
+            sys.exit("线 %s 的科技数和装备档数不一致" % line["id"])
+        for tier in range(len(ids)):
             out.append(INDENT + techs[tier] + " = {")
             out.append("")
             out.append(INDENT * 2 + "enable_equipments = {")
@@ -130,6 +136,9 @@ def render_effects(line, tier):
     temp = temp_name(line, tier)
     out = []
     for effect in line.get("effect", []):
+        only = effect.get("tiers")
+        if only and (tier + 1) not in only:
+            continue
         kind = effect.get("type")
         if kind == "divide_variable":
             out += [
@@ -165,7 +174,23 @@ def render_effects(line, tier):
                 INDENT * 5 + "value = " + temp,
                 INDENT * 4 + "}",
             ]
-        elif kind in ("add_manpower", "add_political_power", "add_stability", "add_war_support"):
+        elif kind == "multiply_variable":
+            out += [
+                INDENT * 4 + "multiply_variable = {",
+                INDENT * 5 + "var = " + temp,
+                INDENT * 5 + "value = " + str(effect["by"]),
+                INDENT * 4 + "}",
+            ]
+        elif kind == "add_popularity":
+            out += [
+                INDENT * 4 + "add_popularity = {",
+                INDENT * 5 + "ideology = " + effect["ideology"],
+                INDENT * 5 + "popularity = " + temp,
+                INDENT * 4 + "}",
+            ]
+        elif kind in ("add_manpower", "add_political_power", "add_stability", "add_war_support",
+                      "add_threat", "army_experience", "navy_experience", "air_experience",
+                      "add_command_power"):
             out.append(INDENT * 4 + kind + " = " + temp)
         elif kind == "add_resource":
             out += [
@@ -191,7 +216,7 @@ def render_on_actions(lines):
     out = ["on_actions = {", ""]
     for line in lines:
         ids = product_ids(line)
-        for tier in range(3):
+        for tier in range(len(ids)):
             temp = temp_name(line, tier)
             out += [
                 INDENT + "on_weekly = { # " + ids[tier],
@@ -247,20 +272,22 @@ def render_sprites(lines):
         texture = line["texture_file"]
         names = [picture_name(line)] + [product_ids(line)[0], product_ids(line)[0] + "_medium",
                                         product_ids(line)[0] + "_2_medium", product_ids(line)[0] + "_3_medium"]
+        frames = line.get("no_of_frames")
         for name in names:
             out += [
                 INDENT + "SpriteType = {",
                 INDENT * 2 + 'name = "GFX_' + name + '"',
                 INDENT * 2 + 'texturefile = "' + texture + '"',
-                INDENT + "}",
-                "",
             ]
+            if frames:
+                out.append(INDENT * 2 + "noOfFrames = " + str(frames))
+            out.append(INDENT + "}")
+        out.append("")
     return "\n".join(out)
 
 
 def render_loc(lines, lang, kind):
-    suffix = {"chinese": "simp_chinese", "english": "english", "russian": "russian"}[lang]
-    out = ["l_" + suffix + ":"]
+    out = []
     for line in lines:
         name = line["name_" + lang]
         roman = ["I", "II", "III"]
@@ -290,12 +317,92 @@ def build_outputs(lines):
     for group, group_lines in groups.items():
         files["common/units/equipment/%s_equipment.txt" % group] = render_equipment(group_lines)
         files["common/technologies/%s_tech.txt" % group] = render_technology(group_lines)
-        files["common/on_actions/%s_on_actions.txt" % group] = render_on_actions(group_lines)
-        for lang in ("chinese", "english", "russian"):
-            suffix = {"chinese": "simp_chinese", "english": "english", "russian": "russian"}[lang]
-            files["localisation/%s/more_production_equipment_l_%s.yml" % (lang, suffix)] = render_loc(group_lines, lang, "equipment")
-            files["localisation/%s/more_production_technology_l_%s.yml" % (lang, suffix)] = render_loc(group_lines, lang, "technology")
+        if not any(l.get("actions") == "manual" for l in group_lines):
+            files["common/on_actions/%s_on_actions.txt" % group] = render_on_actions(group_lines)
+
+    for lang, suffix in (("chinese", "simp_chinese"), ("english", "english"), ("russian", "russian")):
+        for kind in ("equipment", "technology"):
+            chunks = [render_loc(group_lines, lang, kind).strip("\n") + "\n" for group_lines in groups.values()]
+            files["localisation/%s/more_production_%s_l_%s.yml" % (lang, kind, suffix)] = "l_" + suffix + ":\n" + "\n".join(chunks)
     return files, groups
+
+
+def generated_sprite_names(lines):
+    names = set()
+    for line in lines:
+        names.add(picture_name(line))
+        base = product_ids(line)[0]
+        names.update([base, base + "_medium", base + "_2_medium", base + "_3_medium"])
+    return {"GFX_" + n for n in names}
+
+
+def remove_generated_block(text):
+    """删掉上次生成的整段（含标记），避免重复叠加。"""
+    lines = text.splitlines()
+    kept = []
+    skipping = False
+    for line in lines:
+        if line.strip() == "# GENERATED BEGIN":
+            skipping = True
+            continue
+        if line.strip() == "# GENERATED END":
+            skipping = False
+            continue
+        if not skipping:
+            kept.append(line)
+    return "\n".join(kept)
+
+
+def strip_sprites(text, names):
+    """删掉这些名字的 SpriteType 块，其余原样保留。"""
+    lines = text.splitlines()
+    kept = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        if line.strip().startswith("SpriteType"):
+            depth = line.count("{") - line.count("}")
+            j = i
+            while depth > 0 and j + 1 < len(lines):
+                j += 1
+                depth += lines[j].count("{") - lines[j].count("}")
+            block = lines[i:j + 1]
+            m = re.search(r'name\s*=\s*"(GFX_[A-Za-z0-9_.\-]+)"', "\n".join(block))
+            if m and m.group(1) in names:
+                i = j + 1
+                continue
+            kept.extend(block)
+            i = j + 1
+            continue
+        kept.append(line)
+        i += 1
+    return "\n".join(kept)
+
+
+def write_repo(files, lines):
+    for rel, content in files.items():
+        path = ROOT / rel
+        path.parent.mkdir(parents=True, exist_ok=True)
+        if rel.endswith(".yml"):
+            path.write_text(content, encoding="utf-8-sig", newline="\r\n")
+        else:
+            path.write_text(content, encoding="utf-8", newline="\r\n")
+
+    gfx_path = ROOT / "interface" / "more_production.gfx"
+    text = remove_generated_block(gfx_path.read_text(encoding="utf-8-sig"))
+    text = strip_sprites(text, generated_sprite_names(lines))
+    body = ["\t# GENERATED BEGIN"] + render_sprites(lines).rstrip("\n").splitlines() + ["\t# GENERATED END"]
+    parts = text.splitlines()
+    idx = max(i for i, l in enumerate(parts) if l.strip() == "}")
+    parts = parts[:idx] + [""] + body + [""] + parts[idx:]
+
+    # 删块之后会留下成串空行，合并成一个
+    cleaned = []
+    for line in parts:
+        if not line.strip() and cleaned and not cleaned[-1].strip():
+            continue
+        cleaned.append(line)
+    gfx_path.write_text("\n".join(cleaned) + "\n", encoding="utf-8", newline="\r\n")
 
 
 def main():
@@ -303,9 +410,10 @@ def main():
     parser.add_argument("--check", action="store_true")
     parser.add_argument("--only")
     parser.add_argument("--out")
+    parser.add_argument("--config-dir")
     args = parser.parse_args()
 
-    lines = load_lines()
+    lines = load_lines(Path(args.config_dir) if args.config_dir else None)
     if args.only:
         lines = [l for l in lines if l["id"] == args.only]
         if not lines:
@@ -337,7 +445,8 @@ def main():
                 differ += 1
         print("差异文件 %d 个" % differ)
         sys.exit(1 if differ else 0)
-    print("落盘还没接，先用 --out 看样板。")
+    write_repo(files, lines)
+    print("已写盘")
 
 
 if __name__ == "__main__":

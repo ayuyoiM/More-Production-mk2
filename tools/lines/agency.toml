@@ -1,0 +1,61 @@
+# agency 组生产线配置（由 tools/import_lines.py 反推，人工核对后使用）
+
+[[production_line]]
+id = "operative_slot"
+group = "agency"
+name_chinese = "特工位"
+name_english = "Operative Slot"
+name_russian = "Слот оперативника"
+country_flag = "mp_tab_agency"
+archetype_equipment = "operative_slot_in_warehouse"
+texture_file = "gfx/interface/operatives/total_operatives.dds"
+
+[[production_line.equipment]]
+id = "operative_slot_in_warehouse_product"
+year = 1936
+build_cost = 2500
+description_chinese = "人造特工位！"
+description_english = "Artificial operative slot!"
+description_russian = "Искусственный слот оперативника!"
+
+[[production_line.equipment]]
+id = "operative_slot_in_warehouse_product_2"
+year = 1938
+build_cost = 900
+description_chinese = "更有效率的特工位设备！"
+description_english = "More efficient operative slot equipment!"
+description_russian = "Более эффективное оборудование для слота оперативника!"
+
+[[production_line.equipment]]
+id = "operative_slot_in_warehouse_product_3"
+year = 1941
+build_cost = 100
+description_chinese = "最有效率的特工位设备！"
+description_english = "The most efficient operative slot equipment!"
+description_russian = "Наиболее эффективное оборудование для слота оперативника!"
+
+[production_line.technology]
+identifiers = [
+  "operative_slot_production_research",
+  "operative_slot_production_2_research",
+  "operative_slot_production_3_research",
+]
+descriptions_chinese = [
+  "解锁初级特工位。",
+  "解锁中级特工位。",
+  "解锁高级特工位。",
+]
+descriptions_english = [
+  "Unlocks Basic Operative Slot.",
+  "Unlocks Intermediate Operative Slot.",
+  "Unlocks Advanced Operative Slot.",
+]
+descriptions_russian = [
+  "Разблокирует базовый слот для оперативника.",
+  "Разблокирует средний слот для оперативника.",
+  "Разблокирует передовой слот для оперативника.",
+]
+
+[[production_line.effect]]
+type = "add_to_variable"
+target = "more_production_operative_slot"

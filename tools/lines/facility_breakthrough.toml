@@ -1,0 +1,237 @@
+# facility_breakthrough 组生产线配置（由 tools/import_lines.py 反推，人工核对后使用）
+
+[[production_line]]
+id = "army_breakthrough"
+group = "facility_breakthrough"
+name_chinese = "陆军设施突破"
+name_english = "Army Facility Breakthrough"
+name_russian = "Прорыв армии"
+country_flag = "mp_tab_breakthrough"
+resources = { steel = 2 }
+actions = "manual"
+archetype_equipment = "army_breakthrough_in_warehouse"
+texture_file = "gfx/interface/special_project/mapicon_facility_specialization_land.dds"
+no_of_frames = 3
+
+[[production_line.equipment]]
+id = "army_breakthrough_in_warehouse_product"
+year = 1936
+build_cost = 25
+description_chinese = "人造陆军设施突破！"
+description_english = "Artificial army facility breakthrough!"
+description_russian = "Искусственный прорыв армии!"
+
+[[production_line.equipment]]
+id = "army_breakthrough_in_warehouse_product_2"
+year = 1938
+build_cost = 18
+description_chinese = "更有效率的人造陆军设施突破！"
+description_english = "More efficient artificial army facility breakthrough!"
+description_russian = "Более эффективный искусственный прорыв армии!"
+
+[[production_line.equipment]]
+id = "army_breakthrough_in_warehouse_product_3"
+year = 1940
+build_cost = 10
+description_chinese = "最有效率的人造陆军设施突破！"
+description_english = "Most efficient artificial army facility breakthrough!"
+description_russian = "Наиболее эффективный искусственный прорыв армии!"
+
+[production_line.technology]
+identifiers = [
+  "army_breakthrough_production_research",
+  "army_breakthrough_production_2_research",
+  "army_breakthrough_production_3_research",
+]
+descriptions_chinese = [
+  "解锁基础陆军设施突破生产科技。",
+  "解锁中级陆军设施突破生产科技。",
+  "解锁高级陆军设施突破生产科技。",
+]
+descriptions_english = [
+  "Unlocks Basic Army Facility Breakthrough Production Technology.",
+  "Unlocks Intermediate Army Facility Breakthrough Production Technology.",
+  "Unlocks Advanced Army Facility Breakthrough Production Technology.",
+]
+descriptions_russian = [
+  "Разблокирует базовую технологию производства прорыва армейских объектов.",
+  "Разблокирует среднюю технологию производства прорыва армейских объектов.",
+  "Разблокирует передовую технологию производства прорыва армейских объектов.",
+]
+
+[[production_line]]
+id = "navy_breakthrough"
+group = "facility_breakthrough"
+name_chinese = "海军设施突破"
+name_english = "Naval Facility Breakthrough"
+name_russian = "Прорыв флота"
+country_flag = "mp_tab_breakthrough"
+resources = { steel = 1, oil = 1 }
+actions = "manual"
+archetype_equipment = "navy_breakthrough_in_warehouse"
+texture_file = "gfx/interface/special_project/mapicon_facility_specialization_naval.dds"
+no_of_frames = 3
+
+[[production_line.equipment]]
+id = "navy_breakthrough_in_warehouse_product"
+year = 1936
+build_cost = 25
+description_chinese = "人造海军设施突破！"
+description_english = "Artificial naval facility breakthrough!"
+description_russian = "Искусственный прорыв флота!"
+
+[[production_line.equipment]]
+id = "navy_breakthrough_in_warehouse_product_2"
+year = 1938
+build_cost = 18
+description_chinese = "更有效率的人造海军设施突破！"
+description_english = "More efficient artificial naval facility breakthrough!"
+description_russian = "Более эффективный искусственный прорыв флота!"
+
+[[production_line.equipment]]
+id = "navy_breakthrough_in_warehouse_product_3"
+year = 1940
+build_cost = 10
+description_chinese = "最有效率的人造海军设施突破！"
+description_english = "Most efficient artificial naval facility breakthrough!"
+description_russian = "Наиболее эффективный искусственный прорыв флота!"
+
+[production_line.technology]
+identifiers = [
+  "navy_breakthrough_production_research",
+  "navy_breakthrough_production_2_research",
+  "navy_breakthrough_production_3_research",
+]
+descriptions_chinese = [
+  "解锁基础海军设施突破生产科技。",
+  "解锁中级海军设施突破生产科技。",
+  "解锁高级海军设施突破生产科技。",
+]
+descriptions_english = [
+  "Unlocks Basic Naval Facility Breakthrough Production Technology.",
+  "Unlocks Intermediate Naval Facility Breakthrough Production Technology.",
+  "Unlocks Advanced Naval Facility Breakthrough Production Technology.",
+]
+descriptions_russian = [
+  "Разблокирует базовую технологию производства прорыва военно-морских объектов.",
+  "Разблокирует среднюю технологию производства прорыва военно-морских объектов.",
+  "Разблокирует передовую технологию производства прорыва военно-морских объектов.",
+]
+
+[[production_line]]
+id = "air_breakthrough"
+group = "facility_breakthrough"
+name_chinese = "空军设施突破"
+name_english = "Air Force Facility Breakthrough"
+name_russian = "Прорыв ВВС"
+country_flag = "mp_tab_breakthrough"
+resources = { aluminium = 2, rubber = 1 }
+actions = "manual"
+archetype_equipment = "air_breakthrough_in_warehouse"
+texture_file = "gfx/interface/special_project/mapicon_facility_specialization_air.dds"
+no_of_frames = 3
+
+[[production_line.equipment]]
+id = "air_breakthrough_in_warehouse_product"
+year = 1936
+build_cost = 25
+description_chinese = "人造空军设施突破！"
+description_english = "Artificial air force facility breakthrough!"
+description_russian = "Искусственный прорыв ВВС!"
+
+[[production_line.equipment]]
+id = "air_breakthrough_in_warehouse_product_2"
+year = 1938
+build_cost = 18
+description_chinese = "更有效率的人造空军设施突破！"
+description_english = "More efficient artificial air force facility breakthrough!"
+description_russian = "Более эффективный искусственный прорыв ВВС!"
+
+[[production_line.equipment]]
+id = "air_breakthrough_in_warehouse_product_3"
+year = 1940
+build_cost = 10
+description_chinese = "最有效率的人造空军设施突破！"
+description_english = "Most efficient artificial air force facility breakthrough!"
+description_russian = "Наиболее эффективный искусственный прорыв ВВС!"
+
+[production_line.technology]
+identifiers = [
+  "air_breakthrough_production_research",
+  "air_breakthrough_production_2_research",
+  "air_breakthrough_production_3_research",
+]
+descriptions_chinese = [
+  "解锁初级空军设施突破生产科技。",
+  "解锁中级空军设施突破生产科技。",
+  "解锁高级空军设施突破生产科技。",
+]
+descriptions_english = [
+  "Unlocks Basic Air Force Facility Breakthrough Production Technology.",
+  "Unlocks Intermediate Air Force Facility Breakthrough Production Technology.",
+  "Unlocks Advanced Air Force Facility Breakthrough Production Technology.",
+]
+descriptions_russian = [
+  "Разблокирует базовую технологию производства прорыва авиационных объектов.",
+  "Разблокирует среднюю технологию производства прорыва авиационных объектов.",
+  "Разблокирует передовую технологию производства прорыва авиационных объектов.",
+]
+
+[[production_line]]
+id = "nuclear_breakthrough"
+group = "facility_breakthrough"
+name_chinese = "核能设施突破"
+name_english = "Nuclear Facility Breakthrough"
+name_russian = "Прорыв ядерных технологий"
+country_flag = "mp_tab_breakthrough"
+resources = { chromium = 2, tungsten = 1 }
+actions = "manual"
+archetype_equipment = "nuclear_breakthrough_in_warehouse"
+texture_file = "gfx/interface/special_project/mapicon_facility_specialization_nuclear.dds"
+no_of_frames = 3
+
+[[production_line.equipment]]
+id = "nuclear_breakthrough_in_warehouse_product"
+year = 1936
+build_cost = 25
+description_chinese = "人造核能设施突破！"
+description_english = "Artificial nuclear facility breakthrough!"
+description_russian = "Искусственный прорыв ядерных технологий!"
+
+[[production_line.equipment]]
+id = "nuclear_breakthrough_in_warehouse_product_2"
+year = 1938
+build_cost = 18
+description_chinese = "更有效率的人造核能设施突破！"
+description_english = "More efficient artificial nuclear facility breakthrough!"
+description_russian = "Более эффективный искусственный прорыв ядерных технологий!"
+
+[[production_line.equipment]]
+id = "nuclear_breakthrough_in_warehouse_product_3"
+year = 1940
+build_cost = 10
+description_chinese = "最有效率的人造核能设施突破！"
+description_english = "Most efficient artificial nuclear facility breakthrough!"
+description_russian = "Наиболее эффективный искусственный прорыв ядерных технологий!"
+
+[production_line.technology]
+identifiers = [
+  "nuclear_breakthrough_production_research",
+  "nuclear_breakthrough_production_2_research",
+  "nuclear_breakthrough_production_3_research",
+]
+descriptions_chinese = [
+  "解锁基础核能设施突破生产科技。",
+  "解锁中级核能设施突破生产科技。",
+  "解锁高级核能设施突破生产科技。",
+]
+descriptions_english = [
+  "Unlocks Basic Nuclear Facility Breakthrough Production Technology.",
+  "Unlocks Intermediate Nuclear Facility Breakthrough Production Technology.",
+  "Unlocks Advanced Nuclear Facility Breakthrough Production Technology.",
+]
+descriptions_russian = [
+  "Разблокирует базовую технологию производства прорыва ядерных объектов.",
+  "Разблокирует среднюю технологию производства прорыва ядерных объектов.",
+  "Разблокирует передовую технологию производства прорыва ядерных объектов.",
+]

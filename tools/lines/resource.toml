@@ -1,0 +1,414 @@
+# resource 组生产线配置（由 tools/import_lines.py 反推，人工核对后使用）
+
+[[production_line]]
+id = "coal"
+group = "resource"
+name_chinese = "煤炭"
+name_english = "Coal"
+name_russian = "Уголь"
+country_flag = "mp_tab_resource"
+actions = "manual"
+archetype_equipment = "coal_in_warehouse"
+texture_file = "gfx/interface/decisions/decision_coal.dds"
+
+[[production_line.equipment]]
+id = "coal_in_warehouse_product"
+year = 1936
+build_cost = 70
+description_chinese = "我们发明了一种徒手搓资源的办法！"
+description_english = "We have invented a way to generate resources with our bare hands!"
+description_russian = "Способ добывать уголь голыми руками!"
+
+[[production_line.equipment]]
+id = "coal_in_warehouse_product_2"
+year = 1938
+build_cost = 50
+description_chinese = "更高效率的徒手搓资源办法！"
+description_english = "A more efficient way to generate resources with our bare hands!"
+description_russian = "Более эффективный способ добывать уголь голыми руками!"
+resources = { coal = 1 }
+
+[[production_line.equipment]]
+id = "coal_in_warehouse_product_3"
+year = 1941
+build_cost = 20
+description_chinese = "最高效率的徒手搓资源办法！"
+description_english = "The most efficient way to generate resources with our bare hands!"
+description_russian = "Самый эффективный способ добывать уголь голыми руками!"
+resources = { coal = 2 }
+
+[production_line.technology]
+identifiers = [
+  "coal_production_research",
+  "coal_production_2_research",
+  "coal_production_3_research",
+]
+descriptions_chinese = [
+  "解锁初级煤炭生产。",
+  "解锁中级煤炭生产。",
+  "解锁高级煤炭生产。",
+]
+descriptions_english = [
+  "Unlocks Basic coal Production.",
+  "Unlocks Intermediate coal Production.",
+  "Unlocks Advanced coal Production.",
+]
+descriptions_russian = [
+  "Разблокирует базовую добычу угля.",
+  "Разблокирует среднюю добычу угля.",
+  "Разблокирует передовую добычу угля.",
+]
+
+[[production_line]]
+id = "oil"
+group = "resource"
+name_chinese = "石油"
+name_english = "Oil"
+name_russian = "Нефть"
+country_flag = "mp_tab_resource"
+actions = "manual"
+archetype_equipment = "oil_in_warehouse"
+texture_file = "gfx/interface/decisions/decision_oil.dds"
+
+[[production_line.equipment]]
+id = "oil_in_warehouse_product"
+year = 1936
+build_cost = 150
+description_chinese = "我们发明了一种徒手搓资源的办法！"
+description_english = "We have invented a way to generate resources with our bare hands!"
+description_russian = "Мы изобрели способ добывать ресурсы голыми руками!"
+
+[[production_line.equipment]]
+id = "oil_in_warehouse_product_2"
+year = 1938
+build_cost = 90
+description_chinese = "更高效率的徒手搓资源办法！"
+description_english = "A more efficient way to generate resources with our bare hands!"
+description_russian = "Более эффективный способ добывать ресурсы голыми руками!"
+resources = { oil = 1 }
+
+[[production_line.equipment]]
+id = "oil_in_warehouse_product_3"
+year = 1941
+build_cost = 40
+description_chinese = "最高效率的徒手搓资源办法！"
+description_english = "The most efficient way to generate resources with our bare hands!"
+description_russian = "Самый эффективный способ добывать ресурсы голыми руками!"
+resources = { oil = 2 }
+
+[production_line.technology]
+identifiers = [
+  "oil_production_research",
+  "oil_production_2_research",
+  "oil_production_3_research",
+]
+descriptions_chinese = [
+  "解锁初级石油生产。",
+  "解锁中级石油生产。",
+  "解锁高级石油生产。",
+]
+descriptions_english = [
+  "Unlocks Basic Oil Production.",
+  "Unlocks Intermediate Oil Production.",
+  "Unlocks Advanced Oil Production.",
+]
+descriptions_russian = [
+  "Разблокирует базовую добычу нефти.",
+  "Разблокирует среднюю добычу нефти.",
+  "Разблокирует передовую добычу нефти.",
+]
+
+[[production_line]]
+id = "steel"
+group = "resource"
+name_chinese = "钢铁"
+name_english = "Steel"
+name_russian = "Сталь"
+country_flag = "mp_tab_resource"
+actions = "manual"
+archetype_equipment = "steel_in_warehouse"
+texture_file = "gfx/interface/decisions/decision_steel.dds"
+
+[[production_line.equipment]]
+id = "steel_in_warehouse_product"
+year = 1936
+build_cost = 70
+description_chinese = "徒手搓钢铁的办法！"
+description_english = "A way to generate steel with our bare hands!"
+description_russian = "Способ добывать сталь голыми руками!"
+
+[[production_line.equipment]]
+id = "steel_in_warehouse_product_2"
+year = 1938
+build_cost = 50
+description_chinese = "更高效率的徒手搓钢铁办法！"
+description_english = "A more efficient way to generate steel with our bare hands!"
+description_russian = "Более эффективный способ добывать сталь голыми руками!"
+resources = { steel = 1 }
+
+[[production_line.equipment]]
+id = "steel_in_warehouse_product_3"
+year = 1938
+build_cost = 20
+description_chinese = "最高效率的徒手搓钢铁办法！"
+description_english = "The most efficient way to generate steel with our bare hands!"
+description_russian = "Самый эффективный способ добывать сталь голыми руками!"
+resources = { steel = 2 }
+
+[production_line.technology]
+identifiers = [
+  "steel_production_research",
+  "steel_production_2_research",
+  "steel_production_3_research",
+]
+descriptions_chinese = [
+  "解锁初级钢生产。",
+  "解锁中级钢生产。",
+  "解锁高级钢生产。",
+]
+descriptions_english = [
+  "Unlocks Basic Steel Production.",
+  "Unlocks Intermediate Steel Production.",
+  "Unlocks Advanced Steel Production.",
+]
+descriptions_russian = [
+  "Разблокирует базовую добычу стали.",
+  "Разблокирует среднюю добычу стали.",
+  "Разблокирует передовую добычу стали.",
+]
+
+[[production_line]]
+id = "tungsten"
+group = "resource"
+name_chinese = "钨"
+name_english = "Tungsten"
+name_russian = "Вольфрам"
+country_flag = "mp_tab_resource"
+actions = "manual"
+archetype_equipment = "tungsten_in_warehouse"
+texture_file = "gfx/interface/decisions/decision_tungsten.dds"
+
+[[production_line.equipment]]
+id = "tungsten_in_warehouse_product"
+year = 1936
+build_cost = 70
+description_chinese = "徒手搓钨的办法！"
+description_english = "A way to generate tungsten with our bare hands!"
+description_russian = "Способ добывать вольфрам голыми руками!"
+
+[[production_line.equipment]]
+id = "tungsten_in_warehouse_product_2"
+year = 1938
+build_cost = 50
+description_chinese = "更高效率的徒手搓钨办法！"
+description_english = "A more efficient way to generate tungsten with our bare hands!"
+description_russian = "Более эффективный способ добывать вольфрам голыми руками!"
+resources = { tungsten = 1 }
+
+[[production_line.equipment]]
+id = "tungsten_in_warehouse_product_3"
+year = 1941
+build_cost = 20
+description_chinese = "最高效率的徒手搓钨办法！"
+description_english = "The most efficient way to generate tungsten with our bare hands!"
+description_russian = "Самый эффективный способ добывать вольфрам голыми руками!"
+resources = { tungsten = 2 }
+
+[production_line.technology]
+identifiers = [
+  "tungsten_production_research",
+  "tungsten_production_2_research",
+  "tungsten_production_3_research",
+]
+descriptions_chinese = [
+  "解锁初级钨生产。",
+  "解锁中级钨生产。",
+  "解锁高级钨生产。",
+]
+descriptions_english = [
+  "Unlocks Basic Tungsten Production.",
+  "Unlocks Intermediate Tungsten Production.",
+  "Unlocks Advanced Tungsten Production.",
+]
+descriptions_russian = [
+  "Разблокирует базовую добычу вольфрама.",
+  "Разблокирует среднюю добычу вольфрама.",
+  "Разблокирует передовую добычу вольфрама.",
+]
+
+[[production_line]]
+id = "aluminium"
+group = "resource"
+name_chinese = "铝"
+name_english = "Aluminum"
+name_russian = "Алюминий"
+country_flag = "mp_tab_resource"
+actions = "manual"
+archetype_equipment = "aluminium_in_warehouse"
+texture_file = "gfx/interface/decisions/decision_aluminium.dds"
+
+[[production_line.equipment]]
+id = "aluminium_in_warehouse_product"
+year = 1936
+build_cost = 70
+description_chinese = "我们发明了一种徒手搓资源的办法！"
+description_english = "We have invented a way to generate resources with our bare hands!"
+description_russian = "Мы изобрели способ добывать ресурсы голыми руками!"
+
+[[production_line.equipment]]
+id = "aluminium_in_warehouse_product_2"
+year = 1938
+build_cost = 50
+description_chinese = "更高效率的徒手搓资源办法！"
+description_english = "A more efficient way to generate resources with our bare hands!"
+description_russian = "Более эффективный способ добывать ресурсы голыми руками!"
+resources = { aluminium = 1 }
+
+[[production_line.equipment]]
+id = "aluminium_in_warehouse_product_3"
+year = 1941
+build_cost = 20
+description_chinese = "最高效率的徒手搓资源办法！"
+description_english = "The most efficient way to generate resources with our bare hands!"
+description_russian = "Самый эффективный способ добывать ресурсы голыми руками!"
+resources = { aluminium = 2 }
+
+[production_line.technology]
+identifiers = [
+  "aluminium_production_research",
+  "aluminium_production_2_research",
+  "aluminium_production_3_research",
+]
+descriptions_chinese = [
+  "解锁初级铝生产。",
+  "解锁中级铝生产。",
+  "解锁高级铝生产。",
+]
+descriptions_english = [
+  "Unlocks Basic Aluminum Production.",
+  "Unlocks Intermediate Aluminum Production.",
+  "Unlocks Advanced Aluminum Production.",
+]
+descriptions_russian = [
+  "Разблокирует базовую добычу алюминия.",
+  "Разблокирует среднюю добычу алюминия.",
+  "Разблокирует передовую добычу алюминия.",
+]
+
+[[production_line]]
+id = "rubber"
+group = "resource"
+name_chinese = "橡胶"
+name_english = "Rubber"
+name_russian = "Каучук"
+country_flag = "mp_tab_resource"
+actions = "manual"
+archetype_equipment = "rubber_in_warehouse"
+texture_file = "gfx/interface/decisions/decision_rubber.dds"
+
+[[production_line.equipment]]
+id = "rubber_in_warehouse_product"
+year = 1936
+build_cost = 100
+description_chinese = "徒手搓橡胶的办法！"
+description_english = "A way to generate rubber with our bare hands!"
+description_russian = "Способ добывать каучук голыми руками!"
+
+[[production_line.equipment]]
+id = "rubber_in_warehouse_product_2"
+year = 1938
+build_cost = 70
+description_chinese = "更高效率的徒手搓橡胶办法！"
+description_english = "A more efficient way to generate rubber with our bare hands!"
+description_russian = "Более эффективный способ добывать каучук голыми руками!"
+resources = { rubber = 1 }
+
+[[production_line.equipment]]
+id = "rubber_in_warehouse_product_3"
+year = 1941
+build_cost = 30
+description_chinese = "最高效率的徒手搓橡胶办法！"
+description_english = "The most efficient way to generate rubber with our bare hands!"
+description_russian = "Самый эффективный способ добывать каучук голыми руками!"
+resources = { rubber = 2 }
+
+[production_line.technology]
+identifiers = [
+  "rubber_production_research",
+  "rubber_production_2_research",
+  "rubber_production_3_research",
+]
+descriptions_chinese = [
+  "解锁初级橡胶生产。",
+  "解锁中级橡胶生产。",
+  "解锁高级橡胶生产。",
+]
+descriptions_english = [
+  "Unlocks Basic Rubber Production.",
+  "Unlocks Intermediate Rubber Production.",
+  "Unlocks Advanced Rubber Production.",
+]
+descriptions_russian = [
+  "Разблокирует базовую добычу резины.",
+  "Разблокирует среднюю добычу резины.",
+  "Разблокирует передовую добычу резины.",
+]
+
+[[production_line]]
+id = "chromium"
+group = "resource"
+name_chinese = "铬"
+name_english = "Chromium"
+name_russian = "Хром"
+country_flag = "mp_tab_resource"
+actions = "manual"
+archetype_equipment = "chromium_in_warehouse"
+texture_file = "gfx/interface/decisions/decision_chromium.dds"
+
+[[production_line.equipment]]
+id = "chromium_in_warehouse_product"
+year = 1936
+build_cost = 70
+description_chinese = "徒手搓铬的办法！"
+description_english = "A way to generate chromium with our bare hands!"
+description_russian = "Способ добывать хром голыми руками!"
+
+[[production_line.equipment]]
+id = "chromium_in_warehouse_product_2"
+year = 1938
+build_cost = 50
+description_chinese = "更高效率的徒手搓铬办法！"
+description_english = "A more efficient way to generate chromium with our bare hands!"
+description_russian = "Более эффективный способ добывать хром голыми руками!"
+resources = { chromium = 1 }
+
+[[production_line.equipment]]
+id = "chromium_in_warehouse_product_3"
+year = 1941
+build_cost = 20
+description_chinese = "最高效率的徒手搓铬办法！"
+description_english = "The most efficient way to generate chromium with our bare hands!"
+description_russian = "Самый эффективный способ добывать хром голыми руками!"
+resources = { chromium = 2 }
+
+[production_line.technology]
+identifiers = [
+  "chromium_production_research",
+  "chromium_production_2_research",
+  "chromium_production_3_research",
+]
+descriptions_chinese = [
+  "解锁初级铬生产。",
+  "解锁中级铬生产。",
+  "解锁高级铬生产。",
+]
+descriptions_english = [
+  "Unlocks Basic Chromium Production.",
+  "Unlocks Intermediate Chromium Production.",
+  "Unlocks Advanced Chromium Production.",
+]
+descriptions_russian = [
+  "Разблокирует базовую добычу хрома.",
+  "Разблокирует среднюю добычу хрома.",
+  "Разблокирует передовую добычу хрома.",
+]

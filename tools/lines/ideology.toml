@@ -1,0 +1,165 @@
+# ideology 组生产线配置（由 tools/import_lines.py 反推，人工核对后使用）
+
+[[production_line]]
+id = "democracy"
+group = "ideology"
+name_chinese = "民主支持率"
+name_english = "Democratic Support"
+name_russian = "Поддержка демократии"
+country_flag = "mp_tab_ideology"
+resources = { aluminium = 1 }
+archetype_equipment = "democracy_in_warehouse"
+texture_file = "gfx/interface/ideologies/democratic_group.dds"
+
+[[production_line.equipment]]
+id = "democracy_in_warehouse_product"
+year = 1936
+build_cost = 20
+description_chinese = "人造民主支持率！"
+description_english = "Artificial democratic support!"
+description_russian = "Искусственная поддержка демократии!"
+
+[production_line.technology]
+identifiers = [
+  "democracy_production_research",
+]
+descriptions_chinese = [
+  "解锁民主支持率生产。",
+]
+descriptions_english = [
+  "Unlocks Democratic Support Production.",
+]
+descriptions_russian = [
+  "Разблокирует производство поддержки демократии.",
+]
+
+[[production_line.effect]]
+type = "divide_variable"
+by = 1
+
+[[production_line.effect]]
+type = "add_popularity"
+ideology = "democratic"
+
+[[production_line]]
+id = "communism"
+group = "ideology"
+name_chinese = "共产支持率"
+name_english = "Communist Support"
+name_russian = "Поддержка коммунизма"
+country_flag = "mp_tab_ideology"
+resources = { aluminium = 1 }
+archetype_equipment = "communism_in_warehouse"
+texture_file = "gfx/interface/ideologies/communism_group.dds"
+
+[[production_line.equipment]]
+id = "communism_in_warehouse_product"
+year = 1936
+build_cost = 20
+description_chinese = "人造共产支持率！"
+description_english = "Artificial communist support!"
+description_russian = "Искусственная поддержка коммунизма!"
+
+[production_line.technology]
+identifiers = [
+  "communism_production_research",
+]
+descriptions_chinese = [
+  "解锁共产支持率生产。",
+]
+descriptions_english = [
+  "Unlocks Communist Support Production.",
+]
+descriptions_russian = [
+  "Разблокирует производство поддержки коммунизма.",
+]
+
+[[production_line.effect]]
+type = "divide_variable"
+by = 1
+
+[[production_line.effect]]
+type = "add_popularity"
+ideology = "communism"
+
+[[production_line]]
+id = "neutrality"
+group = "ideology"
+name_chinese = "中立支持率"
+name_english = "Neutral Support"
+name_russian = "Поддержка нейтралитета"
+country_flag = "mp_tab_ideology"
+resources = { aluminium = 1 }
+archetype_equipment = "neutrality_in_warehouse"
+texture_file = "gfx/interface/ideologies/neutrality_group.dds"
+
+[[production_line.equipment]]
+id = "neutrality_in_warehouse_product"
+year = 1936
+build_cost = 20
+description_chinese = "人造中立支持率！"
+description_english = "Artificial neutral support!"
+description_russian = "Искусственная поддержка нейтралитета!"
+
+[production_line.technology]
+identifiers = [
+  "neutrality_production_research",
+]
+descriptions_chinese = [
+  "解锁中立支持率生产。",
+]
+descriptions_english = [
+  "Unlocks Neutral Support Production.",
+]
+descriptions_russian = [
+  "Разблокирует производство поддержки нейтралитета.",
+]
+
+[[production_line.effect]]
+type = "divide_variable"
+by = 1
+
+[[production_line.effect]]
+type = "add_popularity"
+ideology = "neutrality"
+
+[[production_line]]
+id = "fascism"
+group = "ideology"
+name_chinese = "法西斯支持率"
+name_english = "Fascist Support"
+name_russian = "Поддержка фашизма"
+country_flag = "mp_tab_ideology"
+resources = { aluminium = 1 }
+archetype_equipment = "fascism_in_warehouse"
+texture_file = "gfx/interface/ideologies/fascism_group.dds"
+
+[[production_line.equipment]]
+id = "fascism_in_warehouse_product"
+year = 1936
+build_cost = 20
+description_chinese = "人造法西斯支持率！"
+description_english = "Artificial fascist support!"
+description_russian = "Искусственная поддержка фашизма!"
+
+[production_line.technology]
+identifiers = [
+  "fascism_production_research",
+]
+descriptions_chinese = [
+  "解锁法西斯支持率生产。",
+]
+descriptions_english = [
+  "Unlocks Fascist Support Production.",
+]
+descriptions_russian = [
+  "Разблокирует производство поддержки фашизма.",
+]
+
+[[production_line.effect]]
+type = "divide_variable"
+by = 1
+
+[[production_line.effect]]
+type = "add_popularity"
+ideology = "fascism"

@@ -1,0 +1,55 @@
+# world_tension 组生产线配置（由 tools/import_lines.py 反推，人工核对后使用）
+
+[[production_line]]
+id = "world_tension_increase"
+group = "world_tension"
+name_chinese = "世界紧张度增加"
+name_english = "World Tension Increase"
+name_russian = "Увеличение напряженности в мире"
+country_flag = "mp_tab_tension"
+resources = { oil = 2 }
+archetype_equipment = "world_tension_increase_in_warehouse"
+texture_file = "gfx/interface/ideas/idea_SWE_radiotjanst_corrupted.dds"
+
+[[production_line.equipment]]
+id = "world_tension_increase_in_warehouse_product"
+year = 1936
+build_cost = 20
+description_chinese = "这个世界好紧张啊！但是谁也不知道在紧张什么！"
+description_english = "The world is feeling tense! But no one knows why!"
+description_russian = "Мир становится напряженным! Но никто не знает почему!"
+
+[production_line.technology]
+identifiers = [
+  "world_tension_increase_production_research",
+]
+
+[[production_line.effect]]
+type = "add_threat"
+
+[[production_line]]
+id = "world_tension_decrease"
+group = "world_tension"
+name_chinese = "世界紧张度减少"
+name_english = "World Tension Decrease"
+name_russian = "Снижение напряженности в мире"
+country_flag = "mp_tab_tension"
+resources = { oil = 2 }
+archetype_equipment = "world_tension_decrease_in_warehouse"
+texture_file = "gfx/interface/ideas/idea_SWE_radiotjanst.dds"
+
+[[production_line.equipment]]
+id = "world_tension_decrease_in_warehouse_product"
+year = 1936
+build_cost = 20
+description_chinese = "谁也无法解释，为什么全球都在打仗但紧张度是负数"
+description_english = "No one can explain why the whole world is at war, yet world tension is negative."
+description_russian = "Никто не может объяснить, почему весь мир воюет, но напряженность отрицательная."
+
+[production_line.technology]
+identifiers = [
+  "world_tension_decrease_production_research",
+]
+
+[[production_line.effect]]
+type = "add_threat"

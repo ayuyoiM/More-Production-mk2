@@ -1,0 +1,63 @@
+# research_point 组生产线配置（由 tools/import_lines.py 反推，人工核对后使用）
+
+[[production_line]]
+id = "research_point"
+group = "research_point"
+name_chinese = "科研点"
+name_english = "Research Points"
+name_russian = "Очки исследований"
+resources = { oil = 1 }
+archetype_equipment = "research_point_in_warehouse"
+texture_file = "gfx/interface/focusview/filter/research_icon.dds"
+
+[[production_line.equipment]]
+id = "research_point_in_warehouse_product"
+year = 1936
+build_cost = 20
+description_chinese = "科学是第一生产力！"
+description_english = "Science is the first productive force!"
+description_russian = "Наука — главная производительная сила!"
+
+[[production_line.equipment]]
+id = "research_point_in_warehouse_product_2"
+year = 1938
+build_cost = 4
+description_chinese = "更有效率的人造科研点！"
+description_english = "More efficient artificial research points!"
+description_russian = "Более эффективные искусственные очки исследований!"
+resources = { oil = 2 }
+
+[[production_line.equipment]]
+id = "research_point_in_warehouse_product_3"
+year = 1941
+build_cost = 0.5
+description_chinese = "最有效率的人造科研点！"
+description_english = "The most efficient artificial research points!"
+description_russian = "Наиболее эффективные искусственные очки исследований!"
+resources = { oil = 3 }
+
+[production_line.technology]
+identifiers = [
+  "research_point_production_research",
+  "research_point_production_2_research",
+  "research_point_production_3_research",
+]
+descriptions_chinese = [
+  "解锁科研点生产 I。",
+  "解锁科研点生产 II。",
+  "解锁科研点生产 III。",
+]
+descriptions_english = [
+  "Unlocks Research Point Production I.",
+  "Unlocks Research Point Production II.",
+  "Unlocks Research Point Production III.",
+]
+descriptions_russian = [
+  "Разблокирует производство исследовательских очков I.",
+  "Разблокирует производство исследовательских очков II.",
+  "Разблокирует производство исследовательских очков III.",
+]
+
+[[production_line.effect]]
+type = "add_to_variable"
+target = "research_point_var"

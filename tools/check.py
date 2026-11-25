@@ -137,8 +137,13 @@ for p in dm_files:
 for p in oa_files + dec_files + dm_files:
     init_vars.update(re.findall(r"set_variable\s*=\s*\{\s*var\s*=\s*([a-z0-9_]+)", read(p)))
 
+sprite_home = {}
 for p in gfx_files:
-    sprites.update(re.findall(r'name\s*=\s*"(GFX_[A-Za-z0-9_.\-]+)"', read(p)))
+    for name in re.findall(r'name\s*=\s*"(GFX_[A-Za-z0-9_.\-]+)"', read(p)):
+        if name in sprite_home:
+            err("精灵名重复：%s（%s 和 %s）" % (name, sprite_home[name], p.name))
+        sprite_home[name] = p.name
+        sprites.add(name)
 
 # ---------- 检查 ----------
 
@@ -152,6 +157,13 @@ for p in gfx_files:
     bad = sum(1 for ch in read(p) if ord(ch) > 127)
     if bad:
         err("%s 含非 ASCII 字符 %d 个" % (p.name, bad))
+
+# HOI4 脚本不用逗号分隔，出现逗号会把后面整块解析歪
+for p in equip_files + tech_files + oa_files + dec_files + cat_files + dm_files:
+    for i, line in enumerate(read(p).splitlines(), 1):
+        body_line = re.sub(r'"[^"]*"', "", line.split("#")[0])
+        if "," in body_line:
+            err("%s 第 %d 行有逗号：%s" % (p.name, i, line.strip()))
 
 for eid, e in equip.items():
     if e["archetype"]:
@@ -188,6 +200,27 @@ for p in oa_files:
 for var, used in sorted(dm_vars.items()):
     if var not in init_vars:
         err("动态修饰符变量 %s 没有 set_variable 初始化（%s）" % (var, ", ".join(used)))
+
+# 多帧贴图没写 noOfFrames 会被当成一整条横图显示
+GAME = Path("D:/Program Files/Steam/steamapps/common/Hearts of Iron IV")
+for p in gfx_files:
+    text = read(p)
+    for m in re.finditer(r"name\s*=\s*\"(GFX_[A-Za-z0-9_.\-]+)\"\s*texturefile\s*=\s*\"([^\"]+)\"([^}]*)", text):
+        name, tex, rest = m.group(1), m.group(2), m.group(3)
+        if "noOfFrames" in rest:
+            continue
+        path = ROOT / tex
+        if not path.exists():
+            path = GAME / tex
+        if not path.exists():
+            continue
+        raw = path.read_bytes()[:20]
+        if len(raw) < 20:
+            continue
+        width = int.from_bytes(raw[16:20], "little")
+        height = int.from_bytes(raw[12:16], "little")
+        if height and width % height == 0 and width // height > 1:
+            warn("%s 的贴图 %s 是 %dx%d（%d 帧横图），但没写 noOfFrames" % (name, tex, width, height, width // height))
 
 langs = {}
 for p in loc_files:

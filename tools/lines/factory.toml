@@ -1,16 +1,195 @@
-# 工厂组生产线配置
-# 改完跑 python tools/gen.py，不要手改生成出来的 txt 和 yml。
+# factory 组生产线配置（由 tools/import_lines.py 反推，人工核对后使用）
+
+[[production_line]]
+id = "civilian_factory"
+group = "factory"
+name_chinese = "民用工厂"
+name_english = "Civilian Factory"
+name_russian = "Гражданский завод"
+country_flag = "mp_tab_factory"
+archetype_equipment = "civilian_factory_in_warehouse"
+texture_file = "gfx/interface/factory_wrench_icon.dds"
+
+[[production_line.equipment]]
+id = "civilian_factory_in_warehouse_product"
+year = 1936
+build_cost = 4800
+description_chinese = "谁说人类不能把工厂建在火星上啦？——埃隆马斯克"
+description_english = "Who says humans can't build factories on Mars? —Elon Musk"
+description_russian = "Кто сказал, что люди не могут строить заводы на Марсе? —Илон Маск"
+
+[[production_line.equipment]]
+id = "civilian_factory_in_warehouse_product_2"
+year = 1938
+build_cost = 3200
+description_chinese = "谁说人类不能把工厂建在火星上啦？——埃隆马斯克"
+description_english = "Who says humans can't build factories on Mars? —Elon Musk"
+description_russian = "Кто сказал, что люди не могут строить заводы на Марсе? —Илон Маск"
+
+[[production_line.equipment]]
+id = "civilian_factory_in_warehouse_product_3"
+year = 1941
+build_cost = 2000
+description_chinese = "谁说人类不能把工厂建在火星上啦？——埃隆马斯克"
+description_english = "Who says humans can't build factories on Mars? —Elon Musk"
+description_russian = "Кто сказал, что люди не могут строить заводы на Марсе? —Илон Маск"
+
+[production_line.technology]
+identifiers = [
+  "civilian_factory_production_research",
+  "civilian_factory_production_2_research",
+  "civilian_factory_production_3_research",
+]
+descriptions_chinese = [
+  "解锁民用工厂生产 I。",
+  "解锁民用工厂生产 II。",
+  "解锁民用工厂生产 III。",
+]
+descriptions_english = [
+  "Unlocks Civilian Factory Production I.",
+  "Unlocks Civilian Factory Production II.",
+  "Unlocks Civilian Factory Production III.",
+]
+descriptions_russian = [
+  "Разблокирует производство гражданских заводов I.",
+  "Разблокирует производство гражданских заводов II.",
+  "Разблокирует производство гражданских заводов III.",
+]
+
+[[production_line.effect]]
+type = "add_building"
+building = "industrial_complex"
+
+[[production_line]]
+id = "military_factory"
+group = "factory"
+name_chinese = "军用工厂"
+name_english = "Military Factory"
+name_russian = "Военный завод"
+country_flag = "mp_tab_factory"
+archetype_equipment = "military_factory_in_warehouse"
+texture_file = "gfx/interface/military_factory_icon.dds"
+
+[[production_line.equipment]]
+id = "military_factory_in_warehouse_product"
+year = 1936
+build_cost = 4200
+description_chinese = "谁说人类不能把工厂建在火星上啦？——埃隆马斯克"
+description_english = "Who says humans can't build factories on Mars? —Elon Musk"
+description_russian = "Кто сказал, что люди не могут строить заводы на Марсе? —Илон Маск"
+
+[[production_line.equipment]]
+id = "military_factory_in_warehouse_product_2"
+year = 1938
+build_cost = 3000
+description_chinese = "谁说人类不能把工厂建在火星上啦？——埃隆马斯克"
+description_english = "Who says humans can't build factories on Mars? —Elon Musk"
+description_russian = "Кто сказал, что люди не могут строить заводы на Марсе? —Илон Маск"
+
+[[production_line.equipment]]
+id = "military_factory_in_warehouse_product_3"
+year = 1941
+build_cost = 1500
+description_chinese = "谁说人类不能把工厂建在火星上啦？——埃隆马斯克"
+description_english = "Who says humans can't build factories on Mars? —Elon Musk"
+description_russian = "Кто сказал, что люди не могут строить заводы на Марсе? —Илон Маск"
+
+[production_line.technology]
+identifiers = [
+  "military_factory_production_research",
+  "military_factory_production_2_research",
+  "military_factory_production_3_research",
+]
+descriptions_chinese = [
+  "解锁军用工厂生产 I。",
+  "解锁军用工厂生产 II。",
+  "解锁军用工厂生产 III。",
+]
+descriptions_english = [
+  "Unlocks Military Factory Production I.",
+  "Unlocks Military Factory Production II.",
+  "Unlocks Military Factory Production III.",
+]
+descriptions_russian = [
+  "Разблокирует производство военных заводов I.",
+  "Разблокирует производство военных заводов II.",
+  "Разблокирует производство военных заводов III.",
+]
+
+[[production_line.effect]]
+type = "add_building"
+building = "arms_factory"
+
+[[production_line]]
+id = "naval_dockyard"
+group = "factory"
+name_chinese = "海军船坞"
+name_english = "Naval Dockyard"
+name_russian = "Военно-морская верфь"
+country_flag = "mp_tab_factory"
+archetype_equipment = "naval_dockyard_in_warehouse"
+texture_file = "gfx/interface/naviesview/ship_activity_docked.dds"
+
+[[production_line.equipment]]
+id = "naval_dockyard_in_warehouse_product"
+year = 1936
+build_cost = 2700
+description_chinese = "谁说人类不能把船坞建在火星上啦？——埃隆马斯克"
+description_english = "Who says humans can't build shipyards on Mars? —Elon Musk"
+description_russian = "Кто сказал, что люди не могут строить верфи на Марсе? —Илон Маск"
+
+[[production_line.equipment]]
+id = "naval_dockyard_in_warehouse_product_2"
+year = 1938
+build_cost = 2000
+description_chinese = "谁说人类不能把船坞建在火星上啦？——埃隆马斯克"
+description_english = "Who says humans can't build shipyards on Mars? —Elon Musk"
+description_russian = "Кто сказал, что люди не могут строить верфи на Марсе? —Илон Маск"
+
+[[production_line.equipment]]
+id = "naval_dockyard_in_warehouse_product_3"
+year = 1941
+build_cost = 1200
+description_chinese = "谁说人类不能把船坞建在火星上啦？——埃隆马斯克"
+description_english = "Who says humans can't build shipyards on Mars? —Elon Musk"
+description_russian = "Кто сказал, что люди не могут строить верфи на Марсе? —Илон Маск"
+
+[production_line.technology]
+identifiers = [
+  "naval_dockyard_production_research",
+  "naval_dockyard_production_2_research",
+  "naval_dockyard_production_3_research",
+]
+descriptions_chinese = [
+  "解锁海军船坞生产 I。",
+  "解锁海军船坞生产 II。",
+  "解锁海军船坞生产 III。",
+]
+descriptions_english = [
+  "Unlocks Naval Dockyard Production I.",
+  "Unlocks Naval Dockyard Production II.",
+  "Unlocks Naval Dockyard Production III.",
+]
+descriptions_russian = [
+  "Разблокирует производство верфей I.",
+  "Разблокирует производство верфей II.",
+  "Разблокирует производство верфей III.",
+]
+
+[[production_line.effect]]
+type = "add_building"
+building = "dockyard"
 
 [[production_line]]
 id = "factory_output"
 group = "factory"
-decision_category = "mp_cat_civilian"
 name_chinese = "工厂产出"
 name_english = "Factory Output"
 name_russian = "Производительность заводов"
 country_flag = "mp_tab_factory"
 archetype_equipment = "factory_output_in_warehouse"
 texture_file = "gfx/interface/production_output_icon.dds"
+
 [[production_line.equipment]]
 id = "factory_output_in_warehouse_product"
 year = 1936
@@ -68,3 +247,71 @@ target = "more_production_industrial_capacity_factory"
 [[production_line.effect]]
 type = "add_to_variable"
 target = "more_production_industrial_capacity_dockyard"
+
+[[production_line]]
+id = "production_efficiency"
+group = "factory"
+name_chinese = "生产效率"
+name_english = "Production Efficiency"
+name_russian = "Эффективность производства"
+country_flag = "mp_tab_factory"
+archetype_equipment = "production_efficiency_in_warehouse"
+texture_file = "gfx/interface/efficiency_icon.dds"
+
+[[production_line.equipment]]
+id = "production_efficiency_in_warehouse_product"
+year = 1936
+build_cost = 1000
+description_chinese = "初级生产效率设备！"
+description_english = "Basic production efficiency equipment!"
+description_russian = "Базовое оборудование для эффективности производства!"
+
+[[production_line.equipment]]
+id = "production_efficiency_in_warehouse_product_2"
+year = 1938
+build_cost = 500
+description_chinese = "更高效的生产效率设备！"
+description_english = "More efficient production efficiency equipment!"
+description_russian = "Более эффективное оборудование для эффективности производства!"
+
+[[production_line.equipment]]
+id = "production_efficiency_in_warehouse_product_3"
+year = 1941
+build_cost = 100
+description_chinese = "最有效率的生产效率设备！"
+description_english = "The most efficient production efficiency equipment!"
+description_russian = "Наиболее эффективное оборудование для эффективности производства!"
+
+[production_line.technology]
+identifiers = [
+  "production_efficiency_production_research",
+  "production_efficiency_production_2_research",
+  "production_efficiency_production_3_research",
+]
+descriptions_chinese = [
+  "解锁初级生产效率设备。",
+  "解锁中级生产效率设备。",
+  "解锁高级生产效率设备。",
+]
+descriptions_english = [
+  "Unlocks Basic Production Efficiency Equipment.",
+  "Unlocks Intermediate Production Efficiency Equipment.",
+  "Unlocks Advanced Production Efficiency Equipment.",
+]
+descriptions_russian = [
+  "Разблокирует базовое оборудование для эффективности производства.",
+  "Разблокирует среднее оборудование для эффективности производства.",
+  "Разблокирует передовое оборудование для эффективности производства.",
+]
+
+[[production_line.effect]]
+type = "divide_variable"
+by = 100
+
+[[production_line.effect]]
+type = "add_to_variable"
+target = "more_production_efficiency_gain_factor"
+
+[[production_line.effect]]
+type = "add_to_variable"
+target = "more_production_efficiency_cap_factor"

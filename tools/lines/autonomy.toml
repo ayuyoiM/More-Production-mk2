@@ -1,0 +1,115 @@
+# autonomy 组生产线配置（由 tools/import_lines.py 反推，人工核对后使用）
+
+[[production_line]]
+id = "increase_autonomy"
+group = "autonomy"
+name_chinese = "提高自治度"
+name_english = "Increase Autonomy"
+name_russian = "Увеличение автономии"
+country_flag = "mp_tab_autonomy"
+actions = "manual"
+archetype_equipment = "increase_autonomy_in_warehouse"
+texture_file = "gfx/interface/autonomy/autonomy_freedom_icon.dds"
+
+[[production_line.equipment]]
+id = "increase_autonomy_in_warehouse_product"
+year = 1936
+build_cost = 500
+description_chinese = "人造提高自治度设备！"
+description_english = "Artificial autonomy-increasing equipment!"
+description_russian = "Искусственное оборудование для увеличения автономии!"
+
+[[production_line.equipment]]
+id = "increase_autonomy_in_warehouse_product_2"
+year = 1938
+build_cost = 100
+description_chinese = "更有效率的人造提高自治度设备！"
+description_english = "More efficient artificial autonomy-increasing equipment!"
+description_russian = "Более эффективное искусственное оборудование для увеличения автономии!"
+
+[[production_line.equipment]]
+id = "increase_autonomy_in_warehouse_product_3"
+year = 1941
+build_cost = 10
+description_chinese = "最有效率的人造提高自治度设备！"
+description_english = "The most efficient artificial autonomy-increasing equipment!"
+description_russian = "Наиболее эффективное искусственное оборудование для увеличения автономии!"
+
+[production_line.technology]
+identifiers = [
+  "increase_autonomy_production_research",
+  "increase_autonomy_production_2_research",
+  "increase_autonomy_production_3_research",
+]
+descriptions_chinese = [
+  "解锁初级提高自治度装备。",
+  "解锁中级提高自治度装备。",
+  "解锁高级提高自治度装备。",
+]
+descriptions_english = [
+  "Unlocks Basic Autonomy-Increasing Equipment.",
+  "Unlocks Intermediate Autonomy-Increasing Equipment.",
+  "Unlocks Advanced Autonomy-Increasing Equipment.",
+]
+descriptions_russian = [
+  "Разблокирует базовое оборудование для увеличения автономии.",
+  "Разблокирует среднее оборудование для увеличения автономии.",
+  "Разблокирует передовое оборудование для увеличения автономии.",
+]
+
+[[production_line]]
+id = "decrease_autonomy"
+group = "autonomy"
+name_chinese = "降低自治度"
+name_english = "Decrease Autonomy"
+name_russian = "Снижение автономии"
+country_flag = "mp_tab_autonomy"
+actions = "manual"
+archetype_equipment = "decrease_autonomy_in_warehouse"
+texture_file = "gfx/interface/autonomy/autonomy_annex_icon.dds"
+
+[[production_line.equipment]]
+id = "decrease_autonomy_in_warehouse_product"
+year = 1936
+build_cost = 1000
+description_chinese = "人造降低自治度设备！"
+description_english = "Artificial autonomy-decreasing equipment!"
+description_russian = "Искусственное оборудование для снижения автономии!"
+
+[[production_line.equipment]]
+id = "decrease_autonomy_in_warehouse_product_2"
+year = 1938
+build_cost = 100
+description_chinese = "更有效率的人造降低自治度设备！"
+description_english = "More efficient artificial autonomy-decreasing equipment!"
+description_russian = "Более эффективное искусственное оборудование для снижения автономии!"
+
+[[production_line.equipment]]
+id = "decrease_autonomy_in_warehouse_product_3"
+year = 1941
+build_cost = 20
+description_chinese = "最有效率的人造降低自治度设备！"
+description_english = "The most efficient artificial autonomy-decreasing equipment!"
+description_russian = "Наиболее эффективное искусственное оборудование для снижения автономии!"
+
+[production_line.technology]
+identifiers = [
+  "decrease_autonomy_production_research",
+  "decrease_autonomy_production_2_research",
+  "decrease_autonomy_production_3_research",
+]
+descriptions_chinese = [
+  "解锁初级降低自治度装备。",
+  "解锁中级降低自治度装备。",
+  "解锁高级降低自治度装备。",
+]
+descriptions_english = [
+  "Unlocks Basic Autonomy-Decreasing Equipment.",
+  "Unlocks Intermediate Autonomy-Decreasing Equipment.",
+  "Unlocks Advanced Autonomy-Decreasing Equipment.",
+]
+descriptions_russian = [
+  "Разблокирует базовое оборудование для снижения автономии.",
+  "Разблокирует среднее оборудование для снижения автономии.",
+  "Разблокирует передовое оборудование для снижения автономии.",
+]

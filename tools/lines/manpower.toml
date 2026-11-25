@@ -1,0 +1,72 @@
+# manpower 组生产线配置（由 tools/import_lines.py 反推，人工核对后使用）
+
+[[production_line]]
+id = "man"
+group = "manpower"
+name_chinese = "合成人"
+name_english = "Synthetic Man"
+name_russian = "Синтетический человек"
+country_flag = "mp_tab_manpower"
+resources = { oil = 2, rubber = 1 }
+archetype_equipment = "man_in_warehouse"
+picture_name = "archetype_produced_man"
+texture_file = "gfx/interface/archetypes/archetype_produced_man.dds"
+
+[[production_line.equipment]]
+id = "man_in_warehouse_product"
+year = 1936
+build_cost = 0.17
+description_chinese = "合成人力！"
+description_english = "Synthetic manpower!"
+description_russian = "Синтетическая рабочая сила!"
+
+[[production_line.equipment]]
+id = "man_in_warehouse_product_2"
+year = 1938
+build_cost = 0.01
+description_chinese = "更有效率的合成人力！"
+description_english = "More efficient synthetic manpower!"
+description_russian = "Более эффективная синтетическая рабочая сила!"
+
+[[production_line.equipment]]
+id = "man_in_warehouse_product_3"
+year = 1941
+build_cost = 0.001
+description_chinese = "§G加入人力池的实际人力将会乘以100倍！§!"
+description_english = "§GThe actual manpower added to your manpower pool will be multiplied by 100!§!"
+description_russian = "§GФактическое количество людских ресурсов, добавленных в ваш резерв, будет умножено на 100!§!"
+
+[production_line.technology]
+identifiers = [
+  "manpower_production_research",
+  "manpower_production_2_research",
+  "manpower_production_3_research",
+]
+descriptions_chinese = [
+  "提供人力合成。",
+  "提供更便宜的人力合成。",
+  "提供最便宜的人力合成。",
+]
+descriptions_english = [
+  "Enables synthetic manpower production.",
+  "Enables cheaper synthetic manpower production.",
+  "Enables the cheapest synthetic manpower production.",
+]
+descriptions_russian = [
+  "Разблокирует производство синтетической рабочей силы.",
+  "Разблокирует более дешевое производство синтетической рабочей силы.",
+  "Разблокирует самое дешевое производство синтетической рабочей силы.",
+]
+
+[[production_line.effect]]
+type = "add_manpower"
+tiers = [1, 2]
+
+[[production_line.effect]]
+type = "multiply_variable"
+by = 100
+tiers = [3]
+
+[[production_line.effect]]
+type = "add_manpower"
+tiers = [3]

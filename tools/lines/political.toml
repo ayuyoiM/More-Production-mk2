@@ -1,0 +1,190 @@
+# political 组生产线配置（由 tools/import_lines.py 反推，人工核对后使用）
+
+[[production_line]]
+id = "pp"
+group = "political"
+name_chinese = "政治点数"
+name_english = "Political Power"
+name_russian = "Политическая власть"
+country_flag = "mp_tab_political"
+resources = { steel = 2 }
+archetype_equipment = "pp_in_warehouse"
+picture_name = "archetype_politcal_power"
+texture_file = "gfx/interface/idea_slot_political_advisor.dds"
+
+[[production_line.equipment]]
+id = "pp_in_warehouse_product"
+year = 1936
+build_cost = 30
+description_chinese = "人造政治点数！"
+description_english = "Artificial political power!"
+description_russian = "Искусственная политическая власть!"
+
+[[production_line.equipment]]
+id = "pp_in_warehouse_product_2"
+year = 1938
+build_cost = 15
+description_chinese = "更有效率的人造政治点数！"
+description_english = "More efficient artificial political power!"
+description_russian = "Более эффективная искусственная политическая власть!"
+
+[[production_line.equipment]]
+id = "pp_in_warehouse_product_3"
+year = 1940
+build_cost = 5
+description_chinese = "最有效率的人造政治点数！"
+description_english = "Most efficient artificial political power!"
+description_russian = "Наиболее эффективная искусственная политическая власть!"
+
+[production_line.technology]
+identifiers = [
+  "political_power_production_research",
+  "political_power_production_2_research",
+  "political_power_production_3_research",
+]
+descriptions_chinese = [
+  "解锁政治点数生产 I。",
+  "解锁政治点数生产 II。",
+  "解锁政治点数生产 III。",
+]
+descriptions_english = [
+  "Unlocks Political Power Production I.",
+  "Unlocks Political Power Production II.",
+  "Unlocks Political Power Production III.",
+]
+descriptions_russian = [
+  "Разблокирует производство политической власти I.",
+  "Разблокирует производство политической власти II.",
+  "Разблокирует производство политической власти III.",
+]
+
+[[production_line.effect]]
+type = "add_political_power"
+
+[[production_line]]
+id = "stability"
+group = "political"
+name_chinese = "稳定度"
+name_english = "Stability"
+name_russian = "Стабильность"
+country_flag = "mp_tab_political"
+resources = { steel = 2 }
+archetype_equipment = "stability_in_warehouse"
+texture_file = "gfx/interface/stability_icon.dds"
+
+[[production_line.equipment]]
+id = "stability_in_warehouse_product"
+year = 1936
+build_cost = 100
+description_chinese = "人造稳定度！"
+description_english = "Artificial stability!"
+description_russian = "Искусственная стабильность!"
+
+[[production_line.equipment]]
+id = "stability_in_warehouse_product_2"
+year = 1938
+build_cost = 50
+description_chinese = "更有效率的人造稳定度！"
+description_english = "More efficient artificial stability!"
+description_russian = "Более эффективная искусственная стабильность!"
+
+[[production_line.equipment]]
+id = "stability_in_warehouse_product_3"
+year = 1940
+build_cost = 10
+description_chinese = "最有效率的人造稳定度！"
+description_english = "Most efficient artificial stability!"
+description_russian = "Наиболее эффективная искусственная стабильность!"
+
+[production_line.technology]
+identifiers = [
+  "stability_production_research",
+  "stability_production_2_research",
+  "stability_production_3_research",
+]
+descriptions_chinese = [
+  "解锁稳定度生产 I。",
+  "解锁稳定度生产 II。",
+  "解锁稳定度生产 III。",
+]
+descriptions_english = [
+  "Unlocks Stability Production I.",
+  "Unlocks Stability Production II.",
+  "Unlocks Stability Production III.",
+]
+descriptions_russian = [
+  "Разблокирует производство стабильности I.",
+  "Разблокирует производство стабильности II.",
+  "Разблокирует производство стабильности III.",
+]
+
+[[production_line.effect]]
+type = "divide_variable"
+by = 1
+
+[[production_line.effect]]
+type = "add_stability"
+
+[[production_line]]
+id = "warsupport"
+group = "political"
+name_chinese = "战争支持度"
+name_english = "War Support"
+name_russian = "Поддержка войны"
+country_flag = "mp_tab_political"
+resources = { steel = 2 }
+archetype_equipment = "warsupport_in_warehouse"
+texture_file = "gfx/interface/war_support_icon.dds"
+
+[[production_line.equipment]]
+id = "warsupport_in_warehouse_product"
+year = 1936
+build_cost = 100
+description_chinese = "人造战争支持度！"
+description_english = "Artificial war support!"
+description_russian = "Искусственная поддержка войны!"
+
+[[production_line.equipment]]
+id = "warsupport_in_warehouse_product_2"
+year = 1938
+build_cost = 50
+description_chinese = "更有效率的人造战争支持度！"
+description_english = "More efficient artificial war support!"
+description_russian = "Более эффективная искусственная поддержка войны!"
+
+[[production_line.equipment]]
+id = "warsupport_in_warehouse_product_3"
+year = 1940
+build_cost = 10
+description_chinese = "最有效率的人造战争支持度！"
+description_english = "Most efficient artificial war support!"
+description_russian = "Наиболее эффективная искусственная поддержка войны!"
+
+[production_line.technology]
+identifiers = [
+  "warsupport_production_research",
+  "warsupport_production_2_research",
+  "warsupport_production_3_research",
+]
+descriptions_chinese = [
+  "解锁战争支持度生产 I。",
+  "解锁战争支持度生产 II。",
+  "解锁战争支持度生产 III。",
+]
+descriptions_english = [
+  "Unlocks War Support Production I.",
+  "Unlocks War Support Production II.",
+  "Unlocks War Support Production III.",
+]
+descriptions_russian = [
+  "Разблокирует производство поддержки войны I.",
+  "Разблокирует производство поддержки войны II.",
+  "Разблокирует производство поддержки войны III.",
+]
+
+[[production_line.effect]]
+type = "divide_variable"
+by = 1
+
+[[production_line.effect]]
+type = "add_war_support"
