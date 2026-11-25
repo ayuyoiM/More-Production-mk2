@@ -36,7 +36,7 @@ mp_cat_political = {
 	}
 
 
-    operative_slot_research_decision = {
+	operative_slot_research_decision = {
 		icon = GFX_total_operatives
 		cost = 0
 		priority = 30
@@ -63,9 +63,9 @@ mp_cat_political = {
 			set_technology = {
 				operative_slot_production_research = 1
 			}
-            add_dynamic_modifier = {
-                modifier = operative_dymanic_modifier
-            }
+			add_dynamic_modifier = {
+				modifier = operative_dymanic_modifier
+			}
 		}
 
     	ai_will_do = { factor = 0 }

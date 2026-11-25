@@ -42,7 +42,7 @@ mp_cat_political = {
 	ideology_research_decision = {
 		icon = generic_civil_support
 		cost = 0
-        priority = 25
+		priority = 25
 		fire_only_once = yes 
 
 		available = {

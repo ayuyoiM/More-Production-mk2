@@ -1,177 +1,177 @@
 flag_decision = {
 
-    cheat_mode_decision = {
-        icon = GFX_decision_generic_decision
+	cheat_mode_decision = {
+		icon = GFX_decision_generic_decision
 		cost = 0
 		complete_effect = {
 			hidden_effect = {
-                set_country_flag = cheat_mode
+				set_country_flag = cheat_mode
 
-                set_variable = {
-                    var = research_point_var
-                    value = 0
-                }
+				set_variable = {
+					var = research_point_var
+					value = 0
+				}
 
-                set_variable = {
-                    var = doctrine_mastery_pool
-                    value = 0
-                }
+				set_variable = {
+					var = doctrine_mastery_pool
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_research_speed_factor
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_research_speed_factor
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_special_project_speed_factor
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_special_project_speed_factor
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_industrial_capacity_factory
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_industrial_capacity_factory
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_industrial_capacity_dockyard
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_industrial_capacity_dockyard
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_operative_slot
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_operative_slot
+					value = 0
+				}
 
 
 
-                set_variable = {
-                    var = more_production_intel_network_gain_factor
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_intel_network_gain_factor
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_decryption_power_factor
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_decryption_power_factor
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_efficiency_gain_factor
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_efficiency_gain_factor
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_efficiency_cap_factor
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_efficiency_cap_factor
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_construction_speed_factor
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_construction_speed_factor
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_nuclear_production_factor
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_nuclear_production_factor
+					value = 0
+				}
 
-                set_variable = {
-                    var = converted_research_speed
-                    value = 100
-                }
+				set_variable = {
+					var = converted_research_speed
+					value = 100
+				}
                 
-                add_dynamic_modifier = {
+				add_dynamic_modifier = {
 				    modifier = research_speed_dymanic_modifier
 			    }
-            }
+			}
 		}
 
     	ai_will_do = { factor = 0 }
-    }
+	}
 
-    normal_mode_decision = {
-        icon = GFX_decision_generic_decision
+	normal_mode_decision = {
+		icon = GFX_decision_generic_decision
 		cost = 0
 		complete_effect = {
-            set_technology = {
-                research_point_production_research = 1
-            }
+			set_technology = {
+				research_point_production_research = 1
+			}
 			hidden_effect = {
-                set_country_flag = normal_mode
+				set_country_flag = normal_mode
 
-                set_variable = {
-                    var = research_point_var
-                    value = 0
-                }
+				set_variable = {
+					var = research_point_var
+					value = 0
+				}
 
-                set_variable = {
-                    var = doctrine_mastery_pool
-                    value = 0
-                }
+				set_variable = {
+					var = doctrine_mastery_pool
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_research_speed_factor
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_research_speed_factor
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_special_project_speed_factor
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_special_project_speed_factor
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_industrial_capacity_factory
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_industrial_capacity_factory
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_industrial_capacity_dockyard
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_industrial_capacity_dockyard
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_operative_slot
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_operative_slot
+					value = 0
+				}
 
 
 
-                set_variable = {
-                    var = more_production_intel_network_gain_factor
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_intel_network_gain_factor
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_decryption_power_factor
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_decryption_power_factor
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_efficiency_gain_factor
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_efficiency_gain_factor
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_efficiency_cap_factor
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_efficiency_cap_factor
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_construction_speed_factor
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_construction_speed_factor
+					value = 0
+				}
 
-                set_variable = {
-                    var = more_production_nuclear_production_factor
-                    value = 0
-                }
+				set_variable = {
+					var = more_production_nuclear_production_factor
+					value = 0
+				}
 
-                set_variable = {
-                    var = converted_research_speed
-                    value = 0
-                }            }
+				set_variable = {
+					var = converted_research_speed
+					value = 0
+				}            }
 		}
 
     	ai_will_do = { factor = 0 }
-    }
+	}
 
 }

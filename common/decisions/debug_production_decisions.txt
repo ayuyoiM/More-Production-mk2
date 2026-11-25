@@ -1,102 +1,102 @@
 mp_cat_lines = {
 
-    # 调试/作弊用：正常模式只显示「一键关闭」
-    # 一键解锁只解锁研究/科技，不替你启用生产线；生产线由各开关逐条启用
+	# 调试/作弊用：正常模式只显示「一键关闭」
+	# 一键解锁只解锁研究/科技，不替你启用生产线；生产线由各开关逐条启用
 
-    mp_unlock_all_production = {
-        icon = GFX_decision_generic_industry
-        cost = 0
-        priority = 200
+	mp_unlock_all_production = {
+		icon = GFX_decision_generic_industry
+		cost = 0
+		priority = 200
 
-        visible = {
-            is_ai = no
-            OR = {
-                is_debug = yes
-                has_country_flag = cheat_mode
-            }
-        }
+		visible = {
+			is_ai = no
+			OR = {
+				is_debug = yes
+				has_country_flag = cheat_mode
+			}
+		}
 
-        complete_effect = {
-            # debug 下一律按作弊模式处理，否则 research 决策的 available 会挡掉
-            activate_decision = cheat_mode_decision
-            activate_decision = operative_slot_research_decision
-            activate_decision = operative_slot_research_2_decision
-            activate_decision = operative_slot_research_3_decision
-            activate_decision = autonomy_research_decision
-            activate_decision = autonomy_research_2_decision
-            activate_decision = autonomy_research_3_decision
-            activate_decision = facility_breakthrough_research_decision
-            activate_decision = facility_breakthrough_research_2_decision
-            activate_decision = facility_breakthrough_research_3_decision
-            activate_decision = factory_research_decision
-            activate_decision = factory_research_2_decision
-            activate_decision = factory_research_3_decision
-            activate_decision = ideology_research_decision
-            activate_decision = manpower_research_decision
-            activate_decision = manpower_research_2_decision
-            activate_decision = manpower_research_3_decision
-            activate_decision = occupation_equipment_research_decision
-            activate_decision = occupation_equipment_research_2_decision
-            activate_decision = occupation_equipment_research_3_decision
-            activate_decision = political_research_decision
-            activate_decision = political_research_2_decision
-            activate_decision = political_research_3_decision
-            activate_decision = research_point_2_decision
-            activate_decision = research_point_3_decision
-            activate_decision = resource_research_decision
-            activate_decision = resource_research_2_decision
-            activate_decision = resource_research_3_decision
-            activate_decision = world_tension_production_decision
-            activate_decision = xp_production_decision
-            activate_decision = xp_production_2_decision
-            activate_decision = xp_production_3_decision
-            activate_decision = command_power_production_decision
-            activate_decision = command_power_production_2_decision
-            activate_decision = command_power_production_3_decision
-            activate_decision = intel_decryption_research_decision
-            activate_decision = intel_decryption_research_2_decision
-            activate_decision = intel_decryption_research_3_decision
-            activate_decision = mio_research_decision
-            activate_decision = mio_research_2_decision
-            activate_decision = mio_research_3_decision
-            activate_decision = doctrine_research_decision
-            activate_decision = doctrine_research_2_decision
-            activate_decision = doctrine_research_3_decision
-            activate_decision = nuclear_bomb_research_decision
-            activate_decision = nuclear_bomb_research_2_decision
-            activate_decision = nuclear_bomb_research_3_decision
-        }
+		complete_effect = {
+			# debug 下一律按作弊模式处理，否则 research 决策的 available 会挡掉
+			activate_decision = cheat_mode_decision
+			activate_decision = operative_slot_research_decision
+			activate_decision = operative_slot_research_2_decision
+			activate_decision = operative_slot_research_3_decision
+			activate_decision = autonomy_research_decision
+			activate_decision = autonomy_research_2_decision
+			activate_decision = autonomy_research_3_decision
+			activate_decision = facility_breakthrough_research_decision
+			activate_decision = facility_breakthrough_research_2_decision
+			activate_decision = facility_breakthrough_research_3_decision
+			activate_decision = factory_research_decision
+			activate_decision = factory_research_2_decision
+			activate_decision = factory_research_3_decision
+			activate_decision = ideology_research_decision
+			activate_decision = manpower_research_decision
+			activate_decision = manpower_research_2_decision
+			activate_decision = manpower_research_3_decision
+			activate_decision = occupation_equipment_research_decision
+			activate_decision = occupation_equipment_research_2_decision
+			activate_decision = occupation_equipment_research_3_decision
+			activate_decision = political_research_decision
+			activate_decision = political_research_2_decision
+			activate_decision = political_research_3_decision
+			activate_decision = research_point_2_decision
+			activate_decision = research_point_3_decision
+			activate_decision = resource_research_decision
+			activate_decision = resource_research_2_decision
+			activate_decision = resource_research_3_decision
+			activate_decision = world_tension_production_decision
+			activate_decision = xp_production_decision
+			activate_decision = xp_production_2_decision
+			activate_decision = xp_production_3_decision
+			activate_decision = command_power_production_decision
+			activate_decision = command_power_production_2_decision
+			activate_decision = command_power_production_3_decision
+			activate_decision = intel_decryption_research_decision
+			activate_decision = intel_decryption_research_2_decision
+			activate_decision = intel_decryption_research_3_decision
+			activate_decision = mio_research_decision
+			activate_decision = mio_research_2_decision
+			activate_decision = mio_research_3_decision
+			activate_decision = doctrine_research_decision
+			activate_decision = doctrine_research_2_decision
+			activate_decision = doctrine_research_3_decision
+			activate_decision = nuclear_bomb_research_decision
+			activate_decision = nuclear_bomb_research_2_decision
+			activate_decision = nuclear_bomb_research_3_decision
+		}
 
-        ai_will_do = { factor = 0 }
-    }
+		ai_will_do = { factor = 0 }
+	}
 
-    mp_lock_all_production = {
-        icon = GFX_decision_generic_industry
-        cost = 0
-        priority = 190
+	mp_lock_all_production = {
+		icon = GFX_decision_generic_industry
+		cost = 0
+		priority = 190
 
-        visible = {
-            is_ai = no
-        }
+		visible = {
+			is_ai = no
+		}
 
-        complete_effect = {
-            clr_country_flag = mp_tab_factory
-            clr_country_flag = mp_tab_resource
-            clr_country_flag = mp_tab_manpower
-            clr_country_flag = mp_tab_political
-            clr_country_flag = mp_tab_ideology
-            clr_country_flag = mp_tab_agency
-            clr_country_flag = mp_tab_autonomy
-            clr_country_flag = mp_tab_tension
-            clr_country_flag = mp_tab_breakthrough
-            clr_country_flag = mp_tab_xp
-            clr_country_flag = mp_tab_intel
-            clr_country_flag = mp_tab_mio
-            clr_country_flag = mp_tab_occupation
-            clr_country_flag = mp_tab_doctrine
-        }
+		complete_effect = {
+			clr_country_flag = mp_tab_factory
+			clr_country_flag = mp_tab_resource
+			clr_country_flag = mp_tab_manpower
+			clr_country_flag = mp_tab_political
+			clr_country_flag = mp_tab_ideology
+			clr_country_flag = mp_tab_agency
+			clr_country_flag = mp_tab_autonomy
+			clr_country_flag = mp_tab_tension
+			clr_country_flag = mp_tab_breakthrough
+			clr_country_flag = mp_tab_xp
+			clr_country_flag = mp_tab_intel
+			clr_country_flag = mp_tab_mio
+			clr_country_flag = mp_tab_occupation
+			clr_country_flag = mp_tab_doctrine
+		}
 
-        ai_will_do = { factor = 0 }
-    }
+		ai_will_do = { factor = 0 }
+	}
 
 }

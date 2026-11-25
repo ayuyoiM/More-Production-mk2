@@ -41,7 +41,7 @@ mp_cat_political = {
 		icon = GFX_autonomy_free_icon
 		cost = 0
 		priority = 30
-        fire_only_once = yes 
+		fire_only_once = yes 
 		  
 		available = {
 			NOT = { has_tech = increase_autonomy_production_research }
@@ -79,7 +79,7 @@ mp_cat_political = {
 		icon = GFX_autonomy_free_icon
 		cost = 0
 		priority = 20
-        fire_only_once = yes 
+		fire_only_once = yes 
 
 		visible = {
 			has_tech = increase_autonomy_production_research
@@ -122,7 +122,7 @@ mp_cat_political = {
 		icon = GFX_autonomy_free_icon
 		cost = 0
 		priority = 10
-        fire_only_once = yes 
+		fire_only_once = yes 
 
 		visible = {
 			has_tech = increase_autonomy_production_2_research

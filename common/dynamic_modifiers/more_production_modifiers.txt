@@ -1,39 +1,39 @@
 research_speed_dymanic_modifier = {
-    enable = { always = yes}
+	enable = { always = yes}
 
-    icon = GFX_idea_generic_research_bonus
+	icon = GFX_idea_generic_research_bonus
 
-    research_speed_factor = more_production_research_speed_factor
-    special_project_speed_factor = more_production_special_project_speed_factor
+	research_speed_factor = more_production_research_speed_factor
+	special_project_speed_factor = more_production_special_project_speed_factor
 }
 
 production_dymanic_modifier = { 
-    enable = {always = yes} 
+	enable = {always = yes} 
 
-    icon = GFX_idea_generic_production_bonus
+	icon = GFX_idea_generic_production_bonus
 
-    industrial_capacity_factory = more_production_industrial_capacity_factory
-    industrial_capacity_dockyard = more_production_industrial_capacity_dockyard
+	industrial_capacity_factory = more_production_industrial_capacity_factory
+	industrial_capacity_dockyard = more_production_industrial_capacity_dockyard
 
-    production_factory_efficiency_gain_factor = more_production_efficiency_gain_factor
-    production_factory_max_efficiency_factor = more_production_efficiency_cap_factor
-    production_speed_buildings_factor = more_production_construction_speed_factor
-    nuclear_production_factor = more_production_nuclear_production_factor
+	production_factory_efficiency_gain_factor = more_production_efficiency_gain_factor
+	production_factory_max_efficiency_factor = more_production_efficiency_cap_factor
+	production_speed_buildings_factor = more_production_construction_speed_factor
+	nuclear_production_factor = more_production_nuclear_production_factor
 }
 
 operative_dymanic_modifier = { 
-    enable = {always = yes} 
+	enable = {always = yes} 
 
-    icon = GFX_idea_generic_spy_intel
+	icon = GFX_idea_generic_spy_intel
 
-    operative_slot = more_production_operative_slot
+	operative_slot = more_production_operative_slot
 }
 
 intel_decryption_dymanic_modifier = {
-    enable = { always = yes }
+	enable = { always = yes }
 
-    icon = GFX_idea_generic_spy_intel
+	icon = GFX_idea_generic_spy_intel
 
-    intel_network_gain_factor = more_production_intel_network_gain_factor
-    decryption_power_factor = more_production_decryption_power_factor
+	intel_network_gain_factor = more_production_intel_network_gain_factor
+	decryption_power_factor = more_production_decryption_power_factor
 }

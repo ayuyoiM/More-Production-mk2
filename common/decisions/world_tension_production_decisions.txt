@@ -1,78 +1,78 @@
 mp_cat_political = {
 
-    mp_enable_tension_tab = {
-        icon = GFX_world_tension_icon
-        cost = 0
-        priority = 100
+	mp_enable_tension_tab = {
+		icon = GFX_world_tension_icon
+		cost = 0
+		priority = 100
 
-        visible = {
-            NOT = { has_country_flag = mp_tab_tension }
-            OR = {
-                has_tech = world_tension_increase_production_research
-                has_tech = world_tension_decrease_production_research
-            }
-        }
+		visible = {
+			NOT = { has_country_flag = mp_tab_tension }
+			OR = {
+				has_tech = world_tension_increase_production_research
+				has_tech = world_tension_decrease_production_research
+			}
+		}
 
-        complete_effect = {
-            set_country_flag = mp_tab_tension
-        }
+		complete_effect = {
+			set_country_flag = mp_tab_tension
+		}
 
-        ai_will_do = { factor = 0 }
-    }
+		ai_will_do = { factor = 0 }
+	}
 
-    mp_disable_tension_tab = {
-        icon = GFX_world_tension_icon
-        cost = 0
-        priority = 90
+	mp_disable_tension_tab = {
+		icon = GFX_world_tension_icon
+		cost = 0
+		priority = 90
 
-        visible = {
-            has_country_flag = mp_tab_tension
-        }
+		visible = {
+			has_country_flag = mp_tab_tension
+		}
 
-        complete_effect = {
-            clr_country_flag = mp_tab_tension
-        }
+		complete_effect = {
+			clr_country_flag = mp_tab_tension
+		}
 
-        ai_will_do = { factor = 0 }
-    }
+		ai_will_do = { factor = 0 }
+	}
 
 
-    # World Tension Decision
-    world_tension_production_decision = {
-        icon = GFX_world_tension_icon
-        cost = 0
-        priority = 25
-        fire_only_once = yes 
+	# World Tension Decision
+	world_tension_production_decision = {
+		icon = GFX_world_tension_icon
+		cost = 0
+		priority = 25
+		fire_only_once = yes 
 
-        available = {
-            NOT = { has_tech = world_tension_increase_production_research }
-            custom_trigger_tooltip = {
-                tooltip = world_tension_production_decision_trigger_tt
-                OR = {
-                    has_country_flag = cheat_mode
-                    check_variable = {
-                        research_point_var > 49
-                    }
-                }
-            }
-        }
+		available = {
+			NOT = { has_tech = world_tension_increase_production_research }
+			custom_trigger_tooltip = {
+				tooltip = world_tension_production_decision_trigger_tt
+				OR = {
+					has_country_flag = cheat_mode
+					check_variable = {
+						research_point_var > 49
+					}
+				}
+			}
+		}
 
-        complete_effect = {
-            if = {
-                limit = {
-                    has_country_flag = normal_mode
-                }
-                add_to_variable = {
-                    var = research_point_var
-                    value = -50
-                }
-            }
-            set_technology = {
-                world_tension_increase_production_research = 1
-                world_tension_decrease_production_research = 1
-            }
-        }
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = normal_mode
+				}
+				add_to_variable = {
+					var = research_point_var
+					value = -50
+				}
+			}
+			set_technology = {
+				world_tension_increase_production_research = 1
+				world_tension_decrease_production_research = 1
+			}
+		}
 
     	ai_will_do = { factor = 0 }
-    }
+	}
 }

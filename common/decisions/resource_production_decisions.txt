@@ -1,193 +1,193 @@
 mp_cat_civilian = {
 
-    mp_enable_resource_tab = {
-        icon = oil
-        cost = 0
-        priority = 100
+	mp_enable_resource_tab = {
+		icon = oil
+		cost = 0
+		priority = 100
 
-        visible = {
-            NOT = { has_country_flag = mp_tab_resource }
-            OR = {
-                has_tech = coal_production_research
-                has_tech = oil_production_research
-                has_tech = steel_production_research
-                has_tech = tungsten_production_research
-                has_tech = aluminium_production_research
-                has_tech = rubber_production_research
-                has_tech = chromium_production_research
-            }
-        }
+		visible = {
+			NOT = { has_country_flag = mp_tab_resource }
+			OR = {
+				has_tech = coal_production_research
+				has_tech = oil_production_research
+				has_tech = steel_production_research
+				has_tech = tungsten_production_research
+				has_tech = aluminium_production_research
+				has_tech = rubber_production_research
+				has_tech = chromium_production_research
+			}
+		}
 
-        complete_effect = {
-            set_country_flag = mp_tab_resource
-        }
+		complete_effect = {
+			set_country_flag = mp_tab_resource
+		}
 
-        ai_will_do = { factor = 0 }
-    }
+		ai_will_do = { factor = 0 }
+	}
 
-    mp_disable_resource_tab = {
-        icon = oil
-        cost = 0
-        priority = 90
+	mp_disable_resource_tab = {
+		icon = oil
+		cost = 0
+		priority = 90
 
-        visible = {
-            has_country_flag = mp_tab_resource
-        }
+		visible = {
+			has_country_flag = mp_tab_resource
+		}
 
-        complete_effect = {
-            clr_country_flag = mp_tab_resource
-        }
+		complete_effect = {
+			clr_country_flag = mp_tab_resource
+		}
 
-        ai_will_do = { factor = 0 }
-    }
+		ai_will_do = { factor = 0 }
+	}
 
 
-    resource_research_decision = {
-        icon = oil
-        cost = 0
-        priority = 30
-        fire_only_once = yes 
+	resource_research_decision = {
+		icon = oil
+		cost = 0
+		priority = 30
+		fire_only_once = yes 
 
-        available = {
-            NOT = { has_tech = coal_production_research }
-            custom_trigger_tooltip = {
-                tooltip = resource_research_decision_trigger_tt
-                OR = {
-                    has_country_flag = cheat_mode
-                    check_variable = {
-                        research_point_var > 9
-                    }
-                }
-            }
-        }
+		available = {
+			NOT = { has_tech = coal_production_research }
+			custom_trigger_tooltip = {
+				tooltip = resource_research_decision_trigger_tt
+				OR = {
+					has_country_flag = cheat_mode
+					check_variable = {
+						research_point_var > 9
+					}
+				}
+			}
+		}
 
-        complete_effect = {
-            if = {
-                limit = {
-                    has_country_flag = normal_mode
-                }
-                add_to_variable = {
-                    var = research_point_var
-                    value = -10
-                }
-            }
-            set_technology = {
-                coal_production_research = 1
-                oil_production_research = 1
-                aluminium_production_research = 1
-                rubber_production_research = 1
-                steel_production_research = 1
-                tungsten_production_research = 1
-                chromium_production_research = 1
-            }
-        }
-
-    	ai_will_do = { factor = 0 }
-    }
-
-    resource_research_2_decision = {
-        icon = oil
-        cost = 0
-        priority = 20
-        fire_only_once = yes 
-
-        visible = {
-            has_tech = coal_production_research
-            has_tech = oil_production_research
-            has_tech = aluminium_production_research
-            has_tech = rubber_production_research
-            has_tech = steel_production_research
-            has_tech = tungsten_production_research
-            has_tech = chromium_production_research
-        }
-
-        available = {
-            NOT = { has_tech = coal_production_2_research }
-            custom_trigger_tooltip = {
-                tooltip = resource_research_2_decision_trigger_tt
-                OR = {
-                    has_country_flag = cheat_mode
-                    check_variable = {
-                        research_point_var > 999
-                    }
-                }
-            }
-        }
-
-        complete_effect = {
-            if = {
-                limit = {
-                    has_country_flag = normal_mode
-                }
-                add_to_variable = {
-                    var = research_point_var
-                    value = -1000
-                }
-            }
-            set_technology = {
-                coal_production_2_research = 1
-                oil_production_2_research = 1
-                aluminium_production_2_research = 1
-                rubber_production_2_research = 1
-                steel_production_2_research = 1
-                tungsten_production_2_research = 1
-                chromium_production_2_research = 1
-            }
-        }
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = normal_mode
+				}
+				add_to_variable = {
+					var = research_point_var
+					value = -10
+				}
+			}
+			set_technology = {
+				coal_production_research = 1
+				oil_production_research = 1
+				aluminium_production_research = 1
+				rubber_production_research = 1
+				steel_production_research = 1
+				tungsten_production_research = 1
+				chromium_production_research = 1
+			}
+		}
 
     	ai_will_do = { factor = 0 }
-    }
+	}
 
-    resource_research_3_decision = {
-        icon = oil
-        cost = 0
-        priority = 10
-        fire_only_once = yes 
+	resource_research_2_decision = {
+		icon = oil
+		cost = 0
+		priority = 20
+		fire_only_once = yes 
 
-        visible = {
-            has_tech = coal_production_2_research
-            has_tech = oil_production_2_research
-            has_tech = aluminium_production_2_research
-            has_tech = rubber_production_2_research
-            has_tech = steel_production_2_research
-            has_tech = tungsten_production_2_research
-            has_tech = chromium_production_2_research
-        }
+		visible = {
+			has_tech = coal_production_research
+			has_tech = oil_production_research
+			has_tech = aluminium_production_research
+			has_tech = rubber_production_research
+			has_tech = steel_production_research
+			has_tech = tungsten_production_research
+			has_tech = chromium_production_research
+		}
 
-        available = {
-            NOT = { has_tech = coal_production_3_research }
-            custom_trigger_tooltip = {
-                tooltip = resource_research_3_decision_trigger_tt
-                OR = {
-                    has_country_flag = cheat_mode
-                    check_variable = {
-                        research_point_var > 99999
-                    }
-                }
-            }
-        }
+		available = {
+			NOT = { has_tech = coal_production_2_research }
+			custom_trigger_tooltip = {
+				tooltip = resource_research_2_decision_trigger_tt
+				OR = {
+					has_country_flag = cheat_mode
+					check_variable = {
+						research_point_var > 999
+					}
+				}
+			}
+		}
 
-        complete_effect = {
-            if = {
-                limit = {
-                    has_country_flag = normal_mode
-                }
-                add_to_variable = {
-                    var = research_point_var
-                    value = -100000
-                }
-            }
-            set_technology = {
-                coal_production_3_research = 1
-                oil_production_3_research = 1
-                aluminium_production_3_research = 1
-                rubber_production_3_research = 1
-                steel_production_3_research = 1
-                tungsten_production_3_research = 1
-                chromium_production_3_research = 1
-            }
-        }
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = normal_mode
+				}
+				add_to_variable = {
+					var = research_point_var
+					value = -1000
+				}
+			}
+			set_technology = {
+				coal_production_2_research = 1
+				oil_production_2_research = 1
+				aluminium_production_2_research = 1
+				rubber_production_2_research = 1
+				steel_production_2_research = 1
+				tungsten_production_2_research = 1
+				chromium_production_2_research = 1
+			}
+		}
 
     	ai_will_do = { factor = 0 }
-    }
+	}
+
+	resource_research_3_decision = {
+		icon = oil
+		cost = 0
+		priority = 10
+		fire_only_once = yes 
+
+		visible = {
+			has_tech = coal_production_2_research
+			has_tech = oil_production_2_research
+			has_tech = aluminium_production_2_research
+			has_tech = rubber_production_2_research
+			has_tech = steel_production_2_research
+			has_tech = tungsten_production_2_research
+			has_tech = chromium_production_2_research
+		}
+
+		available = {
+			NOT = { has_tech = coal_production_3_research }
+			custom_trigger_tooltip = {
+				tooltip = resource_research_3_decision_trigger_tt
+				OR = {
+					has_country_flag = cheat_mode
+					check_variable = {
+						research_point_var > 99999
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = normal_mode
+				}
+				add_to_variable = {
+					var = research_point_var
+					value = -100000
+				}
+			}
+			set_technology = {
+				coal_production_3_research = 1
+				oil_production_3_research = 1
+				aluminium_production_3_research = 1
+				rubber_production_3_research = 1
+				steel_production_3_research = 1
+				tungsten_production_3_research = 1
+				chromium_production_3_research = 1
+			}
+		}
+
+    	ai_will_do = { factor = 0 }
+	}
 }

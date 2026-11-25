@@ -8,7 +8,7 @@ on_actions = {
 					check_variable = {
 						var:num_equipment@increase_autonomy_in_warehouse_product > 0
 					}
-                    is_subject = yes
+					is_subject = yes
 				}
 
 				add_equipment_to_stockpile = {
@@ -16,7 +16,7 @@ on_actions = {
 					amount = -1
 				}
 
-                add_autonomy_score = { 
+				add_autonomy_score = { 
 					value = 100
 				}
 			}
@@ -31,7 +31,7 @@ on_actions = {
 					check_variable = {
 						var:num_equipment@increase_autonomy_in_warehouse_product_2 > 0
 					}
-                    is_subject = yes
+					is_subject = yes
 				}
 				
 				add_equipment_to_stockpile = {
@@ -54,7 +54,7 @@ on_actions = {
 					check_variable = {
 						var:num_equipment@increase_autonomy_in_warehouse_product_3 > 0
 					}
-                    is_subject = yes
+					is_subject = yes
 				}
 				
 				add_equipment_to_stockpile = {
@@ -77,9 +77,9 @@ on_actions = {
 					check_variable = {
 						var:num_equipment@decrease_autonomy_in_warehouse_product > 1
 					}
-                    any_country = {
-                        is_subject_of = ROOT
-                    }
+					any_country = {
+						is_subject_of = ROOT
+					}
 				}
 				
 				add_equipment_to_stockpile = {
@@ -87,13 +87,13 @@ on_actions = {
 					amount = -1
 				}
 
-                every_country = {
-                    limit = { 
-                        is_subject_of = ROOT
-                    }
-                    add_autonomy_score = { 
-                        value = -100
-                    }
+				every_country = {
+					limit = { 
+						is_subject_of = ROOT
+					}
+					add_autonomy_score = { 
+						value = -100
+					}
 			    }
 			}
 		}
@@ -107,9 +107,9 @@ on_actions = {
 					check_variable = {
 						var:num_equipment@decrease_autonomy_in_warehouse_product_2 > 1
 					}
-                    any_country = {
-                        is_subject_of = ROOT
-                    }
+					any_country = {
+						is_subject_of = ROOT
+					}
 				}
 
 				add_equipment_to_stockpile = {
@@ -117,13 +117,13 @@ on_actions = {
 					amount = -1
 				}
 
-                every_country = {
-                    limit = { 
-                        is_subject_of = ROOT
-                    }
-                    add_autonomy_score = { 
-                        value = -100
-                    }
+				every_country = {
+					limit = { 
+						is_subject_of = ROOT
+					}
+					add_autonomy_score = { 
+						value = -100
+					}
 			    }
 			}
 		}
@@ -137,9 +137,9 @@ on_actions = {
 					check_variable = {
 						var:num_equipment@decrease_autonomy_in_warehouse_product_3 > 1
 					}
-                    any_country = {
-                        is_subject_of = ROOT
-                    }
+					any_country = {
+						is_subject_of = ROOT
+					}
 				}
 
 				add_equipment_to_stockpile = {
@@ -147,13 +147,13 @@ on_actions = {
 					amount = -1
 				}
 
-                every_country = {
-                    limit = { 
-                        is_subject_of = ROOT
-                    }
-                    add_autonomy_score = { 
-                        value = -100
-                    }
+				every_country = {
+					limit = { 
+						is_subject_of = ROOT
+					}
+					add_autonomy_score = { 
+						value = -100
+					}
 			    }
 			}
 		}

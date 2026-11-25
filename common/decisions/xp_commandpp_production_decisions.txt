@@ -1,291 +1,291 @@
 mp_cat_military = {
 
-    mp_enable_xp_tab = {
-        icon = GFX_FOCUS_FILTER_ARMY_XP
-        cost = 0
-        priority = 100
+	mp_enable_xp_tab = {
+		icon = GFX_FOCUS_FILTER_ARMY_XP
+		cost = 0
+		priority = 100
 
-        visible = {
-            NOT = { has_country_flag = mp_tab_xp }
-            OR = {
-                has_tech = armyxp_production_research
-                has_tech = navyxp_production_research
-                has_tech = airxp_production_research
-                has_tech = command_power_production_research
-            }
-        }
+		visible = {
+			NOT = { has_country_flag = mp_tab_xp }
+			OR = {
+				has_tech = armyxp_production_research
+				has_tech = navyxp_production_research
+				has_tech = airxp_production_research
+				has_tech = command_power_production_research
+			}
+		}
 
-        complete_effect = {
-            set_country_flag = mp_tab_xp
-        }
+		complete_effect = {
+			set_country_flag = mp_tab_xp
+		}
 
-        ai_will_do = { factor = 0 }
-    }
+		ai_will_do = { factor = 0 }
+	}
 
-    mp_disable_xp_tab = {
-        icon = GFX_FOCUS_FILTER_ARMY_XP
-        cost = 0
-        priority = 90
+	mp_disable_xp_tab = {
+		icon = GFX_FOCUS_FILTER_ARMY_XP
+		cost = 0
+		priority = 90
 
-        visible = {
-            has_country_flag = mp_tab_xp
-        }
+		visible = {
+			has_country_flag = mp_tab_xp
+		}
 
-        complete_effect = {
-            clr_country_flag = mp_tab_xp
-        }
+		complete_effect = {
+			clr_country_flag = mp_tab_xp
+		}
 
-        ai_will_do = { factor = 0 }
-    }
+		ai_will_do = { factor = 0 }
+	}
 
 
-    # XP Production Decision
-    xp_production_decision = {
-        icon = GFX_FOCUS_FILTER_ARMY_XP
-        cost = 0
-        priority = 30
-        fire_only_once = yes 
+	# XP Production Decision
+	xp_production_decision = {
+		icon = GFX_FOCUS_FILTER_ARMY_XP
+		cost = 0
+		priority = 30
+		fire_only_once = yes 
 
-        available = {
-            NOT = { has_tech = armyxp_production_research }
-            custom_trigger_tooltip = {
-                tooltip = xp_production_decision_trigger_tt
-                OR = {
-                    has_country_flag = cheat_mode
-                    check_variable = {
-                        research_point_var > 9
-                    }
-                }
-            }
-        }
+		available = {
+			NOT = { has_tech = armyxp_production_research }
+			custom_trigger_tooltip = {
+				tooltip = xp_production_decision_trigger_tt
+				OR = {
+					has_country_flag = cheat_mode
+					check_variable = {
+						research_point_var > 9
+					}
+				}
+			}
+		}
 
-        complete_effect = {
-            if = {
-                limit = {
-                    has_country_flag = normal_mode
-                }
-                add_to_variable = {
-                    var = research_point_var
-                    value = -10
-                }
-            }
-            set_technology = {
-                armyxp_production_research = 1
-                navyxp_production_research = 1
-                airxp_production_research = 1
-            }
-        }
-
-    	ai_will_do = { factor = 0 }
-    }
-
-    xp_production_2_decision = {
-        icon = GFX_FOCUS_FILTER_ARMY_XP
-        cost = 0
-        priority = 20
-        fire_only_once = yes 
-
-        visible = {
-            has_tech = armyxp_production_research
-            has_tech = navyxp_production_research
-            has_tech = airxp_production_research
-        }
-
-        available = {
-            NOT = { has_tech = armyxp_production_2_research }
-            custom_trigger_tooltip = {
-                tooltip = xp_production_2_decision_trigger_tt
-                OR = {
-                    has_country_flag = cheat_mode
-                    check_variable = {
-                        research_point_var > 999
-                    }
-                }
-            }
-        }
-
-        complete_effect = {
-            if = {
-                limit = {
-                    has_country_flag = normal_mode
-                }
-                add_to_variable = {
-                    var = research_point_var
-                    value = -1000
-                }
-            }
-            set_technology = {
-                armyxp_production_2_research = 1
-                navyxp_production_2_research = 1
-                airxp_production_2_research = 1
-            }
-        }
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = normal_mode
+				}
+				add_to_variable = {
+					var = research_point_var
+					value = -10
+				}
+			}
+			set_technology = {
+				armyxp_production_research = 1
+				navyxp_production_research = 1
+				airxp_production_research = 1
+			}
+		}
 
     	ai_will_do = { factor = 0 }
-    }
+	}
 
-    xp_production_3_decision = {
-        icon = GFX_FOCUS_FILTER_ARMY_XP
-        cost = 0
-        priority = 10
-        fire_only_once = yes 
+	xp_production_2_decision = {
+		icon = GFX_FOCUS_FILTER_ARMY_XP
+		cost = 0
+		priority = 20
+		fire_only_once = yes 
 
-        visible = {
-            has_tech = armyxp_production_2_research
-            has_tech = navyxp_production_2_research
-            has_tech = airxp_production_2_research
-        }
+		visible = {
+			has_tech = armyxp_production_research
+			has_tech = navyxp_production_research
+			has_tech = airxp_production_research
+		}
 
-        available = {
-            NOT = { has_tech = armyxp_production_3_research }
-            custom_trigger_tooltip = {
-                tooltip = xp_production_3_decision_trigger_tt
-                OR = {
-                    has_country_flag = cheat_mode
-                    check_variable = {
-                        research_point_var > 99999
-                    }
-                }
-            }
-        }
+		available = {
+			NOT = { has_tech = armyxp_production_2_research }
+			custom_trigger_tooltip = {
+				tooltip = xp_production_2_decision_trigger_tt
+				OR = {
+					has_country_flag = cheat_mode
+					check_variable = {
+						research_point_var > 999
+					}
+				}
+			}
+		}
 
-        complete_effect = {
-            if = {
-                limit = {
-                    has_country_flag = normal_mode
-                }
-                add_to_variable = {
-                    var = research_point_var
-                    value = -100000
-                }
-            }
-            set_technology = {
-                armyxp_production_3_research = 1
-                navyxp_production_3_research = 1
-                airxp_production_3_research = 1
-            }
-        }
-
-    	ai_will_do = { factor = 0 }
-    }
-
-    # Command Power Decision
-    command_power_production_decision = {
-        icon = GFX_command_power
-        cost = 0
-        priority = 30
-        fire_only_once = yes 
-
-        available = {
-            NOT = { has_tech = command_power_production_research }
-            custom_trigger_tooltip = {
-                tooltip = command_power_production_decision_trigger_tt
-                OR = {
-                    has_country_flag = cheat_mode
-                    check_variable = {
-                        research_point_var > 9
-                    }
-                }
-            }
-        }
-
-        complete_effect = {
-            if = {
-                limit = {
-                    has_country_flag = normal_mode
-                }
-                add_to_variable = {
-                    var = research_point_var
-                    value = -10
-                }
-            }
-            set_technology = {
-                command_power_production_research = 1
-            }
-        }
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = normal_mode
+				}
+				add_to_variable = {
+					var = research_point_var
+					value = -1000
+				}
+			}
+			set_technology = {
+				armyxp_production_2_research = 1
+				navyxp_production_2_research = 1
+				airxp_production_2_research = 1
+			}
+		}
 
     	ai_will_do = { factor = 0 }
-    }
+	}
 
-    command_power_production_2_decision = {
-        icon = GFX_command_power
-        cost = 0
-        priority = 20
-        fire_only_once = yes 
+	xp_production_3_decision = {
+		icon = GFX_FOCUS_FILTER_ARMY_XP
+		cost = 0
+		priority = 10
+		fire_only_once = yes 
 
-        visible = {
-            has_tech = command_power_production_research
-        }
+		visible = {
+			has_tech = armyxp_production_2_research
+			has_tech = navyxp_production_2_research
+			has_tech = airxp_production_2_research
+		}
 
-        available = {
-            NOT = { has_tech = command_power_production_2_research }
-            custom_trigger_tooltip = {
-                tooltip = command_power_production_2_decision_trigger_tt
-                OR = {
-                    has_country_flag = cheat_mode
-                    check_variable = {
-                        research_point_var > 999
-                    }
-                }
-            }
-        }
+		available = {
+			NOT = { has_tech = armyxp_production_3_research }
+			custom_trigger_tooltip = {
+				tooltip = xp_production_3_decision_trigger_tt
+				OR = {
+					has_country_flag = cheat_mode
+					check_variable = {
+						research_point_var > 99999
+					}
+				}
+			}
+		}
 
-        complete_effect = {
-            if = {
-                limit = {
-                    has_country_flag = normal_mode
-                }
-                add_to_variable = {
-                    var = research_point_var
-                    value = -1000
-                }
-            }
-            set_technology = {
-                command_power_production_2_research = 1
-            }
-        }
-
-    	ai_will_do = { factor = 0 }
-    }
-
-    command_power_production_3_decision = {
-        icon = GFX_command_power
-        cost = 0
-        priority = 10
-        fire_only_once = yes 
-
-        visible = {
-            has_tech = command_power_production_2_research
-        }
-
-        available = {
-            NOT = { has_tech = command_power_production_3_research }
-            custom_trigger_tooltip = {
-                tooltip = command_power_production_3_decision_trigger_tt
-                OR = {
-                    has_country_flag = cheat_mode
-                    check_variable = {
-                        research_point_var > 99999
-                    }
-                }
-            }
-        }
-
-        complete_effect = {
-            if = {
-                limit = {
-                    has_country_flag = normal_mode
-                }
-                add_to_variable = {
-                    var = research_point_var
-                    value = -100000
-                }
-            }
-            set_technology = {
-                command_power_production_3_research = 1
-            }
-        }
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = normal_mode
+				}
+				add_to_variable = {
+					var = research_point_var
+					value = -100000
+				}
+			}
+			set_technology = {
+				armyxp_production_3_research = 1
+				navyxp_production_3_research = 1
+				airxp_production_3_research = 1
+			}
+		}
 
     	ai_will_do = { factor = 0 }
-    }
+	}
+
+	# Command Power Decision
+	command_power_production_decision = {
+		icon = GFX_command_power
+		cost = 0
+		priority = 30
+		fire_only_once = yes 
+
+		available = {
+			NOT = { has_tech = command_power_production_research }
+			custom_trigger_tooltip = {
+				tooltip = command_power_production_decision_trigger_tt
+				OR = {
+					has_country_flag = cheat_mode
+					check_variable = {
+						research_point_var > 9
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = normal_mode
+				}
+				add_to_variable = {
+					var = research_point_var
+					value = -10
+				}
+			}
+			set_technology = {
+				command_power_production_research = 1
+			}
+		}
+
+    	ai_will_do = { factor = 0 }
+	}
+
+	command_power_production_2_decision = {
+		icon = GFX_command_power
+		cost = 0
+		priority = 20
+		fire_only_once = yes 
+
+		visible = {
+			has_tech = command_power_production_research
+		}
+
+		available = {
+			NOT = { has_tech = command_power_production_2_research }
+			custom_trigger_tooltip = {
+				tooltip = command_power_production_2_decision_trigger_tt
+				OR = {
+					has_country_flag = cheat_mode
+					check_variable = {
+						research_point_var > 999
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = normal_mode
+				}
+				add_to_variable = {
+					var = research_point_var
+					value = -1000
+				}
+			}
+			set_technology = {
+				command_power_production_2_research = 1
+			}
+		}
+
+    	ai_will_do = { factor = 0 }
+	}
+
+	command_power_production_3_decision = {
+		icon = GFX_command_power
+		cost = 0
+		priority = 10
+		fire_only_once = yes 
+
+		visible = {
+			has_tech = command_power_production_2_research
+		}
+
+		available = {
+			NOT = { has_tech = command_power_production_3_research }
+			custom_trigger_tooltip = {
+				tooltip = command_power_production_3_decision_trigger_tt
+				OR = {
+					has_country_flag = cheat_mode
+					check_variable = {
+						research_point_var > 99999
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = normal_mode
+				}
+				add_to_variable = {
+					var = research_point_var
+					value = -100000
+				}
+			}
+			set_technology = {
+				command_power_production_3_research = 1
+			}
+		}
+
+    	ai_will_do = { factor = 0 }
+	}
 }
