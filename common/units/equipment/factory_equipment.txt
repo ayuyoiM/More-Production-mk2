@@ -245,4 +245,53 @@ equipments = {
 		priority = 30
 	}
 
+	# Construction Speed production
+
+	construction_speed_in_warehouse = {
+		year = 1936
+
+		is_archetype = yes
+
+		picture = archetype_construction_speed
+		is_buildable = no
+
+		type = infantry
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		active = yes
+
+		lend_lease_cost = 2
+
+		build_cost_ic = 1000
+		resources = {
+		}
+	}
+
+	construction_speed_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_factory }
+		year = 1936
+		archetype = construction_speed_in_warehouse
+		priority = 10
+	}
+
+	construction_speed_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_factory }
+		year = 1938
+		archetype = construction_speed_in_warehouse
+		parent = construction_speed_in_warehouse_product
+		build_cost_ic = 500
+		priority = 20
+	}
+
+	construction_speed_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_factory }
+		year = 1941
+		archetype = construction_speed_in_warehouse
+		parent = construction_speed_in_warehouse_product_2
+		build_cost_ic = 100
+		priority = 30
+	}
+
 }

@@ -94,6 +94,13 @@
   production_efficiency_in_warehouse_product_2_desc: "更高效的生产效率设备！"
   production_efficiency_in_warehouse_product_3: "生产效率 III"
   production_efficiency_in_warehouse_product_3_desc: "最有效率的生产效率设备！"
+  # 建筑建造速度
+  construction_speed_in_warehouse_product: "建筑建造速度 I"
+  construction_speed_in_warehouse_product_desc: "让建筑造得快点！"
+  construction_speed_in_warehouse_product_2: "建筑建造速度 II"
+  construction_speed_in_warehouse_product_2_desc: "让建筑造得更快！"
+  construction_speed_in_warehouse_product_3: "建筑建造速度 III"
+  construction_speed_in_warehouse_product_3_desc: "让建筑造得飞快！"
 
   # 民主支持率
   democracy_in_warehouse_product: "民主支持率 I"
@@ -131,6 +138,14 @@
   mio_in_warehouse_product_2_desc: "更有效率的人造军工组织资金！"
   mio_in_warehouse_product_3: "军工组织 III"
   mio_in_warehouse_product_3_desc: "最有效率的人造军工组织资金！"
+
+  # 核弹制造
+  nuclear_bomb_in_warehouse_product: "核弹制造 I"
+  nuclear_bomb_in_warehouse_product_desc: "人造核弹！"
+  nuclear_bomb_in_warehouse_product_2: "核弹制造 II"
+  nuclear_bomb_in_warehouse_product_2_desc: "更高效的核弹！"
+  nuclear_bomb_in_warehouse_product_3: "核弹制造 III"
+  nuclear_bomb_in_warehouse_product_3_desc: "最有效率的核弹！"
 
   # 顺从度设备
   compliance_equipment_in_warehouse_product: "顺从度设备 I"

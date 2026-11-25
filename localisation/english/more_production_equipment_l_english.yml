@@ -94,6 +94,13 @@
   production_efficiency_in_warehouse_product_2_desc: "More efficient production efficiency equipment!"
   production_efficiency_in_warehouse_product_3: "Production Efficiency III"
   production_efficiency_in_warehouse_product_3_desc: "The most efficient production efficiency equipment!"
+  # Construction Speed
+  construction_speed_in_warehouse_product: "Construction Speed I"
+  construction_speed_in_warehouse_product_desc: "Build things faster!"
+  construction_speed_in_warehouse_product_2: "Construction Speed II"
+  construction_speed_in_warehouse_product_2_desc: "Build things much faster!"
+  construction_speed_in_warehouse_product_3: "Construction Speed III"
+  construction_speed_in_warehouse_product_3_desc: "Build things really fast!"
 
   # Democratic Support
   democracy_in_warehouse_product: "Democratic Support I"
@@ -131,6 +138,14 @@
   mio_in_warehouse_product_2_desc: "More efficient synthetic MIO funds!"
   mio_in_warehouse_product_3: "MIO III"
   mio_in_warehouse_product_3_desc: "The most efficient synthetic MIO funds!"
+
+  # Nuclear Bomb Production
+  nuclear_bomb_in_warehouse_product: "Nuclear Bomb Production I"
+  nuclear_bomb_in_warehouse_product_desc: "Man-made nukes!"
+  nuclear_bomb_in_warehouse_product_2: "Nuclear Bomb Production II"
+  nuclear_bomb_in_warehouse_product_2_desc: "More efficient nukes!"
+  nuclear_bomb_in_warehouse_product_3: "Nuclear Bomb Production III"
+  nuclear_bomb_in_warehouse_product_3_desc: "The most efficient nukes!"
 
   # Compliance Equipment
   compliance_equipment_in_warehouse_product: "Compliance Equipment I"

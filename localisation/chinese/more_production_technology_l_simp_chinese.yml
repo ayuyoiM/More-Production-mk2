@@ -94,6 +94,13 @@
   production_efficiency_production_2_research_desc: "解锁中级生产效率设备。"
   production_efficiency_production_3_research: "生产效率 III"
   production_efficiency_production_3_research_desc: "解锁高级生产效率设备。"
+  # 建筑建造速度
+  construction_speed_production_research: "建筑建造速度 I"
+  construction_speed_production_research_desc: "解锁初级建筑建造速度设备。"
+  construction_speed_production_2_research: "建筑建造速度 II"
+  construction_speed_production_2_research_desc: "解锁中级建筑建造速度设备。"
+  construction_speed_production_3_research: "建筑建造速度 III"
+  construction_speed_production_3_research_desc: "解锁高级建筑建造速度设备。"
 
   # 民主支持率
   democracy_production_research: "民主支持率 I"
@@ -131,6 +138,14 @@
   mio_production_2_research_desc: "解锁中级军工组织生产。"
   mio_production_3_research: "军工组织 III"
   mio_production_3_research_desc: "解锁高级军工组织生产。"
+
+  # 核弹制造
+  nuclear_bomb_production_research: "核弹制造 I"
+  nuclear_bomb_production_research_desc: "解锁初级核弹制造设备。"
+  nuclear_bomb_production_2_research: "核弹制造 II"
+  nuclear_bomb_production_2_research_desc: "解锁中级核弹制造设备。"
+  nuclear_bomb_production_3_research: "核弹制造 III"
+  nuclear_bomb_production_3_research_desc: "解锁高级核弹制造设备。"
 
   # 顺从度设备
   compliance_equipment_production_research: "顺从度设备 I"

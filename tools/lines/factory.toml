@@ -315,3 +315,68 @@ target = "more_production_efficiency_gain_factor"
 [[production_line.effect]]
 type = "add_to_variable"
 target = "more_production_efficiency_cap_factor"
+
+[[production_line]]
+id = "construction_speed"
+group = "factory"
+decision_category = "mp_cat_civilian"
+name_chinese = "建筑建造速度"
+name_english = "Construction Speed"
+name_russian = "Скорость строительства"
+country_flag = "mp_tab_factory"
+archetype_equipment = "construction_speed_in_warehouse"
+texture_file = "gfx/interface/factory_wrench_icon.dds"
+
+[[production_line.equipment]]
+id = "construction_speed_in_warehouse_product"
+year = 1936
+build_cost = 1000
+description_chinese = "让建筑造得快点！"
+description_english = "Build things faster!"
+description_russian = "Стройте быстрее!"
+
+[[production_line.equipment]]
+id = "construction_speed_in_warehouse_product_2"
+year = 1938
+build_cost = 500
+description_chinese = "让建筑造得更快！"
+description_english = "Build things much faster!"
+description_russian = "Стройте намного быстрее!"
+
+[[production_line.equipment]]
+id = "construction_speed_in_warehouse_product_3"
+year = 1941
+build_cost = 100
+description_chinese = "让建筑造得飞快！"
+description_english = "Build things really fast!"
+description_russian = "Стройте очень быстро!"
+
+[production_line.technology]
+identifiers = [
+  "construction_speed_production_research",
+  "construction_speed_production_2_research",
+  "construction_speed_production_3_research",
+]
+descriptions_chinese = [
+  "解锁初级建筑建造速度设备。",
+  "解锁中级建筑建造速度设备。",
+  "解锁高级建筑建造速度设备。",
+]
+descriptions_english = [
+  "Unlocks Basic Construction Speed Equipment.",
+  "Unlocks Intermediate Construction Speed Equipment.",
+  "Unlocks Advanced Construction Speed Equipment.",
+]
+descriptions_russian = [
+  "Разблокирует базовое оборудование для скорости строительства.",
+  "Разблокирует среднее оборудование для скорости строительства.",
+  "Разблокирует передовое оборудование для скорости строительства.",
+]
+
+[[production_line.effect]]
+type = "divide_variable"
+by = 100
+
+[[production_line.effect]]
+type = "add_to_variable"
+target = "more_production_construction_speed_factor"

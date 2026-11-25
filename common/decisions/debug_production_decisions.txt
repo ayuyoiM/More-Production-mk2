@@ -62,6 +62,9 @@ mp_cat_lines = {
             activate_decision = doctrine_research_decision
             activate_decision = doctrine_research_2_decision
             activate_decision = doctrine_research_3_decision
+            activate_decision = nuclear_bomb_research_decision
+            activate_decision = nuclear_bomb_research_2_decision
+            activate_decision = nuclear_bomb_research_3_decision
         }
 
         ai_will_do = { factor = 0 }

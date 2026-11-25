@@ -94,6 +94,13 @@
   production_efficiency_production_2_research_desc: "Разблокирует среднее оборудование для эффективности производства."
   production_efficiency_production_3_research: "Эффективность производства III"
   production_efficiency_production_3_research_desc: "Разблокирует передовое оборудование для эффективности производства."
+  # Скорость строительства
+  construction_speed_production_research: "Скорость строительства I"
+  construction_speed_production_research_desc: "Разблокирует базовое оборудование для скорости строительства."
+  construction_speed_production_2_research: "Скорость строительства II"
+  construction_speed_production_2_research_desc: "Разблокирует среднее оборудование для скорости строительства."
+  construction_speed_production_3_research: "Скорость строительства III"
+  construction_speed_production_3_research_desc: "Разблокирует передовое оборудование для скорости строительства."
 
   # Поддержка демократии
   democracy_production_research: "Поддержка демократии I"
@@ -131,6 +138,14 @@
   mio_production_2_research_desc: "Открывает улучшенное производство ВПО."
   mio_production_3_research: "ВПО III"
   mio_production_3_research_desc: "Открывает продвинутое производство ВПО."
+
+  # Производство ядерных бомб
+  nuclear_bomb_production_research: "Производство ядерных бомб I"
+  nuclear_bomb_production_research_desc: "Разблокирует базовое оборудование для производства ядерных бомб."
+  nuclear_bomb_production_2_research: "Производство ядерных бомб II"
+  nuclear_bomb_production_2_research_desc: "Разблокирует среднее оборудование для производства ядерных бомб."
+  nuclear_bomb_production_3_research: "Производство ядерных бомб III"
+  nuclear_bomb_production_3_research_desc: "Разблокирует передовое оборудование для производства ядерных бомб."
 
   # Оборудование для соответствия
   compliance_equipment_production_research: "Оборудование для соответствия I"
