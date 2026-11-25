@@ -1,0 +1,70 @@
+# 工厂组生产线配置
+# 改完跑 python tools/gen.py，不要手改生成出来的 txt 和 yml。
+
+[[production_line]]
+id = "factory_output"
+group = "factory"
+decision_category = "mp_cat_civilian"
+name_chinese = "工厂产出"
+name_english = "Factory Output"
+name_russian = "Производительность заводов"
+country_flag = "mp_tab_factory"
+archetype_equipment = "factory_output_in_warehouse"
+texture_file = "gfx/interface/production_output_icon.dds"
+[[production_line.equipment]]
+id = "factory_output_in_warehouse_product"
+year = 1936
+build_cost = 1000
+description_chinese = "初级工厂产出设备！"
+description_english = "Basic factory output equipment!"
+description_russian = "Базовое оборудование для производительности заводов!"
+
+[[production_line.equipment]]
+id = "factory_output_in_warehouse_product_2"
+year = 1938
+build_cost = 500
+description_chinese = "更高效的工厂产出设备！"
+description_english = "More efficient factory output equipment!"
+description_russian = "Более эффективное оборудование для производительности заводов!"
+
+[[production_line.equipment]]
+id = "factory_output_in_warehouse_product_3"
+year = 1941
+build_cost = 100
+description_chinese = "最有效率的工厂产出设备！"
+description_english = "The most efficient factory output equipment!"
+description_russian = "Наиболее эффективное оборудование для производительности заводов!"
+
+[production_line.technology]
+identifiers = [
+  "factory_output_production_research",
+  "factory_output_production_2_research",
+  "factory_output_production_3_research",
+]
+descriptions_chinese = [
+  "解锁初级工厂产出设备。",
+  "解锁中级工厂产出设备。",
+  "解锁高级工厂产出设备。",
+]
+descriptions_english = [
+  "Unlocks Basic Factory Output Equipment.",
+  "Unlocks Intermediate Factory Output Equipment.",
+  "Unlocks Advanced Factory Output Equipment.",
+]
+descriptions_russian = [
+  "Разблокирует базовое оборудование для увеличения производительности фабрик.",
+  "Разблокирует среднее оборудование для увеличения производительности фабрик.",
+  "Разблокирует передовое оборудование для увеличения производительности фабрик.",
+]
+
+[[production_line.effect]]
+type = "divide_variable"
+by = 100
+
+[[production_line.effect]]
+type = "add_to_variable"
+target = "more_production_industrial_capacity_factory"
+
+[[production_line.effect]]
+type = "add_to_variable"
+target = "more_production_industrial_capacity_dockyard"

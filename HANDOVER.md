@@ -25,17 +25,26 @@ common/
     production_lines.txt                       生产线管理：三个大类的启用/停用总开关 + 占领自动化
     <类别>_production_decisions.txt            15 个，各类研究决策 + 细类开关
     debug_production_decisions.txt             调试：一键解锁（仅 -debug）
-  units/equipment/<类别>_equipment.txt         11 个，虚拟装备定义
-  technologies/<类别>_tech.txt                 11 个，解锁装备的科技
-  on_actions/<类别>_on_actions.txt             11 个，定期转换逻辑
+  units/equipment/<类别>_equipment.txt         15 个，虚拟装备定义
+  technologies/<类别>_tech.txt                 15 个，解锁装备的科技
+  on_actions/<类别>_on_actions.txt             15 个，定期转换逻辑
   dynamic_modifiers/more_production_modifiers.txt
 localisation/{chinese,english,russian}/        三语言，各 4 个 yml
 interface/more_production.gfx
 gfx/interface/{archetypes,technologies}/
+tools/
+  check.py                                    静态校验，改完必跑
+  gen.py                                      生成器
+  test_gen.py                                 生成器自检
+  lines/<组>.toml                             生产线配置（要手改的就这里）
 descriptor.mod
 readme.txt
 HANDOVER.md
 ```
+
+`common/units/equipment`、`common/technologies`、`common/on_actions` 这三组文件，以及装备名和科技名的三语言 yml，都由 `tools/gen.py` 生成，不要手改。改配置表再跑生成器。
+
+注意：目前只有工厂产出（`factory_output`）这一条迁进了配置表，其余 17 条还是手写状态。混用期间手改那 17 条没问题，但别对已经迁进配置的那条动手。
 
 ## 三、数据流
 
@@ -58,24 +67,36 @@ on_weekly / on_daily 扫描仓库 → 转换成真实属性 → 扣掉虚拟装�
 
 ## 五、加一条新生产线的完整步骤
 
-以「军工组织」为例，假设归到军事大类（下面出现的 fuel_ 前缀按实际类别替换）：
+装备、科技、每周结算、图标、装备名和科技名这五类现在由生成器产出。手写的只剩决策和决策相关的本地化。
 
-1. **装备**：在对应 `*_equipment.txt` 里加一个 archetype + 三档 product。
-   - archetype：`is_buildable = no`、`is_archetype = yes`、`type = infantry`（占位）
-   - product：`archetype = <archetype名>`、`parent` 链、`build_cost_ic`
-   - 每个 product 加 `can_be_produced = { has_country_flag = mp_tab_<细类> }`
+1. **写配置**：在 `tools/lines/<组>.toml` 里加一段 `[[production_line]]`，填 id、组、三语名字、国家标记、archetype、三档装备（id / 年份 / 成本 / 三语描述）、三个科技 id、结算动作、贴图路径。
 
-2. **科技**：在对应 `*_tech.txt` 加三档科技，`enable_equipments` 指向装备。
+2. **跑生成器**：`python tools/gen.py`。上面五类文件自动更新。想先看效果就 `python tools/gen.py --only <id> --out <目录>`。
 
-3. **决策**：
-   - 加三条研究决策（`set_technology`），`available` 里带 `NOT = { has_tech = <目标科技> }`
-   - 如果要独立开关，加一对 `mp_enable_<细类>_tab` / `mp_disable_<细类>_tab`
+3. **写决策**：照现有文件抄三条研究决策（`set_technology`，`available` 里带 `NOT = { has_tech = <目标科技> }`），要独立开关就加一对 `mp_enable_<细类>_tab` / `mp_disable_<细类>_tab`。
 
-4. **触发器**：在 `*_on_actions.txt` 加一个块，扫描 `var:num_equipment@<product>` 并转换。
+4. **补决策本地化**：`more_production_decision_l_*.yml` 三语言，决策名 + flag 名。
 
-5. **本地化**：三语言各补装备名、科技名、决策名、flag 名。
+5. **校验**：`python tools/check.py` 错误必须清零，`python tools/test_gen.py` 跑一下生成器自检。
 
-6. **验证**：进游戏看 error.log 有无本模组报错。
+6. **进游戏**：看 error.log 有没有本模组报错，看生产界面图标和数值。
+
+### 结算动作怎么写
+
+配置里 `[[production_line.effect]]` 按顺序执行，可用的 type：
+
+| type | 参数 | 效果 |
+|---|---|---|
+| `divide_variable` | `by` | 把这一档的件数除以 N |
+| `add_to_variable` | `target` | 加到指定变量 |
+| `add_building` | `building` | 加建筑，如 `industrial_complex` |
+| `add_resource` | `resource` | 加资源 |
+| `add_manpower` / `add_political_power` / `add_stability` / `add_war_support` | 无 | 加对应国家属性 |
+| `add_mio_funds` | 无 | 加军工组织资金 |
+| `add_mastery` | 无 | 加学说精通（写进 `doctrine_mastery_pool`） |
+| `add_equipment` | `equipment` | 加装备 |
+
+写了表里没有的 type，生成器直接报错退出。
 
 ## 六、已知陷阱（都踩过）
 
