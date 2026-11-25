@@ -27,6 +27,11 @@ on_actions = {
 					amount = intel_decryption_product_negative
 				}
 
+				divide_variable = {
+					var = intel_decryption_product
+					value = 100
+				}
+
 				add_to_variable = {
 					var = more_production_intel_network_gain_factor
 					value = intel_decryption_product
@@ -75,6 +80,11 @@ on_actions = {
 					amount = intel_decryption_product_2_negative
 				}
 
+				divide_variable = {
+					var = intel_decryption_product_2
+					value = 100
+				}
+
 				add_to_variable = {
 					var = more_production_intel_network_gain_factor
 					value = intel_decryption_product_2
@@ -121,6 +131,11 @@ on_actions = {
 				add_equipment_to_stockpile = {
 					type = intel_decryption_in_warehouse_product_3
 					amount = intel_decryption_product_3_negative
+				}
+
+				divide_variable = {
+					var = intel_decryption_product_3
+					value = 100
 				}
 
 				add_to_variable = {

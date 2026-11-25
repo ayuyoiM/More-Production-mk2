@@ -19,7 +19,7 @@ equipments = {
 
 		lend_lease_cost = 2
 
-		build_cost_ic = 0.17
+		build_cost_ic = 30
 		resources = {
 			oil = 2
 			rubber = 1
@@ -39,7 +39,7 @@ equipments = {
 		archetype = mio_in_warehouse
 		parent = mio_in_warehouse_product
 
-		build_cost_ic = 0.01
+		build_cost_ic = 15
 
 		priority = 20
 	}
@@ -50,7 +50,7 @@ equipments = {
 		archetype = mio_in_warehouse
 		parent = mio_in_warehouse_product_2
 
-		build_cost_ic = 0.001
+		build_cost_ic = 5
 
 		priority = 30
 	}
