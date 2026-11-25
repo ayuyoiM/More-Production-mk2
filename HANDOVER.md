@@ -23,7 +23,7 @@ common/
     categories/more_production_category.txt   6 个 category 定义
     flag_decision.txt                          模式选择（作弊/正常）
     production_lines.txt                       生产线管理：三个大类的启用/停用总开关 + 占领自动化
-    <类别>_production_decisions.txt            16 个，各类研究决策 + 细类开关
+    <类别>_production_decisions.txt            15 个，各类研究决策 + 细类开关
     debug_production_decisions.txt             调试：一键解锁（仅 -debug）
   units/equipment/<类别>_equipment.txt         11 个，虚拟装备定义
   technologies/<类别>_tech.txt                 11 个，解锁装备的科技
@@ -132,5 +132,4 @@ on_weekly / on_daily 扫描仓库 → 转换成真实属性 → 扣掉虚拟装�
 - 三个历史决策缺的本地化键已补齐
 
 未做：
-- diplomatic 线只有占位注释，还没做生产项
 - `mod_summary.md` 已过时，内容被本文档取代，可以删
