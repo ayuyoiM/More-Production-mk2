@@ -1,160 +1,131 @@
 on_actions = {
-	on_weekly = { # Manpower I tech
-		
+
+	on_weekly = { # man_in_warehouse_product
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@man_in_warehouse_product > 0
 					}
 				}
-				
+
 				set_variable = {
-					var = manpower_product
+					var = man_product
 					value = var:num_equipment@man_in_warehouse_product
 				}
 				set_variable = {
-					var = manpower_product_negative
+					var = man_product_negative
 					value = var:num_equipment@man_in_warehouse_product
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@man_in_warehouse_product > 0
-						}
-					}
-					multiply_variable = {
-						var = manpower_product_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = man_product_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = man_in_warehouse_product
-    				amount = manpower_product_negative
-    				# producer = ROOT
+					type = man_in_warehouse_product
+					amount = man_product_negative
 				}
-				add_manpower = manpower_product
+
+				add_manpower = man_product
+
 				set_variable = {
-					var = manpower_product
+					var = man_product
 					value = 0
 				}
 				set_variable = {
-					var = manpower_product_negative
+					var = man_product_negative
 					value = 0
 				}
 			}
 		}
 	}
 
-	on_weekly = { # Manpower II tech
-		
+	on_weekly = { # man_in_warehouse_product_2
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@man_in_warehouse_product_2 > 0
 					}
 				}
-				
+
 				set_variable = {
-					var = manpower_2_product
+					var = man_product_2
 					value = var:num_equipment@man_in_warehouse_product_2
 				}
 				set_variable = {
-					var = manpower_2_product_negative
+					var = man_product_2_negative
 					value = var:num_equipment@man_in_warehouse_product_2
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@man_in_warehouse_product_2 > 0
-						}
-					}
-					multiply_variable = {
-						var = manpower_2_product_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = man_product_2_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = man_in_warehouse_product_2
-    				amount = manpower_2_product_negative
-    				# producer = ROOT
+					type = man_in_warehouse_product_2
+					amount = man_product_2_negative
 				}
-				add_manpower = manpower_2_product
+
+				add_manpower = man_product_2
+
 				set_variable = {
-					var = manpower_2_product
+					var = man_product_2
 					value = 0
 				}
 				set_variable = {
-					var = manpower_2_product_negative
+					var = man_product_2_negative
 					value = 0
 				}
 			}
 		}
 	}
 
-	on_weekly = { # Manpower III tech
-		
+	on_weekly = { # man_in_warehouse_product_3
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@man_in_warehouse_product_3 > 0
 					}
 				}
-				
-				set_variable = {
-					var = manpower_3_product
-					value = var:num_equipment@man_in_warehouse_product_3
-				}
-				set_variable = {
-					var = manpower_3_product_negative
-					value = var:num_equipment@man_in_warehouse_product_3
-				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@man_in_warehouse_product_3 > 0
-						}
-					}
-					multiply_variable = {
-						var = manpower_3_product_negative
-						value = -1
-					}
-				}
-				
-				
-				########################################################
 
-				add_equipment_to_stockpile = {
-    				type = man_in_warehouse_product_3
-    				amount = manpower_3_product_negative
-    				# producer = ROOT
+				set_variable = {
+					var = man_product_3
+					value = var:num_equipment@man_in_warehouse_product_3
+				}
+				set_variable = {
+					var = man_product_3_negative
+					value = var:num_equipment@man_in_warehouse_product_3
 				}
 				multiply_variable = {
-					manpower_3_product = 100
+					var = man_product_3_negative
+					value = -1
 				}
-				add_manpower = manpower_3_product
+
+				add_equipment_to_stockpile = {
+					type = man_in_warehouse_product_3
+					amount = man_product_3_negative
+				}
+
+				multiply_variable = {
+					var = man_product_3
+					value = 100
+				}
+
+				add_manpower = man_product_3
+
 				set_variable = {
-					var = manpower_3_product
+					var = man_product_3
 					value = 0
 				}
 				set_variable = {
-					var = manpower_3_product_negative
+					var = man_product_3_negative
 					value = 0
 				}
 			}
 		}
 	}
+
 }

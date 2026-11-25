@@ -1,4 +1,5 @@
 technologies = {
+
 	mio_production_research = {
 
 		enable_equipments = {
@@ -29,4 +30,5 @@ technologies = {
 		research_cost = -1
 		ai_will_do = { factor = 0 }
 	}
+
 }

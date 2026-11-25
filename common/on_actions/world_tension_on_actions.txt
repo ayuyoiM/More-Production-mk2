@@ -1,18 +1,14 @@
 on_actions = {
 
-    # world tension increase production 
-
-	on_weekly = {
-		
+	on_weekly = { # world_tension_increase_in_warehouse_product
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@world_tension_increase_in_warehouse_product > 0
 					}
 				}
-				
+
 				set_variable = {
 					var = world_tension_increase_product
 					value = var:num_equipment@world_tension_increase_in_warehouse_product
@@ -21,27 +17,18 @@ on_actions = {
 					var = world_tension_increase_product_negative
 					value = var:num_equipment@world_tension_increase_in_warehouse_product
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@world_tension_increase_in_warehouse_product > 0
-						}
-					}
-					multiply_variable = {
-						var = world_tension_increase_product_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = world_tension_increase_product_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = world_tension_increase_in_warehouse_product
-    				amount = world_tension_increase_product_negative
-    				# producer = ROOT
+					type = world_tension_increase_in_warehouse_product
+					amount = world_tension_increase_product_negative
 				}
+
 				add_threat = world_tension_increase_product
+
 				set_variable = {
 					var = world_tension_increase_product
 					value = 0
@@ -54,19 +41,15 @@ on_actions = {
 		}
 	}
 
-	# world tension decrease production
-
-	on_weekly = { 
-		
+	on_weekly = { # world_tension_decrease_in_warehouse_product
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@world_tension_decrease_in_warehouse_product > 0
 					}
 				}
-				
+
 				set_variable = {
 					var = world_tension_decrease_product
 					value = var:num_equipment@world_tension_decrease_in_warehouse_product
@@ -75,27 +58,18 @@ on_actions = {
 					var = world_tension_decrease_product_negative
 					value = var:num_equipment@world_tension_decrease_in_warehouse_product
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@world_tension_decrease_in_warehouse_product > 0
-						}
-					}
-					multiply_variable = {
-						var = world_tension_decrease_product_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = world_tension_decrease_product_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = world_tension_decrease_in_warehouse_product
-    				amount = world_tension_decrease_product_negative
-    				# producer = ROOT
+					type = world_tension_decrease_in_warehouse_product
+					amount = world_tension_decrease_product_negative
 				}
-				add_threat  = world_tension_decrease_product_negative
+
+				add_threat = world_tension_decrease_product
+
 				set_variable = {
 					var = world_tension_decrease_product
 					value = 0

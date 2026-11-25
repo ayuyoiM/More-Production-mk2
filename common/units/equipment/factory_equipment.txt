@@ -1,26 +1,26 @@
 equipments = {
-    # civilian factory production
+
+	# Civilian Factory production
+
 	civilian_factory_in_warehouse = {
 		year = 1936
-	
+
 		is_archetype = yes
-		
+
 		picture = archetype_civilian_factory
 		is_buildable = no
 
-		type = infantry  # = suicide # it is just the little used type ...
+		type = infantry
 		group_by = archetype
-		
+
 		interface_category = interface_category_land
-		
+
 		active = yes
 
-#		can_be_lend_leased = 
-		lend_lease_cost = 2 # Yes, pp can be supplied with Lend-Lease ;D
-		
+		lend_lease_cost = 2
+
 		build_cost_ic = 4800
 		resources = {
-
 		}
 	}
 
@@ -28,7 +28,7 @@ equipments = {
 		can_be_produced = { has_country_flag = mp_tab_factory }
 		year = 1936
 		archetype = civilian_factory_in_warehouse
-		priority = 10	
+		priority = 10
 	}
 
 	civilian_factory_in_warehouse_product_2 = {
@@ -49,29 +49,27 @@ equipments = {
 		priority = 30
 	}
 
-	# military facctory production 
+	# Military Factory production
 
 	military_factory_in_warehouse = {
 		year = 1936
-	
+
 		is_archetype = yes
-		
+
 		picture = archetype_military_factory
 		is_buildable = no
 
-		type = infantry  # = suicide # it is just the little used type ...
+		type = infantry
 		group_by = archetype
-		
+
 		interface_category = interface_category_land
-		
+
 		active = yes
 
-#		can_be_lend_leased = 
-		lend_lease_cost = 2 # Yes, pp can be supplied with Lend-Lease ;D
-		
+		lend_lease_cost = 2
+
 		build_cost_ic = 4200
 		resources = {
-
 		}
 	}
 
@@ -79,7 +77,7 @@ equipments = {
 		can_be_produced = { has_country_flag = mp_tab_factory }
 		year = 1936
 		archetype = military_factory_in_warehouse
-		priority = 10	
+		priority = 10
 	}
 
 	military_factory_in_warehouse_product_2 = {
@@ -100,29 +98,27 @@ equipments = {
 		priority = 30
 	}
 
-	# naval dockyard production 
+	# Naval Dockyard production
 
 	naval_dockyard_in_warehouse = {
 		year = 1936
-	
+
 		is_archetype = yes
-		
+
 		picture = archetype_naval_dockyard
 		is_buildable = no
 
-		type = infantry  # = suicide # it is just the little used type ...
+		type = infantry
 		group_by = archetype
-		
+
 		interface_category = interface_category_land
-		
+
 		active = yes
 
-#		can_be_lend_leased = 
-		lend_lease_cost = 2 # Yes, pp can be supplied with Lend-Lease ;D
-		
+		lend_lease_cost = 2
+
 		build_cost_ic = 2700
 		resources = {
-
 		}
 	}
 
@@ -130,7 +126,7 @@ equipments = {
 		can_be_produced = { has_country_flag = mp_tab_factory }
 		year = 1936
 		archetype = naval_dockyard_in_warehouse
-		priority = 10	
+		priority = 10
 	}
 
 	naval_dockyard_in_warehouse_product_2 = {
@@ -151,28 +147,27 @@ equipments = {
 		priority = 30
 	}
 
-	# Factory Output Equipment Definition
+	# Factory Output production
 
 	factory_output_in_warehouse = {
 		year = 1936
 
 		is_archetype = yes
-		
+
 		picture = archetype_factory_output
 		is_buildable = no
 
-		type = infantry  # Using infantry type as a placeholder
+		type = infantry
 		group_by = archetype
-		
+
 		interface_category = interface_category_land
-		
+
 		active = yes
 
 		lend_lease_cost = 2
-		
+
 		build_cost_ic = 1000
 		resources = {
-		
 		}
 	}
 
@@ -180,7 +175,7 @@ equipments = {
 		can_be_produced = { has_country_flag = mp_tab_factory }
 		year = 1936
 		archetype = factory_output_in_warehouse
-		priority = 10	
+		priority = 10
 	}
 
 	factory_output_in_warehouse_product_2 = {
@@ -201,7 +196,7 @@ equipments = {
 		priority = 30
 	}
 
-	# Production Efficiency Equipment Definition
+	# Production Efficiency production
 
 	production_efficiency_in_warehouse = {
 		year = 1936
@@ -222,7 +217,6 @@ equipments = {
 
 		build_cost_ic = 1000
 		resources = {
-
 		}
 	}
 
@@ -250,4 +244,5 @@ equipments = {
 		build_cost_ic = 100
 		priority = 30
 	}
+
 }

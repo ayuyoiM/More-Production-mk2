@@ -1,6 +1,6 @@
 equipments = {
 
-	# doctrine production line
+	# Doctrine Mastery production
 
 	doctrine_in_warehouse = {
 		year = 1936
@@ -38,9 +38,7 @@ equipments = {
 		year = 1938
 		archetype = doctrine_in_warehouse
 		parent = doctrine_in_warehouse_product
-
 		build_cost_ic = 15
-
 		priority = 20
 	}
 
@@ -49,9 +47,8 @@ equipments = {
 		year = 1941
 		archetype = doctrine_in_warehouse
 		parent = doctrine_in_warehouse_product_2
-
 		build_cost_ic = 5
-
 		priority = 30
 	}
+
 }

@@ -1,6 +1,6 @@
 equipments = {
 
-	# intel_decryption production line
+	# Intel & Decryption production
 
 	intel_decryption_in_warehouse = {
 		year = 1936
@@ -38,9 +38,7 @@ equipments = {
 		year = 1938
 		archetype = intel_decryption_in_warehouse
 		parent = intel_decryption_in_warehouse_product
-
 		build_cost_ic = 15
-
 		priority = 20
 	}
 
@@ -49,9 +47,8 @@ equipments = {
 		year = 1941
 		archetype = intel_decryption_in_warehouse
 		parent = intel_decryption_in_warehouse_product_2
-
 		build_cost_ic = 5
-
 		priority = 30
 	}
+
 }

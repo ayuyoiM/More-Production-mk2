@@ -167,12 +167,17 @@ mp_cat_military = {
 
 		available = {
 			OR = {
-				has_any_grand_doctrine = land
-				has_any_grand_doctrine = naval
-				has_any_grand_doctrine = air
-			}
-			check_variable = {
-				doctrine_mastery_pool > 99
+				has_country_flag = cheat_mode
+				AND = {
+					OR = {
+						has_any_grand_doctrine = land
+						has_any_grand_doctrine = naval
+						has_any_grand_doctrine = air
+					}
+					check_variable = {
+						doctrine_mastery_pool > 99
+					}
+				}
 			}
 		}
 
@@ -188,9 +193,14 @@ mp_cat_military = {
 				add_mastery = {
 					amount = 100
 				}
-				subtract_from_variable = {
-					var = doctrine_mastery_pool
-					value = 100
+				if = {
+					limit = {
+						has_country_flag = normal_mode
+					}
+					subtract_from_variable = {
+						var = doctrine_mastery_pool
+						value = 100
+					}
 				}
 			}
 		}
@@ -209,12 +219,17 @@ mp_cat_military = {
 
 		available = {
 			OR = {
-				has_any_grand_doctrine = land
-				has_any_grand_doctrine = naval
-				has_any_grand_doctrine = air
-			}
-			check_variable = {
-				doctrine_mastery_pool > 999
+				has_country_flag = cheat_mode
+				AND = {
+					OR = {
+						has_any_grand_doctrine = land
+						has_any_grand_doctrine = naval
+						has_any_grand_doctrine = air
+					}
+					check_variable = {
+						doctrine_mastery_pool > 999
+					}
+				}
 			}
 		}
 
@@ -230,9 +245,14 @@ mp_cat_military = {
 				add_mastery = {
 					amount = 1000
 				}
-				subtract_from_variable = {
-					var = doctrine_mastery_pool
-					value = 1000
+				if = {
+					limit = {
+						has_country_flag = normal_mode
+					}
+					subtract_from_variable = {
+						var = doctrine_mastery_pool
+						value = 1000
+					}
 				}
 			}
 		}
@@ -251,12 +271,17 @@ mp_cat_military = {
 
 		available = {
 			OR = {
-				has_any_grand_doctrine = land
-				has_any_grand_doctrine = naval
-				has_any_grand_doctrine = air
-			}
-			check_variable = {
-				doctrine_mastery_pool > 9999
+				has_country_flag = cheat_mode
+				AND = {
+					OR = {
+						has_any_grand_doctrine = land
+						has_any_grand_doctrine = naval
+						has_any_grand_doctrine = air
+					}
+					check_variable = {
+						doctrine_mastery_pool > 9999
+					}
+				}
 			}
 		}
 
@@ -272,9 +297,14 @@ mp_cat_military = {
 				add_mastery = {
 					amount = 10000
 				}
-				subtract_from_variable = {
-					var = doctrine_mastery_pool
-					value = 10000
+				if = {
+					limit = {
+						has_country_flag = normal_mode
+					}
+					subtract_from_variable = {
+						var = doctrine_mastery_pool
+						value = 10000
+					}
 				}
 			}
 		}

@@ -1,97 +1,101 @@
 equipments = {
 
-    # Increase Autonomy Equipment
-    increase_autonomy_in_warehouse = {
-        year = 1936
-        
-        is_archetype = yes
-        
-        picture = archetype_increase_autonomy
-        is_buildable = no
+	# Increase Autonomy production
 
-        type = infantry
-        group_by = archetype
+	increase_autonomy_in_warehouse = {
+		year = 1936
 
-        interface_category = interface_category_land
-        
-        active = yes
-        
-        lend_lease_cost = 2
-        build_cost_ic = 500
-        resources = {
-        
-        }
-    }
+		is_archetype = yes
 
-    increase_autonomy_in_warehouse_product = {
+		picture = archetype_increase_autonomy
+		is_buildable = no
+
+		type = infantry
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		active = yes
+
+		lend_lease_cost = 2
+
+		build_cost_ic = 500
+		resources = {
+		}
+	}
+
+	increase_autonomy_in_warehouse_product = {
 		can_be_produced = { has_country_flag = mp_tab_autonomy }
-        year = 1936
-        archetype = increase_autonomy_in_warehouse
-        priority = 10	
-    }
+		year = 1936
+		archetype = increase_autonomy_in_warehouse
+		priority = 10
+	}
 
-    increase_autonomy_in_warehouse_product_2 = {
+	increase_autonomy_in_warehouse_product_2 = {
 		can_be_produced = { has_country_flag = mp_tab_autonomy }
-        year = 1938
-        archetype = increase_autonomy_in_warehouse
-        parent = increase_autonomy_in_warehouse_product
-        build_cost_ic = 100
-        priority = 10
-    }
+		year = 1938
+		archetype = increase_autonomy_in_warehouse
+		parent = increase_autonomy_in_warehouse_product
+		build_cost_ic = 100
+		priority = 20
+	}
 
-    increase_autonomy_in_warehouse_product_3 = {
+	increase_autonomy_in_warehouse_product_3 = {
 		can_be_produced = { has_country_flag = mp_tab_autonomy }
-        year = 1941
-        archetype = increase_autonomy_in_warehouse
-        parent = increase_autonomy_in_warehouse_product_2
-        build_cost_ic = 10
-        priority = 1
-    }
+		year = 1941
+		archetype = increase_autonomy_in_warehouse
+		parent = increase_autonomy_in_warehouse_product_2
+		build_cost_ic = 10
+		priority = 30
+	}
 
-    # Decrease Autonomy Equipment
-    decrease_autonomy_in_warehouse = {
-        year = 1936
-        
-        is_archetype = yes
-        
-        picture = archetype_decrease_autonomy
-        is_buildable = no
+	# Decrease Autonomy production
 
-        type = infantry
-        group_by = archetype
+	decrease_autonomy_in_warehouse = {
+		year = 1936
 
-        interface_category = interface_category_land
-        
-        active = yes
+		is_archetype = yes
 
-        lend_lease_cost = 2
+		picture = archetype_decrease_autonomy
+		is_buildable = no
 
-        build_cost_ic = 1000
-    }
+		type = infantry
+		group_by = archetype
 
-    decrease_autonomy_in_warehouse_product = {
+		interface_category = interface_category_land
+
+		active = yes
+
+		lend_lease_cost = 2
+
+		build_cost_ic = 1000
+		resources = {
+		}
+	}
+
+	decrease_autonomy_in_warehouse_product = {
 		can_be_produced = { has_country_flag = mp_tab_autonomy }
-        year = 1936
-        archetype = decrease_autonomy_in_warehouse
-        priority = 10
-    }
+		year = 1936
+		archetype = decrease_autonomy_in_warehouse
+		priority = 10
+	}
 
-    decrease_autonomy_in_warehouse_product_2 = {
+	decrease_autonomy_in_warehouse_product_2 = {
 		can_be_produced = { has_country_flag = mp_tab_autonomy }
-        year = 1938
-        archetype = decrease_autonomy_in_warehouse
-        parent = decrease_autonomy_in_warehouse_product
-        build_cost_ic = 100
-        priority = 10
-    }
+		year = 1938
+		archetype = decrease_autonomy_in_warehouse
+		parent = decrease_autonomy_in_warehouse_product
+		build_cost_ic = 100
+		priority = 20
+	}
 
-    decrease_autonomy_in_warehouse_product_3 = {
+	decrease_autonomy_in_warehouse_product_3 = {
 		can_be_produced = { has_country_flag = mp_tab_autonomy }
-        year = 1941
-        archetype = decrease_autonomy_in_warehouse
-        parent = decrease_autonomy_in_warehouse_product_2
-        build_cost_ic = 20
-        priority = 2
-    }
+		year = 1941
+		archetype = decrease_autonomy_in_warehouse
+		parent = decrease_autonomy_in_warehouse_product_2
+		build_cost_ic = 20
+		priority = 30
+	}
 
 }

@@ -1,26 +1,25 @@
 equipments = {
 
-	# Manpower equipment
+	# Synthetic Man production
 
 	man_in_warehouse = {
 		year = 1936
-	
+
 		is_archetype = yes
-		
+
 		picture = archetype_produced_man
 		is_buildable = no
 
-		type = infantry  # = suicide # it is just the little used type ...
+		type = infantry
 		group_by = archetype
-		
+
 		interface_category = interface_category_land
-		
+
 		active = yes
 
-#		can_be_lend_leased = 
-		lend_lease_cost = 2 # Yes, people can be supplied with Lend-Lease ;D
-		
-		build_cost_ic = 0.17 #0.42
+		lend_lease_cost = 2
+
+		build_cost_ic = 0.17
 		resources = {
 			oil = 2
 			rubber = 1
@@ -31,7 +30,7 @@ equipments = {
 		can_be_produced = { has_country_flag = mp_tab_manpower }
 		year = 1936
 		archetype = man_in_warehouse
-		priority = 10	
+		priority = 10
 	}
 
 	man_in_warehouse_product_2 = {
@@ -39,10 +38,8 @@ equipments = {
 		year = 1938
 		archetype = man_in_warehouse
 		parent = man_in_warehouse_product
-
-		build_cost_ic = 0.01 #0.42
-
-		priority = 20	
+		build_cost_ic = 0.01
+		priority = 20
 	}
 
 	man_in_warehouse_product_3 = {
@@ -50,9 +47,8 @@ equipments = {
 		year = 1941
 		archetype = man_in_warehouse
 		parent = man_in_warehouse_product_2
-
-		build_cost_ic = 0.001 #0.17
-
-		priority = 30	
+		build_cost_ic = 0.001
+		priority = 30
 	}
+
 }

@@ -1,6 +1,5 @@
 ﻿l_simp_chinese:
-  more_production_decision: "万能军工厂" 
-  more_production_decision_desc: "上帝创造了人类，人类创造了工厂。人类可以做任何事，为什么工厂不行？\n\n 当前的科研点为：[?research_point_var|.0]"
+  mp_cat_lines_desc: "上帝创造了人类，人类创造了工厂。\n人类可以做任何事，为什么工厂不行？\n\n 当前的科研点为：[?research_point_var|.0]"
 
   flag_decision: "万能军工厂：模式选择"
   cheat_mode_decision: "可以任意解锁任何科技"

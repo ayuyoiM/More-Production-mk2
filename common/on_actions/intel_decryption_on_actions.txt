@@ -36,6 +36,7 @@ on_actions = {
 					var = more_production_intel_network_gain_factor
 					value = intel_decryption_product
 				}
+
 				add_to_variable = {
 					var = more_production_decryption_power_factor
 					value = intel_decryption_product
@@ -89,6 +90,7 @@ on_actions = {
 					var = more_production_intel_network_gain_factor
 					value = intel_decryption_product_2
 				}
+
 				add_to_variable = {
 					var = more_production_decryption_power_factor
 					value = intel_decryption_product_2
@@ -142,6 +144,7 @@ on_actions = {
 					var = more_production_intel_network_gain_factor
 					value = intel_decryption_product_3
 				}
+
 				add_to_variable = {
 					var = more_production_decryption_power_factor
 					value = intel_decryption_product_3
@@ -158,4 +161,5 @@ on_actions = {
 			}
 		}
 	}
+
 }

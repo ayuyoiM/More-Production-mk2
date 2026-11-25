@@ -1,23 +1,24 @@
 equipments = {
-    # world tension production 
+
+	# World Tension Increase production
+
 	world_tension_increase_in_warehouse = {
 		year = 1936
-	
+
 		is_archetype = yes
-		
+
 		picture = archetype_world_tension_increase
 		is_buildable = no
 
-		type = infantry  # = suicide # it is just the little used type ...
+		type = infantry
 		group_by = archetype
-		
+
 		interface_category = interface_category_land
-		
+
 		active = yes
 
-#		can_be_lend_leased = 
-		lend_lease_cost = 2 # Yes, pp can be supplied with Lend-Lease ;D
-		
+		lend_lease_cost = 2
+
 		build_cost_ic = 20
 		resources = {
 			oil = 2
@@ -28,27 +29,28 @@ equipments = {
 		can_be_produced = { has_country_flag = mp_tab_tension }
 		year = 1936
 		archetype = world_tension_increase_in_warehouse
-		priority = 10	
+		priority = 10
 	}
+
+	# World Tension Decrease production
 
 	world_tension_decrease_in_warehouse = {
 		year = 1936
-	
+
 		is_archetype = yes
-		
+
 		picture = archetype_world_tension_decrease
 		is_buildable = no
 
-		type = infantry  # = suicide # it is just the little used type ...
+		type = infantry
 		group_by = archetype
-		
+
 		interface_category = interface_category_land
-		
+
 		active = yes
 
-#		can_be_lend_leased = 
-		lend_lease_cost = 2 # Yes, pp can be supplied with Lend-Lease ;D
-		
+		lend_lease_cost = 2
+
 		build_cost_ic = 20
 		resources = {
 			oil = 2
@@ -59,6 +61,7 @@ equipments = {
 		can_be_produced = { has_country_flag = mp_tab_tension }
 		year = 1936
 		archetype = world_tension_decrease_in_warehouse
-		priority = 10	
+		priority = 10
 	}
+
 }

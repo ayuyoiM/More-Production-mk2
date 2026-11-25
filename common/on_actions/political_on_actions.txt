@@ -1,174 +1,137 @@
 on_actions = {
 
-    on_weekly = { # Political Power I tech
-		
+	on_weekly = { # pp_in_warehouse_product
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@pp_in_warehouse_product > 0
 					}
 				}
-				
+
 				set_variable = {
-					var = political_power_product
+					var = pp_product
 					value = var:num_equipment@pp_in_warehouse_product
 				}
 				set_variable = {
-					var = political_power_product_negative
+					var = pp_product_negative
 					value = var:num_equipment@pp_in_warehouse_product
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@pp_in_warehouse_product > 0
-						}
-					}
-					multiply_variable = {
-						var = political_power_product_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = pp_product_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = pp_in_warehouse_product
-    				amount = political_power_product_negative
-    				# producer = ROOT
+					type = pp_in_warehouse_product
+					amount = pp_product_negative
 				}
-				add_political_power = political_power_product
+
+				add_political_power = pp_product
+
 				set_variable = {
-					var = political_power_product
+					var = pp_product
 					value = 0
 				}
 				set_variable = {
-					var = political_power_product_negative
+					var = pp_product_negative
 					value = 0
 				}
 			}
 		}
 	}
 
-on_weekly = { # Political Power II tech
-		
+	on_weekly = { # pp_in_warehouse_product_2
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@pp_in_warehouse_product_2 > 0
 					}
 				}
-				
+
 				set_variable = {
-					var = political_power_product_2
+					var = pp_product_2
 					value = var:num_equipment@pp_in_warehouse_product_2
 				}
 				set_variable = {
-					var = political_power_product_2_negative
+					var = pp_product_2_negative
 					value = var:num_equipment@pp_in_warehouse_product_2
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@pp_in_warehouse_product_2 > 0
-						}
-					}
-					multiply_variable = {
-						var = political_power_product_2_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = pp_product_2_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = pp_in_warehouse_product_2
-    				amount = political_power_product_2_negative
-    				# producer = ROOT
+					type = pp_in_warehouse_product_2
+					amount = pp_product_2_negative
 				}
-				add_political_power = political_power_product_2
+
+				add_political_power = pp_product_2
+
 				set_variable = {
-					var = political_power_product_2
+					var = pp_product_2
 					value = 0
 				}
 				set_variable = {
-					var = political_power_product_2_negative
+					var = pp_product_2_negative
 					value = 0
 				}
 			}
 		}
 	}
 
-	on_weekly = { # Political Power III tech
-		
+	on_weekly = { # pp_in_warehouse_product_3
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@pp_in_warehouse_product_3 > 0
 					}
 				}
-				
+
 				set_variable = {
-					var = political_power_product_3
+					var = pp_product_3
 					value = var:num_equipment@pp_in_warehouse_product_3
 				}
 				set_variable = {
-					var = political_power_product_3_negative
+					var = pp_product_3_negative
 					value = var:num_equipment@pp_in_warehouse_product_3
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@pp_in_warehouse_product_3 > 0
-						}
-					}
-					multiply_variable = {
-						var = political_power_product_3_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = pp_product_3_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = pp_in_warehouse_product_3
-    				amount = political_power_product_3_negative
-    				# producer = ROOT
+					type = pp_in_warehouse_product_3
+					amount = pp_product_3_negative
 				}
-				add_political_power = political_power_product_3
+
+				add_political_power = pp_product_3
+
 				set_variable = {
-					var = political_power_product_3
+					var = pp_product_3
 					value = 0
 				}
 				set_variable = {
-					var = political_power_product_3_negative
+					var = pp_product_3_negative
 					value = 0
 				}
 			}
 		}
 	}
 
-    # stability and war support
-
-	on_weekly = { # stability tech
-		
+	on_weekly = { # stability_in_warehouse_product
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@stability_in_warehouse_product > 0
 					}
 				}
-				
+
 				set_variable = {
 					var = stability_product
 					value = var:num_equipment@stability_in_warehouse_product
@@ -177,28 +140,21 @@ on_weekly = { # Political Power II tech
 					var = stability_product_negative
 					value = var:num_equipment@stability_in_warehouse_product
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@stability_in_warehouse_product > 0
-						}
-					}
-					multiply_variable = {
-						var = stability_product_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = stability_product_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = stability_in_warehouse_product
-    				amount = stability_product_negative
-    				# producer = ROOT
+					type = stability_in_warehouse_product
+					amount = stability_product_negative
 				}
 
-				divide_variable = { stability_product = 100}
+				divide_variable = {
+					var = stability_product
+					value = 1
+				}
+
 				add_stability = stability_product
 
 				set_variable = {
@@ -213,17 +169,15 @@ on_weekly = { # Political Power II tech
 		}
 	}
 
-	on_weekly = { # stability tech II 
-		
+	on_weekly = { # stability_in_warehouse_product_2
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@stability_in_warehouse_product_2 > 0
 					}
 				}
-				
+
 				set_variable = {
 					var = stability_product_2
 					value = var:num_equipment@stability_in_warehouse_product_2
@@ -232,28 +186,21 @@ on_weekly = { # Political Power II tech
 					var = stability_product_2_negative
 					value = var:num_equipment@stability_in_warehouse_product_2
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@stability_in_warehouse_product_2 > 0
-						}
-					}
-					multiply_variable = {
-						var = stability_product_2_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = stability_product_2_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = stability_in_warehouse_product_2
-    				amount = stability_product_2_negative
-    				# producer = ROOT
+					type = stability_in_warehouse_product_2
+					amount = stability_product_2_negative
 				}
 
-				divide_variable = { stability_product_2 = 100}
+				divide_variable = {
+					var = stability_product_2
+					value = 1
+				}
+
 				add_stability = stability_product_2
 
 				set_variable = {
@@ -268,18 +215,15 @@ on_weekly = { # Political Power II tech
 		}
 	}
 
-
-	on_weekly = { # stability tech III
-		
+	on_weekly = { # stability_in_warehouse_product_3
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@stability_in_warehouse_product_3 > 0
 					}
 				}
-				
+
 				set_variable = {
 					var = stability_product_3
 					value = var:num_equipment@stability_in_warehouse_product_3
@@ -288,28 +232,21 @@ on_weekly = { # Political Power II tech
 					var = stability_product_3_negative
 					value = var:num_equipment@stability_in_warehouse_product_3
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@stability_in_warehouse_product_3 > 0
-						}
-					}
-					multiply_variable = {
-						var = stability_product_3_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = stability_product_3_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = stability_in_warehouse_product_3
-    				amount = stability_product_3_negative
-    				# producer = ROOT
+					type = stability_in_warehouse_product_3
+					amount = stability_product_3_negative
 				}
 
-				divide_variable = { stability_product_3 = 100}
+				divide_variable = {
+					var = stability_product_3
+					value = 1
+				}
+
 				add_stability = stability_product_3
 
 				set_variable = {
@@ -324,17 +261,15 @@ on_weekly = { # Political Power II tech
 		}
 	}
 
-	on_weekly = {  # war support
-		
+	on_weekly = { # warsupport_in_warehouse_product
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@warsupport_in_warehouse_product > 0
 					}
 				}
-				
+
 				set_variable = {
 					var = warsupport_product
 					value = var:num_equipment@warsupport_in_warehouse_product
@@ -343,30 +278,23 @@ on_weekly = { # Political Power II tech
 					var = warsupport_product_negative
 					value = var:num_equipment@warsupport_in_warehouse_product
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@warsupport_in_warehouse_product > 0
-						}
-					}
-					multiply_variable = {
-						var = warsupport_product_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = warsupport_product_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = warsupport_in_warehouse_product
-    				amount = warsupport_product_negative
-    				# producer = ROOT
+					type = warsupport_in_warehouse_product
+					amount = warsupport_product_negative
 				}
 
-				divide_variable = { warsupport_product = 100}
+				divide_variable = {
+					var = warsupport_product
+					value = 1
+				}
+
 				add_war_support = warsupport_product
-				
+
 				set_variable = {
 					var = warsupport_product
 					value = 0
@@ -379,17 +307,15 @@ on_weekly = { # Political Power II tech
 		}
 	}
 
-	on_weekly = { # war support tech II 
-		
+	on_weekly = { # warsupport_in_warehouse_product_2
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@warsupport_in_warehouse_product_2 > 0
 					}
 				}
-				
+
 				set_variable = {
 					var = warsupport_product_2
 					value = var:num_equipment@warsupport_in_warehouse_product_2
@@ -398,30 +324,23 @@ on_weekly = { # Political Power II tech
 					var = warsupport_product_2_negative
 					value = var:num_equipment@warsupport_in_warehouse_product_2
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@warsupport_in_warehouse_product_2 > 0
-						}
-					}
-					multiply_variable = {
-						var = warsupport_product_2_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = warsupport_product_2_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = warsupport_in_warehouse_product_2
-    				amount = warsupport_product_2_negative
-    				# producer = ROOT
+					type = warsupport_in_warehouse_product_2
+					amount = warsupport_product_2_negative
 				}
 
-				divide_variable = { warsupport_product_2 = 100}
+				divide_variable = {
+					var = warsupport_product_2
+					value = 1
+				}
+
 				add_war_support = warsupport_product_2
-				
+
 				set_variable = {
 					var = warsupport_product_2
 					value = 0
@@ -434,17 +353,15 @@ on_weekly = { # Political Power II tech
 		}
 	}
 
-	on_weekly = {  # war support tech III 
-		
+	on_weekly = { # warsupport_in_warehouse_product_3
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@warsupport_in_warehouse_product_3 > 0
 					}
 				}
-				
+
 				set_variable = {
 					var = warsupport_product_3
 					value = var:num_equipment@warsupport_in_warehouse_product_3
@@ -453,30 +370,23 @@ on_weekly = { # Political Power II tech
 					var = warsupport_product_3_negative
 					value = var:num_equipment@warsupport_in_warehouse_product_3
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@warsupport_in_warehouse_product_3 > 0
-						}
-					}
-					multiply_variable = {
-						var = warsupport_product_3_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = warsupport_product_3_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = warsupport_in_warehouse_product_3
-    				amount = warsupport_product_3_negative
-    				# producer = ROOT
+					type = warsupport_in_warehouse_product_3
+					amount = warsupport_product_3_negative
 				}
 
-				divide_variable = { warsupport_product_3 = 100}
+				divide_variable = {
+					var = warsupport_product_3
+					value = 1
+				}
+
 				add_war_support = warsupport_product_3
-				
+
 				set_variable = {
 					var = warsupport_product_3
 					value = 0
@@ -488,9 +398,5 @@ on_weekly = { # Political Power II tech
 			}
 		}
 	}
-
-
-
-
 
 }

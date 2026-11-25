@@ -1,6 +1,5 @@
 ﻿l_english:
-  more_production_decision: "Military Factory Produces Everything!" 
-  more_production_decision_desc: "God created humanity, and humanity created factories. If humans can do anything, why can't factories?\n\n Current research points: [?research_point_var]"
+  mp_cat_lines_desc: "God created humanity, and humanity created factories.\nIf humans can do anything, why can't factories?\n\n Current research points: [?research_point_var]"
 
   flag_decision: "Mode Selection"
   cheat_mode_decision: "Unlock Any Technology at Will"

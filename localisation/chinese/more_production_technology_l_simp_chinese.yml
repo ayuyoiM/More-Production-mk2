@@ -1,185 +1,57 @@
 ﻿l_simp_chinese:
-  # Manpower Production Technologies
-  manpower_production_research: "合成人力 I"
-  manpower_production_research_desc: "提供人力合成。"
-  manpower_production_2_research: "合成人力 II"
-  manpower_production_2_research_desc: "提供更便宜的人力合成。"
-  manpower_production_3_research: "合成人力 III"
-  manpower_production_3_research_desc: "提供最便宜的人力合成。"
+  # 特工位
+  operative_slot_production_research: "特工位 I"
+  operative_slot_production_research_desc: "解锁初级特工位。"
+  operative_slot_production_2_research: "特工位 II"
+  operative_slot_production_2_research_desc: "解锁中级特工位。"
+  operative_slot_production_3_research: "特工位 III"
+  operative_slot_production_3_research_desc: "解锁高级特工位。"
 
-  # Political Power Production Technologies
-  political_power_production_research: "政治点数 I"
-  political_power_production_research_desc: "解锁政治点数生产 I。"
-  political_power_production_2_research: "政治点数 II"
-  political_power_production_2_research_desc: "解锁政治点数生产 II。"
-  political_power_production_3_research: "政治点数 III"
-  political_power_production_3_research_desc: "解锁政治点数生产 III。"
+  # 提高自治度
+  increase_autonomy_production_research: "提高自治度 I"
+  increase_autonomy_production_research_desc: "解锁初级提高自治度装备。"
+  increase_autonomy_production_2_research: "提高自治度 II"
+  increase_autonomy_production_2_research_desc: "解锁中级提高自治度装备。"
+  increase_autonomy_production_3_research: "提高自治度 III"
+  increase_autonomy_production_3_research_desc: "解锁高级提高自治度装备。"
+  # 降低自治度
+  decrease_autonomy_production_research: "降低自治度 I"
+  decrease_autonomy_production_research_desc: "解锁初级降低自治度装备。"
+  decrease_autonomy_production_2_research: "降低自治度 II"
+  decrease_autonomy_production_2_research_desc: "解锁中级降低自治度装备。"
+  decrease_autonomy_production_3_research: "降低自治度 III"
+  decrease_autonomy_production_3_research_desc: "解锁高级降低自治度装备。"
 
-  # Stability Production Technologies
-  stability_production_research: "稳定度 I"
-  stability_production_research_desc: "解锁稳定度生产 I。"
-  stability_production_2_research: "稳定度 II"
-  stability_production_2_research_desc: "解锁稳定度生产 II。"
-  stability_production_3_research: "稳定度 III"
-  stability_production_3_research_desc: "解锁稳定度生产 III。"
+  # 学说精通
+  doctrine_production_research: "学说精通 I"
+  doctrine_production_research_desc: "解锁初级学说精通生产。"
+  doctrine_production_2_research: "学说精通 II"
+  doctrine_production_2_research_desc: "解锁中级学说精通生产。"
+  doctrine_production_3_research: "学说精通 III"
+  doctrine_production_3_research_desc: "解锁高级学说精通生产。"
 
-  # War Support Production Technologies
-  warsupport_production_research: "战争支持度 I"
-  warsupport_production_research_desc: "解锁战争支持度生产 I。"
-  warsupport_production_2_research: "战争支持度 II"
-  warsupport_production_2_research_desc: "解锁战争支持度生产 II。"
-  warsupport_production_3_research: "战争支持度 III"
-  warsupport_production_3_research_desc: "解锁战争支持度生产 III。"
-
-  # Ideology Production Technologies
-  democracy_production_research: "民主支持率生产"
-  democracy_production_research_desc: "解锁民主支持率生产。"
-  communism_production_research: "共产支持率生产"
-  communism_production_research_desc: "解锁共产支持率生产。"
-  neutrality_production_research: "中立支持率生产"
-  neutrality_production_research_desc: "解锁中立支持率生产。"
-  fascism_production_research: "法西斯支持率生产"
-  fascism_production_research_desc: "解锁法西斯支持率生产。"
-
-  # Army Experience Technologies
-  armyxp_production_research: "陆军经验 I"
-  armyxp_production_research_desc: "解锁陆军经验生产 I。"
-  armyxp_production_2_research: "陆军经验 II"
-  armyxp_production_2_research_desc: "解锁陆军经验生产 II。"
-  armyxp_production_3_research: "陆军经验 III"
-  armyxp_production_3_research_desc: "解锁陆军经验生产 III。"
-
-  # Navy Experience Technologies
-  navyxp_production_research: "海军经验 I"
-  navyxp_production_research_desc: "解锁海军经验生产 I。"
-  navyxp_production_2_research: "海军经验 II"
-  navyxp_production_2_research_desc: "解锁海军经验生产 II。"
-  navyxp_production_3_research: "海军经验 III"
-  navyxp_production_3_research_desc: "解锁海军经验生产 III。"
-
-  # Air Experience Technologies
-  airxp_production_research: "空军经验 I"
-  airxp_production_research_desc: "解锁空军经验生产 I。"
-  airxp_production_2_research: "空军经验 II"
-  airxp_production_2_research_desc: "解锁空军经验生产 II。"
-  airxp_production_3_research: "空军经验 III"
-  airxp_production_3_research_desc: "解锁空军经验生产 III。"
-
-  # Command Power Production Technologies
-  command_power_production_research: "指挥点数 I"
-  command_power_production_research_desc: "解锁指挥点数生产 I。"
-  command_power_production_2_research: "指挥点数 II"
-  command_power_production_2_research_desc: "解锁指挥点数生产 II。"
-  command_power_production_3_research: "指挥点数 III"
-  command_power_production_3_research_desc: "解锁指挥点数生产 III。"
-
-  # Research Point Production Technologies
-  research_point_production_research: "科研点 I"
-  research_point_production_research_desc: "解锁科研点生产 I。"
-  research_point_production_2_research: "科研点 II"
-  research_point_production_2_research_desc: "解锁科研点生产 II。"
-  research_point_production_3_research: "科研点 III"
-  research_point_production_3_research_desc: "解锁科研点生产 III。"
-
-  # Factory Production Technologies
-  civilian_factory_production_research: "民用工厂 I"
-  civilian_factory_production_research_desc: "解锁民用工厂生产 I。"
-  civilian_factory_production_2_research: "民用工厂 II"
-  civilian_factory_production_2_research_desc: "解锁民用工厂生产 II。"
-  civilian_factory_production_3_research: "民用工厂 III"
-  civilian_factory_production_3_research_desc: "解锁民用工厂生产 III。"
-
-  military_factory_production_research: "军用工厂 I"
-  military_factory_production_research_desc: "解锁军用工厂生产 I。"
-  military_factory_production_2_research: "军用工厂 II"
-  military_factory_production_2_research_desc: "解锁军用工厂生产 II。"
-  military_factory_production_3_research: "军用工厂 III"
-  military_factory_production_3_research_desc: "解锁军用工厂生产 III。"
-
-  naval_dockyard_production_research: "海军船坞 I"
-  naval_dockyard_production_research_desc: "解锁海军船坞生产 I。"
-  naval_dockyard_production_2_research: "海军船坞 II"
-  naval_dockyard_production_2_research_desc: "解锁海军船坞生产 II。"
-  naval_dockyard_production_3_research: "海军船坞 III"
-  naval_dockyard_production_3_research_desc: "解锁海军船坞生产 III。"
-
-  # Resource Production Technologies
-
-  oil_production_research: "石油生产 I"
-  oil_production_research_desc: "解锁初级石油生产。"
-  oil_production_2_research: "石油生产 II"
-  oil_production_2_research_desc: "解锁中级石油生产。"
-  oil_production_3_research: "石油生产 III"
-  oil_production_3_research_desc: "解锁高级石油生产。"
-
-  aluminium_production_research: "铝生产 I"
-  aluminium_production_research_desc: "解锁初级铝生产。"
-  aluminium_production_2_research: "铝生产 II"
-  aluminium_production_2_research_desc: "解锁中级铝生产。"
-  aluminium_production_3_research: "铝生产 III"
-  aluminium_production_3_research_desc: "解锁高级铝生产。"
-
-  rubber_production_research: "橡胶生产 I"
-  rubber_production_research_desc: "解锁初级橡胶生产。"
-  rubber_production_2_research: "橡胶生产 II"
-  rubber_production_2_research_desc: "解锁中级橡胶生产。"
-  rubber_production_3_research: "橡胶生产 III"
-  rubber_production_3_research_desc: "解锁高级橡胶生产。"
-
-  steel_production_research: "钢铁生产 I"
-  steel_production_research_desc: "解锁初级钢生产。"
-  steel_production_2_research: "钢铁生产 II"
-  steel_production_2_research_desc: "解锁中级钢生产。"
-  steel_production_3_research: "钢铁生产 III"
-  steel_production_3_research_desc: "解锁高级钢生产。"
-
-  tungsten_production_research: "钨生产 I"
-  tungsten_production_research_desc: "解锁初级钨生产。"
-  tungsten_production_2_research: "钨生产 II"
-  tungsten_production_2_research_desc: "解锁中级钨生产。"
-  tungsten_production_3_research: "钨生产 III"
-  tungsten_production_3_research_desc: "解锁高级钨生产。"
-
-  chromium_production_research: "铬生产 I"
-  chromium_production_research_desc: "解锁初级铬生产。"
-  chromium_production_2_research: "铬生产 II"
-  chromium_production_2_research_desc: "解锁中级铬生产。"
-  chromium_production_3_research: "铬生产 III"
-  chromium_production_3_research_desc: "解锁高级铬生产。"
-
-  coal_production_research: "煤炭生产 I"
-  coal_production_research_desc: "解锁初级煤炭生产。"
-  coal_production_2_research: "煤炭生产 II"
-  coal_production_2_research_desc: "解锁中级煤炭生产。"
-  coal_production_3_research: "煤炭生产 III"
-  coal_production_3_research_desc: "解锁高级煤炭生产。"
-
-
-  # Army Breakthrough Technologies
+  # 陆军设施突破
   army_breakthrough_production_research: "陆军设施突破 I"
   army_breakthrough_production_research_desc: "解锁基础陆军设施突破生产科技。"
   army_breakthrough_production_2_research: "陆军设施突破 II"
   army_breakthrough_production_2_research_desc: "解锁中级陆军设施突破生产科技。"
   army_breakthrough_production_3_research: "陆军设施突破 III"
   army_breakthrough_production_3_research_desc: "解锁高级陆军设施突破生产科技。"
-
-  # Navy Breakthrough Technologies
+  # 海军设施突破
   navy_breakthrough_production_research: "海军设施突破 I"
   navy_breakthrough_production_research_desc: "解锁基础海军设施突破生产科技。"
   navy_breakthrough_production_2_research: "海军设施突破 II"
   navy_breakthrough_production_2_research_desc: "解锁中级海军设施突破生产科技。"
   navy_breakthrough_production_3_research: "海军设施突破 III"
   navy_breakthrough_production_3_research_desc: "解锁高级海军设施突破生产科技。"
-
-  # Air Breakthrough Technologies
+  # 空军设施突破
   air_breakthrough_production_research: "空军设施突破 I"
   air_breakthrough_production_research_desc: "解锁初级空军设施突破生产科技。"
   air_breakthrough_production_2_research: "空军设施突破 II"
   air_breakthrough_production_2_research_desc: "解锁中级空军设施突破生产科技。"
   air_breakthrough_production_3_research: "空军设施突破 III"
   air_breakthrough_production_3_research_desc: "解锁高级空军设施突破生产科技。"
-
-  # Nuclear Breakthrough Technologies
+  # 核能设施突破
   nuclear_breakthrough_production_research: "核能设施突破 I"
   nuclear_breakthrough_production_research_desc: "解锁基础核能设施突破生产科技。"
   nuclear_breakthrough_production_2_research: "核能设施突破 II"
@@ -187,73 +59,56 @@
   nuclear_breakthrough_production_3_research: "核能设施突破 III"
   nuclear_breakthrough_production_3_research_desc: "解锁高级核能设施突破生产科技。"
 
-  # Compliance Equipment Technology
-  compliance_equipment_production_research: "顺从度生产 I"
-  compliance_equipment_production_research_desc: "解锁基础服从设备的生产科技。"
-  compliance_equipment_production_2_research: "顺从度生产 II"
-  compliance_equipment_production_2_research_desc: "解锁中级服从设备的生产科技。"
-  compliance_equipment_production_3_research: "顺从度生产 III"
-  compliance_equipment_production_3_research_desc: "解锁高级服从设备的生产科技。"
-
-  # Resistance Equipment Technology
-  resistance_equipment_production_research: "降低抵抗设备 I"
-  resistance_equipment_production_research_desc: "解锁基础抵抗设备的生产科技。"
-  resistance_equipment_production_2_research: "降低抵抗 II"
-  resistance_equipment_production_2_research_desc: "解锁中级抵抗设备的生产科技。"
-  resistance_equipment_production_3_research: "降低抵抗 III"
-  resistance_equipment_production_3_research_desc: "解锁高级抵抗设备的生产科技。"
-
-  # Coring Equipment Technology
-  coring_equipment_production_research: "造核心设备 I"
-  coring_equipment_production_research_desc: "解锁基础造核心设备的生产科技。"
-  coring_equipment_production_2_research: "造核心设备 II"
-  coring_equipment_production_2_research_desc: "解锁中级造核心设备的生产科技。"
-  coring_equipment_production_3_research: "造核心设备 III"
-  coring_equipment_production_3_research_desc: "解锁高级核心设备的生产科技。"
-
-  # Factory Output
-  factory_output_production_research: "工厂产出I"
+  # 民用工厂
+  civilian_factory_production_research: "民用工厂 I"
+  civilian_factory_production_research_desc: "解锁民用工厂生产 I。"
+  civilian_factory_production_2_research: "民用工厂 II"
+  civilian_factory_production_2_research_desc: "解锁民用工厂生产 II。"
+  civilian_factory_production_3_research: "民用工厂 III"
+  civilian_factory_production_3_research_desc: "解锁民用工厂生产 III。"
+  # 军用工厂
+  military_factory_production_research: "军用工厂 I"
+  military_factory_production_research_desc: "解锁军用工厂生产 I。"
+  military_factory_production_2_research: "军用工厂 II"
+  military_factory_production_2_research_desc: "解锁军用工厂生产 II。"
+  military_factory_production_3_research: "军用工厂 III"
+  military_factory_production_3_research_desc: "解锁军用工厂生产 III。"
+  # 海军船坞
+  naval_dockyard_production_research: "海军船坞 I"
+  naval_dockyard_production_research_desc: "解锁海军船坞生产 I。"
+  naval_dockyard_production_2_research: "海军船坞 II"
+  naval_dockyard_production_2_research_desc: "解锁海军船坞生产 II。"
+  naval_dockyard_production_3_research: "海军船坞 III"
+  naval_dockyard_production_3_research_desc: "解锁海军船坞生产 III。"
+  # 工厂产出
+  factory_output_production_research: "工厂产出 I"
   factory_output_production_research_desc: "解锁初级工厂产出设备。"
-  factory_output_production_2_research: "工厂产出II"
+  factory_output_production_2_research: "工厂产出 II"
   factory_output_production_2_research_desc: "解锁中级工厂产出设备。"
-  factory_output_production_3_research: "工厂产出III"
+  factory_output_production_3_research: "工厂产出 III"
   factory_output_production_3_research_desc: "解锁高级工厂产出设备。"
-
-  # Production Efficiency
-  production_efficiency_production_research: "生产效率I"
+  # 生产效率
+  production_efficiency_production_research: "生产效率 I"
   production_efficiency_production_research_desc: "解锁初级生产效率设备。"
-  production_efficiency_production_2_research: "生产效率II"
+  production_efficiency_production_2_research: "生产效率 II"
   production_efficiency_production_2_research_desc: "解锁中级生产效率设备。"
-  production_efficiency_production_3_research: "生产效率III"
+  production_efficiency_production_3_research: "生产效率 III"
   production_efficiency_production_3_research_desc: "解锁高级生产效率设备。"
 
-  # Operative Slots
-  operative_slot_production_research: "特工位I"
-  operative_slot_production_research_desc: "解锁初级特工位。"
-  operative_slot_production_2_research: "特工位II"
-  operative_slot_production_2_research_desc: "解锁中级特工位。"
-  operative_slot_production_3_research: "特工位III"
-  operative_slot_production_3_research_desc: "解锁高级特工位。"
+  # 民主支持率
+  democracy_production_research: "民主支持率 I"
+  democracy_production_research_desc: "解锁民主支持率生产。"
+  # 共产支持率
+  communism_production_research: "共产支持率 I"
+  communism_production_research_desc: "解锁共产支持率生产。"
+  # 中立支持率
+  neutrality_production_research: "中立支持率 I"
+  neutrality_production_research_desc: "解锁中立支持率生产。"
+  # 法西斯支持率
+  fascism_production_research: "法西斯支持率 I"
+  fascism_production_research_desc: "解锁法西斯支持率生产。"
 
-  # Increase Autonomy
-  increase_autonomy_production_research: "提高自治度I"
-  increase_autonomy_production_research_desc: "解锁初级提高自治度装备。"
-  increase_autonomy_production_2_research: "提高自治度II"
-  increase_autonomy_production_2_research_desc: "解锁中级提高自治度装备。"
-  increase_autonomy_production_3_research: "提高自治度III"
-  increase_autonomy_production_3_research_desc: "解锁高级提高自治度装备。"
-
-  # Decrease Autonomy
-  decrease_autonomy_production_research: "降低自治度I"
-  decrease_autonomy_production_research_desc: "解锁初级降低自治度装备。"
-  decrease_autonomy_production_2_research: "降低自治度II"
-  decrease_autonomy_production_2_research_desc: "解锁中级降低自治度装备。"
-  decrease_autonomy_production_3_research: "降低自治度III"
-  decrease_autonomy_production_3_research_desc: "解锁高级降低自治度装备。"
-
-
-
-  # Intel / Decryption Production Technologies
+  # 情报破译
   intel_decryption_production_research: "情报破译 I"
   intel_decryption_production_research_desc: "解锁初级情报破译生产。"
   intel_decryption_production_2_research: "情报破译 II"
@@ -261,7 +116,15 @@
   intel_decryption_production_3_research: "情报破译 III"
   intel_decryption_production_3_research_desc: "解锁高级情报破译生产。"
 
-  # MIO Production Technologies
+  # 合成人
+  manpower_production_research: "合成人 I"
+  manpower_production_research_desc: "提供人力合成。"
+  manpower_production_2_research: "合成人 II"
+  manpower_production_2_research_desc: "提供更便宜的人力合成。"
+  manpower_production_3_research: "合成人 III"
+  manpower_production_3_research_desc: "提供最便宜的人力合成。"
+
+  # 军工组织
   mio_production_research: "军工组织 I"
   mio_production_research_desc: "解锁初级军工组织生产。"
   mio_production_2_research: "军工组织 II"
@@ -269,10 +132,138 @@
   mio_production_3_research: "军工组织 III"
   mio_production_3_research_desc: "解锁高级军工组织生产。"
 
-  # Doctrine Production Technologies
-  doctrine_production_research: "学说精通 I"
-  doctrine_production_research_desc: "解锁初级学说精通生产。"
-  doctrine_production_2_research: "学说精通 II"
-  doctrine_production_2_research_desc: "解锁中级学说精通生产。"
-  doctrine_production_3_research: "学说精通 III"
-  doctrine_production_3_research_desc: "解锁高级学说精通生产。"
+  # 顺从度设备
+  compliance_equipment_production_research: "顺从度设备 I"
+  compliance_equipment_production_research_desc: "解锁基础服从设备的生产科技。"
+  compliance_equipment_production_2_research: "顺从度设备 II"
+  compliance_equipment_production_2_research_desc: "解锁中级服从设备的生产科技。"
+  compliance_equipment_production_3_research: "顺从度设备 III"
+  compliance_equipment_production_3_research_desc: "解锁高级服从设备的生产科技。"
+  # 移除抵抗设备
+  resistance_equipment_production_research: "移除抵抗设备 I"
+  resistance_equipment_production_research_desc: "解锁基础抵抗设备的生产科技。"
+  resistance_equipment_production_2_research: "移除抵抗设备 II"
+  resistance_equipment_production_2_research_desc: "解锁中级抵抗设备的生产科技。"
+  resistance_equipment_production_3_research: "移除抵抗设备 III"
+  resistance_equipment_production_3_research_desc: "解锁高级抵抗设备的生产科技。"
+  # 造核心设备
+  coring_equipment_production_research: "造核心设备 I"
+  coring_equipment_production_research_desc: "解锁基础造核心设备的生产科技。"
+  coring_equipment_production_2_research: "造核心设备 II"
+  coring_equipment_production_2_research_desc: "解锁中级造核心设备的生产科技。"
+  coring_equipment_production_3_research: "造核心设备 III"
+  coring_equipment_production_3_research_desc: "解锁高级核心设备的生产科技。"
+
+  # 政治点数
+  political_power_production_research: "政治点数 I"
+  political_power_production_research_desc: "解锁政治点数生产 I。"
+  political_power_production_2_research: "政治点数 II"
+  political_power_production_2_research_desc: "解锁政治点数生产 II。"
+  political_power_production_3_research: "政治点数 III"
+  political_power_production_3_research_desc: "解锁政治点数生产 III。"
+  # 稳定度
+  stability_production_research: "稳定度 I"
+  stability_production_research_desc: "解锁稳定度生产 I。"
+  stability_production_2_research: "稳定度 II"
+  stability_production_2_research_desc: "解锁稳定度生产 II。"
+  stability_production_3_research: "稳定度 III"
+  stability_production_3_research_desc: "解锁稳定度生产 III。"
+  # 战争支持度
+  warsupport_production_research: "战争支持度 I"
+  warsupport_production_research_desc: "解锁战争支持度生产 I。"
+  warsupport_production_2_research: "战争支持度 II"
+  warsupport_production_2_research_desc: "解锁战争支持度生产 II。"
+  warsupport_production_3_research: "战争支持度 III"
+  warsupport_production_3_research_desc: "解锁战争支持度生产 III。"
+
+  # 科研点
+  research_point_production_research: "科研点 I"
+  research_point_production_research_desc: "解锁科研点生产 I。"
+  research_point_production_2_research: "科研点 II"
+  research_point_production_2_research_desc: "解锁科研点生产 II。"
+  research_point_production_3_research: "科研点 III"
+  research_point_production_3_research_desc: "解锁科研点生产 III。"
+
+  # 煤炭
+  coal_production_research: "煤炭 I"
+  coal_production_research_desc: "解锁初级煤炭生产。"
+  coal_production_2_research: "煤炭 II"
+  coal_production_2_research_desc: "解锁中级煤炭生产。"
+  coal_production_3_research: "煤炭 III"
+  coal_production_3_research_desc: "解锁高级煤炭生产。"
+  # 石油
+  oil_production_research: "石油 I"
+  oil_production_research_desc: "解锁初级石油生产。"
+  oil_production_2_research: "石油 II"
+  oil_production_2_research_desc: "解锁中级石油生产。"
+  oil_production_3_research: "石油 III"
+  oil_production_3_research_desc: "解锁高级石油生产。"
+  # 钢铁
+  steel_production_research: "钢铁 I"
+  steel_production_research_desc: "解锁初级钢生产。"
+  steel_production_2_research: "钢铁 II"
+  steel_production_2_research_desc: "解锁中级钢生产。"
+  steel_production_3_research: "钢铁 III"
+  steel_production_3_research_desc: "解锁高级钢生产。"
+  # 钨
+  tungsten_production_research: "钨 I"
+  tungsten_production_research_desc: "解锁初级钨生产。"
+  tungsten_production_2_research: "钨 II"
+  tungsten_production_2_research_desc: "解锁中级钨生产。"
+  tungsten_production_3_research: "钨 III"
+  tungsten_production_3_research_desc: "解锁高级钨生产。"
+  # 铝
+  aluminium_production_research: "铝 I"
+  aluminium_production_research_desc: "解锁初级铝生产。"
+  aluminium_production_2_research: "铝 II"
+  aluminium_production_2_research_desc: "解锁中级铝生产。"
+  aluminium_production_3_research: "铝 III"
+  aluminium_production_3_research_desc: "解锁高级铝生产。"
+  # 橡胶
+  rubber_production_research: "橡胶 I"
+  rubber_production_research_desc: "解锁初级橡胶生产。"
+  rubber_production_2_research: "橡胶 II"
+  rubber_production_2_research_desc: "解锁中级橡胶生产。"
+  rubber_production_3_research: "橡胶 III"
+  rubber_production_3_research_desc: "解锁高级橡胶生产。"
+  # 铬
+  chromium_production_research: "铬 I"
+  chromium_production_research_desc: "解锁初级铬生产。"
+  chromium_production_2_research: "铬 II"
+  chromium_production_2_research_desc: "解锁中级铬生产。"
+  chromium_production_3_research: "铬 III"
+  chromium_production_3_research_desc: "解锁高级铬生产。"
+
+  # 世界紧张度增加
+  world_tension_increase_production_research: "世界紧张度增加 I"
+  # 世界紧张度减少
+  world_tension_decrease_production_research: "世界紧张度减少 I"
+
+  # 陆军经验
+  armyxp_production_research: "陆军经验 I"
+  armyxp_production_research_desc: "解锁陆军经验生产 I。"
+  armyxp_production_2_research: "陆军经验 II"
+  armyxp_production_2_research_desc: "解锁陆军经验生产 II。"
+  armyxp_production_3_research: "陆军经验 III"
+  armyxp_production_3_research_desc: "解锁陆军经验生产 III。"
+  # 海军经验
+  navyxp_production_research: "海军经验 I"
+  navyxp_production_research_desc: "解锁海军经验生产 I。"
+  navyxp_production_2_research: "海军经验 II"
+  navyxp_production_2_research_desc: "解锁海军经验生产 II。"
+  navyxp_production_3_research: "海军经验 III"
+  navyxp_production_3_research_desc: "解锁海军经验生产 III。"
+  # 空军经验
+  airxp_production_research: "空军经验 I"
+  airxp_production_research_desc: "解锁空军经验生产 I。"
+  airxp_production_2_research: "空军经验 II"
+  airxp_production_2_research_desc: "解锁空军经验生产 II。"
+  airxp_production_3_research: "空军经验 III"
+  airxp_production_3_research_desc: "解锁空军经验生产 III。"
+  # 指挥点数
+  command_power_production_research: "指挥点数 I"
+  command_power_production_research_desc: "解锁指挥点数生产 I。"
+  command_power_production_2_research: "指挥点数 II"
+  command_power_production_2_research_desc: "解锁指挥点数生产 II。"
+  command_power_production_3_research: "指挥点数 III"
+  command_power_production_3_research_desc: "解锁指挥点数生产 III。"

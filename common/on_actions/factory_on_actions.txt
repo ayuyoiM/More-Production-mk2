@@ -1,18 +1,14 @@
 on_actions = {
 
-    # civilian factory production 
-
-	on_weekly = { 
-		
+	on_weekly = { # civilian_factory_in_warehouse_product
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@civilian_factory_in_warehouse_product > 0
 					}
 				}
-				
+
 				set_variable = {
 					var = civilian_factory_product
 					value = var:num_equipment@civilian_factory_in_warehouse_product
@@ -21,30 +17,21 @@ on_actions = {
 					var = civilian_factory_product_negative
 					value = var:num_equipment@civilian_factory_in_warehouse_product
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@civilian_factory_in_warehouse_product > 0
-						}
-					}
-					multiply_variable = {
-						var = civilian_factory_product_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = civilian_factory_product_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = civilian_factory_in_warehouse_product
-    				amount = civilian_factory_product_negative
-    				# producer = ROOT
+					type = civilian_factory_in_warehouse_product
+					amount = civilian_factory_product_negative
 				}
+
 				add_offsite_building = {
-                    type = industrial_complex
-                    level = civilian_factory_product
-                }
+					type = industrial_complex
+					level = civilian_factory_product
+				}
+
 				set_variable = {
 					var = civilian_factory_product
 					value = 0
@@ -57,17 +44,15 @@ on_actions = {
 		}
 	}
 
-	on_weekly = { 
-		
+	on_weekly = { # civilian_factory_in_warehouse_product_2
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@civilian_factory_in_warehouse_product_2 > 0
 					}
 				}
-				
+
 				set_variable = {
 					var = civilian_factory_product_2
 					value = var:num_equipment@civilian_factory_in_warehouse_product_2
@@ -76,30 +61,21 @@ on_actions = {
 					var = civilian_factory_product_2_negative
 					value = var:num_equipment@civilian_factory_in_warehouse_product_2
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@civilian_factory_in_warehouse_product_2 > 0
-						}
-					}
-					multiply_variable = {
-						var = civilian_factory_product_2_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = civilian_factory_product_2_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = civilian_factory_in_warehouse_product_2
-    				amount = civilian_factory_product_2_negative
-    				# producer = ROOT
+					type = civilian_factory_in_warehouse_product_2
+					amount = civilian_factory_product_2_negative
 				}
+
 				add_offsite_building = {
-                    type = industrial_complex
-                    level = civilian_factory_product_2
-                }
+					type = industrial_complex
+					level = civilian_factory_product_2
+				}
+
 				set_variable = {
 					var = civilian_factory_product_2
 					value = 0
@@ -112,18 +88,15 @@ on_actions = {
 		}
 	}
 
-
-	on_weekly = { 
-		
+	on_weekly = { # civilian_factory_in_warehouse_product_3
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@civilian_factory_in_warehouse_product_3 > 0
 					}
 				}
-				
+
 				set_variable = {
 					var = civilian_factory_product_3
 					value = var:num_equipment@civilian_factory_in_warehouse_product_3
@@ -132,30 +105,21 @@ on_actions = {
 					var = civilian_factory_product_3_negative
 					value = var:num_equipment@civilian_factory_in_warehouse_product_3
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@civilian_factory_in_warehouse_product_3 > 0
-						}
-					}
-					multiply_variable = {
-						var = civilian_factory_product_3_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = civilian_factory_product_3_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = civilian_factory_in_warehouse_product_3
-    				amount = civilian_factory_product_3_negative
-    				# producer = ROOT
+					type = civilian_factory_in_warehouse_product_3
+					amount = civilian_factory_product_3_negative
 				}
+
 				add_offsite_building = {
-                    type = industrial_complex
-                    level = civilian_factory_product_3
-                }
+					type = industrial_complex
+					level = civilian_factory_product_3
+				}
+
 				set_variable = {
 					var = civilian_factory_product_3
 					value = 0
@@ -168,52 +132,38 @@ on_actions = {
 		}
 	}
 
-
-	# military factory production 
-
-	on_weekly = { 
-		
+	on_weekly = { # military_factory_in_warehouse_product
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@military_factory_in_warehouse_product > 0
 					}
 				}
-				
+
 				set_variable = {
-					var = military_factory_product	
+					var = military_factory_product
 					value = var:num_equipment@military_factory_in_warehouse_product
 				}
 				set_variable = {
 					var = military_factory_product_negative
 					value = var:num_equipment@military_factory_in_warehouse_product
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@military_factory_in_warehouse_product > 0
-						}
-					}
-					multiply_variable = {
-						var = military_factory_product_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = military_factory_product_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = military_factory_in_warehouse_product
-    				amount = military_factory_product_negative
-    				# producer = ROOT
+					type = military_factory_in_warehouse_product
+					amount = military_factory_product_negative
 				}
+
 				add_offsite_building = {
-                    type = arms_factory
-                    level = military_factory_product
-                }
+					type = arms_factory
+					level = military_factory_product
+				}
+
 				set_variable = {
 					var = military_factory_product
 					value = 0
@@ -226,18 +176,15 @@ on_actions = {
 		}
 	}
 
-
-	on_weekly = { 
-		
+	on_weekly = { # military_factory_in_warehouse_product_2
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@military_factory_in_warehouse_product_2 > 0
 					}
 				}
-				
+
 				set_variable = {
 					var = military_factory_product_2
 					value = var:num_equipment@military_factory_in_warehouse_product_2
@@ -246,30 +193,21 @@ on_actions = {
 					var = military_factory_product_2_negative
 					value = var:num_equipment@military_factory_in_warehouse_product_2
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@military_factory_in_warehouse_product_2 > 0
-						}
-					}
-					multiply_variable = {
-						var = military_factory_product_2_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = military_factory_product_2_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = military_factory_in_warehouse_product_2
-    				amount = military_factory_product_2_negative
-    				# producer = ROOT
+					type = military_factory_in_warehouse_product_2
+					amount = military_factory_product_2_negative
 				}
+
 				add_offsite_building = {
-                    type = arms_factory
-                    level = military_factory_product_2
-                }
+					type = arms_factory
+					level = military_factory_product_2
+				}
+
 				set_variable = {
 					var = military_factory_product_2
 					value = 0
@@ -282,18 +220,15 @@ on_actions = {
 		}
 	}
 
-
-	on_weekly = { 
-		
+	on_weekly = { # military_factory_in_warehouse_product_3
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@military_factory_in_warehouse_product_3 > 0
 					}
 				}
-				
+
 				set_variable = {
 					var = military_factory_product_3
 					value = var:num_equipment@military_factory_in_warehouse_product_3
@@ -302,30 +237,21 @@ on_actions = {
 					var = military_factory_product_3_negative
 					value = var:num_equipment@military_factory_in_warehouse_product_3
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@military_factory_in_warehouse_product_3 > 0
-						}
-					}
-					multiply_variable = {
-						var = military_factory_product_3_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = military_factory_product_3_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = military_factory_in_warehouse_product_3
-    				amount = military_factory_product_3_negative
-    				# producer = ROOT
+					type = military_factory_in_warehouse_product_3
+					amount = military_factory_product_3_negative
 				}
+
 				add_offsite_building = {
-                    type = arms_factory
-                    level = military_factory_product_3
-                }
+					type = arms_factory
+					level = military_factory_product_3
+				}
+
 				set_variable = {
 					var = military_factory_product_3
 					value = 0
@@ -338,51 +264,38 @@ on_actions = {
 		}
 	}
 
-	# naval dockyard production 
-
-	on_weekly = { 
-		
+	on_weekly = { # naval_dockyard_in_warehouse_product
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@naval_dockyard_in_warehouse_product > 0
 					}
 				}
-				
+
 				set_variable = {
-					var = naval_dockyard_product	
+					var = naval_dockyard_product
 					value = var:num_equipment@naval_dockyard_in_warehouse_product
 				}
 				set_variable = {
 					var = naval_dockyard_product_negative
 					value = var:num_equipment@naval_dockyard_in_warehouse_product
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@naval_dockyard_in_warehouse_product > 0
-						}
-					}
-					multiply_variable = {
-						var = naval_dockyard_product_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = naval_dockyard_product_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = naval_dockyard_in_warehouse_product
-    				amount = naval_dockyard_product_negative
-    				# producer = ROOT
+					type = naval_dockyard_in_warehouse_product
+					amount = naval_dockyard_product_negative
 				}
+
 				add_offsite_building = {
-                    type = dockyard
-                    level = naval_dockyard_product
-                }
+					type = dockyard
+					level = naval_dockyard_product
+				}
+
 				set_variable = {
 					var = naval_dockyard_product
 					value = 0
@@ -395,17 +308,15 @@ on_actions = {
 		}
 	}
 
-    on_weekly = { 
-		
+	on_weekly = { # naval_dockyard_in_warehouse_product_2
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@naval_dockyard_in_warehouse_product_2 > 0
 					}
 				}
-				
+
 				set_variable = {
 					var = naval_dockyard_product_2
 					value = var:num_equipment@naval_dockyard_in_warehouse_product_2
@@ -414,30 +325,21 @@ on_actions = {
 					var = naval_dockyard_product_2_negative
 					value = var:num_equipment@naval_dockyard_in_warehouse_product_2
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@naval_dockyard_in_warehouse_product_2 > 0
-						}
-					}
-					multiply_variable = {
-						var = naval_dockyard_product_2_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = naval_dockyard_product_2_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = naval_dockyard_in_warehouse_product_2
-    				amount = naval_dockyard_product_2_negative
-    				# producer = ROOT
+					type = naval_dockyard_in_warehouse_product_2
+					amount = naval_dockyard_product_2_negative
 				}
+
 				add_offsite_building = {
-                    type = dockyard
-                    level = naval_dockyard_product_2
-                }
+					type = dockyard
+					level = naval_dockyard_product_2
+				}
+
 				set_variable = {
 					var = naval_dockyard_product_2
 					value = 0
@@ -450,18 +352,15 @@ on_actions = {
 		}
 	}
 
-
-	on_weekly = { 
-		
+	on_weekly = { # naval_dockyard_in_warehouse_product_3
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@naval_dockyard_in_warehouse_product_3 > 0
 					}
 				}
-				
+
 				set_variable = {
 					var = naval_dockyard_product_3
 					value = var:num_equipment@naval_dockyard_in_warehouse_product_3
@@ -470,30 +369,21 @@ on_actions = {
 					var = naval_dockyard_product_3_negative
 					value = var:num_equipment@naval_dockyard_in_warehouse_product_3
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@naval_dockyard_in_warehouse_product_3 > 0
-						}
-					}
-					multiply_variable = {
-						var = naval_dockyard_product_3_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = naval_dockyard_product_3_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = naval_dockyard_in_warehouse_product_3
-    				amount = naval_dockyard_product_3_negative
-    				# producer = ROOT
+					type = naval_dockyard_in_warehouse_product_3
+					amount = naval_dockyard_product_3_negative
 				}
+
 				add_offsite_building = {
-                    type = dockyard
-                    level = naval_dockyard_product_3
-                }
+					type = dockyard
+					level = naval_dockyard_product_3
+				}
+
 				set_variable = {
 					var = naval_dockyard_product_3
 					value = 0
@@ -506,47 +396,31 @@ on_actions = {
 		}
 	}
 
-
-	# factory and naval ouput production 
-
-	on_weekly = { 
-		
+	on_weekly = { # factory_output_in_warehouse_product
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@factory_output_in_warehouse_product > 0
 					}
 				}
-				
+
 				set_variable = {
-					var = factory_output_product	
+					var = factory_output_product
 					value = var:num_equipment@factory_output_in_warehouse_product
 				}
 				set_variable = {
 					var = factory_output_product_negative
 					value = var:num_equipment@factory_output_in_warehouse_product
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@factory_output_in_warehouse_product > 0
-						}
-					}
-					multiply_variable = {
-						var = factory_output_product_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = factory_output_product_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = factory_output_in_warehouse_product
-    				amount = factory_output_product_negative
-    				# producer = ROOT
+					type = factory_output_in_warehouse_product
+					amount = factory_output_product_negative
 				}
 
 				divide_variable = {
@@ -555,10 +429,13 @@ on_actions = {
 				}
 
 				add_to_variable = {
-					more_production_industrial_capacity_factory = factory_output_product
+					var = more_production_industrial_capacity_factory
+					value = factory_output_product
 				}
+
 				add_to_variable = {
-					more_production_industrial_capacity_dockyard = factory_output_product
+					var = more_production_industrial_capacity_dockyard
+					value = factory_output_product
 				}
 
 				set_variable = {
@@ -573,17 +450,15 @@ on_actions = {
 		}
 	}
 
-    on_weekly = { 
-		
+	on_weekly = { # factory_output_in_warehouse_product_2
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@factory_output_in_warehouse_product_2 > 0
 					}
 				}
-				
+
 				set_variable = {
 					var = factory_output_product_2
 					value = var:num_equipment@factory_output_in_warehouse_product_2
@@ -592,37 +467,31 @@ on_actions = {
 					var = factory_output_product_2_negative
 					value = var:num_equipment@factory_output_in_warehouse_product_2
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@factory_output_in_warehouse_product_2 > 0
-						}
-					}
-					multiply_variable = {
-						var = factory_output_product_2_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = factory_output_product_2_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = factory_output_in_warehouse_product_2
-    				amount = factory_output_product_2_negative
-    				# producer = ROOT
+					type = factory_output_in_warehouse_product_2
+					amount = factory_output_product_2_negative
 				}
+
 				divide_variable = {
 					var = factory_output_product_2
 					value = 100
 				}
 
 				add_to_variable = {
-					more_production_industrial_capacity_factory = factory_output_product_2
+					var = more_production_industrial_capacity_factory
+					value = factory_output_product_2
 				}
+
 				add_to_variable = {
-					more_production_industrial_capacity_dockyard = factory_output_product_2
+					var = more_production_industrial_capacity_dockyard
+					value = factory_output_product_2
 				}
+
 				set_variable = {
 					var = factory_output_product_2
 					value = 0
@@ -635,18 +504,15 @@ on_actions = {
 		}
 	}
 
-
-	on_weekly = { 
-		
+	on_weekly = { # factory_output_in_warehouse_product_3
 		effect = {
 			if = {
 				limit = {
-					
 					check_variable = {
 						var:num_equipment@factory_output_in_warehouse_product_3 > 0
 					}
 				}
-				
+
 				set_variable = {
 					var = factory_output_product_3
 					value = var:num_equipment@factory_output_in_warehouse_product_3
@@ -655,37 +521,31 @@ on_actions = {
 					var = factory_output_product_3_negative
 					value = var:num_equipment@factory_output_in_warehouse_product_3
 				}
-				if = {
-					limit = {
-						check_variable = {
-							var:num_equipment@factory_output_in_warehouse_product_3 > 0
-						}
-					}
-					multiply_variable = {
-						var = factory_output_product_3_negative
-						value = -1
-					}
+				multiply_variable = {
+					var = factory_output_product_3_negative
+					value = -1
 				}
-				
-				
-				########################################################
 
 				add_equipment_to_stockpile = {
-    				type = factory_output_in_warehouse_product_3
-    				amount = factory_output_product_3_negative
-    				# producer = ROOT
+					type = factory_output_in_warehouse_product_3
+					amount = factory_output_product_3_negative
 				}
+
 				divide_variable = {
 					var = factory_output_product_3
 					value = 100
 				}
 
 				add_to_variable = {
-					more_production_industrial_capacity_factory = factory_output_product_3
+					var = more_production_industrial_capacity_factory
+					value = factory_output_product_3
 				}
+
 				add_to_variable = {
-					more_production_industrial_capacity_dockyard = factory_output_product_3
+					var = more_production_industrial_capacity_dockyard
+					value = factory_output_product_3
 				}
+
 				set_variable = {
 					var = factory_output_product_3
 					value = 0
@@ -698,14 +558,10 @@ on_actions = {
 		}
 	}
 
-	# production efficiency production 
-
-	on_weekly = { 
-
+	on_weekly = { # production_efficiency_in_warehouse_product
 		effect = {
 			if = {
 				limit = {
-
 					check_variable = {
 						var:num_equipment@production_efficiency_in_warehouse_product > 0
 					}
@@ -724,8 +580,6 @@ on_actions = {
 					value = -1
 				}
 
-				########################################################
-
 				add_equipment_to_stockpile = {
 					type = production_efficiency_in_warehouse_product
 					amount = production_efficiency_product_negative
@@ -737,10 +591,13 @@ on_actions = {
 				}
 
 				add_to_variable = {
-					more_production_efficiency_gain_factor = production_efficiency_product
+					var = more_production_efficiency_gain_factor
+					value = production_efficiency_product
 				}
+
 				add_to_variable = {
-					more_production_efficiency_cap_factor = production_efficiency_product
+					var = more_production_efficiency_cap_factor
+					value = production_efficiency_product
 				}
 
 				set_variable = {
@@ -755,14 +612,10 @@ on_actions = {
 		}
 	}
 
-	# production efficiency production 
-
-	on_weekly = { 
-
+	on_weekly = { # production_efficiency_in_warehouse_product_2
 		effect = {
 			if = {
 				limit = {
-
 					check_variable = {
 						var:num_equipment@production_efficiency_in_warehouse_product_2 > 0
 					}
@@ -781,8 +634,6 @@ on_actions = {
 					value = -1
 				}
 
-				########################################################
-
 				add_equipment_to_stockpile = {
 					type = production_efficiency_in_warehouse_product_2
 					amount = production_efficiency_product_2_negative
@@ -794,10 +645,13 @@ on_actions = {
 				}
 
 				add_to_variable = {
-					more_production_efficiency_gain_factor = production_efficiency_product_2
+					var = more_production_efficiency_gain_factor
+					value = production_efficiency_product_2
 				}
+
 				add_to_variable = {
-					more_production_efficiency_cap_factor = production_efficiency_product_2
+					var = more_production_efficiency_cap_factor
+					value = production_efficiency_product_2
 				}
 
 				set_variable = {
@@ -812,14 +666,10 @@ on_actions = {
 		}
 	}
 
-	# production efficiency production 
-
-	on_weekly = { 
-
+	on_weekly = { # production_efficiency_in_warehouse_product_3
 		effect = {
 			if = {
 				limit = {
-
 					check_variable = {
 						var:num_equipment@production_efficiency_in_warehouse_product_3 > 0
 					}
@@ -838,8 +688,6 @@ on_actions = {
 					value = -1
 				}
 
-				########################################################
-
 				add_equipment_to_stockpile = {
 					type = production_efficiency_in_warehouse_product_3
 					amount = production_efficiency_product_3_negative
@@ -851,10 +699,13 @@ on_actions = {
 				}
 
 				add_to_variable = {
-					more_production_efficiency_gain_factor = production_efficiency_product_3
+					var = more_production_efficiency_gain_factor
+					value = production_efficiency_product_3
 				}
+
 				add_to_variable = {
-					more_production_efficiency_cap_factor = production_efficiency_product_3
+					var = more_production_efficiency_cap_factor
+					value = production_efficiency_product_3
 				}
 
 				set_variable = {
