@@ -219,6 +219,14 @@
   factory_output_production_3_research: "工厂产出III"
   factory_output_production_3_research_desc: "解锁高级工厂产出设备。"
 
+  # Production Efficiency
+  production_efficiency_production_research: "生产效率I"
+  production_efficiency_production_research_desc: "解锁初级生产效率设备。"
+  production_efficiency_production_2_research: "生产效率II"
+  production_efficiency_production_2_research_desc: "解锁中级生产效率设备。"
+  production_efficiency_production_3_research: "生产效率III"
+  production_efficiency_production_3_research_desc: "解锁高级生产效率设备。"
+
   # Operative Slots
   operative_slot_production_research: "特工位I"
   operative_slot_production_research_desc: "解锁初级特工位。"

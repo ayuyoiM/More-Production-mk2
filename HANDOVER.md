@@ -1,6 +1,6 @@
 # More_Production_coal 交接文档
 
-最后更新：模组版本 1.3.1 / HOI4 1.20.*
+最后更新：模组版本 1.3.2 / HOI4 1.20.*
 
 ## 一、位置
 
@@ -134,6 +134,7 @@ on_weekly / on_daily 扫描仓库 → 转换成真实属性 → 扣掉虚拟装�
 - 学说精通度改为决议投入（`doctrine_mastery_invest_100/1000/10000`），三语言本地化已补
 - 三个历史决策缺的本地化键已补齐
 - 学说 / 军工组织 / 情报破译三条线成本改为 30 / 15 / 5，情报结算除 100
+- 工厂线新增生产效率生产项（成本 1000 / 500 / 100，结算除 100，喂 `production_factory_efficiency_gain_factor` 和 `production_factory_max_efficiency_factor`）
 
 未做：
 - `mod_summary.md` 已过时，内容被本文档取代，可以删

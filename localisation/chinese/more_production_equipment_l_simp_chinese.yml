@@ -220,6 +220,14 @@
   factory_output_in_warehouse_product_3: "工厂产出 III"
   factory_output_in_warehouse_product_3_desc: "最有效率的工厂产出设备！"
 
+  # Production Efficiency Equipment
+  production_efficiency_in_warehouse_product: "生产效率 I"
+  production_efficiency_in_warehouse_product_desc: "初级生产效率设备！"
+  production_efficiency_in_warehouse_product_2: "生产效率 II"
+  production_efficiency_in_warehouse_product_2_desc: "更高效的生产效率设备！"
+  production_efficiency_in_warehouse_product_3: "生产效率 III"
+  production_efficiency_in_warehouse_product_3_desc: "最有效率的生产效率设备！"
+
   # Operative Slot Equipment
   operative_slot_in_warehouse_product: "特工位 I"
   operative_slot_in_warehouse_product_desc: "人造特工位！"

@@ -698,4 +698,175 @@ on_actions = {
 		}
 	}
 
+	# production efficiency production 
+
+	on_weekly = { 
+
+		effect = {
+			if = {
+				limit = {
+
+					check_variable = {
+						var:num_equipment@production_efficiency_in_warehouse_product > 0
+					}
+				}
+
+				set_variable = {
+					var = production_efficiency_product
+					value = var:num_equipment@production_efficiency_in_warehouse_product
+				}
+				set_variable = {
+					var = production_efficiency_product_negative
+					value = var:num_equipment@production_efficiency_in_warehouse_product
+				}
+				multiply_variable = {
+					var = production_efficiency_product_negative
+					value = -1
+				}
+
+				########################################################
+
+				add_equipment_to_stockpile = {
+					type = production_efficiency_in_warehouse_product
+					amount = production_efficiency_product_negative
+				}
+
+				divide_variable = {
+					var = production_efficiency_product
+					value = 100
+				}
+
+				add_to_variable = {
+					more_production_efficiency_gain_factor = production_efficiency_product
+				}
+				add_to_variable = {
+					more_production_efficiency_cap_factor = production_efficiency_product
+				}
+
+				set_variable = {
+					var = production_efficiency_product
+					value = 0
+				}
+				set_variable = {
+					var = production_efficiency_product_negative
+					value = 0
+				}
+			}
+		}
+	}
+
+	# production efficiency production 
+
+	on_weekly = { 
+
+		effect = {
+			if = {
+				limit = {
+
+					check_variable = {
+						var:num_equipment@production_efficiency_in_warehouse_product_2 > 0
+					}
+				}
+
+				set_variable = {
+					var = production_efficiency_product_2
+					value = var:num_equipment@production_efficiency_in_warehouse_product_2
+				}
+				set_variable = {
+					var = production_efficiency_product_2_negative
+					value = var:num_equipment@production_efficiency_in_warehouse_product_2
+				}
+				multiply_variable = {
+					var = production_efficiency_product_2_negative
+					value = -1
+				}
+
+				########################################################
+
+				add_equipment_to_stockpile = {
+					type = production_efficiency_in_warehouse_product_2
+					amount = production_efficiency_product_2_negative
+				}
+
+				divide_variable = {
+					var = production_efficiency_product_2
+					value = 100
+				}
+
+				add_to_variable = {
+					more_production_efficiency_gain_factor = production_efficiency_product_2
+				}
+				add_to_variable = {
+					more_production_efficiency_cap_factor = production_efficiency_product_2
+				}
+
+				set_variable = {
+					var = production_efficiency_product_2
+					value = 0
+				}
+				set_variable = {
+					var = production_efficiency_product_2_negative
+					value = 0
+				}
+			}
+		}
+	}
+
+	# production efficiency production 
+
+	on_weekly = { 
+
+		effect = {
+			if = {
+				limit = {
+
+					check_variable = {
+						var:num_equipment@production_efficiency_in_warehouse_product_3 > 0
+					}
+				}
+
+				set_variable = {
+					var = production_efficiency_product_3
+					value = var:num_equipment@production_efficiency_in_warehouse_product_3
+				}
+				set_variable = {
+					var = production_efficiency_product_3_negative
+					value = var:num_equipment@production_efficiency_in_warehouse_product_3
+				}
+				multiply_variable = {
+					var = production_efficiency_product_3_negative
+					value = -1
+				}
+
+				########################################################
+
+				add_equipment_to_stockpile = {
+					type = production_efficiency_in_warehouse_product_3
+					amount = production_efficiency_product_3_negative
+				}
+
+				divide_variable = {
+					var = production_efficiency_product_3
+					value = 100
+				}
+
+				add_to_variable = {
+					more_production_efficiency_gain_factor = production_efficiency_product_3
+				}
+				add_to_variable = {
+					more_production_efficiency_cap_factor = production_efficiency_product_3
+				}
+
+				set_variable = {
+					var = production_efficiency_product_3
+					value = 0
+				}
+				set_variable = {
+					var = production_efficiency_product_3_negative
+					value = 0
+				}
+			}
+		}
+	}
+
 }

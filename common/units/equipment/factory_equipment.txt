@@ -201,4 +201,53 @@ equipments = {
 		priority = 30
 	}
 
+	# Production Efficiency Equipment Definition
+
+	production_efficiency_in_warehouse = {
+		year = 1936
+
+		is_archetype = yes
+
+		picture = efficiency_icon
+		is_buildable = no
+
+		type = infantry
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		active = yes
+
+		lend_lease_cost = 2
+
+		build_cost_ic = 1000
+		resources = {
+
+		}
+	}
+
+	production_efficiency_in_warehouse_product = {
+		can_be_produced = { has_country_flag = mp_tab_factory }
+		year = 1936
+		archetype = production_efficiency_in_warehouse
+		priority = 10
+	}
+
+	production_efficiency_in_warehouse_product_2 = {
+		can_be_produced = { has_country_flag = mp_tab_factory }
+		year = 1938
+		archetype = production_efficiency_in_warehouse
+		parent = production_efficiency_in_warehouse_product
+		build_cost_ic = 500
+		priority = 20
+	}
+
+	production_efficiency_in_warehouse_product_3 = {
+		can_be_produced = { has_country_flag = mp_tab_factory }
+		year = 1941
+		archetype = production_efficiency_in_warehouse
+		parent = production_efficiency_in_warehouse_product_2
+		build_cost_ic = 100
+		priority = 30
+	}
 }

@@ -55,6 +55,16 @@ flag_decision = {
                 }
 
                 set_variable = {
+                    var = more_production_efficiency_gain_factor
+                    value = 0
+                }
+
+                set_variable = {
+                    var = more_production_efficiency_cap_factor
+                    value = 0
+                }
+
+                set_variable = {
                     var = converted_research_speed
                     value = 100
                 }
@@ -122,6 +132,16 @@ flag_decision = {
 
                 set_variable = {
                     var = more_production_decryption_power_factor
+                    value = 0
+                }
+
+                set_variable = {
+                    var = more_production_efficiency_gain_factor
+                    value = 0
+                }
+
+                set_variable = {
+                    var = more_production_efficiency_cap_factor
                     value = 0
                 }
 

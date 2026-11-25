@@ -209,6 +209,14 @@
   factory_output_production_3_research: "Производительность фабрик III"
   factory_output_production_3_research_desc: "Разблокирует передовое оборудование для увеличения производительности фабрик."
 
+  # Эффективность производства
+  production_efficiency_production_research: "Эффективность производства I"
+  production_efficiency_production_research_desc: "Разблокирует базовое оборудование для эффективности производства."
+  production_efficiency_production_2_research: "Эффективность производства II"
+  production_efficiency_production_2_research_desc: "Разблокирует среднее оборудование для эффективности производства."
+  production_efficiency_production_3_research: "Эффективность производства III"
+  production_efficiency_production_3_research_desc: "Разблокирует передовое оборудование для эффективности производства."
+
   # Слоты оперативников
   operative_slot_production_research: "Слот оперативника I"
   operative_slot_production_research_desc: "Разблокирует базовый слот для оперативника."

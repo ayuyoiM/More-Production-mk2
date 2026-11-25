@@ -218,6 +218,14 @@
   factory_output_in_warehouse_product_3: "Factory Output III"
   factory_output_in_warehouse_product_3_desc: "The most efficient factory output equipment!"
 
+  # Production Efficiency Equipment
+  production_efficiency_in_warehouse_product: "Production Efficiency I"
+  production_efficiency_in_warehouse_product_desc: "Basic production efficiency equipment!"
+  production_efficiency_in_warehouse_product_2: "Production Efficiency II"
+  production_efficiency_in_warehouse_product_2_desc: "More efficient production efficiency equipment!"
+  production_efficiency_in_warehouse_product_3: "Production Efficiency III"
+  production_efficiency_in_warehouse_product_3_desc: "The most efficient production efficiency equipment!"
+
   # Operative Slot Equipment
   operative_slot_in_warehouse_product: "Operative Slot I"
   operative_slot_in_warehouse_product_desc: "Artificial operative slot!"

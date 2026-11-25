@@ -14,6 +14,9 @@ production_dymanic_modifier = {
 
     industrial_capacity_factory = more_production_industrial_capacity_factory
     industrial_capacity_dockyard = more_production_industrial_capacity_dockyard
+
+    production_factory_efficiency_gain_factor = more_production_efficiency_gain_factor
+    production_factory_max_efficiency_factor = more_production_efficiency_cap_factor
 }
 
 operative_dymanic_modifier = { 

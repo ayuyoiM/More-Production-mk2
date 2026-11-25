@@ -219,6 +219,14 @@
   factory_output_production_3_research: "Factory Output III"
   factory_output_production_3_research_desc: "Unlocks Advanced Factory Output Equipment."
 
+  # Production Efficiency
+  production_efficiency_production_research: "Production Efficiency I"
+  production_efficiency_production_research_desc: "Unlocks Basic Production Efficiency Equipment."
+  production_efficiency_production_2_research: "Production Efficiency II"
+  production_efficiency_production_2_research_desc: "Unlocks Intermediate Production Efficiency Equipment."
+  production_efficiency_production_3_research: "Production Efficiency III"
+  production_efficiency_production_3_research_desc: "Unlocks Advanced Production Efficiency Equipment."
+
   # Operative Slots
   operative_slot_production_research: "Operative Slot I"
   operative_slot_production_research_desc: "Unlocks Basic Operative Slot."

@@ -12,6 +12,7 @@ mp_cat_civilian = {
                 has_tech = military_factory_production_research
                 has_tech = naval_dockyard_production_research
                 has_tech = factory_output_production_research
+                has_tech = production_efficiency_production_research
             }
         }
 
@@ -73,6 +74,7 @@ mp_cat_civilian = {
                 military_factory_production_research = 1
                 naval_dockyard_production_research = 1
                 factory_output_production_research = 1
+                production_efficiency_production_research = 1
             }
             add_dynamic_modifier = {
                 modifier = production_dymanic_modifier
@@ -122,6 +124,7 @@ mp_cat_civilian = {
                 military_factory_production_2_research = 1
                 naval_dockyard_production_2_research = 1
                 factory_output_production_2_research = 1
+                production_efficiency_production_2_research = 1
             }
         }
 
@@ -168,6 +171,7 @@ mp_cat_civilian = {
                 military_factory_production_3_research = 1
                 naval_dockyard_production_3_research = 1
                 factory_output_production_3_research = 1
+                production_efficiency_production_3_research = 1
             }
         }
 

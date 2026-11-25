@@ -211,6 +211,14 @@
   factory_output_in_warehouse_product_3: "Производительность заводов III"
   factory_output_in_warehouse_product_3_desc: "Наиболее эффективное оборудование для производительности заводов!"
 
+  # Оборудование эффективности производства
+  production_efficiency_in_warehouse_product: "Эффективность производства I"
+  production_efficiency_in_warehouse_product_desc: "Базовое оборудование для эффективности производства!"
+  production_efficiency_in_warehouse_product_2: "Эффективность производства II"
+  production_efficiency_in_warehouse_product_2_desc: "Более эффективное оборудование для эффективности производства!"
+  production_efficiency_in_warehouse_product_3: "Эффективность производства III"
+  production_efficiency_in_warehouse_product_3_desc: "Наиболее эффективное оборудование для эффективности производства!"
+
   # Оборудование слота оперативников
   operative_slot_in_warehouse_product: "Слот оперативника I"
   operative_slot_in_warehouse_product_desc: "Искусственный слот оперативника!"
