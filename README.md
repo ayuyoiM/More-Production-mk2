@@ -20,7 +20,7 @@ Have fun!"
 基于“我个菜荀子”的万能军工厂 v0.1修改而来，新增情报破译、军工组织、学说三条生产线，工厂线补了生产效率，并做了分类重构。
 原作：https://steamcommunity.com/sharedfiles/filedetails/?id=3378477376
 
-适用版本：HOI4 1.20.*（Operation Postern）
+适用版本：HOI4 1.20.*
 模组版本：1.3.2
 更新日志：CHANGELOG.md
 
