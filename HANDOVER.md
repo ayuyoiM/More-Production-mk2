@@ -23,11 +23,11 @@ common/
     categories/more_production_category.txt   6 个 category 定义
     flag_decision.txt                          模式选择（作弊/正常）
     production_lines.txt                       生产线管理：三个大类的启用/停用总开关 + 占领自动化
-    <类别>_production_decisions.txt            15 个，各类研究决策 + 细类开关
+    <类别>_production_decisions.txt            16 个，各类研究决策 + 细类开关
     debug_production_decisions.txt             调试：一键解锁（仅 -debug）
-  units/equipment/<类别>_equipment.txt         15 个，虚拟装备定义
-  technologies/<类别>_tech.txt                 15 个，解锁装备的科技
-  on_actions/<类别>_on_actions.txt             15 个，定期转换逻辑
+  units/equipment/<类别>_equipment.txt         16 个，虚拟装备定义
+  technologies/<类别>_tech.txt                 16 个，解锁装备的科技
+  on_actions/<类别>_on_actions.txt             16 个，定期转换逻辑
   dynamic_modifiers/more_production_modifiers.txt
 localisation/{chinese,english,russian}/        三语言，各 4 个 yml
 interface/more_production.gfx
@@ -36,6 +36,9 @@ tools/
   check.py                                    静态校验，改完必跑
   gen.py                                      生成器
   test_gen.py                                 生成器自检
+  import_lines.py                             从现有 txt 反推配置，迁移用
+  compare_gen.py                              比对生成结果和现有文件的结构
+  format_txt.py                               缩进统一成 tab
   lines/<组>.toml                             生产线配置（要手改的就这里）
 descriptor.mod
 readme.txt
@@ -44,7 +47,7 @@ HANDOVER.md
 
 `common/units/equipment`、`common/technologies`、`common/on_actions` 这三组文件，以及装备名和科技名的三语言 yml，都由 `tools/gen.py` 生成，不要手改。改配置表再跑生成器。
 
-注意：目前只有工厂产出（`factory_output`）这一条迁进了配置表，其余 17 条还是手写状态。混用期间手改那 17 条没问题，但别对已经迁进配置的那条动手。
+所有生产线都已经迁进配置表，上面那几类文件全部由生成器产出。改生产线就改 `tools/lines/<组>.toml`，改完跑 `python tools/gen.py`，别直接动生成出来的文件。
 
 ## 三、数据流
 
@@ -156,6 +159,12 @@ on_weekly / on_daily 扫描仓库 → 转换成真实属性 → 扣掉虚拟装�
 - 三个历史决策缺的本地化键已补齐
 - 学说 / 军工组织 / 情报破译三条线成本改为 30 / 15 / 5，情报结算除 100
 - 工厂线新增生产效率生产项（成本 1000 / 500 / 100，结算除 100，喂 `production_factory_efficiency_gain_factor` 和 `production_factory_max_efficiency_factor`）
+- 工厂线新增建筑建造速度（喂 `production_speed_buildings_factor`）
+- 新增核弹制造生产线（喂 `nuclear_production_factor`，前置是原版特殊项目 `sp:sp_nuclear_bomb`）
+- 装备 / 科技 / 每周结算 / 图标 / 装备名与科技名改由 `tools/gen.py` 从 `tools/lines/*.toml` 生成
+- `tools/check.py` 静态校验：括号、逗号、重名精灵、多帧贴图、本地化键覆盖、变量初始化
+- `tools/format_txt.py` 统一 txt 缩进为 tab
 
 未做：
 - `mod_summary.md` 已过时，内容被本文档取代，可以删
+- 生产线管理分类的描述没做出来：普通分类不支持 `desc`，动态分类要按国家写 `custom_icon`，做不出通用描述
