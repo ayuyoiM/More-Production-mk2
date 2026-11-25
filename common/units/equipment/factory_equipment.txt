@@ -208,7 +208,7 @@ equipments = {
 
 		is_archetype = yes
 
-		picture = efficiency_icon
+		picture = archetype_production_efficiency
 		is_buildable = no
 
 		type = infantry

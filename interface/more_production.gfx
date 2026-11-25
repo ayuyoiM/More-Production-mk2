@@ -976,4 +976,29 @@ spriteTypes = {
 		texturefile = "gfx/texticons/doctrine_mastery_texticon.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_archetype_production_efficiency"
+		texturefile = "gfx/interface/efficiency_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_production_efficiency_in_warehouse_product"
+		texturefile = "gfx/interface/efficiency_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_production_efficiency_in_warehouse_product_medium"
+		texturefile = "gfx/interface/efficiency_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_production_efficiency_in_warehouse_product_2_medium"
+		texturefile = "gfx/interface/efficiency_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_production_efficiency_in_warehouse_product_3_medium"
+		texturefile = "gfx/interface/efficiency_icon.dds"
+	}
+
 }
