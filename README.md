@@ -26,7 +26,7 @@ Have fun!"
 
 适用版本：HOI4 1.20.*
 
-模组版本：1.3.4
+模组版本：1.3.5
 
 更新日志：[CHANGELOG.md](CHANGELOG.md)
 

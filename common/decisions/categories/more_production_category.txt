@@ -24,7 +24,7 @@ mp_cat_lines = {
 mp_cat_civilian = {
 	icon = GFX_decision_generic_civil_support
 	
-	priority = -2
+	priority = -3
 
 	allowed = {
 		is_ai = no
@@ -44,7 +44,7 @@ mp_cat_civilian = {
 mp_cat_military = {
 	icon = GFX_decision_generic_military
 	
-	priority = -3
+	priority = -4
 
 	allowed = {
 		is_ai = no
@@ -64,7 +64,7 @@ mp_cat_military = {
 mp_cat_research = {
 	icon = GFX_decision_generic_research
 	
-	priority = -4
+	priority = -5
 
 	allowed = {
 		is_ai = no
@@ -84,7 +84,7 @@ mp_cat_research = {
 mp_cat_political = {
 	icon = GFX_decision_generic_political_discourse
 	
-	priority = -5
+	priority = -6
 
 	allowed = {
 		is_ai = no
@@ -104,7 +104,27 @@ mp_cat_political = {
 mp_cat_debug = {
 	icon = GFX_decision_generic_decision
 	
-	priority = -6
+	priority = -7
+
+	allowed = {
+		is_ai = no
+	}
+
+	picture = GFX_decision_cat_picture_gateway_to_europe
+
+	visible = {
+		is_ai = no
+		OR = {
+			has_country_flag = normal_mode
+			has_country_flag = cheat_mode
+		}
+	}
+}
+
+mp_cat_cap = {
+	icon = GFX_decision_generic_decision
+
+	priority = -2
 
 	allowed = {
 		is_ai = no

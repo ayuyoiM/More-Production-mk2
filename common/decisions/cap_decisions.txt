@@ -1,0 +1,404 @@
+mp_cat_cap = {
+
+	# ---------- 正反馈上限档位 ----------
+	# mp_loop_cap 是变量上限（100 = +10000%），999999 视作无限制。
+
+	mp_loop_cap_unlimited = {
+		icon = GFX_decision_generic_decision
+		cost = 0
+		days_reload_time = 0
+		priority = 18
+
+		visible = {
+			NOT = {
+				check_variable = {
+					var = mp_loop_cap
+					value = 999999
+					compare = equals
+				}
+			}
+		}
+
+		complete_effect = {
+			set_variable = {
+				var = mp_loop_cap
+				value = 999999
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_loop_cap_loose = {
+		icon = GFX_decision_generic_decision
+		cost = 0
+		days_reload_time = 0
+		priority = 17
+
+		visible = {
+			NOT = {
+				check_variable = {
+					var = mp_loop_cap
+					value = 999999
+					compare = equals
+				}
+			}
+		}
+
+		complete_effect = {
+			set_variable = {
+				var = mp_loop_cap
+				value = 100
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_loop_cap_standard = {
+		icon = GFX_decision_generic_decision
+		cost = 0
+		days_reload_time = 0
+		priority = 16
+
+		visible = {
+			NOT = {
+				check_variable = {
+					var = mp_loop_cap
+					value = 999999
+					compare = equals
+				}
+			}
+		}
+
+		complete_effect = {
+			set_variable = {
+				var = mp_loop_cap
+				value = 10
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_loop_cap_strict = {
+		icon = GFX_decision_generic_decision
+		cost = 0
+		days_reload_time = 0
+		priority = 15
+
+		visible = {
+			NOT = {
+				check_variable = {
+					var = mp_loop_cap
+					value = 999999
+					compare = equals
+				}
+			}
+		}
+
+		complete_effect = {
+			set_variable = {
+				var = mp_loop_cap
+				value = 1
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	# ---------- 微调步长 ----------
+	# 加减各五档，按百分比：10000% / 1000% / 100% / 10% / 1%
+	# 对应变量增量 100 / 10 / 1 / 0.1 / 0.01，下限 0.01。
+
+	mp_cap_up_10000 = {
+		icon = GFX_decision_generic_decision
+		cost = 0
+		days_reload_time = 0
+		priority = 14
+
+		visible = {
+			NOT = {
+				check_variable = {
+					var = mp_loop_cap
+					value = 999999
+					compare = equals
+				}
+			}
+		}
+
+		complete_effect = {
+			add_to_variable = {
+				var = mp_loop_cap
+				value = 100
+			}
+			clamp_variable = {
+				var = mp_loop_cap
+				min = 0.01
+				max = 999999
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_cap_up_1000 = {
+		icon = GFX_decision_generic_decision
+		cost = 0
+		days_reload_time = 0
+		priority = 13
+
+		visible = {
+			NOT = {
+				check_variable = {
+					var = mp_loop_cap
+					value = 999999
+					compare = equals
+				}
+			}
+		}
+
+		complete_effect = {
+			add_to_variable = {
+				var = mp_loop_cap
+				value = 10
+			}
+			clamp_variable = {
+				var = mp_loop_cap
+				min = 0.01
+				max = 999999
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_cap_up_100 = {
+		icon = GFX_decision_generic_decision
+		cost = 0
+		days_reload_time = 0
+		priority = 12
+
+		visible = {
+			NOT = {
+				check_variable = {
+					var = mp_loop_cap
+					value = 999999
+					compare = equals
+				}
+			}
+		}
+
+		complete_effect = {
+			add_to_variable = {
+				var = mp_loop_cap
+				value = 1
+			}
+			clamp_variable = {
+				var = mp_loop_cap
+				min = 0.01
+				max = 999999
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_cap_up_10 = {
+		icon = GFX_decision_generic_decision
+		cost = 0
+		days_reload_time = 0
+		priority = 11
+
+		visible = {
+			NOT = {
+				check_variable = {
+					var = mp_loop_cap
+					value = 999999
+					compare = equals
+				}
+			}
+		}
+
+		complete_effect = {
+			add_to_variable = {
+				var = mp_loop_cap
+				value = 0.1
+			}
+			clamp_variable = {
+				var = mp_loop_cap
+				min = 0.01
+				max = 999999
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_cap_up_1 = {
+		icon = GFX_decision_generic_decision
+		cost = 0
+		days_reload_time = 0
+		priority = 10
+
+		visible = {
+			NOT = {
+				check_variable = {
+					var = mp_loop_cap
+					value = 999999
+					compare = equals
+				}
+			}
+		}
+
+		complete_effect = {
+			add_to_variable = {
+				var = mp_loop_cap
+				value = 0.01
+			}
+			clamp_variable = {
+				var = mp_loop_cap
+				min = 0.01
+				max = 999999
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_cap_down_10000 = {
+		icon = GFX_decision_generic_decision
+		cost = 0
+		days_reload_time = 0
+		priority = 9
+
+		visible = {
+			check_variable = {
+				mp_loop_cap > 0.01
+			}
+		}
+
+		complete_effect = {
+			subtract_from_variable = {
+				var = mp_loop_cap
+				value = 100
+			}
+			clamp_variable = {
+				var = mp_loop_cap
+				min = 0.01
+				max = 999999
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_cap_down_1000 = {
+		icon = GFX_decision_generic_decision
+		cost = 0
+		days_reload_time = 0
+		priority = 8
+
+		visible = {
+			check_variable = {
+				mp_loop_cap > 0.01
+			}
+		}
+
+		complete_effect = {
+			subtract_from_variable = {
+				var = mp_loop_cap
+				value = 10
+			}
+			clamp_variable = {
+				var = mp_loop_cap
+				min = 0.01
+				max = 999999
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_cap_down_100 = {
+		icon = GFX_decision_generic_decision
+		cost = 0
+		days_reload_time = 0
+		priority = 7
+
+		visible = {
+			check_variable = {
+				mp_loop_cap > 0.01
+			}
+		}
+
+		complete_effect = {
+			subtract_from_variable = {
+				var = mp_loop_cap
+				value = 1
+			}
+			clamp_variable = {
+				var = mp_loop_cap
+				min = 0.01
+				max = 999999
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_cap_down_10 = {
+		icon = GFX_decision_generic_decision
+		cost = 0
+		days_reload_time = 0
+		priority = 6
+
+		visible = {
+			check_variable = {
+				mp_loop_cap > 0.01
+			}
+		}
+
+		complete_effect = {
+			subtract_from_variable = {
+				var = mp_loop_cap
+				value = 0.1
+			}
+			clamp_variable = {
+				var = mp_loop_cap
+				min = 0.01
+				max = 999999
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_cap_down_1 = {
+		icon = GFX_decision_generic_decision
+		cost = 0
+		days_reload_time = 0
+		priority = 5
+
+		visible = {
+			check_variable = {
+				mp_loop_cap > 0.01
+			}
+		}
+
+		complete_effect = {
+			subtract_from_variable = {
+				var = mp_loop_cap
+				value = 0.01
+			}
+			clamp_variable = {
+				var = mp_loop_cap
+				min = 0.01
+				max = 999999
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+}

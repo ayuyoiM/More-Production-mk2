@@ -195,7 +195,7 @@ mp_cat_military = {
 				}
 			}
 			every_military_industrial_organization = {
-				add_mio_size = 1
+				add_mio_size = 5
 			}
 		}
 

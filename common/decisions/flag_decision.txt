@@ -81,7 +81,7 @@ flag_decision = {
 
 				set_variable = {
 					var = mp_loop_cap
-					value = 2000
+					value = 10
 				}
                 
 				add_dynamic_modifier = {
@@ -177,7 +177,7 @@ flag_decision = {
 
 				set_variable = {
 					var = mp_loop_cap
-					value = 2000
+					value = 10
 				}            }
 		}
 

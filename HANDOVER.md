@@ -1,6 +1,6 @@
 # More_Production_coal 交接文档
 
-最后更新：模组版本 1.3.4 / HOI4 1.20.*
+最后更新：模组版本 1.3.5 / HOI4 1.20.*
 
 ## 一、位置
 
@@ -20,9 +20,10 @@
 ```
 common/
   decisions/
-    categories/more_production_category.txt   6 个 category 定义
+    categories/more_production_category.txt   7 个 category 定义
     flag_decision.txt                          模式选择（作弊/正常）
     production_lines.txt                       生产线管理：三个大类的启用/停用总开关 + 占领自动化
+    cap_decisions.txt                          调整数值：正反馈上限四档 + 十档微调步长
     <类别>_production_decisions.txt            15 个，各类研究决策 + 细类开关
     debug_production_decisions.txt             调试：一键解锁（仅 -debug）
   units/equipment/<类别>_equipment.txt         15 个，虚拟装备定义
@@ -168,7 +169,7 @@ on_weekly / on_daily 扫描仓库 → 转换成真实属性 → 扣掉虚拟装�
 - 装备 / 科技 / 每周结算 / 图标 / 装备名与科技名改由 `tools/gen.py` 从 `tools/lines/*.toml` 生成
 - `tools/check.py` 静态校验：括号、逗号、重名精灵、多帧贴图、本地化键覆盖、变量初始化
 - `tools/format_txt.py` 统一 txt 缩进为 tab
-- 上限五档（`mp_loop_cap`，入口在生产线管理分类），覆盖模组里全部百分比加成：工厂产出、生产效率、建设速度、情报网增益、破译能力、研究速度、特殊项目速度；特工槽位单独封 +10。科研点、军工组织规模储备这类点数不封，游戏原生资源也不封
+- 上限四档 + 十档微调步长（`mp_loop_cap`，入口是独立的「调整数值」分类 `mp_cat_cap`）：无限制 / 100（+10000%）/ 10（+1000%）/ 1（+100%），默认 10；步长 ±10000% / ±1000% / ±100% / ±10% / ±1%，变量增量依次 100 / 10 / 1 / 0.1 / 0.01，下限 0.01。覆盖模组里全部百分比加成：工厂产出、生产效率、建设速度、情报网增益、破译能力、研究速度、特殊项目速度；特工槽位单独封 +10。科研点、军工组织规模储备这类点数不封，游戏原生资源也不封
 - 资源线七条的第一档补上 0.5 资源消耗
 - 军事总开关不再误开占领线；一键解锁全部改为一次性
 - 28 条启用/停用决议补三语 `desc`，说明各自产出和结算方式
