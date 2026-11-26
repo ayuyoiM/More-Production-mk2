@@ -148,7 +148,7 @@
 
   # automate occupation equipment 
   mp_loop_cap_unlimited: "正反馈上限：无限制"
-  mp_loop_cap_unlimited_desc: "\n§Y工厂产出、生产效率、建设速度§!三条线会互相放大。这一档不封顶，保持原版行为。"
+  mp_loop_cap_unlimited_desc: "\n无上限会导致工厂产出、生产效率左脚踩右脚，导致数值§R爆炸§!，从而导致§R废档§!。"
   mp_loop_cap_loose: "正反馈上限：宽松（+200000%）"
   mp_loop_cap_loose_desc: "\n三条线各自最高 §G+200000%§!。"
   mp_loop_cap_standard: "正反馈上限：标准（+50000%）"

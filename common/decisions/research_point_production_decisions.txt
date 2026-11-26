@@ -29,6 +29,7 @@ mp_cat_research = {
 			if = {
 				limit = {
 					has_country_flag = normal_mode
+					NOT = { has_country_flag = cheat_mode }
 				}
 				add_to_variable = {
 					var = research_point_var
@@ -73,6 +74,7 @@ mp_cat_research = {
 			if = {
 				limit = {
 					has_country_flag = normal_mode
+					NOT = { has_country_flag = cheat_mode }
 				}
 				add_to_variable = {
 					var = research_point_var
@@ -119,6 +121,7 @@ mp_cat_research = {
 			if = {
 				limit = {
 					has_country_flag = normal_mode
+					NOT = { has_country_flag = cheat_mode }
 				}
 				add_to_variable = {
 					var = research_point_var
@@ -191,6 +194,18 @@ mp_cat_research = {
 					more_production_research_speed_factor = 1
 				}
 			}
+			if = {
+				limit = {
+					check_variable = {
+						mp_loop_cap > 0
+					}
+				}
+				clamp_variable = {
+					var = more_production_research_speed_factor
+					min = 0
+					max = mp_loop_cap
+				}
+			}
 		}
 
 		ai_will_do = { factor = 0 }
@@ -255,6 +270,18 @@ mp_cat_research = {
 				}
 				add_to_variable = {
 					more_production_special_project_speed_factor = 1
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						mp_loop_cap > 0
+					}
+				}
+				clamp_variable = {
+					var = more_production_special_project_speed_factor
+					min = 0
+					max = mp_loop_cap
 				}
 			}
 			

@@ -147,7 +147,7 @@
 
   # Automate Occupation Equipment
   mp_loop_cap_unlimited: "Feedback Cap: Unlimited"
-  mp_loop_cap_unlimited_desc: "\n§YFactory output, production efficiency and construction speed§! feed each other. This cap is off, same as the original behaviour."
+  mp_loop_cap_unlimited_desc: "\nNo cap means factory output and production efficiency feed each other, the numbers §Rexplode§!, and the save is §Rruined§!."
   mp_loop_cap_loose: "Feedback Cap: Loose (+200000%)"
   mp_loop_cap_loose_desc: "\nEach of the three lines is capped at §G+200000%§!."
   mp_loop_cap_standard: "Feedback Cap: Standard (+50000%)"

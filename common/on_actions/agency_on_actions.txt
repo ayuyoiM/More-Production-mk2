@@ -32,6 +32,19 @@ on_actions = {
 					value = operative_slot_product
 				}
 
+				if = {
+					limit = {
+						check_variable = {
+							mp_loop_cap > 0
+						}
+					}
+					clamp_variable = {
+						var = more_production_operative_slot
+						min = 0
+						max = 10
+					}
+				}
+
 				set_variable = {
 					var = operative_slot_product
 					value = 0
@@ -76,6 +89,19 @@ on_actions = {
 					value = operative_slot_product_2
 				}
 
+				if = {
+					limit = {
+						check_variable = {
+							mp_loop_cap > 0
+						}
+					}
+					clamp_variable = {
+						var = more_production_operative_slot
+						min = 0
+						max = 10
+					}
+				}
+
 				set_variable = {
 					var = operative_slot_product_2
 					value = 0
@@ -118,6 +144,19 @@ on_actions = {
 				add_to_variable = {
 					var = more_production_operative_slot
 					value = operative_slot_product_3
+				}
+
+				if = {
+					limit = {
+						check_variable = {
+							mp_loop_cap > 0
+						}
+					}
+					clamp_variable = {
+						var = more_production_operative_slot
+						min = 0
+						max = 10
+					}
 				}
 
 				set_variable = {

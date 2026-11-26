@@ -59,3 +59,8 @@ descriptions_russian = [
 [[production_line.effect]]
 type = "add_to_variable"
 target = "more_production_operative_slot"
+
+[[production_line.effect]]
+type = "clamp_variable"
+var = "more_production_operative_slot"
+max = "10"

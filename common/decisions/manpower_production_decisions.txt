@@ -59,6 +59,7 @@ mp_cat_civilian = {
 			if = {
 				limit = {
 					has_country_flag = normal_mode
+					NOT = { has_country_flag = cheat_mode }
 				}
 				add_to_variable = {
 					var = research_point_var
@@ -99,6 +100,7 @@ mp_cat_civilian = {
 			if = {
 				limit = {
 					has_country_flag = normal_mode
+					NOT = { has_country_flag = cheat_mode }
 				}
 				add_to_variable = {
 					var = research_point_var
@@ -139,6 +141,7 @@ mp_cat_civilian = {
 			if = {
 				limit = {
 					has_country_flag = normal_mode
+					NOT = { has_country_flag = cheat_mode }
 				}
 				add_to_variable = {
 					var = research_point_var

@@ -68,3 +68,13 @@ target = "more_production_intel_network_gain_factor"
 [[production_line.effect]]
 type = "add_to_variable"
 target = "more_production_decryption_power_factor"
+
+[[production_line.effect]]
+type = "clamp_variable"
+var = "more_production_intel_network_gain_factor"
+max = "mp_loop_cap"
+
+[[production_line.effect]]
+type = "clamp_variable"
+var = "more_production_decryption_power_factor"
+max = "mp_loop_cap"
