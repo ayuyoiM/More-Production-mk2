@@ -1,4 +1,4 @@
-# COUNTRY 作用域 Effect 候选清单
+# COUNTRY 作用域 Effect 候选清单（1.20.0）
 
 来源：游戏自带 `documentation/effects_documentation.md`，COUNTRY 作用域共 **323** 个 effect。
 按「能不能当生产项」分三档。C 档只列名字，不逐个写说明。

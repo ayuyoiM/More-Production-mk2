@@ -1,21 +1,27 @@
-[h1]Military Factory Makes  - MK II[/h1]
-Based on the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3378477376]"Military Factory Makes EVERYTHING!" v0.1 by "我个菜荀子"[/url]
+[h1]Military Factory Makes - MK II[/h1]
+Based on [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3378477376]"Military Factory Makes EVERYTHING!" by "我个菜荀子"[/url]
 
 This project is maintained using LLMs.
 If you find any bugs, please report them in the Steam comments.
 
-This branch adds:
-
-Five production lines.
+[h2]Added in this branch[/h2]
 [list]
 [*]Coal resource;
 [*]Intelligence decryption;
 [*]Military industrial organizations;
 [*]Doctrines;
-[*]Production efficiency.
+[*]Production efficiency;
+[*]Construction speed.
 [/list]
 
+[h2]Numeric caps[/h2]
+Factory output, production efficiency, construction speed, intel decryption, research speed and special project speed are all capped, defaulting to the Loose tier at +200000%.
+Switch between five tiers in "Production Line Management": Loose, Standard, Strict, Very Strict, or pick "Unlimited" to lift the cap.
+Unlimited lets factory output and production efficiency feed each other; the numbers will explode and ruin the save. Choose with care.
+Point-based values such as research points, manpower and MIO funds are not capped.
+
 Production items have been restructured into a category + production line toggle structure.
+The AI will not use this mod's features.
 
 Compatible version: HOI4 1.20.*
 
