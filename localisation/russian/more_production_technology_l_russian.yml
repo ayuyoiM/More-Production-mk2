@@ -139,14 +139,6 @@
   mio_production_3_research: "ВПО III"
   mio_production_3_research_desc: "Открывает продвинутое производство ВПО."
 
-  # Производство ядерных бомб
-  nuclear_bomb_production_research: "Производство ядерных бомб I"
-  nuclear_bomb_production_research_desc: "Разблокирует базовое оборудование для производства ядерных бомб."
-  nuclear_bomb_production_2_research: "Производство ядерных бомб II"
-  nuclear_bomb_production_2_research_desc: "Разблокирует среднее оборудование для производства ядерных бомб."
-  nuclear_bomb_production_3_research: "Производство ядерных бомб III"
-  nuclear_bomb_production_3_research_desc: "Разблокирует передовое оборудование для производства ядерных бомб."
-
   # Оборудование для соответствия
   compliance_equipment_production_research: "Оборудование для соответствия I"
   compliance_equipment_production_research_desc: "Разблокирует базовую технологию производства оборудования для подчинения."

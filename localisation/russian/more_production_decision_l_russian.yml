@@ -150,6 +150,17 @@
   special_research_speed_decision_trigger_tt: "\nТекущие очки исследований: §Y[?research_point_var]§! \nПреобразуемая скорость специальных проектов: §G[?converted_research_speed|.0%%]§!"
 
   # Автоматизация оккупационного оборудования
+  mp_loop_cap_unlimited: "Предел обратной связи: без ограничений"
+  mp_loop_cap_unlimited_desc: "\n§YПроизводительность заводов, эффективность производства и скорость строительства§! усиливают друг друга. Ограничение выключено."
+  mp_loop_cap_loose: "Предел обратной связи: мягкий (+200000%)"
+  mp_loop_cap_loose_desc: "\nКаждая из трёх линий ограничена §G+200000%§!."
+  mp_loop_cap_standard: "Предел обратной связи: стандартный (+50000%)"
+  mp_loop_cap_standard_desc: "\nКаждая из трёх линий ограничена §Y+50000%§!."
+  mp_loop_cap_strict: "Предел обратной связи: строгий (+10000%)"
+  mp_loop_cap_strict_desc: "\nКаждая из трёх линий ограничена §R+10000%§!."
+  mp_loop_cap_ultra: "Предел обратной связи: очень строгий (+1000%)"
+  mp_loop_cap_ultra_desc: "\nКаждая из трёх линий ограничена §R+1000%§!."
+
   automate_occupation_decision: "Автоматически использовать оккупационное оборудование"
   automate_occupation_decision_desc: "\n§GОборудование для соответствия, сопротивления и создания ядра будет активироваться случайным образом в ваших неосновных территориях§!\n\n§RЧтобы производить основное оборудование, неосновные провинции должны иметь как минимум 70 соответствия и менее 10 сопротивления§!"
 
@@ -249,15 +260,6 @@
   mp_disable_mio_tab: "Отключить линию ВПО"
   mp_enable_doctrine_tab: "Включить линию доктрин"
   mp_disable_doctrine_tab: "Отключить линию доктрин"
-  mp_enable_nuclear_tab: "Включить линию производства ядерных бомб"
-  mp_disable_nuclear_tab: "Отключить линию производства ядерных бомб"
-  nuclear_bomb_research_decision: "Базовое исследование производства ядерных бомб  |  10 ОИ"
-  nuclear_bomb_research_decision_trigger_tt: "Требуется 10 ОИ, сейчас: [?research_point_var]"
-  nuclear_bomb_research_2_decision: "Среднее исследование производства ядерных бомб  |  100 ОИ"
-  nuclear_bomb_research_2_decision_trigger_tt: "Требуется 100 ОИ, сейчас: [?research_point_var]"
-  nuclear_bomb_research_3_decision: "Передовое исследование производства ядерных бомб  |  10 000 ОИ"
-  nuclear_bomb_research_3_decision_trigger_tt: "Требуется 10 000 ОИ, сейчас: [?research_point_var]"
-  mp_tab_nuclear: "Линия производства ядерных бомб включена"
   mp_tab_intel: "Линия разведки и дешифровки включена"
   mp_tab_mio: "Линия ВПО включена"
   mp_tab_doctrine: "Линия доктрин включена"

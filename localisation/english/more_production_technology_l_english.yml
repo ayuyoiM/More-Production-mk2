@@ -139,14 +139,6 @@
   mio_production_3_research: "MIO III"
   mio_production_3_research_desc: "Unlocks advanced MIO production."
 
-  # Nuclear Bomb Production
-  nuclear_bomb_production_research: "Nuclear Bomb Production I"
-  nuclear_bomb_production_research_desc: "Unlocks Basic Nuclear Bomb Production Equipment."
-  nuclear_bomb_production_2_research: "Nuclear Bomb Production II"
-  nuclear_bomb_production_2_research_desc: "Unlocks Intermediate Nuclear Bomb Production Equipment."
-  nuclear_bomb_production_3_research: "Nuclear Bomb Production III"
-  nuclear_bomb_production_3_research_desc: "Unlocks Advanced Nuclear Bomb Production Equipment."
-
   # Compliance Equipment
   compliance_equipment_production_research: "Compliance Equipment I"
   compliance_equipment_production_research_desc: "Unlocks Basic Compliance Equipment Production Technology."

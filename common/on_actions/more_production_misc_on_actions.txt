@@ -1,0 +1,43 @@
+on_actions = {
+
+	# 维护「科研点 -> 科研速度」决策 tooltip 里显示的换算值。
+	# 正常模式：research_point_var / 100000；作弊模式：固定 1（= +100%），
+	# 与 cheat_mode 下决策的实际效果保持一致，避免 tooltip 显示和结果对不上。
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = cheat_mode
+				}
+				set_variable = {
+					var = converted_research_speed
+					value = 100
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						check_variable = {
+							research_point_var > 0
+						}
+					}
+					set_variable = {
+						var = converted_research_speed
+						value = research_point_var
+					}
+					divide_variable = {
+						var = converted_research_speed
+						value = 100000
+					}
+				}
+				else = {
+					set_variable = {
+						var = converted_research_speed
+						value = 0
+					}
+				}
+			}
+		}
+	}
+
+}

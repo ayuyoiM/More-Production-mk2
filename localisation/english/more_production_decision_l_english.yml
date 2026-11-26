@@ -146,6 +146,17 @@
   special_research_speed_decision_trigger_tt: "\nCurrent research points: §Y[?research_point_var]§! \nConvertible special project speed: §G[?converted_research_speed|.0%%]§!"
 
   # Automate Occupation Equipment
+  mp_loop_cap_unlimited: "Feedback Cap: Unlimited"
+  mp_loop_cap_unlimited_desc: "\n§YFactory output, production efficiency and construction speed§! feed each other. This cap is off, same as the original behaviour."
+  mp_loop_cap_loose: "Feedback Cap: Loose (+200000%)"
+  mp_loop_cap_loose_desc: "\nEach of the three lines is capped at §G+200000%§!."
+  mp_loop_cap_standard: "Feedback Cap: Standard (+50000%)"
+  mp_loop_cap_standard_desc: "\nEach of the three lines is capped at §Y+50000%§!."
+  mp_loop_cap_strict: "Feedback Cap: Strict (+10000%)"
+  mp_loop_cap_strict_desc: "\nEach of the three lines is capped at §R+10000%§!."
+  mp_loop_cap_ultra: "Feedback Cap: Very Strict (+1000%)"
+  mp_loop_cap_ultra_desc: "\nEach of the three lines is capped at §R+1000%§!."
+
   automate_occupation_decision: "Automatically Use Occupation Equipment"
   automate_occupation_decision_desc: "\n§GCompliance, resistance, and core-creation equipment will activate randomly in your non-core territories§!\n\n§RTo produce core equipment, non-core provinces must have at least 70 Compliance and less than 10 resistance§!"
 
@@ -245,15 +256,6 @@
   mp_disable_mio_tab: "Disable MIO Production Line"
   mp_enable_doctrine_tab: "Enable Doctrine Production Line"
   mp_disable_doctrine_tab: "Disable Doctrine Production Line"
-  mp_enable_nuclear_tab: "Enable Nuclear Bomb Production Line"
-  mp_disable_nuclear_tab: "Disable Nuclear Bomb Production Line"
-  nuclear_bomb_research_decision: "Basic Nuclear Bomb Production Research  |  10 RP"
-  nuclear_bomb_research_decision_trigger_tt: "Requires 10 RP, current: [?research_point_var]"
-  nuclear_bomb_research_2_decision: "Intermediate Nuclear Bomb Production Research  |  100 RP"
-  nuclear_bomb_research_2_decision_trigger_tt: "Requires 100 RP, current: [?research_point_var]"
-  nuclear_bomb_research_3_decision: "Advanced Nuclear Bomb Production Research  |  10,000 RP"
-  nuclear_bomb_research_3_decision_trigger_tt: "Requires 10,000 RP, current: [?research_point_var]"
-  mp_tab_nuclear: "Nuclear bomb production line enabled"
   mp_tab_intel: "Intel & Decryption production line enabled"
   mp_tab_mio: "MIO production line enabled"
   mp_tab_doctrine: "Doctrine production line enabled"

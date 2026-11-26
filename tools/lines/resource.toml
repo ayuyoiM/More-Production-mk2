@@ -18,6 +18,7 @@ build_cost = 70
 description_chinese = "我们发明了一种徒手搓资源的办法！"
 description_english = "We have invented a way to generate resources with our bare hands!"
 description_russian = "Способ добывать уголь голыми руками!"
+resources = { coal = 0.5 }
 
 [[production_line.equipment]]
 id = "coal_in_warehouse_product_2"
@@ -77,6 +78,7 @@ build_cost = 150
 description_chinese = "我们发明了一种徒手搓资源的办法！"
 description_english = "We have invented a way to generate resources with our bare hands!"
 description_russian = "Мы изобрели способ добывать ресурсы голыми руками!"
+resources = { oil = 0.5 }
 
 [[production_line.equipment]]
 id = "oil_in_warehouse_product_2"
@@ -136,6 +138,7 @@ build_cost = 70
 description_chinese = "徒手搓钢铁的办法！"
 description_english = "A way to generate steel with our bare hands!"
 description_russian = "Способ добывать сталь голыми руками!"
+resources = { steel = 0.5 }
 
 [[production_line.equipment]]
 id = "steel_in_warehouse_product_2"
@@ -195,6 +198,7 @@ build_cost = 70
 description_chinese = "徒手搓钨的办法！"
 description_english = "A way to generate tungsten with our bare hands!"
 description_russian = "Способ добывать вольфрам голыми руками!"
+resources = { tungsten = 0.5 }
 
 [[production_line.equipment]]
 id = "tungsten_in_warehouse_product_2"
@@ -254,6 +258,7 @@ build_cost = 70
 description_chinese = "我们发明了一种徒手搓资源的办法！"
 description_english = "We have invented a way to generate resources with our bare hands!"
 description_russian = "Мы изобрели способ добывать ресурсы голыми руками!"
+resources = { aluminium = 0.5 }
 
 [[production_line.equipment]]
 id = "aluminium_in_warehouse_product_2"
@@ -313,6 +318,7 @@ build_cost = 100
 description_chinese = "徒手搓橡胶的办法！"
 description_english = "A way to generate rubber with our bare hands!"
 description_russian = "Способ добывать каучук голыми руками!"
+resources = { rubber = 0.5 }
 
 [[production_line.equipment]]
 id = "rubber_in_warehouse_product_2"
@@ -372,6 +378,7 @@ build_cost = 70
 description_chinese = "徒手搓铬的办法！"
 description_english = "A way to generate chromium with our bare hands!"
 description_russian = "Способ добывать хром голыми руками!"
+resources = { chromium = 0.5 }
 
 [[production_line.equipment]]
 id = "chromium_in_warehouse_product_2"

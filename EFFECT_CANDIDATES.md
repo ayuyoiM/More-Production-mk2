@@ -28,7 +28,7 @@
 | `add_tech_bonus` | 科技加成（限次数） | 有 uses 次数上限 |
 | `set_grand_doctrine` | 直接解锁并指定大师学说 | 一次性，已选会覆盖 |
 | `set_sub_doctrine` | 直接解锁并指定子学说 | 一次性 |
-| `add_cic` | 加 CIC 银行资金 | 1.20 新机制，看数值 |
+| `add_cic` | 加国际市场中的经济产能盈余 | 看数值 |
 | `add_equipment_subsidy` | 加装备补贴 | 需确认有没有上限 |
 | `add_resource` | 州资源产出 +N | 州资源有上限 |
 | `add_mines` | 战略区布雷 +N | 有上限 |

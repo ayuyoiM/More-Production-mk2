@@ -18,7 +18,6 @@ production_dymanic_modifier = {
 	production_factory_efficiency_gain_factor = more_production_efficiency_gain_factor
 	production_factory_max_efficiency_factor = more_production_efficiency_cap_factor
 	production_speed_buildings_factor = more_production_construction_speed_factor
-	nuclear_production_factor = more_production_nuclear_production_factor
 }
 
 operative_dymanic_modifier = { 

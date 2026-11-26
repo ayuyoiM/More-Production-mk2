@@ -206,6 +206,22 @@ def render_effects(line, tier):
                 INDENT * 5 + "amount = " + temp,
                 INDENT * 4 + "}",
             ]
+        elif kind == "clamp_variable":
+            # 老存档没有 mp_loop_cap 变量，跳过 clamp，避免把加成清成 0
+            out += [
+                INDENT * 4 + "if = {",
+                INDENT * 5 + "limit = {",
+                INDENT * 6 + "check_variable = {",
+                INDENT * 7 + "mp_loop_cap > 0",
+                INDENT * 6 + "}",
+                INDENT * 5 + "}",
+                INDENT * 5 + "clamp_variable = {",
+                INDENT * 6 + "var = " + effect["var"],
+                INDENT * 6 + "min = 0",
+                INDENT * 6 + "max = " + effect["max"],
+                INDENT * 5 + "}",
+                INDENT * 4 + "}",
+            ]
         else:
             sys.exit("线 %s 里有不认识的结算类型：%s" % (line["id"], kind))
         out.append("")

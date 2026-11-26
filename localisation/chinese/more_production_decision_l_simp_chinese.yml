@@ -147,6 +147,17 @@
   special_research_speed_decision_trigger_tt: "\n当前科研点数：§Y[?research_point_var]§!，\n可转换的特殊项目速度：§G[?converted_research_speed|.0%%]§!"
 
   # automate occupation equipment 
+  mp_loop_cap_unlimited: "正反馈上限：无限制"
+  mp_loop_cap_unlimited_desc: "\n§Y工厂产出、生产效率、建设速度§!三条线会互相放大。这一档不封顶，保持原版行为。"
+  mp_loop_cap_loose: "正反馈上限：宽松（+200000%）"
+  mp_loop_cap_loose_desc: "\n三条线各自最高 §G+200000%§!。"
+  mp_loop_cap_standard: "正反馈上限：标准（+50000%）"
+  mp_loop_cap_standard_desc: "\n三条线各自最高 §Y+50000%§!。"
+  mp_loop_cap_strict: "正反馈上限：严格（+10000%）"
+  mp_loop_cap_strict_desc: "\n三条线各自最高 §R+10000%§!。"
+  mp_loop_cap_ultra: "正反馈上限：超严格（+1000%）"
+  mp_loop_cap_ultra_desc: "\n三条线各自最高 §R+1000%§!，基本只保留原版手感。"
+
   automate_occupation_decision: "自动使用占领设备"
   automate_occupation_decision_desc: "\n§G顺从度,抵抗度和核心化装备会在你控制的非核心地区随机生效§!\n\n§R造核心装备需要非核心省份拥有至70点顺从度和低于10的抵抗度§!"
 
@@ -246,15 +257,6 @@
   mp_disable_mio_tab: "停用军工组织生产线"
   mp_enable_doctrine_tab: "启用学说生产线"
   mp_disable_doctrine_tab: "停用学说生产线"
-  mp_enable_nuclear_tab: "启用核弹制造生产线"
-  mp_disable_nuclear_tab: "停用核弹制造生产线"
-  nuclear_bomb_research_decision: "初级核弹制造研究  |  §G10科研点§!"
-  nuclear_bomb_research_decision_trigger_tt: "需要§G10科研点§!，当前为：§Y[?research_point_var]§!"
-  nuclear_bomb_research_2_decision: "中级核弹制造研究  |  §Y100科研点§!"
-  nuclear_bomb_research_2_decision_trigger_tt: "需要§Y100科研点§!，当前为：§Y[?research_point_var]§!"
-  nuclear_bomb_research_3_decision: "高级核弹制造研究  |  §R10,000科研点§!"
-  nuclear_bomb_research_3_decision_trigger_tt: "需要§R10,000科研点§!，当前为：§Y[?research_point_var]§!"
-  mp_tab_nuclear: "核弹制造生产线已启用"
   mp_tab_intel: "情报破译生产线已启用"
   mp_tab_mio: "军工组织生产线已启用"
   mp_tab_doctrine: "学说生产线已启用"

@@ -438,6 +438,32 @@ on_actions = {
 					value = factory_output_product
 				}
 
+				if = {
+					limit = {
+						check_variable = {
+							mp_loop_cap > 0
+						}
+					}
+					clamp_variable = {
+						var = more_production_industrial_capacity_factory
+						min = 0
+						max = mp_loop_cap
+					}
+				}
+
+				if = {
+					limit = {
+						check_variable = {
+							mp_loop_cap > 0
+						}
+					}
+					clamp_variable = {
+						var = more_production_industrial_capacity_dockyard
+						min = 0
+						max = mp_loop_cap
+					}
+				}
+
 				set_variable = {
 					var = factory_output_product
 					value = 0
@@ -490,6 +516,32 @@ on_actions = {
 				add_to_variable = {
 					var = more_production_industrial_capacity_dockyard
 					value = factory_output_product_2
+				}
+
+				if = {
+					limit = {
+						check_variable = {
+							mp_loop_cap > 0
+						}
+					}
+					clamp_variable = {
+						var = more_production_industrial_capacity_factory
+						min = 0
+						max = mp_loop_cap
+					}
+				}
+
+				if = {
+					limit = {
+						check_variable = {
+							mp_loop_cap > 0
+						}
+					}
+					clamp_variable = {
+						var = more_production_industrial_capacity_dockyard
+						min = 0
+						max = mp_loop_cap
+					}
 				}
 
 				set_variable = {
@@ -546,6 +598,32 @@ on_actions = {
 					value = factory_output_product_3
 				}
 
+				if = {
+					limit = {
+						check_variable = {
+							mp_loop_cap > 0
+						}
+					}
+					clamp_variable = {
+						var = more_production_industrial_capacity_factory
+						min = 0
+						max = mp_loop_cap
+					}
+				}
+
+				if = {
+					limit = {
+						check_variable = {
+							mp_loop_cap > 0
+						}
+					}
+					clamp_variable = {
+						var = more_production_industrial_capacity_dockyard
+						min = 0
+						max = mp_loop_cap
+					}
+				}
+
 				set_variable = {
 					var = factory_output_product_3
 					value = 0
@@ -598,6 +676,32 @@ on_actions = {
 				add_to_variable = {
 					var = more_production_efficiency_cap_factor
 					value = production_efficiency_product
+				}
+
+				if = {
+					limit = {
+						check_variable = {
+							mp_loop_cap > 0
+						}
+					}
+					clamp_variable = {
+						var = more_production_efficiency_gain_factor
+						min = 0
+						max = mp_loop_cap
+					}
+				}
+
+				if = {
+					limit = {
+						check_variable = {
+							mp_loop_cap > 0
+						}
+					}
+					clamp_variable = {
+						var = more_production_efficiency_cap_factor
+						min = 0
+						max = mp_loop_cap
+					}
 				}
 
 				set_variable = {
@@ -654,6 +758,32 @@ on_actions = {
 					value = production_efficiency_product_2
 				}
 
+				if = {
+					limit = {
+						check_variable = {
+							mp_loop_cap > 0
+						}
+					}
+					clamp_variable = {
+						var = more_production_efficiency_gain_factor
+						min = 0
+						max = mp_loop_cap
+					}
+				}
+
+				if = {
+					limit = {
+						check_variable = {
+							mp_loop_cap > 0
+						}
+					}
+					clamp_variable = {
+						var = more_production_efficiency_cap_factor
+						min = 0
+						max = mp_loop_cap
+					}
+				}
+
 				set_variable = {
 					var = production_efficiency_product_2
 					value = 0
@@ -708,6 +838,32 @@ on_actions = {
 					value = production_efficiency_product_3
 				}
 
+				if = {
+					limit = {
+						check_variable = {
+							mp_loop_cap > 0
+						}
+					}
+					clamp_variable = {
+						var = more_production_efficiency_gain_factor
+						min = 0
+						max = mp_loop_cap
+					}
+				}
+
+				if = {
+					limit = {
+						check_variable = {
+							mp_loop_cap > 0
+						}
+					}
+					clamp_variable = {
+						var = more_production_efficiency_cap_factor
+						min = 0
+						max = mp_loop_cap
+					}
+				}
+
 				set_variable = {
 					var = production_efficiency_product_3
 					value = 0
@@ -755,6 +911,19 @@ on_actions = {
 				add_to_variable = {
 					var = more_production_construction_speed_factor
 					value = construction_speed_product
+				}
+
+				if = {
+					limit = {
+						check_variable = {
+							mp_loop_cap > 0
+						}
+					}
+					clamp_variable = {
+						var = more_production_construction_speed_factor
+						min = 0
+						max = mp_loop_cap
+					}
 				}
 
 				set_variable = {
@@ -806,6 +975,19 @@ on_actions = {
 					value = construction_speed_product_2
 				}
 
+				if = {
+					limit = {
+						check_variable = {
+							mp_loop_cap > 0
+						}
+					}
+					clamp_variable = {
+						var = more_production_construction_speed_factor
+						min = 0
+						max = mp_loop_cap
+					}
+				}
+
 				set_variable = {
 					var = construction_speed_product_2
 					value = 0
@@ -853,6 +1035,19 @@ on_actions = {
 				add_to_variable = {
 					var = more_production_construction_speed_factor
 					value = construction_speed_product_3
+				}
+
+				if = {
+					limit = {
+						check_variable = {
+							mp_loop_cap > 0
+						}
+					}
+					clamp_variable = {
+						var = more_production_construction_speed_factor
+						min = 0
+						max = mp_loop_cap
+					}
 				}
 
 				set_variable = {

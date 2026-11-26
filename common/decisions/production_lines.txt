@@ -37,7 +37,6 @@ mp_cat_lines = {
 					has_country_flag = mp_tab_breakthrough
 					has_country_flag = mp_tab_xp
 					has_country_flag = mp_tab_mio
-					has_country_flag = mp_tab_occupation
 					has_country_flag = mp_tab_doctrine
 				}
 			}
@@ -47,7 +46,6 @@ mp_cat_lines = {
 			set_country_flag = mp_tab_breakthrough
 			set_country_flag = mp_tab_xp
 			set_country_flag = mp_tab_mio
-			set_country_flag = mp_tab_occupation
 			set_country_flag = mp_tab_doctrine
 		}
 
@@ -68,6 +66,7 @@ mp_cat_lines = {
 					has_country_flag = mp_tab_autonomy
 					has_country_flag = mp_tab_tension
 					has_country_flag = mp_tab_intel
+					has_country_flag = mp_tab_occupation
 				}
 			}
 		}
@@ -79,6 +78,7 @@ mp_cat_lines = {
 			set_country_flag = mp_tab_autonomy
 			set_country_flag = mp_tab_tension
 			set_country_flag = mp_tab_intel
+			set_country_flag = mp_tab_occupation
 		}
 
 		ai_will_do = { factor = 0 }
@@ -118,7 +118,6 @@ mp_cat_lines = {
 				has_country_flag = mp_tab_breakthrough
 				has_country_flag = mp_tab_xp
 				has_country_flag = mp_tab_mio
-				has_country_flag = mp_tab_occupation
 				has_country_flag = mp_tab_doctrine
 			}
 		}
@@ -127,7 +126,6 @@ mp_cat_lines = {
 			clr_country_flag = mp_tab_breakthrough
 			clr_country_flag = mp_tab_xp
 			clr_country_flag = mp_tab_mio
-			clr_country_flag = mp_tab_occupation
 			clr_country_flag = mp_tab_doctrine
 		}
 
@@ -147,6 +145,7 @@ mp_cat_lines = {
 				has_country_flag = mp_tab_autonomy
 				has_country_flag = mp_tab_tension
 				has_country_flag = mp_tab_intel
+				has_country_flag = mp_tab_occupation
 			}
 		}
 
@@ -157,12 +156,136 @@ mp_cat_lines = {
 			clr_country_flag = mp_tab_autonomy
 			clr_country_flag = mp_tab_tension
 			clr_country_flag = mp_tab_intel
+			clr_country_flag = mp_tab_occupation
 		}
 
 		ai_will_do = { factor = 0 }
 	}
 
 
+	# ---------- 正反馈上限 ----------
+	# 工厂产出、生产效率、建设速度三条线会互相放大，这里给玩家一个封顶档位。
+	# mp_loop_cap 是百分比变量（1000 = +100000%），999999 视作无限制。
+
+	mp_loop_cap_unlimited = {
+		icon = GFX_decision_generic_decision
+		cost = 0
+		priority = 18
+
+		visible = {
+			NOT = {
+				check_variable = {
+					var = mp_loop_cap
+					value = 999999
+				}
+			}
+		}
+
+		complete_effect = {
+			set_variable = {
+				var = mp_loop_cap
+				value = 999999
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_loop_cap_loose = {
+		icon = GFX_decision_generic_decision
+		cost = 0
+		priority = 17
+
+		visible = {
+			NOT = {
+				check_variable = {
+					var = mp_loop_cap
+					value = 2000
+				}
+			}
+		}
+
+		complete_effect = {
+			set_variable = {
+				var = mp_loop_cap
+				value = 2000
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_loop_cap_standard = {
+		icon = GFX_decision_generic_decision
+		cost = 0
+		priority = 16
+
+		visible = {
+			NOT = {
+				check_variable = {
+					var = mp_loop_cap
+					value = 500
+				}
+			}
+		}
+
+		complete_effect = {
+			set_variable = {
+				var = mp_loop_cap
+				value = 500
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_loop_cap_strict = {
+		icon = GFX_decision_generic_decision
+		cost = 0
+		priority = 15
+
+		visible = {
+			NOT = {
+				check_variable = {
+					var = mp_loop_cap
+					value = 100
+				}
+			}
+		}
+
+		complete_effect = {
+			set_variable = {
+				var = mp_loop_cap
+				value = 100
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	mp_loop_cap_ultra = {
+		icon = GFX_decision_generic_decision
+		cost = 0
+		priority = 14
+
+		visible = {
+			NOT = {
+				check_variable = {
+					var = mp_loop_cap
+					value = 10
+				}
+			}
+		}
+
+		complete_effect = {
+			set_variable = {
+				var = mp_loop_cap
+				value = 10
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
 	# ---------- 占领设备自动化 ----------
 
 	automate_occupation_decision = {

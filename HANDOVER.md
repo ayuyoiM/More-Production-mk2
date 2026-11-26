@@ -1,6 +1,6 @@
 # More_Production_coal 交接文档
 
-最后更新：模组版本 1.3.2 / HOI4 1.20.*
+最后更新：模组版本 1.3.4 / HOI4 1.20.*
 
 ## 一、位置
 
@@ -23,11 +23,12 @@ common/
     categories/more_production_category.txt   6 个 category 定义
     flag_decision.txt                          模式选择（作弊/正常）
     production_lines.txt                       生产线管理：三个大类的启用/停用总开关 + 占领自动化
-    <类别>_production_decisions.txt            16 个，各类研究决策 + 细类开关
+    <类别>_production_decisions.txt            15 个，各类研究决策 + 细类开关
     debug_production_decisions.txt             调试：一键解锁（仅 -debug）
-  units/equipment/<类别>_equipment.txt         16 个，虚拟装备定义
-  technologies/<类别>_tech.txt                 16 个，解锁装备的科技
-  on_actions/<类别>_on_actions.txt             16 个，定期转换逻辑
+  units/equipment/<类别>_equipment.txt         15 个，虚拟装备定义
+  technologies/<类别>_tech.txt                 15 个，解锁装备的科技
+  on_actions/<类别>_on_actions.txt             15 个，定期转换逻辑
+  on_actions/more_production_misc_on_actions.txt  手写，维护决策提示用的换算值
   dynamic_modifiers/more_production_modifiers.txt
 localisation/{chinese,english,russian}/        三语言，各 4 个 yml
 interface/more_production.gfx
@@ -142,6 +143,9 @@ on_weekly / on_daily 扫描仓库 → 转换成真实属性 → 扣掉虚拟装�
 10. **新生产线的成本别抄人力线**
     人力线是 `0.17 / 0.01 / 0.001`，因为 1 件只给 1 点人力，人力不值钱。学说、军工组织、情报这三条早期照抄了这个价，结果一件的成本比政治点线便宜一百多倍，一周刷出几万件。现在统一按政治点线定价：`30 / 15 / 5`，整数，三档递减。目标是小数百分比字段的（情报的两个 factor），结算时再 `divide_variable`，情报是除 100，参照政治点线里稳定度的写法。
 
+11. **`clamp_variable` 的 `max` 引用变量前要判存在**
+    `max = mp_loop_cap` 这种写法，变量不存在时按 0 处理，会把已有加成一次性清空。生成器现在给 clamp 外面包了 `check_variable = { mp_loop_cap > 0 }`，老存档没有这个变量时直接跳过封顶。以后加新的可调上限照这个写法。
+
 ## 七、当前状态
 
 已完成：
@@ -159,12 +163,16 @@ on_weekly / on_daily 扫描仓库 → 转换成真实属性 → 扣掉虚拟装�
 - 三个历史决策缺的本地化键已补齐
 - 学说 / 军工组织 / 情报破译三条线成本改为 30 / 15 / 5，情报结算除 100
 - 工厂线新增生产效率生产项（成本 1000 / 500 / 100，结算除 100，喂 `production_factory_efficiency_gain_factor` 和 `production_factory_max_efficiency_factor`）
-- 工厂线新增建筑建造速度（喂 `production_speed_buildings_factor`）
-- 新增核弹制造生产线（喂 `nuclear_production_factor`，前置是原版特殊项目 `sp:sp_nuclear_bomb`）
+- 工厂线新增建设速度（喂 `production_speed_buildings_factor`）
+- 核弹制造生产线已移除（原版核弹靠特殊项目产出，这条线收益绕、门槛还卡在特殊项目上）
 - 装备 / 科技 / 每周结算 / 图标 / 装备名与科技名改由 `tools/gen.py` 从 `tools/lines/*.toml` 生成
 - `tools/check.py` 静态校验：括号、逗号、重名精灵、多帧贴图、本地化键覆盖、变量初始化
 - `tools/format_txt.py` 统一 txt 缩进为 tab
+- 正反馈上限五档（`mp_loop_cap`，管工厂产出 / 生产效率 / 建设速度三条线，入口在生产线管理分类）
+- 资源线七条的第一档补上 0.5 资源消耗
+- 军事总开关不再误开占领线；一键解锁全部改为一次性
 
 未做：
 - `mod_summary.md` 已过时，内容被本文档取代，可以删
 - 生产线管理分类的描述没做出来：普通分类不支持 `desc`，动态分类要按国家写 `custom_icon`，做不出通用描述
+- 有 11 条线整条三档都不配 `resources`（agency 一条、autonomy 两条、factory 六条、核弹线已删），生产不消耗资源，暂时不补

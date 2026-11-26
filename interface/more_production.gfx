@@ -563,32 +563,6 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_archetype_nuclear_bomb"
-		texturefile = "gfx/interface/special_project/mapicon_facility_specialization_nuclear.dds"
-		noOfFrames = 3
-	}
-	SpriteType = {
-		name = "GFX_nuclear_bomb_in_warehouse_product"
-		texturefile = "gfx/interface/special_project/mapicon_facility_specialization_nuclear.dds"
-		noOfFrames = 3
-	}
-	SpriteType = {
-		name = "GFX_nuclear_bomb_in_warehouse_product_medium"
-		texturefile = "gfx/interface/special_project/mapicon_facility_specialization_nuclear.dds"
-		noOfFrames = 3
-	}
-	SpriteType = {
-		name = "GFX_nuclear_bomb_in_warehouse_product_2_medium"
-		texturefile = "gfx/interface/special_project/mapicon_facility_specialization_nuclear.dds"
-		noOfFrames = 3
-	}
-	SpriteType = {
-		name = "GFX_nuclear_bomb_in_warehouse_product_3_medium"
-		texturefile = "gfx/interface/special_project/mapicon_facility_specialization_nuclear.dds"
-		noOfFrames = 3
-	}
-
-	SpriteType = {
 		name = "GFX_archetype_compliance_equipment"
 		texturefile = "gfx/interface/occupation/compliance_icon.dds"
 	}

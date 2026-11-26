@@ -1,0 +1,25 @@
+[h1]Military Factory Makes  - MK II[/h1]
+Based on the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3378477376]"Military Factory Makes EVERYTHING!" v0.1 by "我个菜荀子"[/url]
+
+This project is maintained using LLMs.
+If you find any bugs, please report them in the Steam comments.
+
+This branch adds:
+
+Five production lines.
+[list]
+[*]Coal resource;
+[*]Intelligence decryption;
+[*]Military industrial organizations;
+[*]Doctrines;
+[*]Production efficiency.
+[/list]
+
+Production items have been restructured into a category + production line toggle structure.
+
+Compatible version: HOI4 1.20.*
+
+[h2]Credits[/h2]
+Original original mod author: Space Maze
+Original mod author: 我个菜荀子
+[i]LLM[/i] (aka AI): DeepSeek 4.1 Flash

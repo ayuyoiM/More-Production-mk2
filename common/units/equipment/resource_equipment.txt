@@ -28,6 +28,9 @@ equipments = {
 		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1936
 		archetype = coal_in_warehouse
+		resources = {
+			coal = 0.5
+		}
 		priority = 10
 	}
 
@@ -83,6 +86,9 @@ equipments = {
 		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1936
 		archetype = oil_in_warehouse
+		resources = {
+			oil = 0.5
+		}
 		priority = 10
 	}
 
@@ -138,6 +144,9 @@ equipments = {
 		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1936
 		archetype = steel_in_warehouse
+		resources = {
+			steel = 0.5
+		}
 		priority = 10
 	}
 
@@ -193,6 +202,9 @@ equipments = {
 		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1936
 		archetype = tungsten_in_warehouse
+		resources = {
+			tungsten = 0.5
+		}
 		priority = 10
 	}
 
@@ -248,6 +260,9 @@ equipments = {
 		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1936
 		archetype = aluminium_in_warehouse
+		resources = {
+			aluminium = 0.5
+		}
 		priority = 10
 	}
 
@@ -303,6 +318,9 @@ equipments = {
 		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1936
 		archetype = rubber_in_warehouse
+		resources = {
+			rubber = 0.5
+		}
 		priority = 10
 	}
 
@@ -358,6 +376,9 @@ equipments = {
 		can_be_produced = { has_country_flag = mp_tab_resource }
 		year = 1936
 		archetype = chromium_in_warehouse
+		resources = {
+			chromium = 0.5
+		}
 		priority = 10
 	}
 

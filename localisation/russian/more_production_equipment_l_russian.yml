@@ -139,14 +139,6 @@
   mio_in_warehouse_product_3: "ВПО III"
   mio_in_warehouse_product_3_desc: "Самые эффективные синтетические средства ВПО!"
 
-  # Производство ядерных бомб
-  nuclear_bomb_in_warehouse_product: "Производство ядерных бомб I"
-  nuclear_bomb_in_warehouse_product_desc: "Искусственные ядерные бомбы!"
-  nuclear_bomb_in_warehouse_product_2: "Производство ядерных бомб II"
-  nuclear_bomb_in_warehouse_product_2_desc: "Более эффективные ядерные бомбы!"
-  nuclear_bomb_in_warehouse_product_3: "Производство ядерных бомб III"
-  nuclear_bomb_in_warehouse_product_3_desc: "Наиболее эффективные ядерные бомбы!"
-
   # Оборудование для соответствия
   compliance_equipment_in_warehouse_product: "Оборудование для соответствия I"
   compliance_equipment_in_warehouse_product_desc: "Искусственное оборудование для соответствия!"

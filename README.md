@@ -17,29 +17,32 @@ Have fun!"
 
 # 万能军工厂
 
-基于“我个菜荀子”的万能军工厂 v0.1修改而来，新增情报破译、军工组织、学说、核弹制造四条生产线，工厂线补了生产效率和建筑建造速度，并做了分类重构。
-原作：https://steamcommunity.com/sharedfiles/filedetails/?id=3378477376
+[![Steam](https://img.shields.io/badge/%E5%88%9B%E6%84%8F%E5%B7%A5%E5%9D%8A-Steam?style=flat-square&logo=Steam&label=Steam&color=%23000000)](https://steamcommunity.com/sharedfiles/filedetails/?id=3615184066)
+[![Steam Update Date](https://img.shields.io/steam/update-date/3615184066?style=flat-square&label=工坊更新时间)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3615184066)
+
+基于[“我个菜荀子”的万能军工厂](https://steamcommunity.com/sharedfiles/filedetails/?id=3378477376) v0.1 修改而来，新增煤、情报破译、军工组织、学说、核弹制造五条生产线，工厂线补了生产效率和建设速度，并做了分类重构。
+
+游戏 AI 不会使用
 
 适用版本：HOI4 1.20.*
-模组版本：1.3.3
-更新日志：CHANGELOG.md
+模组版本：1.3.4
+更新日志：[CHANGELOG.md](/CHANGELOG.md)
 
 ## 功能
 
 作弊向模组。用军事工厂生产「虚拟装备」，
 装备进仓库后由脚本定期转换成国家的真实资源或属性。
-可以不花任何代价把产能变成工厂、资源、政治点、科研点、人力、经验、军工组织资金、学说精通度、生产效率、建造速度和核弹产能等等。
+把产能变成工厂、资源、政治点、科研点、人力、经验、军工组织资金、学说精通度、生产效率、建造速度和核弹产能等等。
 
 ## 界面结构
 
 决策界面分为：
 
   生产线管理    三个大类总开关，一次开/关一整个大类；另有占领设备的自动使用开关
-  民生          工厂（含生产效率和建筑建造速度）、资源、人力
+  民生          工厂（含生产效率和建设速度）、资源、人力
   军事          设施突破、经验与指挥点、军工组织、学说、核弹制造
   科研          科研点
   外交政治      政治、意识形态、特务、自治、紧张度、情报破译、占领
-  调试          仅在 -debug 启动时出现，一键解锁全部
 
 每个大类内部还有逐条的生产线开关，可以只开其中一两条。
 科研点线的装备没有开关，常驻生产界面。
@@ -59,5 +62,4 @@ Have fun!"
 
 原原模组作者：Space Maze
 原模组作者：我个菜荀子
-本修改版在原作基础上新增情报破译、军工组织、学说三条生产线，工厂线补了生产效率，并将生产项重构为分类 + 生产线开关结构。
 LLM 大语言模型：DeepSeek 4.1 Flash
